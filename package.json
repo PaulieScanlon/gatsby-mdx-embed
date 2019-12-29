@@ -1,0 +1,17 @@
+{
+  "private": true,
+  "scripts": {
+    "clean": "yarn workspace demo clean",
+    "serve": "yarn workspace demo serve",
+    "develop": "yarn workspace demo develop",
+    "build": "yarn workspace demo build",
+    "test": "yarn workspace @pauliescanlon/gatsby-mdx-embed test",
+    "test:watch": "yarn workspace @pauliescanlon/gatsby-mdx-embed test:watch",
+    "test:coverage": "yarn workspace @pauliescanlon/gatsby-mdx-embed test:coverage",
+    "release": "node copy-readme.js && yarn workspace @pauliescanlon/gatsby-mdx-embed publish"
+  },
+  "workspaces": [
+    "demo",
+    "@pauliescanlon/gatsby-mdx-routes"
+  ]
+}

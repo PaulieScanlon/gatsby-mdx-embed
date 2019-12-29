@@ -1,0 +1,35 @@
+{
+  "name": "@pauliescanlon/gatsby-mdx-embed",
+  "author": "Paul Scanlon <pauliescanlon@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PaulieScanlon/gatsby-mdx-embed.git"
+  },
+  "version": "0.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "publish": "npm login"
+  },
+  "dependencies": {
+    "gatsby": "^2.18.12",
+    "react": "^16.12.0"
+  },
+  "devDependencies": {
+    "jest": "^24.9.0",
+    "prettier": "^1.19.1"
+  },
+  "keywords": [
+    "gatsby",
+    "gatsby-plugin",
+    "gatsby-mdx"
+  ],
+  "description": "...",
+  "bugs": {
+    "url": "https://github.com/PaulieScanlon/gatsby-mdx-embed/issues"
+  },
+  "homepage": "https://github.com/PaulieScanlon/gatsby-mdx-embed#readme"
+}

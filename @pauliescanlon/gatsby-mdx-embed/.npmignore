@@ -1,0 +1,5 @@
+.prettierrc
+jest.config.js
+refs.md
+coverage
+yarn-error.log
