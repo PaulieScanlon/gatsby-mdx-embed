@@ -25,7 +25,7 @@ export const onRenderBody = ({ setHeadComponents }, pluginOptions) => {
       return provider
     })
     .map((provider, index) => (
-      <script key={`${provider.name}-${index}`} src={`${provider.url}`} />
+      <script async key={`${provider.name}-${index}`} src={`${provider.url}`} />
     ))
 
   setHeadComponents([...providerScriptTags])
