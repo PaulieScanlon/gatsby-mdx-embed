@@ -9,7 +9,7 @@ export const Tweet = ({ id }) => (
       </a>
     </blockquote> */}
     <blockquote className="twitter-tweet">
-      <a href="https://twitter.com/PaulieScanlon/status/1201514996838141952?ref_src=twsrc%5Etfw">
+      <a href="https://twitter.com/PaulieScanlon/status/1201514996838141952">
         ....
       </a>
     </blockquote>
