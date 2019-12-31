@@ -1,4 +1,4 @@
-exports.onRouteUpdate = () => {
+const loadTwitter = () => {
   if (
     typeof window.twttr !== `undefined` &&
     window.twttr.widgets &&
@@ -6,7 +6,9 @@ exports.onRouteUpdate = () => {
   ) {
     window.twttr.widgets.load(document.getElementById("___gatsby"))
   }
+}
 
+const processInstagram = () => {
   if (
     typeof window.instgrm !== `undefined` &&
     window.instgrm.Embeds &&
@@ -14,4 +16,14 @@ exports.onRouteUpdate = () => {
   ) {
     window.instgrm.Embeds.process()
   }
+}
+
+exports.onInitialClientRender = () => {
+  loadTwitter()
+  processInstagram()
+}
+
+exports.onRouteUpdate = () => {
+  loadTwitter()
+  processInstagram()
 }
