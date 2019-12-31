@@ -1,4 +1,4 @@
-const loadTwitter = () => {
+const twttrLoad = () => {
   if (
     typeof window.twttr !== `undefined` &&
     window.twttr.widgets &&
@@ -8,7 +8,7 @@ const loadTwitter = () => {
   }
 }
 
-const processInstagram = () => {
+const instgrmProcess = () => {
   if (
     typeof window.instgrm !== `undefined` &&
     window.instgrm.Embeds &&
@@ -18,11 +18,10 @@ const processInstagram = () => {
   }
 }
 
-const initScripts = () => {
-  console.log("initScripts")
-  loadTwitter()
-  processInstagram()
+const runProviders = () => {
+  twttrLoad()
+  instgrmProcess()
 }
 
-exports.onInitialClientRender = initScripts
-exports.onRouteUpdate = initScripts
+exports.onInitialClientRender = runProviders
+exports.onRouteUpdate = runProviders

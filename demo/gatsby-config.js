@@ -22,6 +22,14 @@ module.exports = {
           default: `${__dirname}/src/layouts/layout.js`,
         },
         plugins: [`@pauliescanlon/gatsby-mdx-embed`],
+        // plugins: [
+        //   {
+        //     resolve: `@pauliescanlon/gatsby-mdx-embed`,
+        //     options: {
+        //       exclude: ["flickr"],
+        //     },
+        //   },
+        // ],
       },
     },
   ],
