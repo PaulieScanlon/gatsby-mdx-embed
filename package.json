@@ -12,6 +12,6 @@
   },
   "workspaces": [
     "demo",
-    "@pauliescanlon/gatsby-mdx-routes"
+    "@pauliescanlon/gatsby-mdx-embed"
   ]
 }

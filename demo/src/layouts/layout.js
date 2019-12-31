@@ -1,5 +1,7 @@
 import React, { Fragment } from "react"
-import { StaticQuery, graphql, Link } from "gatsby"
+import { StaticQuery, graphql } from "gatsby"
+
+import { MdxEmbedProivider } from "@pauliescanlon/gatsby-mdx-embed"
 
 import PropTypes from "prop-types"
 
@@ -42,20 +44,9 @@ const Layout = ({ children }) => {
               siteURL={siteURL}
               author={author}
             />
-            <nav>
-              <MdxRoutes>
-                {routes => (
-                  <ul>
-                    {routes.map((route, index) => (
-                      <li key={index}>
-                        <Link to={route.slug}>{route.navigationLabel}</Link>
-                      </li>
-                    ))}
-                  </ul>
-                )}
-              </MdxRoutes>
-            </nav>
-            <main>{children}</main>
+            <MdxEmbedProivider>
+              <main className="markdown-body">{children}</main>
+            </MdxEmbedProivider>
           </Fragment>
         )
       }}
