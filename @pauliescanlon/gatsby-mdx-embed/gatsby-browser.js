@@ -4,7 +4,8 @@ exports.onRouteUpdate = () => {
     window.twttr.widgets &&
     typeof window.twttr.widgets.load === `function`
   ) {
-    window.twttr.widgets.load()
+    console.log("window.twttr.widgets.load()")
+    window.twttr.widgets.load(document.getElementById("___gatsby"))
   }
 
   if (

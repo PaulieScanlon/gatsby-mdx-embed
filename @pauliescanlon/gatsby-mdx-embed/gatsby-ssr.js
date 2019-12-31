@@ -21,11 +21,10 @@ export const onRenderBody = ({ setHeadComponents }, pluginOptions) => {
       if (pluginOptions.exclude) {
         return !pluginOptions.exclude.includes(provider.name)
       }
-
       return provider
     })
     .map((provider, index) => (
-      <script async key={`${provider.name}-${index}`} src={`${provider.url}`} />
+      <script key={`${provider.name}-${index}`} src={`${provider.url}`} />
     ))
 
   setHeadComponents([...providerScriptTags])
