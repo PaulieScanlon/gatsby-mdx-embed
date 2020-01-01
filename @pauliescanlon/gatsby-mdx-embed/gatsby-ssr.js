@@ -15,7 +15,7 @@ const providers = [
   },
 ]
 
-export const onRenderBody = ({ setPostBodyComponents }, pluginOptions) => {
+export const onRenderBody = ({ setHeadComponents }, pluginOptions) => {
   const providerScriptTags = providers
     .filter(provider => {
       if (pluginOptions.exclude) {
@@ -27,5 +27,5 @@ export const onRenderBody = ({ setPostBodyComponents }, pluginOptions) => {
       <script key={`${provider.name}-${index}`} src={`${provider.url}`} />
     ))
 
-  setPostBodyComponents([...providerScriptTags])
+  setHeadComponents([...providerScriptTags])
 }
