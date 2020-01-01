@@ -26,7 +26,7 @@ module.exports = {
         //   {
         //     resolve: `@pauliescanlon/gatsby-mdx-embed`,
         //     options: {
-        //       exclude: ["flickr"],
+        //       @TODO
         //     },
         //   },
         // ],

@@ -64,23 +64,6 @@ module.exports = {
 }
 ```
 
-### Options (gatsby.config)
-
-By default the plugin injects x3 scripts for `twitter`, `instagram` and `flickr`
-
-If you're not using one of any of these providers you can exclude the scripts to keep your blog **blazing fast**
-
-```js
-plugins: [
-  {
-    resolve: `@pauliescanlon/gatsby-mdx-embed`,
-    options: {
-      exclude: ["flickr", "instagram"]
-    }
-  }
-];
-```
-
 ### Components
 
 The plugin currently supports the following components
@@ -94,9 +77,8 @@ The plugin currently supports the following components
 - Vimeo
 - YouTube
 
-\***\*TODO add prop tables for the components\*\***
-
-Thanks to the following projects which helped and inspired me
+Thanks to the following projects which were used as references
 
 - [gatsby-remark-oembed](https://github.com/raae/gatsby-remark-oembed)
 - [gatsby-plugin-twitter](https://github.com/gatsbyjs/gatsby/tree/master/packages/gatsby-plugin-twitter)
+- [gatsby-plugin-instagram-embed](https://github.com/jlengstorf/gatsby-plugin-instagram-embed)
