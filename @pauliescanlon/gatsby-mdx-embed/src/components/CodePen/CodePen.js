@@ -11,7 +11,7 @@ export const CodePen = ({ id, height = 500, tabs = ["result"] }) => (
     scrolling="no"
     src={`https://codepen.io/team/codepen/embed/${id}?height=265&theme-id=default&default-tab=${tabs}`}
     frameBorder="no"
-    allowtransparenc="true"
+    allowtransparency="true"
     allowFullScreen
   />
 )

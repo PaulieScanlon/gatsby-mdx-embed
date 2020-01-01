@@ -1,3 +1,7 @@
+<a href="https://gatsby-mdx-embed.netlify.com/" target="_blank">
+<img src="https://gatsby-mdx-embed.netlify.com/images/mdx-embed-main-og-image.jpg" alt="gatsby-mdx-embed image" />
+</a>
+
 # gatsby-mdx-embed
 
 With `gatsby-mdx-embed` you can embed media content from providers like Twitter, YouTube, Instgram and number or others directly into your `.mdx` files ... **no imports required**
