@@ -6,9 +6,7 @@ export const Tweet = ({ id }) => {
     <Fragment>
       <blockquote className="twitter-tweet">
         <a href={`https://twitter.com/${id}?ref_src=twsrc%5Etfw`}>
-          {typeof window !== "undefined" && !window.twttr
-            ? "Error Loading"
-            : ""}
+          {typeof window !== "undefined" && !window.twttr ? "Loading" : ""}
         </a>
       </blockquote>
     </Fragment>

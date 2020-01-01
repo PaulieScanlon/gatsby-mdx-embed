@@ -9,9 +9,7 @@ export const Instagram = ({ id, caption }) => {
     <Fragment>
       <blockquote className="instagram-media" data-instgrm-version="12">
         <a href={`https://instagram.com/p/${id}`}>
-          {typeof window !== "undefined" && !window.instgrm
-            ? "Error Loading"
-            : ""}
+          {typeof window !== "undefined" && !window.instgrm ? "Loading" : ""}
         </a>
       </blockquote>
     </Fragment>
