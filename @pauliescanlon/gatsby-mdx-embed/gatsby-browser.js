@@ -47,6 +47,10 @@ const instgrmProcess = () => {
   }
 }
 
+let isFlickrScriptAdded = false
+const flickrEmbedClassNames = [`.flickr-embed-mdx`].join(`,`)
+const flickrEmbedScript = `https://embedr.flickr.com/assets/client-code.js`
+
 exports.onRouteUpdate = () => {
   if (document.querySelector(twttrClassNames) !== null) {
     if (!isTwttrScriptAdded) {
@@ -62,14 +66,13 @@ exports.onRouteUpdate = () => {
     }
   }
 
+  if (document.querySelector(flickrEmbedClassNames) !== null) {
+    if (!isFlickrScriptAdded) {
+      createScriptTag(flickrEmbedScript, null)
+      isFlickrScriptAdded = true
+    }
+  }
+
   twttrLoad()
   instgrmProcess()
 }
-
-// const runProviders = () => {
-//   twttrLoad()
-//   instgrmProcess()
-// }
-
-// exports.onInitialClientRender = runProviders
-// exports.onRouteUpdate = runProviders

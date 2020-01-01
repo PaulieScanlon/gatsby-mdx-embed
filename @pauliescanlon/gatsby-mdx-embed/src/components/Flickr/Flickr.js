@@ -3,20 +3,19 @@ import PropTypes from "prop-types"
 
 export const Flickr = ({ id }) => (
   <Fragment>
-    <a data-flickr-embed="true" data-header="true" data-footer="true">
-      {typeof window !== "undefined" && !window.FlickrEmbedr ? (
-        <blockquote>
-          <a href={`https://live.staticflickr.com/${id}`}>Error Loading</a>
-        </blockquote>
-      ) : (
-        <img
-          src={`https://live.staticflickr.com/${id}`}
-          width="100%"
-          height="auto"
-          alt={id}
-        />
-      )}
-    </a>
+    <span
+      className="flickr-embed-mdx"
+      data-flickr-embed="true"
+      data-header="true"
+      data-footer="true"
+    >
+      <img
+        src={`https://live.staticflickr.com/${id}`}
+        width="100%"
+        height="auto"
+        alt={id}
+      />
+    </span>
   </Fragment>
 )
 
