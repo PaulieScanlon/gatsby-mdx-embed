@@ -28,6 +28,7 @@ export default merge(theme, {
   },
   fonts: {
     heading: `Montserrat, sans-serif`,
+    body: `font-family: Merriweather, Georgia, serif`,
     monospace: `Consolas, Menlo, Monaco, source-code-pro, Courier New, monospace`,
   },
   styles: {
@@ -35,16 +36,19 @@ export default merge(theme, {
       fontFamily: `body`,
     },
     pre: {
-      variant: `prism`,
+      // variant: `prism`,
       fontFamily: `monospace`,
       tabSize: 4,
-      hyphens: `none`,
+      // hyphens: `none`,
       marginBottom: 2,
       color: `white`,
-      bg: `prism.background`,
+      backgroundColor: `highlight`,
       overflow: `auto`,
       borderRadius: 10,
       p: 3,
+      code: {
+        color: `text`,
+      },
     },
     code: {
       fontFamily: `monospace`,
@@ -59,7 +63,12 @@ export default merge(theme, {
       paddingX: `0.2em`,
     },
     a: {
+      border: "1px solid red",
+      fontFamily: "body",
       color: `secondary`,
+      ":active": {
+        color: "inherit",
+      },
     },
     hr: {
       borderColor: `muted`,

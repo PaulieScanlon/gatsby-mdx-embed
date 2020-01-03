@@ -2,41 +2,60 @@ import { Link } from "gatsby"
 
 # gatsby-mdx-embed
 
-### All your favourite providers in one place 😎!
+### All your favourite providers in one place! 😎
 
-`gatsby-mdx-embed` exposes a custom `MdxProvider` called `MdxEmbedProvider` which you can wrap around your content.
+Add `gatsby-mdx-embed` to your `gatsby-config` then use the `gatsby-mdx-embed` components in your `.mdx` files!
 
-You can then use the `gatsby-mdx-embed` components in your `.mdx` files... without import!
+```js
+// gatsby-config.js
+
+
+module.exports = {
+  ...
+  plugins: [`@pauliescanlon/gatsby-mdx-embed`]
+  ...
+}
+
+
+```
+<br />
+
+### No import required!
+
+Because `gatsby-mdx-embed` is a plugin to use you can to add a component to your `.mdx` file and et voila!
+
+```js
+// some-mdx-file.mdx
+
+#### My cool pen
+
+Here's a pen, and some other blog post text
+
+<CodePen id="PNaGbb" />
+```
+
+... which renders as 👇
+
+#### My cool pen
+
+Here's a pen, and some other blog post text
+
+<CodePen id="PNaGbb" />
+
+<br />
+<br />
+<br />
+
+## Components
 
 The following `gatsby-mdx-embed` components are currently available. More coming soon!
 
-<Link to="/codePen"><h1>CodePen</h1></Link>
-<CodePen id="PNaGbb" />
+<Link to="/codePen"><h3>CodePen</h3></Link>
+<Link to="/codeSandbox"><h3>CodeSandbox</h3></Link>
+<Link to="/flickr"><h3>Flickr</h3></Link>
+<Link to="/instagram"><h3>Instagram</h3></Link>
+<Link to="/spotify"><h3>Spotify</h3></Link>
+<Link to="/twitter"><h3>Twitter</h3></Link>
+<Link to="/vimeo"><h3>Vimeo</h3></Link>
+<Link to="/youTube"><h3>YouTube</h3></Link>
 
-
-<Link to="/codeSandbox"><h1>CodeSandbox</h1></Link>
-<CodeSandbox id="react-new" />
-
-
-<Link to="/flickr"><h1>Flickr</h1></Link>
-<Flickr id="458/30740580204_7283c9987e_k.jpg" />
-
-
-<Link to="/instagram"><h1>Instagram</h1></Link>
-<Instagram id="B6x41PQh-ys" />
-
-
-<Link to="/spotify"><h1>Spotify</h1></Link>
-<Spotify id="album/65KwtzkJXw7oT819NFWmEP" />
-
-
-<Link to="/twitter"><h1>Twitter</h1></Link>
-<Tweet id="PaulieScanlon/status/1201514996838141952" />
-
-
-<Link to="/vimeo"><h1>Vimeo</h1></Link>
-<Vimeo id="38445453" />
-
-
-<Link to="/youTube"><h1>YouTube</h1></Link>
-<YouTube id="WFOxZAmB_1Y" />
