@@ -48,9 +48,7 @@ export default merge(theme, {
     },
     code: {
       fontFamily: `monospace`,
-      // from typography overrideThemeStyles
-      // "h1 code, h2 code, h3 code, h4 code, h5 code, h6 code"
-      fontSize: `inherit`,
+      fontSize: `95%`,
     },
     inlineCode: {
       borderRadius: `0.3em`,
@@ -60,16 +58,16 @@ export default merge(theme, {
       paddingBottom: `0.05em`,
       paddingX: `0.2em`,
     },
-    // from typography overrideThemeStyles
     a: {
-      color: `primary`,
+      color: `secondary`,
     },
     hr: {
       borderColor: `muted`,
     },
     p: {
       code: {
-        fontSize: `inherit`,
+        fontFamily: `monospace`,
+        fontSize: `95%`,
       },
     },
     li: {

@@ -1,3 +1,5 @@
+export { wrapRootElement } from "./src/wrapRootElement"
+
 const createScriptTag = (providerEmbedUrl, providerEmbedScript) => {
   const script = document.createElement(`script`)
 
@@ -51,7 +53,7 @@ let isFlickrScriptAdded = false
 const flickrEmbedClassNames = [`.flickr-embed-mdx`].join(`,`)
 const flickrEmbedScript = `https://embedr.flickr.com/assets/client-code.js`
 
-exports.onRouteUpdate = () => {
+export const onRouteUpdate = () => {
   if (document.querySelector(twttrClassNames) !== null) {
     if (!isTwttrScriptAdded) {
       createScriptTag(null, twttrEmbedScript)

@@ -22,8 +22,8 @@ module.exports = {
         defaultLayouts: {
           default: `${__dirname}/src/layouts/layout.js`,
         },
-        plugins: [`@pauliescanlon/gatsby-mdx-embed`],
       },
     },
+    `@pauliescanlon/gatsby-mdx-embed`,
   ],
 }

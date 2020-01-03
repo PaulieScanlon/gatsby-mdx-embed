@@ -21,6 +21,6 @@ const components = {
   CodePen: props => <CodePen {...props} />,
 }
 
-export const MdxEmbedProivider = ({ children }) => (
+export const MdxEmbedProvider = ({ children }) => (
   <MDXProvider components={components}>{children}</MDXProvider>
 )

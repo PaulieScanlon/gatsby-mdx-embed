@@ -3,7 +3,7 @@ import PropTypes from "prop-types"
 import { Global, css } from "@emotion/core"
 import { StaticQuery, graphql } from "gatsby"
 
-import { MdxEmbedProivider } from "@pauliescanlon/gatsby-mdx-embed"
+// import { MdxEmbedProivider } from "@pauliescanlon/gatsby-mdx-embed"
 
 import Seo from "../components/seo"
 
@@ -49,18 +49,18 @@ const Layout = ({ children }) => {
               siteURL={siteURL}
               author={author}
             />
-            <MdxEmbedProivider>
-              <main
-                style={{
-                  marginLeft: "auto",
-                  marginRight: "auto",
-                  maxWidth: 672,
-                  padding: "24px 16px",
-                }}
-              >
-                {children}
-              </main>
-            </MdxEmbedProivider>
+            {/* <MdxEmbedProivider> */}
+            <main
+              style={{
+                marginLeft: "auto",
+                marginRight: "auto",
+                maxWidth: 672,
+                padding: "24px 16px",
+              }}
+            >
+              {children}
+            </main>
+            {/* </MdxEmbedProivider> */}
           </Fragment>
         )
       }}
