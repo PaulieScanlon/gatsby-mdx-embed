@@ -8,6 +8,7 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-theme-ui`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -22,14 +23,6 @@ module.exports = {
           default: `${__dirname}/src/layouts/layout.js`,
         },
         plugins: [`@pauliescanlon/gatsby-mdx-embed`],
-        // plugins: [
-        //   {
-        //     resolve: `@pauliescanlon/gatsby-mdx-embed`,
-        //     options: {
-        //       @TODO
-        //     },
-        //   },
-        // ],
       },
     },
   ],

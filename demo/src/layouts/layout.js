@@ -1,13 +1,11 @@
 import React, { Fragment } from "react"
+import PropTypes from "prop-types"
+import { Global, css } from "@emotion/core"
 import { StaticQuery, graphql } from "gatsby"
 
 import { MdxEmbedProivider } from "@pauliescanlon/gatsby-mdx-embed"
 
-import PropTypes from "prop-types"
-
 import Seo from "../components/seo"
-
-import "./layout.css"
 
 const Layout = ({ children }) => {
   return (
@@ -36,6 +34,13 @@ const Layout = ({ children }) => {
 
         return (
           <Fragment>
+            <Global
+              styles={css`
+                body {
+                  font-family: Merriweather, Georgia, serif;
+                }
+              `}
+            />
             <Seo
               lang="eng"
               title={title}
@@ -45,7 +50,16 @@ const Layout = ({ children }) => {
               author={author}
             />
             <MdxEmbedProivider>
-              <main className="markdown-body">{children}</main>
+              <main
+                style={{
+                  marginLeft: "auto",
+                  marginRight: "auto",
+                  maxWidth: 672,
+                  padding: "24px 16px",
+                }}
+              >
+                {children}
+              </main>
             </MdxEmbedProivider>
           </Fragment>
         )
