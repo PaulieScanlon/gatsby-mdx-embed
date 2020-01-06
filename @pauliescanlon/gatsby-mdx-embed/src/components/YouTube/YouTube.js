@@ -1,14 +1,14 @@
 import React from "react"
 import PropTypes from "prop-types"
 
-// https://github.com/escaladesports/react-youtube-embed/blob/master/src/index.js
-export const YouTube = ({ id }) => (
+import { getPadding } from "../../utils"
+
+export const YouTube = ({ id, aspectRatio }) => (
   <div
     style={{
       position: "relative",
-      paddingBottom: "56.25%" /* 16:9 */,
-      paddingTop: "25px",
-      height: 0,
+      width: "100%",
+      ...getPadding(aspectRatio),
     }}
   >
     <iframe
@@ -33,4 +33,12 @@ YouTube.propTypes = {
    * YouTube id
    */
   id: PropTypes.string.isRequired,
+  /**
+   * Aspect ratio of YouTube video
+   */
+  aspectRatio: PropTypes.oneOf(["1:1", "16:9", "4:3", "3:2", "8:5"]),
+}
+
+YouTube.defaultProps = {
+  aspectRatio: "16:9",
 }

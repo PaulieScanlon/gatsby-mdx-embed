@@ -1,13 +1,14 @@
 import React from "react"
 import PropTypes from "prop-types"
 
-export const Vimeo = ({ id }) => (
+import { getPadding } from "../../utils"
+
+export const Vimeo = ({ id, aspectRatio }) => (
   <div
     style={{
       position: "relative",
-      paddingBottom: "56.25%" /* 16:9 */,
-      paddingTop: "25px",
-      height: 0,
+      width: "100%",
+      ...getPadding(aspectRatio),
     }}
   >
     <iframe
@@ -32,4 +33,12 @@ Vimeo.propTypes = {
    * Vimeo id
    */
   id: PropTypes.string.isRequired,
+  /**
+   * Aspect ratio of Vimeo video
+   */
+  // aspectRatio: PropTypes.oneOf(["1:1", "16:9", "4:3", "3:2", "8:5"]),
+}
+
+Vimeo.defaultProps = {
+  aspectRatio: "16:9",
 }

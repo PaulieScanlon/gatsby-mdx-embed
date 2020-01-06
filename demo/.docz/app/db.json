@@ -36,6 +36,11 @@
             "slug": "codepen",
             "depth": 1,
             "value": "CodePen"
+          },
+          {
+            "slug": "basic-usage",
+            "depth": 2,
+            "value": "Basic usage"
           }
         ]
       }
@@ -56,6 +61,11 @@
             "slug": "codesandbox",
             "depth": 1,
             "value": "CodeSandbox"
+          },
+          {
+            "slug": "basic-usage",
+            "depth": 2,
+            "value": "Basic usage"
           }
         ]
       }
@@ -76,6 +86,11 @@
             "slug": "flickr",
             "depth": 1,
             "value": "Flickr"
+          },
+          {
+            "slug": "basic-usage",
+            "depth": 2,
+            "value": "Basic usage"
           }
         ]
       }
@@ -96,6 +111,11 @@
             "slug": "instagram",
             "depth": 1,
             "value": "Instagram"
+          },
+          {
+            "slug": "basic-usage",
+            "depth": 2,
+            "value": "Basic usage"
           }
         ]
       }
@@ -116,6 +136,11 @@
             "slug": "spotify",
             "depth": 1,
             "value": "Spotify"
+          },
+          {
+            "slug": "basic-usage",
+            "depth": 2,
+            "value": "Basic usage"
           }
         ]
       }
@@ -171,6 +196,11 @@
             "slug": "vimeo",
             "depth": 1,
             "value": "Vimeo"
+          },
+          {
+            "slug": "basic-usage",
+            "depth": 2,
+            "value": "Basic usage"
           }
         ]
       }
@@ -191,6 +221,16 @@
             "slug": "youtube",
             "depth": 1,
             "value": "YouTube"
+          },
+          {
+            "slug": "basic-usage",
+            "depth": 2,
+            "value": "Basic usage"
+          },
+          {
+            "slug": "aspect-ratio",
+            "depth": 2,
+            "value": "Aspect Ratio"
           }
         ]
       }
@@ -295,6 +335,37 @@
       ]
     },
     {
+      "key": "../@pauliescanlon/gatsby-mdx-embed/src/components/CodeSandbox/CodeSandbox.js",
+      "value": [
+        {
+          "description": "",
+          "displayName": "CodeSandbox",
+          "methods": [],
+          "actualName": "CodeSandbox",
+          "props": {
+            "id": {
+              "type": {
+                "name": "string"
+              },
+              "required": true,
+              "description": "CodeSandbox id"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "key": "../@pauliescanlon/gatsby-mdx-embed/src/components/MdxEmbedProvider/MdxEmbedProvider.js",
+      "value": [
+        {
+          "description": "",
+          "displayName": "MdxEmbedProvider",
+          "methods": [],
+          "actualName": "MdxEmbedProvider"
+        }
+      ]
+    },
+    {
       "key": "../@pauliescanlon/gatsby-mdx-embed/src/components/Flickr/Flickr.js",
       "value": [
         {
@@ -309,33 +380,6 @@
               },
               "required": true,
               "description": "Flickr id"
-            }
-          }
-        }
-      ]
-    },
-    {
-      "key": "../@pauliescanlon/gatsby-mdx-embed/src/components/Instagram/Instagram.js",
-      "value": [
-        {
-          "description": "",
-          "displayName": "Instagram",
-          "methods": [],
-          "actualName": "Instagram",
-          "props": {
-            "id": {
-              "type": {
-                "name": "string"
-              },
-              "required": true,
-              "description": "Instagram id"
-            },
-            "caption": {
-              "type": {
-                "name": "bool"
-              },
-              "required": false,
-              "description": "Not in use"
             }
           }
         }
@@ -386,77 +430,6 @@
                 "value": "380",
                 "computed": false
               }
-            }
-          }
-        }
-      ]
-    },
-    {
-      "key": "../@pauliescanlon/gatsby-mdx-embed/src/components/MdxEmbedProvider/MdxEmbedProvider.js",
-      "value": [
-        {
-          "description": "",
-          "displayName": "MdxEmbedProvider",
-          "methods": [],
-          "actualName": "MdxEmbedProvider"
-        }
-      ]
-    },
-    {
-      "key": "../@pauliescanlon/gatsby-mdx-embed/src/components/CodeSandbox/CodeSandbox.js",
-      "value": [
-        {
-          "description": "",
-          "displayName": "CodeSandbox",
-          "methods": [],
-          "actualName": "CodeSandbox",
-          "props": {
-            "id": {
-              "type": {
-                "name": "string"
-              },
-              "required": true,
-              "description": "CodeSandbox id"
-            }
-          }
-        }
-      ]
-    },
-    {
-      "key": "../@pauliescanlon/gatsby-mdx-embed/src/components/Vimeo/Vimeo.js",
-      "value": [
-        {
-          "description": "",
-          "displayName": "Vimeo",
-          "methods": [],
-          "actualName": "Vimeo",
-          "props": {
-            "id": {
-              "type": {
-                "name": "string"
-              },
-              "required": true,
-              "description": "Vimeo id"
-            }
-          }
-        }
-      ]
-    },
-    {
-      "key": "../@pauliescanlon/gatsby-mdx-embed/src/components/YouTube/YouTube.js",
-      "value": [
-        {
-          "description": "",
-          "displayName": "YouTube",
-          "methods": [],
-          "actualName": "YouTube",
-          "props": {
-            "id": {
-              "type": {
-                "name": "string"
-              },
-              "required": true,
-              "description": "YouTube id"
             }
           }
         }
@@ -523,6 +496,106 @@
                 "value": "\"left\"",
                 "computed": false
               }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "key": "../@pauliescanlon/gatsby-mdx-embed/src/components/Vimeo/Vimeo.js",
+      "value": [
+        {
+          "description": "",
+          "displayName": "Vimeo",
+          "methods": [],
+          "actualName": "Vimeo",
+          "props": {
+            "id": {
+              "type": {
+                "name": "string"
+              },
+              "required": true,
+              "description": "Vimeo id"
+            },
+            "aspectRatio": {
+              "defaultValue": {
+                "value": "\"16:9\"",
+                "computed": false
+              },
+              "required": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "key": "../@pauliescanlon/gatsby-mdx-embed/src/components/YouTube/YouTube.js",
+      "value": [
+        {
+          "description": "",
+          "displayName": "YouTube",
+          "methods": [],
+          "actualName": "YouTube",
+          "props": {
+            "id": {
+              "type": {
+                "name": "string"
+              },
+              "required": true,
+              "description": "YouTube id"
+            },
+            "aspectRatio": {
+              "type": {
+                "name": "enum",
+                "value": [
+                  {
+                    "value": "\"1:1\"",
+                    "computed": false
+                  },
+                  {
+                    "value": "\"16:9\"",
+                    "computed": false
+                  },
+                  {
+                    "value": "\"4:3\"",
+                    "computed": false
+                  },
+                  {
+                    "value": "\"3:2\"",
+                    "computed": false
+                  },
+                  {
+                    "value": "\"8:5\"",
+                    "computed": false
+                  }
+                ]
+              },
+              "required": false,
+              "description": "Aspect ratio of YouTube video",
+              "defaultValue": {
+                "value": "\"16:9\"",
+                "computed": false
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "key": "../@pauliescanlon/gatsby-mdx-embed/src/components/Instagram/Instagram.js",
+      "value": [
+        {
+          "description": "",
+          "displayName": "Instagram",
+          "methods": [],
+          "actualName": "Instagram",
+          "props": {
+            "id": {
+              "type": {
+                "name": "string"
+              },
+              "required": true,
+              "description": "Instagram id"
             }
           }
         }

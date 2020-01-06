@@ -24,5 +24,5 @@ Instagram.propTypes = {
   /**
    * Not in use
    */
-  caption: PropTypes.bool,
+  // caption: PropTypes.bool,
 }
