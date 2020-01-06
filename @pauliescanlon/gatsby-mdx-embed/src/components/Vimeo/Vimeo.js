@@ -28,5 +28,8 @@ export const Vimeo = ({ id }) => (
 )
 
 Vimeo.propTypes = {
+  /**
+   * Vimeo id
+   */
   id: PropTypes.string.isRequired,
 }

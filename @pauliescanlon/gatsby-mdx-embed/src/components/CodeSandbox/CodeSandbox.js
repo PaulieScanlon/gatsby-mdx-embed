@@ -18,5 +18,8 @@ export const CodeSandbox = ({ id }) => (
 )
 
 CodeSandbox.propTypes = {
+  /**
+   * CodeSandbox id
+   */
   id: PropTypes.string.isRequired,
 }

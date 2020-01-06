@@ -15,7 +15,16 @@ export const Spotify = ({ id, width = 320, height = 380 }) => (
 )
 
 Spotify.propTypes = {
+  /**
+   * Spotify id
+   */
   id: PropTypes.string.isRequired,
+  /**
+   * Width for the iFrame
+   */
   width: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
+  /**
+   * Height for the iFrame
+   */
   height: PropTypes.number,
 }

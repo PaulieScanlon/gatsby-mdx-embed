@@ -17,6 +17,12 @@ export const Instagram = ({ id, caption }) => {
 }
 
 Instagram.propTypes = {
+  /**
+   * Instagram id
+   */
   id: PropTypes.string.isRequired,
+  /**
+   * Not in use
+   */
   caption: PropTypes.bool,
 }

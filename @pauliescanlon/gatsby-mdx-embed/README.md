@@ -24,8 +24,6 @@ npm install @pauliescanlon/gatsby-mdx-embed
 npm install @mdx-js/react gatsby-plugin-mdx
 ```
 
-By using the `MdxEmbedProvider` all you have to do is install the plugin then use the relevant component in your `.mdx` file and the embed codes will execute.
-
 ### Setup (gatsby.config)
 
 ```js
@@ -34,9 +32,11 @@ module.exports = {
   plugins: [`@pauliescanlon/gatsby-mdx-embed`]
 ```
 
-gatsby-mdx-embed injects an `MdxProvider` if it's the first and or only plugin you're using that uses this method you shouldn't have any clashes. However if you're using a theme or some other plugin that uses `.mdx` you may need to switch the order of the plugins.
+gatsby-mdx-embed injects an `MdxProvider` if it's the first and or only plugin that uses this method you shouldn't have any clashes.
 
-A note on using multiple `MdxProvider`(s)directly from [@chrisbiscardi](https://twitter.com/chrisbiscardi)
+However if you're using a theme or some other plugin that uses `.mdx` you may need to switch the order of the plugins.
+
+A note on using multiple `MdxProvider`(s) directly from [@chrisbiscardi](https://twitter.com/chrisbiscardi)
 
 > Multiple providers will merge the components object. **Last provider wins**
 

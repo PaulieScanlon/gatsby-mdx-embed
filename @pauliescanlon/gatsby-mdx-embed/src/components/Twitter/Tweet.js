@@ -14,5 +14,8 @@ export const Tweet = ({ id }) => {
 }
 
 Tweet.propTypes = {
+  /**
+   * Tweet id
+   */
   id: PropTypes.string.isRequired,
 }

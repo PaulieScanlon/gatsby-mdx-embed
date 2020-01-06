@@ -18,5 +18,8 @@ export const Flickr = ({ id }) => (
 )
 
 Flickr.propTypes = {
+  /**
+   * Flickr id
+   */
   id: PropTypes.string.isRequired,
 }

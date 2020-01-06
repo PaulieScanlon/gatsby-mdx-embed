@@ -18,10 +18,16 @@ export const CodePen = ({ id, height, tabs }) => (
 
 CodePen.propTypes = {
   /**
-   * This is a pretty good description for this prop
+   * CodePen id
    */
   id: PropTypes.string.isRequired,
+  /**
+   * Height for the iFrame
+   */
   height: PropTypes.number,
+  /**
+   * Which tabs to display
+   */
   tabs: PropTypes.arrayOf(
     PropTypes.oneOf(["js", "css", "scss", "less", "result"])
   ),

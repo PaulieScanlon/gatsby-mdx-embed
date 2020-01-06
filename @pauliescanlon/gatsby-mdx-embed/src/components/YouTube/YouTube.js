@@ -29,5 +29,8 @@ export const YouTube = ({ id }) => (
 )
 
 YouTube.propTypes = {
+  /**
+   * YouTube id
+   */
   id: PropTypes.string.isRequired,
 }
