@@ -9,7 +9,7 @@
       }
     ],
     "version": "0.1.0",
-    "repository": "https://github.com/gatsbyjs/gatsby-starter-default",
+    "repository": "https://github.com/PaulieScanlon/gatsby-mdx-embed",
     "native": false,
     "themeConfig": {
       "initialColorMode": "dark"
@@ -28,7 +28,7 @@
         "id": "10b1984cccc73b0bff0d9cd4589374a6",
         "filepath": "src/components/codePen.mdx",
         "fullpath": "/Users/paulscanlon/Desktop/_development/gatsby-mdx-embed/demo/src/components/codePen.mdx",
-        "link": "https://github.com/gatsbyjs/gatsby-starter-default/edit/https:/github.com/PaulieScanlon/gatsby-mdx-embed/demo/src/components/codePen.mdx",
+        "link": "https://github.com/PaulieScanlon/gatsby-mdx-embed/edit/master/demo/src/components/codePen.mdx",
         "slug": "src-components-code-pen",
         "route": "/src-components-code-pen",
         "headings": [
@@ -48,7 +48,7 @@
         "id": "140838a9d74ad909a17b5da2246c0d56",
         "filepath": "src/components/codeSandbox.mdx",
         "fullpath": "/Users/paulscanlon/Desktop/_development/gatsby-mdx-embed/demo/src/components/codeSandbox.mdx",
-        "link": "https://github.com/gatsbyjs/gatsby-starter-default/edit/https:/github.com/PaulieScanlon/gatsby-mdx-embed/demo/src/components/codeSandbox.mdx",
+        "link": "https://github.com/PaulieScanlon/gatsby-mdx-embed/edit/master/demo/src/components/codeSandbox.mdx",
         "slug": "src-components-code-sandbox",
         "route": "/src-components-code-sandbox",
         "headings": [
@@ -68,7 +68,7 @@
         "id": "ec710b8504651e6e09512f6abdef2168",
         "filepath": "src/components/flickr.mdx",
         "fullpath": "/Users/paulscanlon/Desktop/_development/gatsby-mdx-embed/demo/src/components/flickr.mdx",
-        "link": "https://github.com/gatsbyjs/gatsby-starter-default/edit/https:/github.com/PaulieScanlon/gatsby-mdx-embed/demo/src/components/flickr.mdx",
+        "link": "https://github.com/PaulieScanlon/gatsby-mdx-embed/edit/master/demo/src/components/flickr.mdx",
         "slug": "src-components-flickr",
         "route": "/src-components-flickr",
         "headings": [
@@ -88,7 +88,7 @@
         "id": "cdc3ac74ef745a043ef4436e2f9aedfd",
         "filepath": "src/components/instagram.mdx",
         "fullpath": "/Users/paulscanlon/Desktop/_development/gatsby-mdx-embed/demo/src/components/instagram.mdx",
-        "link": "https://github.com/gatsbyjs/gatsby-starter-default/edit/https:/github.com/PaulieScanlon/gatsby-mdx-embed/demo/src/components/instagram.mdx",
+        "link": "https://github.com/PaulieScanlon/gatsby-mdx-embed/edit/master/demo/src/components/instagram.mdx",
         "slug": "src-components-instagram",
         "route": "/src-components-instagram",
         "headings": [
@@ -108,7 +108,7 @@
         "id": "43e071e256a18cbe7a5ac9636bdeefb9",
         "filepath": "src/components/spotify.mdx",
         "fullpath": "/Users/paulscanlon/Desktop/_development/gatsby-mdx-embed/demo/src/components/spotify.mdx",
-        "link": "https://github.com/gatsbyjs/gatsby-starter-default/edit/https:/github.com/PaulieScanlon/gatsby-mdx-embed/demo/src/components/spotify.mdx",
+        "link": "https://github.com/PaulieScanlon/gatsby-mdx-embed/edit/master/demo/src/components/spotify.mdx",
         "slug": "src-components-spotify",
         "route": "/src-components-spotify",
         "headings": [
@@ -128,7 +128,7 @@
         "id": "b5429cc0a98a187c89a19aad6e38ecb6",
         "filepath": "src/components/twitter.mdx",
         "fullpath": "/Users/paulscanlon/Desktop/_development/gatsby-mdx-embed/demo/src/components/twitter.mdx",
-        "link": "https://github.com/gatsbyjs/gatsby-starter-default/edit/https:/github.com/PaulieScanlon/gatsby-mdx-embed/demo/src/components/twitter.mdx",
+        "link": "https://github.com/PaulieScanlon/gatsby-mdx-embed/edit/master/demo/src/components/twitter.mdx",
         "slug": "src-components-twitter",
         "route": "/src-components-twitter",
         "headings": [
@@ -148,7 +148,7 @@
         "id": "ea4c51c7ae357f2c5945fc7c1935863b",
         "filepath": "src/components/vimeo.mdx",
         "fullpath": "/Users/paulscanlon/Desktop/_development/gatsby-mdx-embed/demo/src/components/vimeo.mdx",
-        "link": "https://github.com/gatsbyjs/gatsby-starter-default/edit/https:/github.com/PaulieScanlon/gatsby-mdx-embed/demo/src/components/vimeo.mdx",
+        "link": "https://github.com/PaulieScanlon/gatsby-mdx-embed/edit/master/demo/src/components/vimeo.mdx",
         "slug": "src-components-vimeo",
         "route": "/src-components-vimeo",
         "headings": [
@@ -168,7 +168,7 @@
         "id": "69eb6165db9193296e1fa207f750bf92",
         "filepath": "src/components/youTube.mdx",
         "fullpath": "/Users/paulscanlon/Desktop/_development/gatsby-mdx-embed/demo/src/components/youTube.mdx",
-        "link": "https://github.com/gatsbyjs/gatsby-starter-default/edit/https:/github.com/PaulieScanlon/gatsby-mdx-embed/demo/src/components/youTube.mdx",
+        "link": "https://github.com/PaulieScanlon/gatsby-mdx-embed/edit/master/demo/src/components/youTube.mdx",
         "slug": "src-components-you-tube",
         "route": "/src-components-you-tube",
         "headings": [
@@ -188,7 +188,7 @@
         "id": "522b7407e210088f3588b943aec44115",
         "filepath": "src/pages/index.mdx",
         "fullpath": "/Users/paulscanlon/Desktop/_development/gatsby-mdx-embed/demo/src/pages/index.mdx",
-        "link": "https://github.com/gatsbyjs/gatsby-starter-default/edit/https:/github.com/PaulieScanlon/gatsby-mdx-embed/demo/src/pages/index.mdx",
+        "link": "https://github.com/PaulieScanlon/gatsby-mdx-embed/edit/master/demo/src/pages/index.mdx",
         "slug": "src-pages-index",
         "menu": "",
         "headings": [
@@ -280,6 +280,26 @@
       ]
     },
     {
+      "key": "../@pauliescanlon/gatsby-mdx-embed/src/components/Flickr/Flickr.js",
+      "value": [
+        {
+          "description": "",
+          "displayName": "Flickr",
+          "methods": [],
+          "actualName": "Flickr",
+          "props": {
+            "id": {
+              "type": {
+                "name": "string"
+              },
+              "required": true,
+              "description": ""
+            }
+          }
+        }
+      ]
+    },
+    {
       "key": "../@pauliescanlon/gatsby-mdx-embed/src/components/Instagram/Instagram.js",
       "value": [
         {
@@ -303,57 +323,6 @@
               "description": ""
             }
           }
-        }
-      ]
-    },
-    {
-      "key": "../@pauliescanlon/gatsby-mdx-embed/src/components/Flickr/Flickr.js",
-      "value": [
-        {
-          "description": "",
-          "displayName": "Flickr",
-          "methods": [],
-          "actualName": "Flickr",
-          "props": {
-            "id": {
-              "type": {
-                "name": "string"
-              },
-              "required": true,
-              "description": ""
-            }
-          }
-        }
-      ]
-    },
-    {
-      "key": "../@pauliescanlon/gatsby-mdx-embed/src/components/CodeSandbox/CodeSandbox.js",
-      "value": [
-        {
-          "description": "",
-          "displayName": "CodeSandbox",
-          "methods": [],
-          "actualName": "CodeSandbox",
-          "props": {
-            "id": {
-              "type": {
-                "name": "string"
-              },
-              "required": true,
-              "description": ""
-            }
-          }
-        }
-      ]
-    },
-    {
-      "key": "../@pauliescanlon/gatsby-mdx-embed/src/components/MdxEmbedProvider/MdxEmbedProvider.js",
-      "value": [
-        {
-          "description": "",
-          "displayName": "MdxEmbedProvider",
-          "methods": [],
-          "actualName": "MdxEmbedProvider"
         }
       ]
     },
@@ -402,6 +371,37 @@
                 "value": "380",
                 "computed": false
               }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "key": "../@pauliescanlon/gatsby-mdx-embed/src/components/MdxEmbedProvider/MdxEmbedProvider.js",
+      "value": [
+        {
+          "description": "",
+          "displayName": "MdxEmbedProvider",
+          "methods": [],
+          "actualName": "MdxEmbedProvider"
+        }
+      ]
+    },
+    {
+      "key": "../@pauliescanlon/gatsby-mdx-embed/src/components/CodeSandbox/CodeSandbox.js",
+      "value": [
+        {
+          "description": "",
+          "displayName": "CodeSandbox",
+          "methods": [],
+          "actualName": "CodeSandbox",
+          "props": {
+            "id": {
+              "type": {
+                "name": "string"
+              },
+              "required": true,
+              "description": ""
             }
           }
         }
