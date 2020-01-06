@@ -136,6 +136,21 @@
             "slug": "tweet",
             "depth": 1,
             "value": "Tweet"
+          },
+          {
+            "slug": "basic-usage",
+            "depth": 2,
+            "value": "Basic usage"
+          },
+          {
+            "slug": "theme",
+            "depth": 2,
+            "value": "Theme"
+          },
+          {
+            "slug": "align",
+            "depth": 2,
+            "value": "Align"
           }
         ]
       }
@@ -213,17 +228,6 @@
   ],
   "props": [
     {
-      "key": "../@pauliescanlon/gatsby-mdx-embed/src/components/MdxEmbedProvider/MdxEmbedProvider.js",
-      "value": [
-        {
-          "description": "",
-          "displayName": "MdxEmbedProvider",
-          "methods": [],
-          "actualName": "MdxEmbedProvider"
-        }
-      ]
-    },
-    {
       "key": "../@pauliescanlon/gatsby-mdx-embed/src/components/CodePen/CodePen.js",
       "value": [
         {
@@ -285,26 +289,6 @@
                 "value": "[\"result\"]",
                 "computed": false
               }
-            }
-          }
-        }
-      ]
-    },
-    {
-      "key": "../@pauliescanlon/gatsby-mdx-embed/src/components/CodeSandbox/CodeSandbox.js",
-      "value": [
-        {
-          "description": "",
-          "displayName": "CodeSandbox",
-          "methods": [],
-          "actualName": "CodeSandbox",
-          "props": {
-            "id": {
-              "type": {
-                "name": "string"
-              },
-              "required": true,
-              "description": "CodeSandbox id"
             }
           }
         }
@@ -408,20 +392,31 @@
       ]
     },
     {
-      "key": "../@pauliescanlon/gatsby-mdx-embed/src/components/Twitter/Tweet.js",
+      "key": "../@pauliescanlon/gatsby-mdx-embed/src/components/MdxEmbedProvider/MdxEmbedProvider.js",
       "value": [
         {
           "description": "",
-          "displayName": "Tweet",
+          "displayName": "MdxEmbedProvider",
           "methods": [],
-          "actualName": "Tweet",
+          "actualName": "MdxEmbedProvider"
+        }
+      ]
+    },
+    {
+      "key": "../@pauliescanlon/gatsby-mdx-embed/src/components/CodeSandbox/CodeSandbox.js",
+      "value": [
+        {
+          "description": "",
+          "displayName": "CodeSandbox",
+          "methods": [],
+          "actualName": "CodeSandbox",
           "props": {
             "id": {
               "type": {
                 "name": "string"
               },
               "required": true,
-              "description": "Tweet id"
+              "description": "CodeSandbox id"
             }
           }
         }
@@ -462,6 +457,72 @@
               },
               "required": true,
               "description": "YouTube id"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "key": "../@pauliescanlon/gatsby-mdx-embed/src/components/Twitter/Tweet.js",
+      "value": [
+        {
+          "description": "",
+          "displayName": "Tweet",
+          "methods": [],
+          "actualName": "Tweet",
+          "props": {
+            "id": {
+              "type": {
+                "name": "string"
+              },
+              "required": true,
+              "description": "Tweet id"
+            },
+            "theme": {
+              "type": {
+                "name": "enum",
+                "value": [
+                  {
+                    "value": "\"light\"",
+                    "computed": false
+                  },
+                  {
+                    "value": "\"dark\"",
+                    "computed": false
+                  }
+                ]
+              },
+              "required": false,
+              "description": "Color theme of Tweet",
+              "defaultValue": {
+                "value": "\"light\"",
+                "computed": false
+              }
+            },
+            "align": {
+              "type": {
+                "name": "enum",
+                "value": [
+                  {
+                    "value": "\"left\"",
+                    "computed": false
+                  },
+                  {
+                    "value": "\"center\"",
+                    "computed": false
+                  },
+                  {
+                    "value": "\"right\"",
+                    "computed": false
+                  }
+                ]
+              },
+              "required": false,
+              "description": "Alignment of Tweet",
+              "defaultValue": {
+                "value": "\"left\"",
+                "computed": false
+              }
             }
           }
         }

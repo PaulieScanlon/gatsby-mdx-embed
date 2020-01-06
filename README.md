@@ -4,7 +4,7 @@
 
 # gatsby-mdx-embed
 
-With `gatsby-mdx-embed` you can embed media content from providers like Twitter, YouTube, Instgram and number or others directly into your `.mdx` files ... **no imports required**
+With `gatsby-mdx-embed` you can embed media content from providers like Twitter, YouTube, Instgram and a number of others directly in `.mdx` ... **no imports required**
 
 ## 👁️ Preview
 
@@ -18,7 +18,7 @@ With `gatsby-mdx-embed` you can embed media content from providers like Twitter,
 npm install @pauliescanlon/gatsby-mdx-embed
 ```
 
-### Install peer dependancies
+### Install peer dependencies
 
 ```
 npm install @mdx-js/react gatsby-plugin-mdx
@@ -30,9 +30,11 @@ npm install @mdx-js/react gatsby-plugin-mdx
 module.exports = {
   ...
   plugins: [`@pauliescanlon/gatsby-mdx-embed`]
+  ...
+}
 ```
 
-gatsby-mdx-embed injects an `MdxProvider` if it's the first and or only plugin that uses this method you shouldn't have any clashes.
+gatsby-mdx-embed injects an `MdxProvider` if it's the first and / or only plugin that uses this method you shouldn't have any clashes.
 
 However if you're using a theme or some other plugin that uses `.mdx` you may need to switch the order of the plugins.
 
