@@ -24,68 +24,21 @@ npm install @pauliescanlon/gatsby-mdx-embed
 npm install @mdx-js/react gatsby-plugin-mdx
 ```
 
-By using the `MdxEmbedProvider` all you have to do is use the relevant component in your `.mdx` file and the embed codes will execute.
-
-If you're using `.mdx` then you're probably already familiar with ...
-
-```js
-<MdxProivider>{children}</MdxProivider>
-```
-
-or if you're sourcing `.mdx` from somewhere other than `src/pages` you'd also being using ...
-
-```js
-<MdxProvider>
-  <MdxRenderer>{mdx.body}</MdxRenderer>
-</MdxProvider>
-```
-
-`gatsby-mdx-embed` is just another provider and can be used along side your existing providers or it can be used alone.
-
-```js
-<MdxEmbedProivider>{children}</MdxEmbedProivider>
-```
-
-or
-
-```js
-<MdxEmbedProivider>
-  <MdxProvider>{children}</MdxProvider>
-</MdxEmbedProivider>
-```
-
-A note on using multiple providers directly from [@chrisbiscardi](https://twitter.com/chrisbiscardi)
-
-> Multiple providers will merge the components object. **Last provider wins**
+By using the `MdxEmbedProvider` all you have to do is install the plugin then use the relevant component in your `.mdx` file and the embed codes will execute.
 
 ### Setup (gatsby.config)
 
 ```js
 module.exports = {
   ...
-  plugins: [
-    {
-      resolve: `gatsby-plugin-mdx`,
-      options: {
-        plugins: [`@pauliescanlon/gatsby-mdx-embed`],
-      },
-    },
-  ],
-}
+  plugins: [`@pauliescanlon/gatsby-mdx-embed`]
 ```
 
-### Components
+gatsby-mdx-embed injects an `MdxProvider` if it's the first and or only plugin you're using that uses this method you shouldn't have any clashes. However if you're using a theme or some other plugin that uses `.mdx` you may need to switch the order of the plugins.
 
-The plugin currently supports the following components
+A note on using multiple `MdxProvider`(s)directly from [@chrisbiscardi](https://twitter.com/chrisbiscardi)
 
-- CodePen
-- CodeSandbox
-- Flickr
-- Instagram
-- Spotify
-- Twitter
-- Vimeo
-- YouTube
+> Multiple providers will merge the components object. **Last provider wins**
 
 Thanks to the following projects which were used as references
 
