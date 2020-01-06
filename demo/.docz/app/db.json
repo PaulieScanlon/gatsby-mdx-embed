@@ -1,0 +1,463 @@
+{
+  "config": {
+    "title": "gatsby-mdx-embed",
+    "description": "gatsby-mdx-embed is....",
+    "menu": [],
+    "version": "0.1.0",
+    "repository": "https://github.com/gatsbyjs/gatsby-starter-default",
+    "native": false,
+    "themeConfig": {
+      "initialColorMode": "dark"
+    },
+    "separator": "-"
+  },
+  "entries": [
+    {
+      "key": "src/pages/index.mdx",
+      "value": {
+        "name": "An introduction",
+        "route": "/",
+        "id": "522b7407e210088f3588b943aec44115",
+        "filepath": "src/pages/index.mdx",
+        "fullpath": "/Users/paulscanlon/Desktop/_development/gatsby-mdx-embed/demo/src/pages/index.mdx",
+        "link": "https://github.com/gatsbyjs/gatsby-starter-default/edit/master/demo/src/pages/index.mdx",
+        "slug": "src-pages-index",
+        "menu": "",
+        "headings": [
+          {
+            "slug": "all-your-favourite-providers-in-one-place-",
+            "depth": 3,
+            "value": "All your favourite providers in one place! 😎"
+          },
+          {
+            "slug": "no-import-required",
+            "depth": 3,
+            "value": "No import required!"
+          },
+          {
+            "slug": "my-cool-pen",
+            "depth": 4,
+            "value": "My cool pen"
+          }
+        ]
+      }
+    },
+    {
+      "key": "src/components/codePen.mdx",
+      "value": {
+        "name": "CodePen",
+        "menu": "Components",
+        "id": "10b1984cccc73b0bff0d9cd4589374a6",
+        "filepath": "src/components/codePen.mdx",
+        "fullpath": "/Users/paulscanlon/Desktop/_development/gatsby-mdx-embed/demo/src/components/codePen.mdx",
+        "link": "https://github.com/gatsbyjs/gatsby-starter-default/edit/master/demo/src/components/codePen.mdx",
+        "slug": "src-components-code-pen",
+        "route": "/src-components-code-pen",
+        "headings": [
+          {
+            "slug": "codepen",
+            "depth": 1,
+            "value": "CodePen"
+          }
+        ]
+      }
+    },
+    {
+      "key": "src/components/codeSandbox.mdx",
+      "value": {
+        "name": "CodeSandbox",
+        "menu": "Components",
+        "id": "140838a9d74ad909a17b5da2246c0d56",
+        "filepath": "src/components/codeSandbox.mdx",
+        "fullpath": "/Users/paulscanlon/Desktop/_development/gatsby-mdx-embed/demo/src/components/codeSandbox.mdx",
+        "link": "https://github.com/gatsbyjs/gatsby-starter-default/edit/master/demo/src/components/codeSandbox.mdx",
+        "slug": "src-components-code-sandbox",
+        "route": "/src-components-code-sandbox",
+        "headings": [
+          {
+            "slug": "codesandbox",
+            "depth": 1,
+            "value": "CodeSandbox"
+          }
+        ]
+      }
+    },
+    {
+      "key": "src/components/flickr.mdx",
+      "value": {
+        "name": "Flickr",
+        "menu": "Components",
+        "id": "ec710b8504651e6e09512f6abdef2168",
+        "filepath": "src/components/flickr.mdx",
+        "fullpath": "/Users/paulscanlon/Desktop/_development/gatsby-mdx-embed/demo/src/components/flickr.mdx",
+        "link": "https://github.com/gatsbyjs/gatsby-starter-default/edit/master/demo/src/components/flickr.mdx",
+        "slug": "src-components-flickr",
+        "route": "/src-components-flickr",
+        "headings": [
+          {
+            "slug": "flickr",
+            "depth": 1,
+            "value": "Flickr"
+          }
+        ]
+      }
+    },
+    {
+      "key": "src/components/instagram.mdx",
+      "value": {
+        "name": "Instagram",
+        "menu": "Components",
+        "id": "cdc3ac74ef745a043ef4436e2f9aedfd",
+        "filepath": "src/components/instagram.mdx",
+        "fullpath": "/Users/paulscanlon/Desktop/_development/gatsby-mdx-embed/demo/src/components/instagram.mdx",
+        "link": "https://github.com/gatsbyjs/gatsby-starter-default/edit/master/demo/src/components/instagram.mdx",
+        "slug": "src-components-instagram",
+        "route": "/src-components-instagram",
+        "headings": [
+          {
+            "slug": "instagram",
+            "depth": 1,
+            "value": "Instagram"
+          }
+        ]
+      }
+    },
+    {
+      "key": "src/components/spotify.mdx",
+      "value": {
+        "name": "Spotify",
+        "menu": "Components",
+        "id": "43e071e256a18cbe7a5ac9636bdeefb9",
+        "filepath": "src/components/spotify.mdx",
+        "fullpath": "/Users/paulscanlon/Desktop/_development/gatsby-mdx-embed/demo/src/components/spotify.mdx",
+        "link": "https://github.com/gatsbyjs/gatsby-starter-default/edit/master/demo/src/components/spotify.mdx",
+        "slug": "src-components-spotify",
+        "route": "/src-components-spotify",
+        "headings": [
+          {
+            "slug": "spotify",
+            "depth": 1,
+            "value": "Spotify"
+          }
+        ]
+      }
+    },
+    {
+      "key": "src/components/twitter.mdx",
+      "value": {
+        "name": "Twitter",
+        "menu": "Components",
+        "id": "b5429cc0a98a187c89a19aad6e38ecb6",
+        "filepath": "src/components/twitter.mdx",
+        "fullpath": "/Users/paulscanlon/Desktop/_development/gatsby-mdx-embed/demo/src/components/twitter.mdx",
+        "link": "https://github.com/gatsbyjs/gatsby-starter-default/edit/master/demo/src/components/twitter.mdx",
+        "slug": "src-components-twitter",
+        "route": "/src-components-twitter",
+        "headings": [
+          {
+            "slug": "tweet",
+            "depth": 1,
+            "value": "Tweet"
+          }
+        ]
+      }
+    },
+    {
+      "key": "src/components/vimeo.mdx",
+      "value": {
+        "name": "Vimeo",
+        "menu": "Components",
+        "id": "ea4c51c7ae357f2c5945fc7c1935863b",
+        "filepath": "src/components/vimeo.mdx",
+        "fullpath": "/Users/paulscanlon/Desktop/_development/gatsby-mdx-embed/demo/src/components/vimeo.mdx",
+        "link": "https://github.com/gatsbyjs/gatsby-starter-default/edit/master/demo/src/components/vimeo.mdx",
+        "slug": "src-components-vimeo",
+        "route": "/src-components-vimeo",
+        "headings": [
+          {
+            "slug": "vimeo",
+            "depth": 1,
+            "value": "Vimeo"
+          }
+        ]
+      }
+    },
+    {
+      "key": "src/components/youTube.mdx",
+      "value": {
+        "name": "YouTube",
+        "menu": "Components",
+        "id": "69eb6165db9193296e1fa207f750bf92",
+        "filepath": "src/components/youTube.mdx",
+        "fullpath": "/Users/paulscanlon/Desktop/_development/gatsby-mdx-embed/demo/src/components/youTube.mdx",
+        "link": "https://github.com/gatsbyjs/gatsby-starter-default/edit/master/demo/src/components/youTube.mdx",
+        "slug": "src-components-you-tube",
+        "route": "/src-components-you-tube",
+        "headings": [
+          {
+            "slug": "youtube",
+            "depth": 1,
+            "value": "YouTube"
+          }
+        ]
+      }
+    }
+  ],
+  "props": [
+    {
+      "key": "../@pauliescanlon/gatsby-mdx-embed/src/components/Flickr/Flickr.js",
+      "value": [
+        {
+          "description": "",
+          "displayName": "Flickr",
+          "methods": [],
+          "actualName": "Flickr",
+          "props": {
+            "id": {
+              "type": {
+                "name": "string"
+              },
+              "required": true,
+              "description": ""
+            }
+          }
+        }
+      ]
+    },
+    {
+      "key": "../@pauliescanlon/gatsby-mdx-embed/src/components/CodePen/CodePen.js",
+      "value": [
+        {
+          "description": "",
+          "displayName": "CodePen",
+          "methods": [],
+          "actualName": "CodePen",
+          "props": {
+            "id": {
+              "type": {
+                "name": "string"
+              },
+              "required": true,
+              "description": "This is a pretty good description for this prop"
+            },
+            "height": {
+              "type": {
+                "name": "number"
+              },
+              "required": false,
+              "description": "",
+              "defaultValue": {
+                "value": "500",
+                "computed": false
+              }
+            },
+            "tabs": {
+              "type": {
+                "name": "arrayOf",
+                "value": {
+                  "name": "enum",
+                  "value": [
+                    {
+                      "value": "\"js\"",
+                      "computed": false
+                    },
+                    {
+                      "value": "\"css\"",
+                      "computed": false
+                    },
+                    {
+                      "value": "\"scss\"",
+                      "computed": false
+                    },
+                    {
+                      "value": "\"less\"",
+                      "computed": false
+                    },
+                    {
+                      "value": "\"result\"",
+                      "computed": false
+                    }
+                  ]
+                }
+              },
+              "required": false,
+              "description": "",
+              "defaultValue": {
+                "value": "[\"result\"]",
+                "computed": false
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "key": "../@pauliescanlon/gatsby-mdx-embed/src/components/CodeSandbox/CodeSandbox.js",
+      "value": [
+        {
+          "description": "",
+          "displayName": "CodeSandbox",
+          "methods": [],
+          "actualName": "CodeSandbox",
+          "props": {
+            "id": {
+              "type": {
+                "name": "string"
+              },
+              "required": true,
+              "description": ""
+            }
+          }
+        }
+      ]
+    },
+    {
+      "key": "../@pauliescanlon/gatsby-mdx-embed/src/components/MdxEmbedProvider/MdxEmbedProvider.js",
+      "value": [
+        {
+          "description": "",
+          "displayName": "MdxEmbedProvider",
+          "methods": [],
+          "actualName": "MdxEmbedProvider"
+        }
+      ]
+    },
+    {
+      "key": "../@pauliescanlon/gatsby-mdx-embed/src/components/Instagram/Instagram.js",
+      "value": [
+        {
+          "description": "",
+          "displayName": "Instagram",
+          "methods": [],
+          "actualName": "Instagram",
+          "props": {
+            "id": {
+              "type": {
+                "name": "string"
+              },
+              "required": true,
+              "description": ""
+            },
+            "caption": {
+              "type": {
+                "name": "bool"
+              },
+              "required": false,
+              "description": ""
+            }
+          }
+        }
+      ]
+    },
+    {
+      "key": "../@pauliescanlon/gatsby-mdx-embed/src/components/Spotify/Spotify.js",
+      "value": [
+        {
+          "description": "",
+          "displayName": "Spotify",
+          "methods": [],
+          "actualName": "Spotify",
+          "props": {
+            "id": {
+              "type": {
+                "name": "string"
+              },
+              "required": true,
+              "description": ""
+            },
+            "width": {
+              "type": {
+                "name": "union",
+                "value": [
+                  {
+                    "name": "number"
+                  },
+                  {
+                    "name": "string"
+                  }
+                ]
+              },
+              "required": false,
+              "description": "",
+              "defaultValue": {
+                "value": "320",
+                "computed": false
+              }
+            },
+            "height": {
+              "type": {
+                "name": "number"
+              },
+              "required": false,
+              "description": "",
+              "defaultValue": {
+                "value": "380",
+                "computed": false
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "key": "../@pauliescanlon/gatsby-mdx-embed/src/components/Twitter/Tweet.js",
+      "value": [
+        {
+          "description": "",
+          "displayName": "Tweet",
+          "methods": [],
+          "actualName": "Tweet",
+          "props": {
+            "id": {
+              "type": {
+                "name": "string"
+              },
+              "required": true,
+              "description": ""
+            }
+          }
+        }
+      ]
+    },
+    {
+      "key": "../@pauliescanlon/gatsby-mdx-embed/src/components/Vimeo/Vimeo.js",
+      "value": [
+        {
+          "description": "",
+          "displayName": "Vimeo",
+          "methods": [],
+          "actualName": "Vimeo",
+          "props": {
+            "id": {
+              "type": {
+                "name": "string"
+              },
+              "required": true,
+              "description": ""
+            }
+          }
+        }
+      ]
+    },
+    {
+      "key": "../@pauliescanlon/gatsby-mdx-embed/src/components/YouTube/YouTube.js",
+      "value": [
+        {
+          "description": "",
+          "displayName": "YouTube",
+          "methods": [],
+          "actualName": "YouTube",
+          "props": {
+            "id": {
+              "type": {
+                "name": "string"
+              },
+              "required": true,
+              "description": ""
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

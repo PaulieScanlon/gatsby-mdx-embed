@@ -18,6 +18,12 @@ With `gatsby-mdx-embed` you can embed media content from providers like Twitter,
 npm install @pauliescanlon/gatsby-mdx-embed
 ```
 
+### Install peer dependancies
+
+```
+npm install @mdx-js/react gatsby-plugin-mdx
+```
+
 By using the `MdxEmbedProvider` all you have to do is use the relevant component in your `.mdx` file and the embed codes will execute.
 
 If you're using `.mdx` then you're probably already familiar with ...
@@ -67,19 +73,6 @@ module.exports = {
   ],
 }
 ```
-
-### Components
-
-The plugin currently supports the following components
-
-- CodePen
-- CodeSandbox
-- Flickr
-- Instagram
-- Spotify
-- Twitter
-- Vimeo
-- YouTube
 
 Thanks to the following projects which were used as references
 

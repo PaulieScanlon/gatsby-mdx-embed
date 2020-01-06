@@ -1,27 +1,25 @@
+const path = require("path")
+
+const directoryPath = path.join(
+  process.cwd(),
+  "../@pauliescanlon/gatsby-mdx-embed/src/components"
+)
+
 module.exports = {
-  siteMetadata: {
-    title: `@pauliescanlon/gatsby-mdx-embed`,
-    description: `gatsby-mdx-embed is....`,
-    siteURL: "https://gatsby-mdx-embed.netlify.com",
-    siteImage: "images/mdx-embed-main-og-image.jpg",
-    author: "@pauliescanlon",
-  },
   plugins: [
-    `gatsby-plugin-react-helmet`,
-    `gatsby-plugin-theme-ui`,
     `@pauliescanlon/gatsby-mdx-embed`,
+
     {
-      resolve: `gatsby-source-filesystem`,
+      resolve: "gatsby-theme-docz",
       options: {
-        name: `pages`,
-        path: `${__dirname}/src/pages/`,
-      },
-    },
-    {
-      resolve: `gatsby-plugin-mdx`,
-      options: {
-        defaultLayouts: {
-          default: `${__dirname}/src/layouts/layout.js`,
+        title: "gatsby-mdx-embed",
+        description: "gatsby-mdx-embed is....",
+        repository: "https://github.com/PaulieScanlon/gatsby-mdx-embed",
+        docgenConfig: {
+          searchPath: directoryPath,
+        },
+        themeConfig: {
+          initialColorMode: "dark",
         },
       },
     },

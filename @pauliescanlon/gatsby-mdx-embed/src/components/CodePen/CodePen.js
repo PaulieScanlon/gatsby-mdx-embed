@@ -1,7 +1,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 
-export const CodePen = ({ id, height = 500, tabs = ["result"] }) => (
+export const CodePen = ({ id, height, tabs }) => (
   <iframe
     title={`codePen-${id}`}
     height={height}
@@ -17,9 +17,17 @@ export const CodePen = ({ id, height = 500, tabs = ["result"] }) => (
 )
 
 CodePen.propTypes = {
+  /**
+   * This is a pretty good description for this prop
+   */
   id: PropTypes.string.isRequired,
   height: PropTypes.number,
   tabs: PropTypes.arrayOf(
     PropTypes.oneOf(["js", "css", "scss", "less", "result"])
   ),
+}
+
+CodePen.defaultProps = {
+  height: 500,
+  tabs: ["result"],
 }
