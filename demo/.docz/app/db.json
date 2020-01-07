@@ -380,26 +380,6 @@
       ]
     },
     {
-      "key": "../@pauliescanlon/gatsby-mdx-embed/src/components/Flickr/Flickr.js",
-      "value": [
-        {
-          "description": "",
-          "displayName": "Flickr",
-          "methods": [],
-          "actualName": "Flickr",
-          "props": {
-            "id": {
-              "type": {
-                "name": "string"
-              },
-              "required": true,
-              "description": "Flickr id"
-            }
-          }
-        }
-      ]
-    },
-    {
       "key": "../@pauliescanlon/gatsby-mdx-embed/src/components/Instagram/Instagram.js",
       "value": [
         {
@@ -434,6 +414,182 @@
               },
               "required": true,
               "description": "CodeSandbox id"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "key": "../@pauliescanlon/gatsby-mdx-embed/src/components/Flickr/Flickr.js",
+      "value": [
+        {
+          "description": "",
+          "displayName": "Flickr",
+          "methods": [],
+          "actualName": "Flickr",
+          "props": {
+            "id": {
+              "type": {
+                "name": "string"
+              },
+              "required": true,
+              "description": "Flickr id"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "key": "../@pauliescanlon/gatsby-mdx-embed/src/components/MdxEmbedProvider/MdxEmbedProvider.js",
+      "value": [
+        {
+          "description": "",
+          "displayName": "MdxEmbedProvider",
+          "methods": [],
+          "actualName": "MdxEmbedProvider"
+        }
+      ]
+    },
+    {
+      "key": "../@pauliescanlon/gatsby-mdx-embed/src/components/SoundCloud/SoundCloud.js",
+      "value": [
+        {
+          "description": "",
+          "displayName": "SoundCloud",
+          "methods": [],
+          "actualName": "SoundCloud",
+          "props": {
+            "id": {
+              "type": {
+                "name": "string"
+              },
+              "required": true,
+              "description": "SoundCloud id"
+            },
+            "autoPlay": {
+              "type": {
+                "name": "bool"
+              },
+              "required": false,
+              "description": "Auto play audio",
+              "defaultValue": {
+                "value": "false",
+                "computed": false
+              }
+            },
+            "visual": {
+              "type": {
+                "name": "bool"
+              },
+              "required": false,
+              "description": "Show the visual artwork",
+              "defaultValue": {
+                "value": "false",
+                "computed": false
+              }
+            },
+            "width": {
+              "type": {
+                "name": "union",
+                "value": [
+                  {
+                    "name": "number"
+                  },
+                  {
+                    "name": "string"
+                  }
+                ]
+              },
+              "required": false,
+              "description": "Width for the iFrame",
+              "defaultValue": {
+                "value": "\"100%\"",
+                "computed": false
+              }
+            },
+            "height": {
+              "type": {
+                "name": "union",
+                "value": [
+                  {
+                    "name": "number"
+                  },
+                  {
+                    "name": "string"
+                  }
+                ]
+              },
+              "required": false,
+              "description": "Height for the iFrame",
+              "defaultValue": {
+                "value": "\"auto\"",
+                "computed": false
+              }
+            },
+            "color": {
+              "type": {
+                "name": "string"
+              },
+              "required": false,
+              "description": "The color of the play button without the #"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "key": "../@pauliescanlon/gatsby-mdx-embed/src/components/Spotify/Spotify.js",
+      "value": [
+        {
+          "description": "",
+          "displayName": "Spotify",
+          "methods": [],
+          "actualName": "Spotify",
+          "props": {
+            "id": {
+              "type": {
+                "name": "string"
+              },
+              "required": true,
+              "description": "Spotify id"
+            },
+            "width": {
+              "type": {
+                "name": "union",
+                "value": [
+                  {
+                    "name": "number"
+                  },
+                  {
+                    "name": "string"
+                  }
+                ]
+              },
+              "required": false,
+              "description": "Width for the iFrame",
+              "defaultValue": {
+                "value": "320",
+                "computed": false
+              }
+            },
+            "height": {
+              "type": {
+                "name": "union",
+                "value": [
+                  {
+                    "name": "number"
+                  },
+                  {
+                    "name": "string"
+                  }
+                ]
+              },
+              "required": false,
+              "description": "Height for the iFrame",
+              "defaultValue": {
+                "value": "380",
+                "computed": false
+              }
             }
           }
         }
@@ -580,162 +736,6 @@
                 "value": "\"16:9\"",
                 "computed": false
               }
-            }
-          }
-        }
-      ]
-    },
-    {
-      "key": "../@pauliescanlon/gatsby-mdx-embed/src/components/MdxEmbedProvider/MdxEmbedProvider.js",
-      "value": [
-        {
-          "description": "",
-          "displayName": "MdxEmbedProvider",
-          "methods": [],
-          "actualName": "MdxEmbedProvider"
-        }
-      ]
-    },
-    {
-      "key": "../@pauliescanlon/gatsby-mdx-embed/src/components/Spotify/Spotify.js",
-      "value": [
-        {
-          "description": "",
-          "displayName": "Spotify",
-          "methods": [],
-          "actualName": "Spotify",
-          "props": {
-            "id": {
-              "type": {
-                "name": "string"
-              },
-              "required": true,
-              "description": "Spotify id"
-            },
-            "width": {
-              "type": {
-                "name": "union",
-                "value": [
-                  {
-                    "name": "number"
-                  },
-                  {
-                    "name": "string"
-                  }
-                ]
-              },
-              "required": false,
-              "description": "Width for the iFrame",
-              "defaultValue": {
-                "value": "320",
-                "computed": false
-              }
-            },
-            "height": {
-              "type": {
-                "name": "union",
-                "value": [
-                  {
-                    "name": "number"
-                  },
-                  {
-                    "name": "string"
-                  }
-                ]
-              },
-              "required": false,
-              "description": "Height for the iFrame",
-              "defaultValue": {
-                "value": "380",
-                "computed": false
-              }
-            }
-          }
-        }
-      ]
-    },
-    {
-      "key": "../@pauliescanlon/gatsby-mdx-embed/src/components/SoundCloud/SoundCloud.js",
-      "value": [
-        {
-          "description": "",
-          "displayName": "SoundCloud",
-          "methods": [],
-          "actualName": "SoundCloud",
-          "props": {
-            "id": {
-              "type": {
-                "name": "string"
-              },
-              "required": true,
-              "description": "SoundCloud id"
-            },
-            "autoPlay": {
-              "type": {
-                "name": "bool"
-              },
-              "required": false,
-              "description": "Auto play audio",
-              "defaultValue": {
-                "value": "false",
-                "computed": false
-              }
-            },
-            "visual": {
-              "type": {
-                "name": "bool"
-              },
-              "required": false,
-              "description": "Show the visual artwork",
-              "defaultValue": {
-                "value": "false",
-                "computed": false
-              }
-            },
-            "width": {
-              "type": {
-                "name": "union",
-                "value": [
-                  {
-                    "name": "number"
-                  },
-                  {
-                    "name": "string"
-                  }
-                ]
-              },
-              "required": false,
-              "description": "Width for the iFrame",
-              "defaultValue": {
-                "value": "\"100%\"",
-                "computed": false
-              }
-            },
-            "height": {
-              "type": {
-                "name": "union",
-                "value": [
-                  {
-                    "name": "number"
-                  },
-                  {
-                    "name": "string"
-                  }
-                ]
-              },
-              "required": false,
-              "description": "Height for the iFrame",
-              "defaultValue": {
-                "value": "\"auto\"",
-                "computed": false
-              }
-            },
-            "color": {
-              "type": {
-                "name": "string"
-              },
-              "required": false,
-              "description": "The color of the play button without the #"
             }
           }
         }

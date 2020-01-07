@@ -45,6 +45,8 @@ A note on using multiple `MdxProvider`(s) directly from [@chrisbiscardi](https:/
 
 If you're using **gatsby-mdx-embed** in your project i'd love to hear from you [@pauliescanlon](https://twitter.com/PaulieScanlon)
 
+[![ko-fi](https://www.ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/P5P31B7G8)
+
 Thanks to the following projects which were used as references
 
 - [gatsby-remark-oembed](https://github.com/raae/gatsby-remark-oembed)
