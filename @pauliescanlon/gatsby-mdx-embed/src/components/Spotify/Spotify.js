@@ -1,7 +1,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 
-export const Spotify = ({ id, width = 320, height = 380 }) => (
+export const Spotify = ({ id, width, height }) => (
   <iframe
     title={`spotify-${id}`}
     src={`https://open.spotify.com/embed/${id}`}
@@ -25,5 +25,10 @@ Spotify.propTypes = {
   /**
    * Height for the iFrame
    */
-  height: PropTypes.number,
+  height: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
+}
+
+Spotify.defaultProps = {
+  width: 320,
+  height: 380,
 }

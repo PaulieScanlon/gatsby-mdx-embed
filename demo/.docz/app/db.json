@@ -121,6 +121,41 @@
       }
     },
     {
+      "key": "src/components/soundCloud.mdx",
+      "value": {
+        "name": "SoundCloud",
+        "menu": "Components",
+        "id": "42091e1395c96b4c548451d403060fc5",
+        "filepath": "src/components/soundCloud.mdx",
+        "fullpath": "/Users/paulscanlon/Desktop/_development/gatsby-mdx-embed/demo/src/components/soundCloud.mdx",
+        "link": "https://github.com/PaulieScanlon/gatsby-mdx-embed/edit/master/demo/src/components/soundCloud.mdx",
+        "slug": "src-components-sound-cloud",
+        "route": "/src-components-sound-cloud",
+        "headings": [
+          {
+            "slug": "soundcloud",
+            "depth": 1,
+            "value": "SoundCloud"
+          },
+          {
+            "slug": "basic-usage",
+            "depth": 2,
+            "value": "Basic usage"
+          },
+          {
+            "slug": "color",
+            "depth": 2,
+            "value": "Color"
+          },
+          {
+            "slug": "visual",
+            "depth": 2,
+            "value": "Visual"
+          }
+        ]
+      }
+    },
+    {
       "key": "src/components/spotify.mdx",
       "value": {
         "name": "Spotify",
@@ -345,20 +380,20 @@
       ]
     },
     {
-      "key": "../@pauliescanlon/gatsby-mdx-embed/src/components/CodeSandbox/CodeSandbox.js",
+      "key": "../@pauliescanlon/gatsby-mdx-embed/src/components/Flickr/Flickr.js",
       "value": [
         {
           "description": "",
-          "displayName": "CodeSandbox",
+          "displayName": "Flickr",
           "methods": [],
-          "actualName": "CodeSandbox",
+          "actualName": "Flickr",
           "props": {
             "id": {
               "type": {
                 "name": "string"
               },
               "required": true,
-              "description": "CodeSandbox id"
+              "description": "Flickr id"
             }
           }
         }
@@ -385,33 +420,22 @@
       ]
     },
     {
-      "key": "../@pauliescanlon/gatsby-mdx-embed/src/components/Flickr/Flickr.js",
+      "key": "../@pauliescanlon/gatsby-mdx-embed/src/components/CodeSandbox/CodeSandbox.js",
       "value": [
         {
           "description": "",
-          "displayName": "Flickr",
+          "displayName": "CodeSandbox",
           "methods": [],
-          "actualName": "Flickr",
+          "actualName": "CodeSandbox",
           "props": {
             "id": {
               "type": {
                 "name": "string"
               },
               "required": true,
-              "description": "Flickr id"
+              "description": "CodeSandbox id"
             }
           }
-        }
-      ]
-    },
-    {
-      "key": "../@pauliescanlon/gatsby-mdx-embed/src/components/MdxEmbedProvider/MdxEmbedProvider.js",
-      "value": [
-        {
-          "description": "",
-          "displayName": "MdxEmbedProvider",
-          "methods": [],
-          "actualName": "MdxEmbedProvider"
         }
       ]
     },
@@ -562,6 +586,17 @@
       ]
     },
     {
+      "key": "../@pauliescanlon/gatsby-mdx-embed/src/components/MdxEmbedProvider/MdxEmbedProvider.js",
+      "value": [
+        {
+          "description": "",
+          "displayName": "MdxEmbedProvider",
+          "methods": [],
+          "actualName": "MdxEmbedProvider"
+        }
+      ]
+    },
+    {
       "key": "../@pauliescanlon/gatsby-mdx-embed/src/components/Spotify/Spotify.js",
       "value": [
         {
@@ -598,7 +633,15 @@
             },
             "height": {
               "type": {
-                "name": "number"
+                "name": "union",
+                "value": [
+                  {
+                    "name": "number"
+                  },
+                  {
+                    "name": "string"
+                  }
+                ]
               },
               "required": false,
               "description": "Height for the iFrame",
@@ -606,6 +649,93 @@
                 "value": "380",
                 "computed": false
               }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "key": "../@pauliescanlon/gatsby-mdx-embed/src/components/SoundCloud/SoundCloud.js",
+      "value": [
+        {
+          "description": "",
+          "displayName": "SoundCloud",
+          "methods": [],
+          "actualName": "SoundCloud",
+          "props": {
+            "id": {
+              "type": {
+                "name": "string"
+              },
+              "required": true,
+              "description": "SoundCloud id"
+            },
+            "autoPlay": {
+              "type": {
+                "name": "bool"
+              },
+              "required": false,
+              "description": "Auto play audio",
+              "defaultValue": {
+                "value": "false",
+                "computed": false
+              }
+            },
+            "visual": {
+              "type": {
+                "name": "bool"
+              },
+              "required": false,
+              "description": "Show the visual artwork",
+              "defaultValue": {
+                "value": "false",
+                "computed": false
+              }
+            },
+            "width": {
+              "type": {
+                "name": "union",
+                "value": [
+                  {
+                    "name": "number"
+                  },
+                  {
+                    "name": "string"
+                  }
+                ]
+              },
+              "required": false,
+              "description": "Width for the iFrame",
+              "defaultValue": {
+                "value": "\"100%\"",
+                "computed": false
+              }
+            },
+            "height": {
+              "type": {
+                "name": "union",
+                "value": [
+                  {
+                    "name": "number"
+                  },
+                  {
+                    "name": "string"
+                  }
+                ]
+              },
+              "required": false,
+              "description": "Height for the iFrame",
+              "defaultValue": {
+                "value": "\"auto\"",
+                "computed": false
+              }
+            },
+            "color": {
+              "type": {
+                "name": "string"
+              },
+              "required": false,
+              "description": "The color of the play button without the #"
             }
           }
         }

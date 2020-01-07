@@ -9,16 +9,18 @@ import { Tweet } from "../Twitter"
 import { YouTube } from "../YouTube"
 import { Spotify } from "../Spotify"
 import { Flickr } from "../Flickr"
+import { SoundCloud } from "../SoundCloud"
 
 const components = {
+  CodePen: props => <CodePen {...props} />,
   CodeSandbox: props => <CodeSandbox {...props} />,
+  Flickr: props => <Flickr {...props} />,
   Vimeo: props => <Vimeo {...props} />,
   Tweet: props => <Tweet {...props} />,
   YouTube: props => <YouTube {...props} />,
   Spotify: props => <Spotify {...props} />,
-  Flickr: props => <Flickr {...props} />,
   Instagram: props => <Instagram {...props} />,
-  CodePen: props => <CodePen {...props} />,
+  SoundCloud: props => <SoundCloud {...props} />,
 }
 
 export const MdxEmbedProvider = ({ children }) => (
