@@ -7,7 +7,8 @@ const directoryPath = path.join(
 
 export default {
   title: "gatsby-mdx-embed",
-  description: "gatsby-mdx-embed is....",
+  description:
+    "gatsby-mdx-embed is an mdx plugin to embed YouTube, Twitter etc into .mdx without imports",
   menu: ["Getting Started", { name: "Components" }],
   docgenConfig: {
     searchPath: directoryPath,

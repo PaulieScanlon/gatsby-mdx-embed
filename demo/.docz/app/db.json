@@ -1,7 +1,7 @@
 {
   "config": {
     "title": "gatsby-mdx-embed",
-    "description": "gatsby-mdx-embed is....",
+    "description": "gatsby-mdx-embed is an mdx plugin to embed YouTube, Twitter etc into .mdx without imports",
     "menu": [
       "Getting Started",
       {
@@ -141,6 +141,16 @@
             "slug": "basic-usage",
             "depth": 2,
             "value": "Basic usage"
+          },
+          {
+            "slug": "width",
+            "depth": 2,
+            "value": "Width"
+          },
+          {
+            "slug": "height",
+            "depth": 2,
+            "value": "Height"
           }
         ]
       }
@@ -248,9 +258,9 @@
         "menu": "",
         "headings": [
           {
-            "slug": "all-your-favourite-providers-in-one-place-",
-            "depth": 3,
-            "value": "All your favourite providers in one place! 😎"
+            "slug": "all-your-favorite-providers-in-one-place",
+            "depth": 1,
+            "value": "All your favorite providers in one place!"
           },
           {
             "slug": "no-import-required",
@@ -355,13 +365,22 @@
       ]
     },
     {
-      "key": "../@pauliescanlon/gatsby-mdx-embed/src/components/MdxEmbedProvider/MdxEmbedProvider.js",
+      "key": "../@pauliescanlon/gatsby-mdx-embed/src/components/Instagram/Instagram.js",
       "value": [
         {
           "description": "",
-          "displayName": "MdxEmbedProvider",
+          "displayName": "Instagram",
           "methods": [],
-          "actualName": "MdxEmbedProvider"
+          "actualName": "Instagram",
+          "props": {
+            "id": {
+              "type": {
+                "name": "string"
+              },
+              "required": true,
+              "description": "Instagram id"
+            }
+          }
         }
       ]
     },
@@ -386,52 +405,13 @@
       ]
     },
     {
-      "key": "../@pauliescanlon/gatsby-mdx-embed/src/components/Spotify/Spotify.js",
+      "key": "../@pauliescanlon/gatsby-mdx-embed/src/components/MdxEmbedProvider/MdxEmbedProvider.js",
       "value": [
         {
           "description": "",
-          "displayName": "Spotify",
+          "displayName": "MdxEmbedProvider",
           "methods": [],
-          "actualName": "Spotify",
-          "props": {
-            "id": {
-              "type": {
-                "name": "string"
-              },
-              "required": true,
-              "description": "Spotify id"
-            },
-            "width": {
-              "type": {
-                "name": "union",
-                "value": [
-                  {
-                    "name": "number"
-                  },
-                  {
-                    "name": "string"
-                  }
-                ]
-              },
-              "required": false,
-              "description": "Width for the iFrame",
-              "defaultValue": {
-                "value": "320",
-                "computed": false
-              }
-            },
-            "height": {
-              "type": {
-                "name": "number"
-              },
-              "required": false,
-              "description": "Height for the iFrame",
-              "defaultValue": {
-                "value": "380",
-                "computed": false
-              }
-            }
-          }
+          "actualName": "MdxEmbedProvider"
         }
       ]
     },
@@ -582,20 +562,50 @@
       ]
     },
     {
-      "key": "../@pauliescanlon/gatsby-mdx-embed/src/components/Instagram/Instagram.js",
+      "key": "../@pauliescanlon/gatsby-mdx-embed/src/components/Spotify/Spotify.js",
       "value": [
         {
           "description": "",
-          "displayName": "Instagram",
+          "displayName": "Spotify",
           "methods": [],
-          "actualName": "Instagram",
+          "actualName": "Spotify",
           "props": {
             "id": {
               "type": {
                 "name": "string"
               },
               "required": true,
-              "description": "Instagram id"
+              "description": "Spotify id"
+            },
+            "width": {
+              "type": {
+                "name": "union",
+                "value": [
+                  {
+                    "name": "number"
+                  },
+                  {
+                    "name": "string"
+                  }
+                ]
+              },
+              "required": false,
+              "description": "Width for the iFrame",
+              "defaultValue": {
+                "value": "320",
+                "computed": false
+              }
+            },
+            "height": {
+              "type": {
+                "name": "number"
+              },
+              "required": false,
+              "description": "Height for the iFrame",
+              "defaultValue": {
+                "value": "380",
+                "computed": false
+              }
             }
           }
         }

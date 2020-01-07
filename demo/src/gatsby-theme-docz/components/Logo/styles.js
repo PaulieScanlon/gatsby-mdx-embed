@@ -1,4 +1,10 @@
-export const logo = {}
+export const logoDark = {
+  fill: "border",
+}
+
+export const logoLight = {
+  fill: "primary",
+}
 
 export const link = {
   display: "flex",
