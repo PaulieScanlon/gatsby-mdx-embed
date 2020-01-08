@@ -14,10 +14,6 @@ export const Gist = ({ id }) => {
   const gistId = id.split("/")[1]
   const gistEmbedScript = `${root}${id}.json?callback=gist_callback_${gistId}`
 
-  const getProvider = () => {
-    createScriptTag(gistEmbedScript, null)
-  }
-
   useEffect(() => {
     window[`gist_callback_${gistId}`] = gist => {
       createStyleSheet(gist.stylesheet)
@@ -27,8 +23,8 @@ export const Gist = ({ id }) => {
         files: gist.files[0],
       })
     }
-    getProvider()
-  }, [])
+    createScriptTag(gistEmbedScript, null)
+  }, [gistId, gistEmbedScript])
 
   return (
     !gistResponse.isLoading && (
@@ -49,5 +45,5 @@ Gist.propTypes = {
   /**
    * Gist id
    */
-  id: PropTypes.string,
+  id: PropTypes.string.isRequired,
 }

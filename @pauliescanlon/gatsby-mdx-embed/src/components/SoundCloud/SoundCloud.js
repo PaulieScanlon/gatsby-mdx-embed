@@ -7,7 +7,7 @@ export const SoundCloud = ({ id, width, height, autoPlay, visual, color }) => (
     width={width}
     height={height}
     scrolling="no"
-    frameborder="no"
+    frameBorder="no"
     allow="autoplay"
     src={`https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/${id}&color=%23${color}&auto_play=${autoPlay}&visual=${visual}`}
   />

@@ -24,16 +24,16 @@ export const createScriptTag = (providerEmbedUrl, providerEmbedScript) => {
 
   script.type = `text/javascript`
 
-  if (providerEmbedScript) {
-    script.innerText = providerEmbedScript
-  }
-
   if (providerEmbedUrl) {
     script.src = providerEmbedUrl
   }
 
+  if (providerEmbedScript) {
+    script.innerText = providerEmbedScript
+  }
+
   script.onerror = error => {
-    throw error
+    console.error(`MdxEmbedProvider ${error.type}`, error)
   }
 
   document.getElementsByTagName(`head`)[0].appendChild(script)

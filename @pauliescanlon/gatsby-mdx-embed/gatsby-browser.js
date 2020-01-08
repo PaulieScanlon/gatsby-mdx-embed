@@ -22,7 +22,7 @@ const instgrmClassNames = [
   `.instagram-media`,
   `.instagram-media-rendered`,
 ].join(`,`)
-const instgrmEmbedScript = `https://www.instagram.com/embed.js`
+const instgrmEmbedUrl = `https://www.instagram.com/embed.js`
 
 const instgrmProcess = () => {
   if (
@@ -36,7 +36,7 @@ const instgrmProcess = () => {
 
 let isFlickrScriptAdded = false
 const flickrEmbedClassNames = [`.flickr-embed-mdx`].join(`,`)
-const flickrEmbedScript = `https://embedr.flickr.com/assets/client-code.js`
+const flickrEmbedUrl = `https://embedr.flickr.com/assets/client-code.js`
 
 export const onRouteUpdate = () => {
   if (document.querySelector(twttrClassNames) !== null) {
@@ -48,14 +48,14 @@ export const onRouteUpdate = () => {
 
   if (document.querySelector(instgrmClassNames) !== null) {
     if (!isInstgrmScriptAdded) {
-      createScriptTag(instgrmEmbedScript, null)
+      createScriptTag(instgrmEmbedUrl, null)
       isInstgrmScriptAdded = true
     }
   }
 
   if (document.querySelector(flickrEmbedClassNames) !== null) {
     if (!isFlickrScriptAdded) {
-      createScriptTag(flickrEmbedScript, null)
+      createScriptTag(flickrEmbedUrl, null)
       isFlickrScriptAdded = true
     }
   }
