@@ -5,7 +5,7 @@
     "type": "git",
     "url": "git+https://github.com/PaulieScanlon/gatsby-mdx-embed.git"
   },
-  "version": "0.0.4",
+  "version": "0.0.5",
   "main": "index.js",
   "license": "MIT",
   "scripts": {
