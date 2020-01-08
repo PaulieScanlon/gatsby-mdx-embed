@@ -12,7 +12,7 @@
     "repository": "https://github.com/PaulieScanlon/gatsby-mdx-embed",
     "native": false,
     "themeConfig": {
-      "initialColorMode": "dark"
+      "initialColorMode": "light"
     },
     "separator": "-",
     "docgenConfig": {
@@ -20,6 +20,36 @@
     }
   },
   "entries": [
+    {
+      "key": "src/pages/index.mdx",
+      "value": {
+        "name": "Getting Started",
+        "route": "/",
+        "id": "522b7407e210088f3588b943aec44115",
+        "filepath": "src/pages/index.mdx",
+        "fullpath": "/Users/paulscanlon/Desktop/_development/gatsby-mdx-embed/demo/src/pages/index.mdx",
+        "link": "https://github.com/PaulieScanlon/gatsby-mdx-embed/edit/master/demo/src/pages/index.mdx",
+        "slug": "src-pages-index",
+        "menu": "",
+        "headings": [
+          {
+            "slug": "all-your-favorite-providers-in-one-place",
+            "depth": 1,
+            "value": "All your favorite providers in one place!"
+          },
+          {
+            "slug": "no-import-required",
+            "depth": 3,
+            "value": "No import required!"
+          },
+          {
+            "slug": "my-cool-pen",
+            "depth": 4,
+            "value": "My cool pen"
+          }
+        ]
+      }
+    },
     {
       "key": "src/components/codePen.mdx",
       "value": {
@@ -86,6 +116,31 @@
             "slug": "flickr",
             "depth": 1,
             "value": "Flickr"
+          },
+          {
+            "slug": "basic-usage",
+            "depth": 2,
+            "value": "Basic usage"
+          }
+        ]
+      }
+    },
+    {
+      "key": "src/components/gist.mdx",
+      "value": {
+        "name": "Gist",
+        "menu": "Components",
+        "id": "431072598def886d9f904e73909c836e",
+        "filepath": "src/components/gist.mdx",
+        "fullpath": "/Users/paulscanlon/Desktop/_development/gatsby-mdx-embed/demo/src/components/gist.mdx",
+        "link": "https://github.com/PaulieScanlon/gatsby-mdx-embed/edit/master/demo/src/components/gist.mdx",
+        "slug": "src-components-gist",
+        "route": "/src-components-gist",
+        "headings": [
+          {
+            "slug": "gist",
+            "depth": 1,
+            "value": "Gist"
           },
           {
             "slug": "basic-usage",
@@ -279,36 +334,6 @@
           }
         ]
       }
-    },
-    {
-      "key": "src/pages/index.mdx",
-      "value": {
-        "name": "Getting Started",
-        "route": "/",
-        "id": "522b7407e210088f3588b943aec44115",
-        "filepath": "src/pages/index.mdx",
-        "fullpath": "/Users/paulscanlon/Desktop/_development/gatsby-mdx-embed/demo/src/pages/index.mdx",
-        "link": "https://github.com/PaulieScanlon/gatsby-mdx-embed/edit/master/demo/src/pages/index.mdx",
-        "slug": "src-pages-index",
-        "menu": "",
-        "headings": [
-          {
-            "slug": "all-your-favorite-providers-in-one-place",
-            "depth": 1,
-            "value": "All your favorite providers in one place!"
-          },
-          {
-            "slug": "no-import-required",
-            "depth": 3,
-            "value": "No import required!"
-          },
-          {
-            "slug": "my-cool-pen",
-            "depth": 4,
-            "value": "My cool pen"
-          }
-        ]
-      }
     }
   ],
   "props": [
@@ -380,20 +405,20 @@
       ]
     },
     {
-      "key": "../@pauliescanlon/gatsby-mdx-embed/src/components/Instagram/Instagram.js",
+      "key": "../@pauliescanlon/gatsby-mdx-embed/src/components/Flickr/Flickr.js",
       "value": [
         {
           "description": "",
-          "displayName": "Instagram",
+          "displayName": "Flickr",
           "methods": [],
-          "actualName": "Instagram",
+          "actualName": "Flickr",
           "props": {
             "id": {
               "type": {
                 "name": "string"
               },
               "required": true,
-              "description": "Instagram id"
+              "description": "Flickr id"
             }
           }
         }
@@ -420,26 +445,6 @@
       ]
     },
     {
-      "key": "../@pauliescanlon/gatsby-mdx-embed/src/components/Flickr/Flickr.js",
-      "value": [
-        {
-          "description": "",
-          "displayName": "Flickr",
-          "methods": [],
-          "actualName": "Flickr",
-          "props": {
-            "id": {
-              "type": {
-                "name": "string"
-              },
-              "required": true,
-              "description": "Flickr id"
-            }
-          }
-        }
-      ]
-    },
-    {
       "key": "../@pauliescanlon/gatsby-mdx-embed/src/components/MdxEmbedProvider/MdxEmbedProvider.js",
       "value": [
         {
@@ -447,6 +452,26 @@
           "displayName": "MdxEmbedProvider",
           "methods": [],
           "actualName": "MdxEmbedProvider"
+        }
+      ]
+    },
+    {
+      "key": "../@pauliescanlon/gatsby-mdx-embed/src/components/Instagram/Instagram.js",
+      "value": [
+        {
+          "description": "",
+          "displayName": "Instagram",
+          "methods": [],
+          "actualName": "Instagram",
+          "props": {
+            "id": {
+              "type": {
+                "name": "string"
+              },
+              "required": true,
+              "description": "Instagram id"
+            }
+          }
         }
       ]
     },
@@ -736,6 +761,26 @@
                 "value": "\"16:9\"",
                 "computed": false
               }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "key": "../@pauliescanlon/gatsby-mdx-embed/src/components/Gist/Gist.js",
+      "value": [
+        {
+          "description": "",
+          "displayName": "Gist",
+          "methods": [],
+          "actualName": "Gist",
+          "props": {
+            "id": {
+              "type": {
+                "name": "string"
+              },
+              "required": false,
+              "description": "Gist id"
             }
           }
         }

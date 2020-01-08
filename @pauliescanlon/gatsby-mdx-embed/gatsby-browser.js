@@ -1,20 +1,5 @@
+import { createScriptTag } from "./src/utils"
 export { wrapRootElement } from "./src/wrapRootElement"
-
-const createScriptTag = (providerEmbedUrl, providerEmbedScript) => {
-  const script = document.createElement(`script`)
-
-  script.type = `text/javascript`
-
-  if (providerEmbedScript) {
-    script.innerText = providerEmbedScript
-  }
-
-  if (providerEmbedUrl) {
-    script.src = providerEmbedUrl
-  }
-
-  document.getElementsByTagName(`head`)[0].appendChild(script)
-}
 
 let isTwttrScriptAdded = false
 const twttrClassNames = [`.twitter-tweet`].join(`,`)

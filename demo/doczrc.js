@@ -14,6 +14,6 @@ export default {
     searchPath: directoryPath,
   },
   themeConfig: {
-    initialColorMode: "dark",
+    initialColorMode: "light",
   },
 }
