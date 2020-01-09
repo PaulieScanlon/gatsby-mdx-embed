@@ -8,7 +8,7 @@ import { YouTube } from "@pauliescanlon/gatsby-mdx-embed"
 
 # YouTube
 
-Display a YouTube video by including the component in your `.mdx`. An `id` is required. There are props for aspect ratio.
+Display a YouTube video by including the component in your `.mdx`. An `id` is required. There are a number additional props available.
 
 <Props of={YouTube} />
 
@@ -22,4 +22,10 @@ Display a YouTube video by including the component in your `.mdx`. An `id` is re
 
 <Playground>
   <YouTube id="mM5_T-F1Yn4" aspectRatio="4:3" />
+</Playground>
+
+## Skip to
+
+<Playground>
+  <YouTube id="PS2784YfPpw" skipTo={{ h: 0, m: 38, s: 44 }} />
 </Playground>

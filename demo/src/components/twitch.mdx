@@ -1,0 +1,25 @@
+---
+name: Twitch
+menu: Components
+---
+
+import { Playground, Props } from "docz"
+import { Twitch } from "@pauliescanlon/gatsby-mdx-embed"
+
+# Twitch
+
+Display a Twitch video by including the component in your `.mdx`. An `id` is required. There are a number additional props available.
+
+<Props of={Twitch} />
+
+## Basic usage
+
+<Playground>
+  <Twitch id="510143691" />
+</Playground>
+
+## Skip to
+
+<Playground>
+  <Twitch id="510143691" skipTo={{ h: 0, m: 1, s: 53 }} />
+</Playground>

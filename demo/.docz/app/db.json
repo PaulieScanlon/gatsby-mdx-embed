@@ -216,6 +216,36 @@
       }
     },
     {
+      "key": "src/components/twitch.mdx",
+      "value": {
+        "name": "Twitch",
+        "menu": "Components",
+        "id": "dfd7a624e64553ab654b7b98009023bc",
+        "filepath": "src/components/twitch.mdx",
+        "fullpath": "/Users/paulscanlon/Desktop/_development/gatsby-mdx-embed/demo/src/components/twitch.mdx",
+        "link": "https://github.com/PaulieScanlon/gatsby-mdx-embed/edit/master/demo/src/components/twitch.mdx",
+        "slug": "src-components-twitch",
+        "route": "/src-components-twitch",
+        "headings": [
+          {
+            "slug": "twitch",
+            "depth": 1,
+            "value": "Twitch"
+          },
+          {
+            "slug": "basic-usage",
+            "depth": 2,
+            "value": "Basic usage"
+          },
+          {
+            "slug": "skip-to",
+            "depth": 2,
+            "value": "Skip to"
+          }
+        ]
+      }
+    },
+    {
       "key": "src/components/twitter.mdx",
       "value": {
         "name": "Twitter",
@@ -271,6 +301,11 @@
             "slug": "basic-usage",
             "depth": 2,
             "value": "Basic usage"
+          },
+          {
+            "slug": "skip-to",
+            "depth": 2,
+            "value": "Skip to"
           }
         ]
       }
@@ -301,6 +336,11 @@
             "slug": "aspect-ratio",
             "depth": 2,
             "value": "Aspect Ratio"
+          },
+          {
+            "slug": "skip-to",
+            "depth": 2,
+            "value": "Skip to"
           }
         ]
       }
@@ -324,8 +364,13 @@
           },
           {
             "slug": "no-import-required",
-            "depth": 3,
+            "depth": 2,
             "value": "No import required!"
+          },
+          {
+            "slug": "which-renders-as-",
+            "depth": 2,
+            "value": "Which renders as 👇"
           },
           {
             "slug": "my-cool-pen",
@@ -337,57 +382,6 @@
     }
   ],
   "props": [
-    {
-      "key": "../@pauliescanlon/gatsby-mdx-embed/src/components/CodeSandbox/CodeSandbox.js",
-      "value": [
-        {
-          "description": "",
-          "displayName": "CodeSandbox",
-          "methods": [],
-          "actualName": "CodeSandbox",
-          "props": {
-            "id": {
-              "type": {
-                "name": "string"
-              },
-              "required": true,
-              "description": "CodeSandbox id"
-            }
-          }
-        }
-      ]
-    },
-    {
-      "key": "../@pauliescanlon/gatsby-mdx-embed/src/components/MdxEmbedProvider/MdxEmbedProvider.js",
-      "value": [
-        {
-          "description": "",
-          "displayName": "MdxEmbedProvider",
-          "methods": [],
-          "actualName": "MdxEmbedProvider"
-        }
-      ]
-    },
-    {
-      "key": "../@pauliescanlon/gatsby-mdx-embed/src/components/Flickr/Flickr.js",
-      "value": [
-        {
-          "description": "",
-          "displayName": "Flickr",
-          "methods": [],
-          "actualName": "Flickr",
-          "props": {
-            "id": {
-              "type": {
-                "name": "string"
-              },
-              "required": true,
-              "description": "Flickr id"
-            }
-          }
-        }
-      ]
-    },
     {
       "key": "../@pauliescanlon/gatsby-mdx-embed/src/components/CodePen/CodePen.js",
       "value": [
@@ -456,6 +450,66 @@
       ]
     },
     {
+      "key": "../@pauliescanlon/gatsby-mdx-embed/src/components/CodeSandbox/CodeSandbox.js",
+      "value": [
+        {
+          "description": "",
+          "displayName": "CodeSandbox",
+          "methods": [],
+          "actualName": "CodeSandbox",
+          "props": {
+            "id": {
+              "type": {
+                "name": "string"
+              },
+              "required": true,
+              "description": "CodeSandbox id"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "key": "../@pauliescanlon/gatsby-mdx-embed/src/components/Gist/Gist.js",
+      "value": [
+        {
+          "description": "",
+          "displayName": "Gist",
+          "methods": [],
+          "actualName": "Gist",
+          "props": {
+            "id": {
+              "type": {
+                "name": "string"
+              },
+              "required": true,
+              "description": "Gist id"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "key": "../@pauliescanlon/gatsby-mdx-embed/src/components/Flickr/Flickr.js",
+      "value": [
+        {
+          "description": "",
+          "displayName": "Flickr",
+          "methods": [],
+          "actualName": "Flickr",
+          "props": {
+            "id": {
+              "type": {
+                "name": "string"
+              },
+              "required": true,
+              "description": "Flickr id"
+            }
+          }
+        }
+      ]
+    },
+    {
       "key": "../@pauliescanlon/gatsby-mdx-embed/src/components/Instagram/Instagram.js",
       "value": [
         {
@@ -472,6 +526,104 @@
               "description": "Instagram id"
             }
           }
+        }
+      ]
+    },
+    {
+      "key": "../@pauliescanlon/gatsby-mdx-embed/src/components/SoundCloud/SoundCloud.js",
+      "value": [
+        {
+          "description": "",
+          "displayName": "SoundCloud",
+          "methods": [],
+          "actualName": "SoundCloud",
+          "props": {
+            "id": {
+              "type": {
+                "name": "string"
+              },
+              "required": true,
+              "description": "SoundCloud id"
+            },
+            "autoPlay": {
+              "type": {
+                "name": "bool"
+              },
+              "required": false,
+              "description": "Auto play audio",
+              "defaultValue": {
+                "value": "false",
+                "computed": false
+              }
+            },
+            "visual": {
+              "type": {
+                "name": "bool"
+              },
+              "required": false,
+              "description": "Show the visual artwork",
+              "defaultValue": {
+                "value": "false",
+                "computed": false
+              }
+            },
+            "width": {
+              "type": {
+                "name": "union",
+                "value": [
+                  {
+                    "name": "number"
+                  },
+                  {
+                    "name": "string"
+                  }
+                ]
+              },
+              "required": false,
+              "description": "Width for the iFrame",
+              "defaultValue": {
+                "value": "\"100%\"",
+                "computed": false
+              }
+            },
+            "height": {
+              "type": {
+                "name": "union",
+                "value": [
+                  {
+                    "name": "number"
+                  },
+                  {
+                    "name": "string"
+                  }
+                ]
+              },
+              "required": false,
+              "description": "Height for the iFrame",
+              "defaultValue": {
+                "value": "\"auto\"",
+                "computed": false
+              }
+            },
+            "color": {
+              "type": {
+                "name": "string"
+              },
+              "required": false,
+              "description": "The color of the play button without the #"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "key": "../@pauliescanlon/gatsby-mdx-embed/src/components/MdxEmbedProvider/MdxEmbedProvider.js",
+      "value": [
+        {
+          "description": "",
+          "displayName": "MdxEmbedProvider",
+          "methods": [],
+          "actualName": "MdxEmbedProvider"
         }
       ]
     },
@@ -528,33 +680,6 @@
                 "value": "380",
                 "computed": false
               }
-            }
-          }
-        }
-      ]
-    },
-    {
-      "key": "../@pauliescanlon/gatsby-mdx-embed/src/components/Vimeo/Vimeo.js",
-      "value": [
-        {
-          "description": "",
-          "displayName": "Vimeo",
-          "methods": [],
-          "actualName": "Vimeo",
-          "props": {
-            "id": {
-              "type": {
-                "name": "string"
-              },
-              "required": true,
-              "description": "Vimeo id"
-            },
-            "aspectRatio": {
-              "defaultValue": {
-                "value": "\"16:9\"",
-                "computed": false
-              },
-              "required": false
             }
           }
         }
@@ -674,113 +799,154 @@
                 "value": "\"16:9\"",
                 "computed": false
               }
-            }
-          }
-        }
-      ]
-    },
-    {
-      "key": "../@pauliescanlon/gatsby-mdx-embed/src/components/SoundCloud/SoundCloud.js",
-      "value": [
-        {
-          "description": "",
-          "displayName": "SoundCloud",
-          "methods": [],
-          "actualName": "SoundCloud",
-          "props": {
-            "id": {
+            },
+            "skipTo": {
               "type": {
-                "name": "string"
+                "name": "shape",
+                "value": {
+                  "h": {
+                    "name": "number",
+                    "required": false
+                  },
+                  "m": {
+                    "name": "number",
+                    "required": true
+                  },
+                  "s": {
+                    "name": "number",
+                    "required": true
+                  }
+                }
               },
-              "required": true,
-              "description": "SoundCloud id"
+              "required": false,
+              "description": "Skip to a time in the video",
+              "defaultValue": {
+                "value": "{\n  h: 0,\n  m: 0,\n  s: 0,\n}",
+                "computed": false
+              }
             },
             "autoPlay": {
               "type": {
                 "name": "bool"
               },
               "required": false,
-              "description": "Auto play audio",
+              "description": "Auto play the video",
               "defaultValue": {
                 "value": "false",
                 "computed": false
               }
-            },
-            "visual": {
-              "type": {
-                "name": "bool"
-              },
-              "required": false,
-              "description": "Show the visual artwork",
-              "defaultValue": {
-                "value": "false",
-                "computed": false
-              }
-            },
-            "width": {
-              "type": {
-                "name": "union",
-                "value": [
-                  {
-                    "name": "number"
-                  },
-                  {
-                    "name": "string"
-                  }
-                ]
-              },
-              "required": false,
-              "description": "Width for the iFrame",
-              "defaultValue": {
-                "value": "\"100%\"",
-                "computed": false
-              }
-            },
-            "height": {
-              "type": {
-                "name": "union",
-                "value": [
-                  {
-                    "name": "number"
-                  },
-                  {
-                    "name": "string"
-                  }
-                ]
-              },
-              "required": false,
-              "description": "Height for the iFrame",
-              "defaultValue": {
-                "value": "\"auto\"",
-                "computed": false
-              }
-            },
-            "color": {
-              "type": {
-                "name": "string"
-              },
-              "required": false,
-              "description": "The color of the play button without the #"
             }
           }
         }
       ]
     },
     {
-      "key": "../@pauliescanlon/gatsby-mdx-embed/src/components/Gist/Gist.js",
+      "key": "../@pauliescanlon/gatsby-mdx-embed/src/components/Vimeo/Vimeo.js",
       "value": [
         {
           "description": "",
-          "displayName": "Gist",
+          "displayName": "Vimeo",
           "methods": [],
-          "actualName": "Gist",
+          "actualName": "Vimeo",
           "props": {
             "id": {
               "type": {
                 "name": "string"
               },
               "required": true,
-              "description": "Gist id"
+              "description": "Vimeo id"
+            },
+            "skipTo": {
+              "type": {
+                "name": "shape",
+                "value": {
+                  "h": {
+                    "name": "number",
+                    "required": false
+                  },
+                  "m": {
+                    "name": "number",
+                    "required": true
+                  },
+                  "s": {
+                    "name": "number",
+                    "required": true
+                  }
+                }
+              },
+              "required": false,
+              "description": "Skip to a time in the video",
+              "defaultValue": {
+                "value": "{\n  h: 0,\n  m: 0,\n  s: 0,\n}",
+                "computed": false
+              }
+            },
+            "autoPlay": {
+              "type": {
+                "name": "bool"
+              },
+              "required": false,
+              "description": "Auto play the video",
+              "defaultValue": {
+                "value": "false",
+                "computed": false
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "key": "../@pauliescanlon/gatsby-mdx-embed/src/components/Twitch/Twitch.js",
+      "value": [
+        {
+          "description": "",
+          "displayName": "Twitch",
+          "methods": [],
+          "actualName": "Twitch",
+          "props": {
+            "id": {
+              "type": {
+                "name": "string"
+              },
+              "required": true,
+              "description": "Twitch id"
+            },
+            "skipTo": {
+              "type": {
+                "name": "shape",
+                "value": {
+                  "h": {
+                    "name": "number",
+                    "required": false
+                  },
+                  "m": {
+                    "name": "number",
+                    "required": true
+                  },
+                  "s": {
+                    "name": "number",
+                    "required": true
+                  }
+                }
+              },
+              "required": false,
+              "description": "Skip to a time in the video",
+              "defaultValue": {
+                "value": "{\n  h: 0,\n  m: 0,\n  s: 0,\n}",
+                "computed": false
+              }
+            },
+            "autoPlay": {
+              "type": {
+                "name": "bool"
+              },
+              "required": false,
+              "description": "Auto play the video",
+              "defaultValue": {
+                "value": "false",
+                "computed": false
+              }
             }
           }
         }
