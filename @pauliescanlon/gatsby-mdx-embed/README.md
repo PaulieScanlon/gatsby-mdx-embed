@@ -35,9 +35,9 @@ module.exports = {
 }
 ```
 
-gatsby-mdx-embed automatically injects an `MdxProvider`. If it's the first and / or only plugin that uses this method you shouldn't have any clashes.
+`gatsby-mdx-embed` automatically injects an `MdxProvider`. If it's the first and / or only plugin that uses this method you shouldn't have any clashes.
 
-However if you're using a theme or some other plugin that uses `.mdx` you may need to switch the order of the plugins.
+However, if you're using a theme or some other plugin that uses `.mdx` you may need to switch the order of the plugins.
 
 A note on using multiple `MdxProvider`(s) directly from [@chrisbiscardi](https://twitter.com/chrisbiscardi)
 
