@@ -470,26 +470,6 @@
       ]
     },
     {
-      "key": "../@pauliescanlon/gatsby-mdx-embed/src/components/Gist/Gist.js",
-      "value": [
-        {
-          "description": "",
-          "displayName": "Gist",
-          "methods": [],
-          "actualName": "Gist",
-          "props": {
-            "id": {
-              "type": {
-                "name": "string"
-              },
-              "required": true,
-              "description": "Gist id"
-            }
-          }
-        }
-      ]
-    },
-    {
       "key": "../@pauliescanlon/gatsby-mdx-embed/src/components/Flickr/Flickr.js",
       "value": [
         {
@@ -504,6 +484,26 @@
               },
               "required": true,
               "description": "Flickr id"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "key": "../@pauliescanlon/gatsby-mdx-embed/src/components/Gist/Gist.js",
+      "value": [
+        {
+          "description": "",
+          "displayName": "Gist",
+          "methods": [],
+          "actualName": "Gist",
+          "props": {
+            "id": {
+              "type": {
+                "name": "string"
+              },
+              "required": true,
+              "description": "Gist id"
             }
           }
         }
@@ -526,6 +526,17 @@
               "description": "Instagram id"
             }
           }
+        }
+      ]
+    },
+    {
+      "key": "../@pauliescanlon/gatsby-mdx-embed/src/components/MdxEmbedProvider/MdxEmbedProvider.js",
+      "value": [
+        {
+          "description": "",
+          "displayName": "MdxEmbedProvider",
+          "methods": [],
+          "actualName": "MdxEmbedProvider"
         }
       ]
     },
@@ -617,17 +628,6 @@
       ]
     },
     {
-      "key": "../@pauliescanlon/gatsby-mdx-embed/src/components/MdxEmbedProvider/MdxEmbedProvider.js",
-      "value": [
-        {
-          "description": "",
-          "displayName": "MdxEmbedProvider",
-          "methods": [],
-          "actualName": "MdxEmbedProvider"
-        }
-      ]
-    },
-    {
       "key": "../@pauliescanlon/gatsby-mdx-embed/src/components/Spotify/Spotify.js",
       "value": [
         {
@@ -678,6 +678,62 @@
               "description": "Height for the iFrame",
               "defaultValue": {
                 "value": "380",
+                "computed": false
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "key": "../@pauliescanlon/gatsby-mdx-embed/src/components/Twitch/Twitch.js",
+      "value": [
+        {
+          "description": "",
+          "displayName": "Twitch",
+          "methods": [],
+          "actualName": "Twitch",
+          "props": {
+            "id": {
+              "type": {
+                "name": "string"
+              },
+              "required": true,
+              "description": "Twitch id"
+            },
+            "skipTo": {
+              "type": {
+                "name": "shape",
+                "value": {
+                  "h": {
+                    "name": "number",
+                    "required": false
+                  },
+                  "m": {
+                    "name": "number",
+                    "required": true
+                  },
+                  "s": {
+                    "name": "number",
+                    "required": true
+                  }
+                }
+              },
+              "required": false,
+              "description": "Skip to a time in the video",
+              "defaultValue": {
+                "value": "{\n  h: 0,\n  m: 0,\n  s: 0,\n}",
+                "computed": false
+              }
+            },
+            "autoPlay": {
+              "type": {
+                "name": "bool"
+              },
+              "required": false,
+              "description": "Auto play the video",
+              "defaultValue": {
+                "value": "false",
                 "computed": false
               }
             }
@@ -752,95 +808,6 @@
       ]
     },
     {
-      "key": "../@pauliescanlon/gatsby-mdx-embed/src/components/YouTube/YouTube.js",
-      "value": [
-        {
-          "description": "",
-          "displayName": "YouTube",
-          "methods": [],
-          "actualName": "YouTube",
-          "props": {
-            "id": {
-              "type": {
-                "name": "string"
-              },
-              "required": true,
-              "description": "YouTube id"
-            },
-            "aspectRatio": {
-              "type": {
-                "name": "enum",
-                "value": [
-                  {
-                    "value": "\"1:1\"",
-                    "computed": false
-                  },
-                  {
-                    "value": "\"16:9\"",
-                    "computed": false
-                  },
-                  {
-                    "value": "\"4:3\"",
-                    "computed": false
-                  },
-                  {
-                    "value": "\"3:2\"",
-                    "computed": false
-                  },
-                  {
-                    "value": "\"8:5\"",
-                    "computed": false
-                  }
-                ]
-              },
-              "required": false,
-              "description": "Aspect ratio of YouTube video",
-              "defaultValue": {
-                "value": "\"16:9\"",
-                "computed": false
-              }
-            },
-            "skipTo": {
-              "type": {
-                "name": "shape",
-                "value": {
-                  "h": {
-                    "name": "number",
-                    "required": false
-                  },
-                  "m": {
-                    "name": "number",
-                    "required": true
-                  },
-                  "s": {
-                    "name": "number",
-                    "required": true
-                  }
-                }
-              },
-              "required": false,
-              "description": "Skip to a time in the video",
-              "defaultValue": {
-                "value": "{\n  h: 0,\n  m: 0,\n  s: 0,\n}",
-                "computed": false
-              }
-            },
-            "autoPlay": {
-              "type": {
-                "name": "bool"
-              },
-              "required": false,
-              "description": "Auto play the video",
-              "defaultValue": {
-                "value": "false",
-                "computed": false
-              }
-            }
-          }
-        }
-      ]
-    },
-    {
       "key": "../@pauliescanlon/gatsby-mdx-embed/src/components/Vimeo/Vimeo.js",
       "value": [
         {
@@ -897,20 +864,53 @@
       ]
     },
     {
-      "key": "../@pauliescanlon/gatsby-mdx-embed/src/components/Twitch/Twitch.js",
+      "key": "../@pauliescanlon/gatsby-mdx-embed/src/components/YouTube/YouTube.js",
       "value": [
         {
           "description": "",
-          "displayName": "Twitch",
+          "displayName": "YouTube",
           "methods": [],
-          "actualName": "Twitch",
+          "actualName": "YouTube",
           "props": {
             "id": {
               "type": {
                 "name": "string"
               },
               "required": true,
-              "description": "Twitch id"
+              "description": "YouTube id"
+            },
+            "aspectRatio": {
+              "type": {
+                "name": "enum",
+                "value": [
+                  {
+                    "value": "\"1:1\"",
+                    "computed": false
+                  },
+                  {
+                    "value": "\"16:9\"",
+                    "computed": false
+                  },
+                  {
+                    "value": "\"4:3\"",
+                    "computed": false
+                  },
+                  {
+                    "value": "\"3:2\"",
+                    "computed": false
+                  },
+                  {
+                    "value": "\"8:5\"",
+                    "computed": false
+                  }
+                ]
+              },
+              "required": false,
+              "description": "Aspect ratio of YouTube video",
+              "defaultValue": {
+                "value": "\"16:9\"",
+                "computed": false
+              }
             },
             "skipTo": {
               "type": {
