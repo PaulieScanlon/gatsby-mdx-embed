@@ -12,6 +12,7 @@ const SEO = ({ description, lang, meta, keywords, title: initialTitle }) => {
   const ogImage = db.config.ogImage
 
   const imagePath = `${base}images/${ogImage}`
+  const favIcon = `${base}images/ffavicon-32x32.png`
 
   return (
     <Helmet
@@ -81,7 +82,9 @@ const SEO = ({ description, lang, meta, keywords, title: initialTitle }) => {
             : []
         )
         .concat(meta)}
-    />
+    >
+      <link rel="icon" type="image/png" href={`${favIcon}`}></link>
+    </Helmet>
   )
 }
 

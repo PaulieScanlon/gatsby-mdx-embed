@@ -547,20 +547,20 @@
       ]
     },
     {
-      "key": "../@pauliescanlon/gatsby-mdx-embed/src/components/Instagram/Instagram.js",
+      "key": "../@pauliescanlon/gatsby-mdx-embed/src/components/Flickr/Flickr.js",
       "value": [
         {
           "description": "",
-          "displayName": "Instagram",
+          "displayName": "Flickr",
           "methods": [],
-          "actualName": "Instagram",
+          "actualName": "Flickr",
           "props": {
             "id": {
               "type": {
                 "name": "string"
               },
               "required": true,
-              "description": "Instagram id"
+              "description": "Flickr id"
             }
           }
         }
@@ -587,22 +587,33 @@
       ]
     },
     {
-      "key": "../@pauliescanlon/gatsby-mdx-embed/src/components/Flickr/Flickr.js",
+      "key": "../@pauliescanlon/gatsby-mdx-embed/src/components/Instagram/Instagram.js",
       "value": [
         {
           "description": "",
-          "displayName": "Flickr",
+          "displayName": "Instagram",
           "methods": [],
-          "actualName": "Flickr",
+          "actualName": "Instagram",
           "props": {
             "id": {
               "type": {
                 "name": "string"
               },
               "required": true,
-              "description": "Flickr id"
+              "description": "Instagram id"
             }
           }
+        }
+      ]
+    },
+    {
+      "key": "../@pauliescanlon/gatsby-mdx-embed/src/components/MdxEmbedProvider/MdxEmbedProvider.js",
+      "value": [
+        {
+          "description": "",
+          "displayName": "MdxEmbedProvider",
+          "methods": [],
+          "actualName": "MdxEmbedProvider"
         }
       ]
     },
@@ -690,17 +701,6 @@
               "description": "The color of the play button without the #"
             }
           }
-        }
-      ]
-    },
-    {
-      "key": "../@pauliescanlon/gatsby-mdx-embed/src/components/MdxEmbedProvider/MdxEmbedProvider.js",
-      "value": [
-        {
-          "description": "",
-          "displayName": "MdxEmbedProvider",
-          "methods": [],
-          "actualName": "MdxEmbedProvider"
         }
       ]
     },
@@ -819,6 +819,62 @@
       ]
     },
     {
+      "key": "../@pauliescanlon/gatsby-mdx-embed/src/components/Vimeo/Vimeo.js",
+      "value": [
+        {
+          "description": "",
+          "displayName": "Vimeo",
+          "methods": [],
+          "actualName": "Vimeo",
+          "props": {
+            "id": {
+              "type": {
+                "name": "string"
+              },
+              "required": true,
+              "description": "Vimeo id"
+            },
+            "skipTo": {
+              "type": {
+                "name": "shape",
+                "value": {
+                  "h": {
+                    "name": "number",
+                    "required": false
+                  },
+                  "m": {
+                    "name": "number",
+                    "required": true
+                  },
+                  "s": {
+                    "name": "number",
+                    "required": true
+                  }
+                }
+              },
+              "required": false,
+              "description": "Skip to a time in the video",
+              "defaultValue": {
+                "value": "{\n  h: 0,\n  m: 0,\n  s: 0,\n}",
+                "computed": false
+              }
+            },
+            "autoPlay": {
+              "type": {
+                "name": "bool"
+              },
+              "required": false,
+              "description": "Auto play the video",
+              "defaultValue": {
+                "value": "false",
+                "computed": false
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
       "key": "../@pauliescanlon/gatsby-mdx-embed/src/components/Twitter/Tweet.js",
       "value": [
         {
@@ -877,62 +933,6 @@
               "description": "Alignment of Tweet",
               "defaultValue": {
                 "value": "\"left\"",
-                "computed": false
-              }
-            }
-          }
-        }
-      ]
-    },
-    {
-      "key": "../@pauliescanlon/gatsby-mdx-embed/src/components/Vimeo/Vimeo.js",
-      "value": [
-        {
-          "description": "",
-          "displayName": "Vimeo",
-          "methods": [],
-          "actualName": "Vimeo",
-          "props": {
-            "id": {
-              "type": {
-                "name": "string"
-              },
-              "required": true,
-              "description": "Vimeo id"
-            },
-            "skipTo": {
-              "type": {
-                "name": "shape",
-                "value": {
-                  "h": {
-                    "name": "number",
-                    "required": false
-                  },
-                  "m": {
-                    "name": "number",
-                    "required": true
-                  },
-                  "s": {
-                    "name": "number",
-                    "required": true
-                  }
-                }
-              },
-              "required": false,
-              "description": "Skip to a time in the video",
-              "defaultValue": {
-                "value": "{\n  h: 0,\n  m: 0,\n  s: 0,\n}",
-                "computed": false
-              }
-            },
-            "autoPlay": {
-              "type": {
-                "name": "bool"
-              },
-              "required": false,
-              "description": "Auto play the video",
-              "defaultValue": {
-                "value": "false",
                 "computed": false
               }
             }
