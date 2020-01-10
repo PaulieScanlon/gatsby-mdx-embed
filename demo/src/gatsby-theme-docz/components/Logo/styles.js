@@ -1,4 +1,5 @@
 export const logo = {
+  height: "auto",
   path: {
     fill: "primary",
   },

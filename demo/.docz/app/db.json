@@ -15,6 +15,8 @@
       "initialColorMode": "light"
     },
     "separator": "-",
+    "base": "https://gatsby-mdx-embed.netlify.com/",
+    "ogImage": "mdx-embed-main-og-image.jpg",
     "docgenConfig": {
       "searchPath": "/Users/paulscanlon/Desktop/_development/gatsby-mdx-embed/@pauliescanlon/gatsby-mdx-embed/src/components"
     }
@@ -346,6 +348,81 @@
       }
     },
     {
+      "key": "src/pages/help.mdx",
+      "value": {
+        "id": "36fbc839afce02f710663a15c63b5026",
+        "filepath": "src/pages/help.mdx",
+        "fullpath": "/Users/paulscanlon/Desktop/_development/gatsby-mdx-embed/demo/src/pages/help.mdx",
+        "link": "https://github.com/PaulieScanlon/gatsby-mdx-embed/edit/master/demo/src/pages/help.mdx",
+        "slug": "src-pages-help",
+        "route": "/src-pages-help",
+        "name": "Help",
+        "menu": "",
+        "headings": [
+          {
+            "slug": "help",
+            "depth": 1,
+            "value": "Help!"
+          },
+          {
+            "slug": "codepen",
+            "depth": 2,
+            "value": "CodePen"
+          },
+          {
+            "slug": "codesandbox",
+            "depth": 2,
+            "value": "CodeSandbox"
+          },
+          {
+            "slug": "flickr",
+            "depth": 2,
+            "value": "Flickr"
+          },
+          {
+            "slug": "gist",
+            "depth": 2,
+            "value": "Gist"
+          },
+          {
+            "slug": "instagram",
+            "depth": 2,
+            "value": "Instagram"
+          },
+          {
+            "slug": "soundcloud",
+            "depth": 2,
+            "value": "SoundCloud"
+          },
+          {
+            "slug": "spotify",
+            "depth": 2,
+            "value": "Spotify"
+          },
+          {
+            "slug": "twitch",
+            "depth": 2,
+            "value": "Twitch"
+          },
+          {
+            "slug": "tweet",
+            "depth": 2,
+            "value": "Tweet"
+          },
+          {
+            "slug": "vimeo",
+            "depth": 2,
+            "value": "Vimeo"
+          },
+          {
+            "slug": "youtube",
+            "depth": 2,
+            "value": "YouTube"
+          }
+        ]
+      }
+    },
+    {
       "key": "src/pages/index.mdx",
       "value": {
         "name": "Getting Started",
@@ -470,20 +547,20 @@
       ]
     },
     {
-      "key": "../@pauliescanlon/gatsby-mdx-embed/src/components/Flickr/Flickr.js",
+      "key": "../@pauliescanlon/gatsby-mdx-embed/src/components/Instagram/Instagram.js",
       "value": [
         {
           "description": "",
-          "displayName": "Flickr",
+          "displayName": "Instagram",
           "methods": [],
-          "actualName": "Flickr",
+          "actualName": "Instagram",
           "props": {
             "id": {
               "type": {
                 "name": "string"
               },
               "required": true,
-              "description": "Flickr id"
+              "description": "Instagram id"
             }
           }
         }
@@ -510,33 +587,22 @@
       ]
     },
     {
-      "key": "../@pauliescanlon/gatsby-mdx-embed/src/components/Instagram/Instagram.js",
+      "key": "../@pauliescanlon/gatsby-mdx-embed/src/components/Flickr/Flickr.js",
       "value": [
         {
           "description": "",
-          "displayName": "Instagram",
+          "displayName": "Flickr",
           "methods": [],
-          "actualName": "Instagram",
+          "actualName": "Flickr",
           "props": {
             "id": {
               "type": {
                 "name": "string"
               },
               "required": true,
-              "description": "Instagram id"
+              "description": "Flickr id"
             }
           }
-        }
-      ]
-    },
-    {
-      "key": "../@pauliescanlon/gatsby-mdx-embed/src/components/MdxEmbedProvider/MdxEmbedProvider.js",
-      "value": [
-        {
-          "description": "",
-          "displayName": "MdxEmbedProvider",
-          "methods": [],
-          "actualName": "MdxEmbedProvider"
         }
       ]
     },
@@ -624,6 +690,17 @@
               "description": "The color of the play button without the #"
             }
           }
+        }
+      ]
+    },
+    {
+      "key": "../@pauliescanlon/gatsby-mdx-embed/src/components/MdxEmbedProvider/MdxEmbedProvider.js",
+      "value": [
+        {
+          "description": "",
+          "displayName": "MdxEmbedProvider",
+          "methods": [],
+          "actualName": "MdxEmbedProvider"
         }
       ]
     },

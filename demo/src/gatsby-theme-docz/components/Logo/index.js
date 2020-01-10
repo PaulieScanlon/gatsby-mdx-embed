@@ -13,7 +13,6 @@ export const Logo = () => {
           y="0px"
           viewBox="0 0 275 188"
           width="90px"
-          height="auto"
           sx={styles.logo}
         >
           <path
