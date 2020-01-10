@@ -41,21 +41,21 @@ const flickrEmbedUrl = `https://embedr.flickr.com/assets/client-code.js`
 export const onRouteUpdate = () => {
   if (document.querySelector(twttrClassNames) !== null) {
     if (!isTwttrScriptAdded) {
-      createScriptTag(null, twttrEmbedScript)
+      createScriptTag(null, twttrEmbedScript, null, null, null)
       isTwttrScriptAdded = true
     }
   }
 
   if (document.querySelector(instgrmClassNames) !== null) {
     if (!isInstgrmScriptAdded) {
-      createScriptTag(instgrmEmbedUrl, null)
+      createScriptTag(instgrmEmbedUrl, null, null, null, null)
       isInstgrmScriptAdded = true
     }
   }
 
   if (document.querySelector(flickrEmbedClassNames) !== null) {
     if (!isFlickrScriptAdded) {
-      createScriptTag(flickrEmbedUrl, null)
+      createScriptTag(flickrEmbedUrl, null, null, null, null)
       isFlickrScriptAdded = true
     }
   }

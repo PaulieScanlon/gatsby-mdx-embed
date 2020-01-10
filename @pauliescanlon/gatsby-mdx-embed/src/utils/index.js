@@ -19,7 +19,13 @@ export const getPadding = aspectRatio => {
   return config[aspectRatio]
 }
 
-export const createScriptTag = (providerEmbedUrl, providerEmbedScript) => {
+export const createScriptTag = (
+  providerEmbedUrl,
+  providerEmbedScript,
+  id,
+  dataAttr,
+  callback
+) => {
   const script = document.createElement(`script`)
 
   script.type = `text/javascript`
@@ -30,6 +36,20 @@ export const createScriptTag = (providerEmbedUrl, providerEmbedScript) => {
 
   if (providerEmbedScript) {
     script.innerText = providerEmbedScript
+  }
+
+  if (id) {
+    script.id = id
+  }
+
+  if (dataAttr) {
+    script.setAttribute(dataAttr.name, dataAttr.value)
+  }
+
+  if (callback) {
+    script.onload = () => {
+      callback()
+    }
   }
 
   script.onerror = error => {

@@ -15,13 +15,13 @@ With `gatsby-mdx-embed` you can embed media content from providers like Twitter,
 ### Install
 
 ```
-npm install @pauliescanlon/gatsby-mdx-embed
+npm install @pauliescanlon/gatsby-mdx-embed --save
 ```
 
 ### Install peer dependencies
 
 ```
-npm install @mdx-js/react gatsby-plugin-mdx
+npm install @mdx-js/react gatsby-plugin-mdx --save
 ```
 
 ### Setup
