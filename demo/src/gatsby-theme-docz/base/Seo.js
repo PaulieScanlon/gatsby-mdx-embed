@@ -12,7 +12,7 @@ const SEO = ({ description, lang, meta, keywords, title: initialTitle }) => {
   const ogImage = db.config.ogImage
 
   const imagePath = `${base}images/${ogImage}`
-  const favIcon = `${base}images/ffavicon-32x32.png`
+  const favIcon = `${base}images/favicon-32x32.png`
 
   return (
     <Helmet

@@ -527,26 +527,6 @@
       ]
     },
     {
-      "key": "../@pauliescanlon/gatsby-mdx-embed/src/components/CodeSandbox/CodeSandbox.js",
-      "value": [
-        {
-          "description": "",
-          "displayName": "CodeSandbox",
-          "methods": [],
-          "actualName": "CodeSandbox",
-          "props": {
-            "id": {
-              "type": {
-                "name": "string"
-              },
-              "required": true,
-              "description": "CodeSandbox id"
-            }
-          }
-        }
-      ]
-    },
-    {
       "key": "../@pauliescanlon/gatsby-mdx-embed/src/components/Flickr/Flickr.js",
       "value": [
         {
@@ -561,6 +541,26 @@
               },
               "required": true,
               "description": "Flickr id"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "key": "../@pauliescanlon/gatsby-mdx-embed/src/components/CodeSandbox/CodeSandbox.js",
+      "value": [
+        {
+          "description": "",
+          "displayName": "CodeSandbox",
+          "methods": [],
+          "actualName": "CodeSandbox",
+          "props": {
+            "id": {
+              "type": {
+                "name": "string"
+              },
+              "required": true,
+              "description": "CodeSandbox id"
             }
           }
         }
@@ -819,62 +819,6 @@
       ]
     },
     {
-      "key": "../@pauliescanlon/gatsby-mdx-embed/src/components/Vimeo/Vimeo.js",
-      "value": [
-        {
-          "description": "",
-          "displayName": "Vimeo",
-          "methods": [],
-          "actualName": "Vimeo",
-          "props": {
-            "id": {
-              "type": {
-                "name": "string"
-              },
-              "required": true,
-              "description": "Vimeo id"
-            },
-            "skipTo": {
-              "type": {
-                "name": "shape",
-                "value": {
-                  "h": {
-                    "name": "number",
-                    "required": false
-                  },
-                  "m": {
-                    "name": "number",
-                    "required": true
-                  },
-                  "s": {
-                    "name": "number",
-                    "required": true
-                  }
-                }
-              },
-              "required": false,
-              "description": "Skip to a time in the video",
-              "defaultValue": {
-                "value": "{\n  h: 0,\n  m: 0,\n  s: 0,\n}",
-                "computed": false
-              }
-            },
-            "autoPlay": {
-              "type": {
-                "name": "bool"
-              },
-              "required": false,
-              "description": "Auto play the video",
-              "defaultValue": {
-                "value": "false",
-                "computed": false
-              }
-            }
-          }
-        }
-      ]
-    },
-    {
       "key": "../@pauliescanlon/gatsby-mdx-embed/src/components/Twitter/Tweet.js",
       "value": [
         {
@@ -933,6 +877,62 @@
               "description": "Alignment of Tweet",
               "defaultValue": {
                 "value": "\"left\"",
+                "computed": false
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "key": "../@pauliescanlon/gatsby-mdx-embed/src/components/Vimeo/Vimeo.js",
+      "value": [
+        {
+          "description": "",
+          "displayName": "Vimeo",
+          "methods": [],
+          "actualName": "Vimeo",
+          "props": {
+            "id": {
+              "type": {
+                "name": "string"
+              },
+              "required": true,
+              "description": "Vimeo id"
+            },
+            "skipTo": {
+              "type": {
+                "name": "shape",
+                "value": {
+                  "h": {
+                    "name": "number",
+                    "required": false
+                  },
+                  "m": {
+                    "name": "number",
+                    "required": true
+                  },
+                  "s": {
+                    "name": "number",
+                    "required": true
+                  }
+                }
+              },
+              "required": false,
+              "description": "Skip to a time in the video",
+              "defaultValue": {
+                "value": "{\n  h: 0,\n  m: 0,\n  s: 0,\n}",
+                "computed": false
+              }
+            },
+            "autoPlay": {
+              "type": {
+                "name": "bool"
+              },
+              "required": false,
+              "description": "Auto play the video",
+              "defaultValue": {
+                "value": "false",
                 "computed": false
               }
             }
