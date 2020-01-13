@@ -19,13 +19,7 @@ export const getPadding = aspectRatio => {
   return config[aspectRatio]
 }
 
-export const createScriptTag = (
-  providerEmbedUrl,
-  providerEmbedScript,
-  id,
-  dataAttr,
-  callback
-) => {
+export const createScriptTag = (providerEmbedUrl, providerEmbedScript) => {
   const script = document.createElement(`script`)
 
   script.type = `text/javascript`
@@ -38,20 +32,6 @@ export const createScriptTag = (
     script.innerText = providerEmbedScript
   }
 
-  if (id) {
-    script.id = id
-  }
-
-  if (dataAttr) {
-    script.setAttribute(dataAttr.name, dataAttr.value)
-  }
-
-  if (callback) {
-    script.onload = () => {
-      callback()
-    }
-  }
-
   script.onerror = error => {
     console.error(`MdxEmbedProvider ${error.type}`, error)
   }
@@ -59,12 +39,12 @@ export const createScriptTag = (
   document.getElementsByTagName(`head`)[0].appendChild(script)
 }
 
-export const createStyleSheet = stylesheet => {
+export const createStyleSheet = href => {
   const link = document.createElement(`link`)
 
   link.type = `text/css`
   link.rel = `stylesheet`
-  link.href = stylesheet
+  link.href = href
 
   document.getElementsByTagName(`head`)[0].appendChild(link)
 }

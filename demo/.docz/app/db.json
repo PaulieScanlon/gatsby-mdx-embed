@@ -21,578 +21,6 @@
       "searchPath": "/Users/paulscanlon/Desktop/_development/gatsby-mdx-embed/@pauliescanlon/gatsby-mdx-embed/src/components"
     }
   },
-  "props": [
-    {
-      "key": "../@pauliescanlon/gatsby-mdx-embed/src/components/CodePen/CodePen.js",
-      "value": [
-        {
-          "description": "",
-          "displayName": "CodePen",
-          "methods": [],
-          "actualName": "CodePen",
-          "props": {
-            "id": {
-              "type": {
-                "name": "string"
-              },
-              "required": true,
-              "description": "CodePen id"
-            },
-            "height": {
-              "type": {
-                "name": "number"
-              },
-              "required": false,
-              "description": "Height for the iFrame",
-              "defaultValue": {
-                "value": "500",
-                "computed": false
-              }
-            },
-            "tabs": {
-              "type": {
-                "name": "arrayOf",
-                "value": {
-                  "name": "enum",
-                  "value": [
-                    {
-                      "value": "\"js\"",
-                      "computed": false
-                    },
-                    {
-                      "value": "\"css\"",
-                      "computed": false
-                    },
-                    {
-                      "value": "\"scss\"",
-                      "computed": false
-                    },
-                    {
-                      "value": "\"less\"",
-                      "computed": false
-                    },
-                    {
-                      "value": "\"result\"",
-                      "computed": false
-                    }
-                  ]
-                }
-              },
-              "required": false,
-              "description": "Which tabs to display",
-              "defaultValue": {
-                "value": "[\"result\"]",
-                "computed": false
-              }
-            }
-          }
-        }
-      ]
-    },
-    {
-      "key": "../@pauliescanlon/gatsby-mdx-embed/src/components/CodeSandbox/CodeSandbox.js",
-      "value": [
-        {
-          "description": "",
-          "displayName": "CodeSandbox",
-          "methods": [],
-          "actualName": "CodeSandbox",
-          "props": {
-            "id": {
-              "type": {
-                "name": "string"
-              },
-              "required": true,
-              "description": "CodeSandbox id"
-            }
-          }
-        }
-      ]
-    },
-    {
-      "key": "../@pauliescanlon/gatsby-mdx-embed/src/components/Gist/Gist.js",
-      "value": [
-        {
-          "description": "",
-          "displayName": "Gist",
-          "methods": [],
-          "actualName": "Gist",
-          "props": {
-            "id": {
-              "type": {
-                "name": "string"
-              },
-              "required": true,
-              "description": "Gist id"
-            }
-          }
-        }
-      ]
-    },
-    {
-      "key": "../@pauliescanlon/gatsby-mdx-embed/src/components/Flickr/Flickr.js",
-      "value": [
-        {
-          "description": "",
-          "displayName": "Flickr",
-          "methods": [],
-          "actualName": "Flickr",
-          "props": {
-            "id": {
-              "type": {
-                "name": "string"
-              },
-              "required": true,
-              "description": "Flickr id"
-            }
-          }
-        }
-      ]
-    },
-    {
-      "key": "../@pauliescanlon/gatsby-mdx-embed/src/components/Instagram/Instagram.js",
-      "value": [
-        {
-          "description": "",
-          "displayName": "Instagram",
-          "methods": [],
-          "actualName": "Instagram",
-          "props": {
-            "id": {
-              "type": {
-                "name": "string"
-              },
-              "required": true,
-              "description": "Instagram id"
-            }
-          }
-        }
-      ]
-    },
-    {
-      "key": "../@pauliescanlon/gatsby-mdx-embed/src/components/SoundCloud/SoundCloud.js",
-      "value": [
-        {
-          "description": "",
-          "displayName": "SoundCloud",
-          "methods": [],
-          "actualName": "SoundCloud",
-          "props": {
-            "id": {
-              "type": {
-                "name": "string"
-              },
-              "required": true,
-              "description": "SoundCloud id"
-            },
-            "autoPlay": {
-              "type": {
-                "name": "bool"
-              },
-              "required": false,
-              "description": "Auto play audio",
-              "defaultValue": {
-                "value": "false",
-                "computed": false
-              }
-            },
-            "visual": {
-              "type": {
-                "name": "bool"
-              },
-              "required": false,
-              "description": "Show the visual artwork",
-              "defaultValue": {
-                "value": "false",
-                "computed": false
-              }
-            },
-            "width": {
-              "type": {
-                "name": "union",
-                "value": [
-                  {
-                    "name": "number"
-                  },
-                  {
-                    "name": "string"
-                  }
-                ]
-              },
-              "required": false,
-              "description": "Width for the iFrame",
-              "defaultValue": {
-                "value": "\"100%\"",
-                "computed": false
-              }
-            },
-            "height": {
-              "type": {
-                "name": "union",
-                "value": [
-                  {
-                    "name": "number"
-                  },
-                  {
-                    "name": "string"
-                  }
-                ]
-              },
-              "required": false,
-              "description": "Height for the iFrame",
-              "defaultValue": {
-                "value": "\"auto\"",
-                "computed": false
-              }
-            },
-            "color": {
-              "type": {
-                "name": "string"
-              },
-              "required": false,
-              "description": "The color of the play button without the #"
-            }
-          }
-        }
-      ]
-    },
-    {
-      "key": "../@pauliescanlon/gatsby-mdx-embed/src/components/MdxEmbedProvider/MdxEmbedProvider.js",
-      "value": [
-        {
-          "description": "",
-          "displayName": "MdxEmbedProvider",
-          "methods": [],
-          "actualName": "MdxEmbedProvider"
-        }
-      ]
-    },
-    {
-      "key": "../@pauliescanlon/gatsby-mdx-embed/src/components/Spotify/Spotify.js",
-      "value": [
-        {
-          "description": "",
-          "displayName": "Spotify",
-          "methods": [],
-          "actualName": "Spotify",
-          "props": {
-            "id": {
-              "type": {
-                "name": "string"
-              },
-              "required": true,
-              "description": "Spotify id"
-            },
-            "width": {
-              "type": {
-                "name": "union",
-                "value": [
-                  {
-                    "name": "number"
-                  },
-                  {
-                    "name": "string"
-                  }
-                ]
-              },
-              "required": false,
-              "description": "Width for the iFrame",
-              "defaultValue": {
-                "value": "320",
-                "computed": false
-              }
-            },
-            "height": {
-              "type": {
-                "name": "union",
-                "value": [
-                  {
-                    "name": "number"
-                  },
-                  {
-                    "name": "string"
-                  }
-                ]
-              },
-              "required": false,
-              "description": "Height for the iFrame",
-              "defaultValue": {
-                "value": "380",
-                "computed": false
-              }
-            }
-          }
-        }
-      ]
-    },
-    {
-      "key": "../@pauliescanlon/gatsby-mdx-embed/src/components/Twitch/Twitch.js",
-      "value": [
-        {
-          "description": "",
-          "displayName": "Twitch",
-          "methods": [],
-          "actualName": "Twitch",
-          "props": {
-            "id": {
-              "type": {
-                "name": "string"
-              },
-              "required": true,
-              "description": "Twitch id"
-            },
-            "skipTo": {
-              "type": {
-                "name": "shape",
-                "value": {
-                  "h": {
-                    "name": "number",
-                    "required": false
-                  },
-                  "m": {
-                    "name": "number",
-                    "required": true
-                  },
-                  "s": {
-                    "name": "number",
-                    "required": true
-                  }
-                }
-              },
-              "required": false,
-              "description": "Skip to a time in the video",
-              "defaultValue": {
-                "value": "{\n  h: 0,\n  m: 0,\n  s: 0,\n}",
-                "computed": false
-              }
-            },
-            "autoPlay": {
-              "type": {
-                "name": "bool"
-              },
-              "required": false,
-              "description": "Auto play the video",
-              "defaultValue": {
-                "value": "false",
-                "computed": false
-              }
-            }
-          }
-        }
-      ]
-    },
-    {
-      "key": "../@pauliescanlon/gatsby-mdx-embed/src/components/Twitter/Tweet.js",
-      "value": [
-        {
-          "description": "",
-          "displayName": "Tweet",
-          "methods": [],
-          "actualName": "Tweet",
-          "props": {
-            "id": {
-              "type": {
-                "name": "string"
-              },
-              "required": true,
-              "description": "Tweet id"
-            },
-            "theme": {
-              "type": {
-                "name": "enum",
-                "value": [
-                  {
-                    "value": "\"light\"",
-                    "computed": false
-                  },
-                  {
-                    "value": "\"dark\"",
-                    "computed": false
-                  }
-                ]
-              },
-              "required": false,
-              "description": "Color theme of Tweet",
-              "defaultValue": {
-                "value": "\"light\"",
-                "computed": false
-              }
-            },
-            "align": {
-              "type": {
-                "name": "enum",
-                "value": [
-                  {
-                    "value": "\"left\"",
-                    "computed": false
-                  },
-                  {
-                    "value": "\"center\"",
-                    "computed": false
-                  },
-                  {
-                    "value": "\"right\"",
-                    "computed": false
-                  }
-                ]
-              },
-              "required": false,
-              "description": "Alignment of Tweet",
-              "defaultValue": {
-                "value": "\"left\"",
-                "computed": false
-              }
-            }
-          }
-        }
-      ]
-    },
-    {
-      "key": "../@pauliescanlon/gatsby-mdx-embed/src/components/Vimeo/Vimeo.js",
-      "value": [
-        {
-          "description": "",
-          "displayName": "Vimeo",
-          "methods": [],
-          "actualName": "Vimeo",
-          "props": {
-            "id": {
-              "type": {
-                "name": "string"
-              },
-              "required": true,
-              "description": "Vimeo id"
-            },
-            "skipTo": {
-              "type": {
-                "name": "shape",
-                "value": {
-                  "h": {
-                    "name": "number",
-                    "required": false
-                  },
-                  "m": {
-                    "name": "number",
-                    "required": true
-                  },
-                  "s": {
-                    "name": "number",
-                    "required": true
-                  }
-                }
-              },
-              "required": false,
-              "description": "Skip to a time in the video",
-              "defaultValue": {
-                "value": "{\n  h: 0,\n  m: 0,\n  s: 0,\n}",
-                "computed": false
-              }
-            },
-            "autoPlay": {
-              "type": {
-                "name": "bool"
-              },
-              "required": false,
-              "description": "Auto play the video",
-              "defaultValue": {
-                "value": "false",
-                "computed": false
-              }
-            }
-          }
-        }
-      ]
-    },
-    {
-      "key": "../@pauliescanlon/gatsby-mdx-embed/src/components/YouTube/YouTube.js",
-      "value": [
-        {
-          "description": "",
-          "displayName": "YouTube",
-          "methods": [],
-          "actualName": "YouTube",
-          "props": {
-            "id": {
-              "type": {
-                "name": "string"
-              },
-              "required": true,
-              "description": "YouTube id"
-            },
-            "aspectRatio": {
-              "type": {
-                "name": "enum",
-                "value": [
-                  {
-                    "value": "\"1:1\"",
-                    "computed": false
-                  },
-                  {
-                    "value": "\"16:9\"",
-                    "computed": false
-                  },
-                  {
-                    "value": "\"4:3\"",
-                    "computed": false
-                  },
-                  {
-                    "value": "\"3:2\"",
-                    "computed": false
-                  },
-                  {
-                    "value": "\"8:5\"",
-                    "computed": false
-                  }
-                ]
-              },
-              "required": false,
-              "description": "Aspect ratio of YouTube video",
-              "defaultValue": {
-                "value": "\"16:9\"",
-                "computed": false
-              }
-            },
-            "skipTo": {
-              "type": {
-                "name": "shape",
-                "value": {
-                  "h": {
-                    "name": "number",
-                    "required": false
-                  },
-                  "m": {
-                    "name": "number",
-                    "required": true
-                  },
-                  "s": {
-                    "name": "number",
-                    "required": true
-                  }
-                }
-              },
-              "required": false,
-              "description": "Skip to a time in the video",
-              "defaultValue": {
-                "value": "{\n  h: 0,\n  m: 0,\n  s: 0,\n}",
-                "computed": false
-              }
-            },
-            "autoPlay": {
-              "type": {
-                "name": "bool"
-              },
-              "required": false,
-              "description": "Auto play the video",
-              "defaultValue": {
-                "value": "false",
-                "computed": false
-              }
-            }
-          }
-        }
-      ]
-    }
-  ],
   "entries": [
     {
       "key": "src/components/codePen.mdx",
@@ -885,6 +313,36 @@
       }
     },
     {
+      "key": "src/components/wikipedia.mdx",
+      "value": {
+        "name": "Wikipedia",
+        "menu": "Components",
+        "id": "27988ff4f390f99e72e3ed1a5baa1f05",
+        "filepath": "src/components/wikipedia.mdx",
+        "fullpath": "/Users/paulscanlon/Desktop/_development/gatsby-mdx-embed/demo/src/components/wikipedia.mdx",
+        "link": "https://github.com/PaulieScanlon/gatsby-mdx-embed/edit/master/demo/src/components/wikipedia.mdx",
+        "slug": "src-components-wikipedia",
+        "route": "/src-components-wikipedia",
+        "headings": [
+          {
+            "slug": "wikipedia",
+            "depth": 1,
+            "value": "Wikipedia"
+          },
+          {
+            "slug": "basic-usage",
+            "depth": 2,
+            "value": "Basic usage"
+          },
+          {
+            "slug": "height",
+            "depth": 2,
+            "value": "Height"
+          }
+        ]
+      }
+    },
+    {
       "key": "src/components/youTube.mdx",
       "value": {
         "name": "YouTube",
@@ -1038,6 +496,617 @@
           }
         ]
       }
+    }
+  ],
+  "props": [
+    {
+      "key": "../@pauliescanlon/gatsby-mdx-embed/src/components/CodePen/CodePen.js",
+      "value": [
+        {
+          "description": "",
+          "displayName": "CodePen",
+          "methods": [],
+          "actualName": "CodePen",
+          "props": {
+            "id": {
+              "type": {
+                "name": "string"
+              },
+              "required": true,
+              "description": "CodePen id"
+            },
+            "height": {
+              "type": {
+                "name": "number"
+              },
+              "required": false,
+              "description": "Height for the iFrame",
+              "defaultValue": {
+                "value": "500",
+                "computed": false
+              }
+            },
+            "tabs": {
+              "type": {
+                "name": "arrayOf",
+                "value": {
+                  "name": "enum",
+                  "value": [
+                    {
+                      "value": "\"js\"",
+                      "computed": false
+                    },
+                    {
+                      "value": "\"css\"",
+                      "computed": false
+                    },
+                    {
+                      "value": "\"scss\"",
+                      "computed": false
+                    },
+                    {
+                      "value": "\"less\"",
+                      "computed": false
+                    },
+                    {
+                      "value": "\"result\"",
+                      "computed": false
+                    }
+                  ]
+                }
+              },
+              "required": false,
+              "description": "Which tabs to display",
+              "defaultValue": {
+                "value": "[\"result\"]",
+                "computed": false
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "key": "../@pauliescanlon/gatsby-mdx-embed/src/components/Flickr/Flickr.js",
+      "value": [
+        {
+          "description": "",
+          "displayName": "Flickr",
+          "methods": [],
+          "actualName": "Flickr",
+          "props": {
+            "id": {
+              "type": {
+                "name": "string"
+              },
+              "required": true,
+              "description": "Flickr id"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "key": "../@pauliescanlon/gatsby-mdx-embed/src/components/CodeSandbox/CodeSandbox.js",
+      "value": [
+        {
+          "description": "",
+          "displayName": "CodeSandbox",
+          "methods": [],
+          "actualName": "CodeSandbox",
+          "props": {
+            "id": {
+              "type": {
+                "name": "string"
+              },
+              "required": true,
+              "description": "CodeSandbox id"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "key": "../@pauliescanlon/gatsby-mdx-embed/src/components/Gist/Gist.js",
+      "value": [
+        {
+          "description": "",
+          "displayName": "Gist",
+          "methods": [],
+          "actualName": "Gist",
+          "props": {
+            "id": {
+              "type": {
+                "name": "string"
+              },
+              "required": true,
+              "description": "Gist id"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "key": "../@pauliescanlon/gatsby-mdx-embed/src/components/Instagram/Instagram.js",
+      "value": [
+        {
+          "description": "",
+          "displayName": "Instagram",
+          "methods": [],
+          "actualName": "Instagram",
+          "props": {
+            "id": {
+              "type": {
+                "name": "string"
+              },
+              "required": true,
+              "description": "Instagram id"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "key": "../@pauliescanlon/gatsby-mdx-embed/src/components/MdxEmbedProvider/MdxEmbedProvider.js",
+      "value": [
+        {
+          "description": "",
+          "displayName": "MdxEmbedProvider",
+          "methods": [],
+          "actualName": "MdxEmbedProvider"
+        }
+      ]
+    },
+    {
+      "key": "../@pauliescanlon/gatsby-mdx-embed/src/components/SoundCloud/SoundCloud.js",
+      "value": [
+        {
+          "description": "",
+          "displayName": "SoundCloud",
+          "methods": [],
+          "actualName": "SoundCloud",
+          "props": {
+            "id": {
+              "type": {
+                "name": "string"
+              },
+              "required": true,
+              "description": "SoundCloud id"
+            },
+            "autoPlay": {
+              "type": {
+                "name": "bool"
+              },
+              "required": false,
+              "description": "Auto play audio",
+              "defaultValue": {
+                "value": "false",
+                "computed": false
+              }
+            },
+            "visual": {
+              "type": {
+                "name": "bool"
+              },
+              "required": false,
+              "description": "Show the visual artwork",
+              "defaultValue": {
+                "value": "false",
+                "computed": false
+              }
+            },
+            "width": {
+              "type": {
+                "name": "union",
+                "value": [
+                  {
+                    "name": "number"
+                  },
+                  {
+                    "name": "string"
+                  }
+                ]
+              },
+              "required": false,
+              "description": "Width for the iFrame",
+              "defaultValue": {
+                "value": "\"100%\"",
+                "computed": false
+              }
+            },
+            "height": {
+              "type": {
+                "name": "union",
+                "value": [
+                  {
+                    "name": "number"
+                  },
+                  {
+                    "name": "string"
+                  }
+                ]
+              },
+              "required": false,
+              "description": "Height for the iFrame",
+              "defaultValue": {
+                "value": "\"auto\"",
+                "computed": false
+              }
+            },
+            "color": {
+              "type": {
+                "name": "string"
+              },
+              "required": false,
+              "description": "The color of the play button without the #"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "key": "../@pauliescanlon/gatsby-mdx-embed/src/components/Spotify/Spotify.js",
+      "value": [
+        {
+          "description": "",
+          "displayName": "Spotify",
+          "methods": [],
+          "actualName": "Spotify",
+          "props": {
+            "id": {
+              "type": {
+                "name": "string"
+              },
+              "required": true,
+              "description": "Spotify id"
+            },
+            "width": {
+              "type": {
+                "name": "union",
+                "value": [
+                  {
+                    "name": "number"
+                  },
+                  {
+                    "name": "string"
+                  }
+                ]
+              },
+              "required": false,
+              "description": "Width for the iFrame",
+              "defaultValue": {
+                "value": "320",
+                "computed": false
+              }
+            },
+            "height": {
+              "type": {
+                "name": "union",
+                "value": [
+                  {
+                    "name": "number"
+                  },
+                  {
+                    "name": "string"
+                  }
+                ]
+              },
+              "required": false,
+              "description": "Height for the iFrame",
+              "defaultValue": {
+                "value": "380",
+                "computed": false
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "key": "../@pauliescanlon/gatsby-mdx-embed/src/components/Twitch/Twitch.js",
+      "value": [
+        {
+          "description": "",
+          "displayName": "Twitch",
+          "methods": [],
+          "actualName": "Twitch",
+          "props": {
+            "id": {
+              "type": {
+                "name": "string"
+              },
+              "required": true,
+              "description": "Twitch id"
+            },
+            "skipTo": {
+              "type": {
+                "name": "shape",
+                "value": {
+                  "h": {
+                    "name": "number",
+                    "required": false
+                  },
+                  "m": {
+                    "name": "number",
+                    "required": true
+                  },
+                  "s": {
+                    "name": "number",
+                    "required": true
+                  }
+                }
+              },
+              "required": false,
+              "description": "Skip to a time in the video",
+              "defaultValue": {
+                "value": "{\n  h: 0,\n  m: 0,\n  s: 0,\n}",
+                "computed": false
+              }
+            },
+            "autoPlay": {
+              "type": {
+                "name": "bool"
+              },
+              "required": false,
+              "description": "Auto play the video",
+              "defaultValue": {
+                "value": "false",
+                "computed": false
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "key": "../@pauliescanlon/gatsby-mdx-embed/src/components/Twitter/Tweet.js",
+      "value": [
+        {
+          "description": "",
+          "displayName": "Tweet",
+          "methods": [],
+          "actualName": "Tweet",
+          "props": {
+            "id": {
+              "type": {
+                "name": "string"
+              },
+              "required": true,
+              "description": "Tweet id"
+            },
+            "theme": {
+              "type": {
+                "name": "enum",
+                "value": [
+                  {
+                    "value": "\"light\"",
+                    "computed": false
+                  },
+                  {
+                    "value": "\"dark\"",
+                    "computed": false
+                  }
+                ]
+              },
+              "required": false,
+              "description": "Color theme of Tweet",
+              "defaultValue": {
+                "value": "\"light\"",
+                "computed": false
+              }
+            },
+            "align": {
+              "type": {
+                "name": "enum",
+                "value": [
+                  {
+                    "value": "\"left\"",
+                    "computed": false
+                  },
+                  {
+                    "value": "\"center\"",
+                    "computed": false
+                  },
+                  {
+                    "value": "\"right\"",
+                    "computed": false
+                  }
+                ]
+              },
+              "required": false,
+              "description": "Alignment of Tweet",
+              "defaultValue": {
+                "value": "\"left\"",
+                "computed": false
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "key": "../@pauliescanlon/gatsby-mdx-embed/src/components/Vimeo/Vimeo.js",
+      "value": [
+        {
+          "description": "",
+          "displayName": "Vimeo",
+          "methods": [],
+          "actualName": "Vimeo",
+          "props": {
+            "id": {
+              "type": {
+                "name": "string"
+              },
+              "required": true,
+              "description": "Vimeo id"
+            },
+            "skipTo": {
+              "type": {
+                "name": "shape",
+                "value": {
+                  "h": {
+                    "name": "number",
+                    "required": false
+                  },
+                  "m": {
+                    "name": "number",
+                    "required": true
+                  },
+                  "s": {
+                    "name": "number",
+                    "required": true
+                  }
+                }
+              },
+              "required": false,
+              "description": "Skip to a time in the video",
+              "defaultValue": {
+                "value": "{\n  h: 0,\n  m: 0,\n  s: 0,\n}",
+                "computed": false
+              }
+            },
+            "autoPlay": {
+              "type": {
+                "name": "bool"
+              },
+              "required": false,
+              "description": "Auto play the video",
+              "defaultValue": {
+                "value": "false",
+                "computed": false
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "key": "../@pauliescanlon/gatsby-mdx-embed/src/components/Wikipedia/Wikipedia.js",
+      "value": [
+        {
+          "description": "",
+          "displayName": "Wikipedia",
+          "methods": [],
+          "actualName": "Wikipedia",
+          "props": {
+            "id": {
+              "type": {
+                "name": "string"
+              },
+              "required": true,
+              "description": "Wikipedia page id"
+            },
+            "height": {
+              "type": {
+                "name": "union",
+                "value": [
+                  {
+                    "name": "number"
+                  },
+                  {
+                    "name": "string"
+                  }
+                ]
+              },
+              "required": false,
+              "description": "Height for the iFrame",
+              "defaultValue": {
+                "value": "600",
+                "computed": false
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "key": "../@pauliescanlon/gatsby-mdx-embed/src/components/YouTube/YouTube.js",
+      "value": [
+        {
+          "description": "",
+          "displayName": "YouTube",
+          "methods": [],
+          "actualName": "YouTube",
+          "props": {
+            "id": {
+              "type": {
+                "name": "string"
+              },
+              "required": true,
+              "description": "YouTube id"
+            },
+            "aspectRatio": {
+              "type": {
+                "name": "enum",
+                "value": [
+                  {
+                    "value": "\"1:1\"",
+                    "computed": false
+                  },
+                  {
+                    "value": "\"16:9\"",
+                    "computed": false
+                  },
+                  {
+                    "value": "\"4:3\"",
+                    "computed": false
+                  },
+                  {
+                    "value": "\"3:2\"",
+                    "computed": false
+                  },
+                  {
+                    "value": "\"8:5\"",
+                    "computed": false
+                  }
+                ]
+              },
+              "required": false,
+              "description": "Aspect ratio of YouTube video",
+              "defaultValue": {
+                "value": "\"16:9\"",
+                "computed": false
+              }
+            },
+            "skipTo": {
+              "type": {
+                "name": "shape",
+                "value": {
+                  "h": {
+                    "name": "number",
+                    "required": false
+                  },
+                  "m": {
+                    "name": "number",
+                    "required": true
+                  },
+                  "s": {
+                    "name": "number",
+                    "required": true
+                  }
+                }
+              },
+              "required": false,
+              "description": "Skip to a time in the video",
+              "defaultValue": {
+                "value": "{\n  h: 0,\n  m: 0,\n  s: 0,\n}",
+                "computed": false
+              }
+            },
+            "autoPlay": {
+              "type": {
+                "name": "bool"
+              },
+              "required": false,
+              "description": "Auto play the video",
+              "defaultValue": {
+                "value": "false",
+                "computed": false
+              }
+            }
+          }
+        }
+      ]
     }
   ]
 }
