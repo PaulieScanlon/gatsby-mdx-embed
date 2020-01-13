@@ -1,0 +1,25 @@
+---
+name: Wikipedia
+menu: Components
+---
+
+import { Playground, Props } from "docz"
+import { Wikipedia } from "@pauliescanlon/gatsby-mdx-embed"
+
+# Wikipedia
+
+Display a Wikipedia page by including the component in your `.mdx`. An `id` is required. There are a number additional props available.
+
+<Props of={Wikipedia} />
+
+## Basic usage
+
+<Playground>
+  <Wikipedia id="Tim_Berners-Lee" />
+</Playground>
+
+## Height
+
+<Playground>
+  <Wikipedia id="Tim_Berners-Lee" height="400px" />
+</Playground>

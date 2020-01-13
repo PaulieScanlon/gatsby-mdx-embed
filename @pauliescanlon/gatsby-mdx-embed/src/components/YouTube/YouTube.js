@@ -11,8 +11,6 @@ export const YouTube = ({ id, aspectRatio, autoPlay, skipTo }) => {
 
   const startTime = tH + tM + s
 
-  console.log("startTime: ", startTime)
-
   return (
     <div
       style={{
