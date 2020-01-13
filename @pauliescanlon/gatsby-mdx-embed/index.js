@@ -4,7 +4,12 @@ export { CodeSandbox } from "./src/components/CodeSandbox"
 export { Flickr } from "./src/components/Flickr"
 export { Instagram } from "./src/components/Instagram"
 export { Spotify } from "./src/components/Spotify"
-export { Tweet } from "./src/components/Twitter"
+export {
+  Tweet,
+  TwitterFollowButton,
+  TwitterMentionButton,
+  TwitterHashtagButton,
+} from "./src/components/Twitter"
 export { Vimeo } from "./src/components/Vimeo"
 export { YouTube } from "./src/components/YouTube"
 export { SoundCloud } from "./src/components/SoundCloud"

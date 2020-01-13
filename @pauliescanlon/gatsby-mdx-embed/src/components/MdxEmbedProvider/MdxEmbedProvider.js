@@ -5,7 +5,12 @@ import { CodeSandbox } from "../CodeSandbox"
 import { Instagram } from "../Instagram"
 import { CodePen } from "../CodePen"
 import { Vimeo } from "../Vimeo"
-import { Tweet } from "../Twitter"
+import {
+  Tweet,
+  TwitterFollowButton,
+  TwitterMentionButton,
+  TwitterHashtagButton,
+} from "../Twitter"
 import { YouTube } from "../YouTube"
 import { Spotify } from "../Spotify"
 import { Flickr } from "../Flickr"
@@ -20,6 +25,9 @@ const components = {
   Flickr: props => <Flickr {...props} />,
   Vimeo: props => <Vimeo {...props} />,
   Tweet: props => <Tweet {...props} />,
+  TwitterFollowButton: props => <TwitterFollowButton {...props} />,
+  TwitterMentionButton: props => <TwitterMentionButton {...props} />,
+  TwitterHashtagButton: props => <TwitterHashtagButton {...props} />,
   YouTube: props => <YouTube {...props} />,
   Spotify: props => <Spotify {...props} />,
   Instagram: props => <Instagram {...props} />,

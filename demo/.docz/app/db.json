@@ -250,7 +250,7 @@
     {
       "key": "src/components/twitter.mdx",
       "value": {
-        "name": "Twitter",
+        "name": "Tweet",
         "menu": "Components",
         "id": "b5429cc0a98a187c89a19aad6e38ecb6",
         "filepath": "src/components/twitter.mdx",
@@ -278,6 +278,86 @@
             "slug": "align",
             "depth": 2,
             "value": "Align"
+          }
+        ]
+      }
+    },
+    {
+      "key": "src/components/twitterFollowButton.mdx",
+      "value": {
+        "name": "TwitterTwitterFollowButton",
+        "menu": "Components",
+        "id": "58cccbf9e056f771f58c1adb41752e42",
+        "filepath": "src/components/twitterFollowButton.mdx",
+        "fullpath": "/Users/paulscanlon/Desktop/_development/gatsby-mdx-embed/demo/src/components/twitterFollowButton.mdx",
+        "link": "https://github.com/PaulieScanlon/gatsby-mdx-embed/edit/master/demo/src/components/twitterFollowButton.mdx",
+        "slug": "src-components-twitter-follow-button",
+        "route": "/src-components-twitter-follow-button",
+        "headings": [
+          {
+            "slug": "twitterfollowbutton",
+            "depth": 1,
+            "value": "TwitterFollowButton"
+          },
+          {
+            "slug": "basic-usage",
+            "depth": 2,
+            "value": "Basic usage"
+          },
+          {
+            "slug": "show-followers",
+            "depth": 2,
+            "value": "Show followers"
+          }
+        ]
+      }
+    },
+    {
+      "key": "src/components/twitterHashtagButton.mdx",
+      "value": {
+        "name": "TwitterHashtagButton",
+        "menu": "Components",
+        "id": "2a29971ebfa10ff849ffe947ebec9e9f",
+        "filepath": "src/components/twitterHashtagButton.mdx",
+        "fullpath": "/Users/paulscanlon/Desktop/_development/gatsby-mdx-embed/demo/src/components/twitterHashtagButton.mdx",
+        "link": "https://github.com/PaulieScanlon/gatsby-mdx-embed/edit/master/demo/src/components/twitterHashtagButton.mdx",
+        "slug": "src-components-twitter-hashtag-button",
+        "route": "/src-components-twitter-hashtag-button",
+        "headings": [
+          {
+            "slug": "twitterhashtagbutton",
+            "depth": 1,
+            "value": "TwitterHashtagButton"
+          },
+          {
+            "slug": "basic-usage",
+            "depth": 2,
+            "value": "Basic usage"
+          }
+        ]
+      }
+    },
+    {
+      "key": "src/components/twitterMentionButton.mdx",
+      "value": {
+        "name": "TwitterMentionButton",
+        "menu": "Components",
+        "id": "32814c91e773ca3310df5acd27ea7df5",
+        "filepath": "src/components/twitterMentionButton.mdx",
+        "fullpath": "/Users/paulscanlon/Desktop/_development/gatsby-mdx-embed/demo/src/components/twitterMentionButton.mdx",
+        "link": "https://github.com/PaulieScanlon/gatsby-mdx-embed/edit/master/demo/src/components/twitterMentionButton.mdx",
+        "slug": "src-components-twitter-mention-button",
+        "route": "/src-components-twitter-mention-button",
+        "headings": [
+          {
+            "slug": "twittermentionbutton",
+            "depth": 1,
+            "value": "TwitterMentionButton"
+          },
+          {
+            "slug": "basic-usage",
+            "depth": 2,
+            "value": "Basic usage"
           }
         ]
       }
@@ -567,26 +647,6 @@
       ]
     },
     {
-      "key": "../@pauliescanlon/gatsby-mdx-embed/src/components/Flickr/Flickr.js",
-      "value": [
-        {
-          "description": "",
-          "displayName": "Flickr",
-          "methods": [],
-          "actualName": "Flickr",
-          "props": {
-            "id": {
-              "type": {
-                "name": "string"
-              },
-              "required": true,
-              "description": "Flickr id"
-            }
-          }
-        }
-      ]
-    },
-    {
       "key": "../@pauliescanlon/gatsby-mdx-embed/src/components/CodeSandbox/CodeSandbox.js",
       "value": [
         {
@@ -601,6 +661,26 @@
               },
               "required": true,
               "description": "CodeSandbox id"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "key": "../@pauliescanlon/gatsby-mdx-embed/src/components/Flickr/Flickr.js",
+      "value": [
+        {
+          "description": "",
+          "displayName": "Flickr",
+          "methods": [],
+          "actualName": "Flickr",
+          "props": {
+            "id": {
+              "type": {
+                "name": "string"
+              },
+              "required": true,
+              "description": "Flickr id"
             }
           }
         }
@@ -1099,6 +1179,77 @@
               },
               "required": false,
               "description": "Auto play the video",
+              "defaultValue": {
+                "value": "false",
+                "computed": false
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "key": "../@pauliescanlon/gatsby-mdx-embed/src/components/Twitter/TwitterHashtagButton.js",
+      "value": [
+        {
+          "description": "",
+          "displayName": "TwitterHashtagButton",
+          "methods": [],
+          "actualName": "TwitterHashtagButton",
+          "props": {
+            "hashtag": {
+              "type": {
+                "name": "string"
+              },
+              "required": true,
+              "description": "Twitter hashtag"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "key": "../@pauliescanlon/gatsby-mdx-embed/src/components/Twitter/TwitterMentionButton.js",
+      "value": [
+        {
+          "description": "",
+          "displayName": "TwitterMentionButton",
+          "methods": [],
+          "actualName": "TwitterMentionButton",
+          "props": {
+            "username": {
+              "type": {
+                "name": "string"
+              },
+              "required": true,
+              "description": "Twitter username"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "key": "../@pauliescanlon/gatsby-mdx-embed/src/components/Twitter/TwitterFollowButton.js",
+      "value": [
+        {
+          "description": "",
+          "displayName": "TwitterFollowButton",
+          "methods": [],
+          "actualName": "TwitterFollowButton",
+          "props": {
+            "username": {
+              "type": {
+                "name": "string"
+              },
+              "required": true,
+              "description": "Twitter username"
+            },
+            "showFollowers": {
+              "type": {
+                "name": "bool"
+              },
+              "required": false,
+              "description": "Show the follower count",
               "defaultValue": {
                 "value": "false",
                 "computed": false
