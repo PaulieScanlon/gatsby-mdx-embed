@@ -1,0 +1,25 @@
+---
+name: TwitterTwitterFollowButton
+menu: Components
+---
+
+import { Playground, Props } from "docz"
+import { TwitterFollowButton } from "@pauliescanlon/gatsby-mdx-embed"
+
+# TwitterFollowButton
+
+Display a TwitterFollowButton by including the component in your `.mdx`. An `id` is required. There are a number additional props available.
+
+<Props of={TwitterFollowButton} />
+
+## Basic usage
+
+<Playground>
+  <TwitterFollowButton username="PaulieScanlon" />
+</Playground>
+
+## Show followers
+
+<Playground>
+  <TwitterFollowButton username="gatsbyjs" showFollowers={true} />
+</Playground>
