@@ -3,7 +3,7 @@ import PropTypes from "prop-types"
 
 import { getPadding } from "../../utils"
 
-export const Vimeo = ({ id, autoPlay, skipTo }) => {
+export const Vimeo = ({ vimeoId, autoPlay, skipTo }) => {
   const { h, m, s } = skipTo
 
   return (
@@ -15,8 +15,8 @@ export const Vimeo = ({ id, autoPlay, skipTo }) => {
       }}
     >
       <iframe
-        title={`vimeo-${id}`}
-        src={`https://player.vimeo.com/video/${id}?autoplay=${autoPlay}#t=${h}h${m}m${s}s`}
+        title={`vimeo-${vimeoId}`}
+        src={`https://player.vimeo.com/video/${vimeoId}?autoplay=${autoPlay}#t=${h}h${m}m${s}s`}
         frameBorder="0"
         allow="autoplay; fullscreen"
         allowFullScreen
@@ -36,7 +36,7 @@ Vimeo.propTypes = {
   /**
    * Vimeo id
    */
-  id: PropTypes.string.isRequired,
+  vimeoId: PropTypes.string.isRequired,
   /**
    * Skip to a time in the video
    */

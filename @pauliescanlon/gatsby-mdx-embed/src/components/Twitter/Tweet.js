@@ -1,11 +1,11 @@
 import React from "react"
 import PropTypes from "prop-types"
 
-export const Tweet = ({ id, theme, align }) => {
+export const Tweet = ({ tweetLink, theme, align }) => {
   return (
     <div style={{ overflow: "auto" }}>
       <blockquote className="twitter-tweet" data-theme={theme} align={align}>
-        <a href={`https://twitter.com/${id}?ref_src=twsrc%5Etfw`}>
+        <a href={`https://twitter.com/${tweetLink}?ref_src=twsrc%5Etfw`}>
           {typeof window !== "undefined" && !window.twttr ? "Loading" : ""}
         </a>
       </blockquote>
@@ -15,9 +15,9 @@ export const Tweet = ({ id, theme, align }) => {
 
 Tweet.propTypes = {
   /**
-   * Tweet id
+   * Tweet link
    */
-  id: PropTypes.string.isRequired,
+  tweetLink: PropTypes.string.isRequired,
   /**
    * Color theme of Tweet
    */

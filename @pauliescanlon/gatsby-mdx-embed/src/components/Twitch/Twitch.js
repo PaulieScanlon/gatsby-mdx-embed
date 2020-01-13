@@ -3,7 +3,7 @@ import PropTypes from "prop-types"
 
 import { getPadding } from "../../utils"
 
-export const Twitch = ({ id, autoPlay, skipTo }) => {
+export const Twitch = ({ twitchId, autoPlay, skipTo }) => {
   const { h, m, s } = skipTo
 
   return (
@@ -15,8 +15,8 @@ export const Twitch = ({ id, autoPlay, skipTo }) => {
       }}
     >
       <iframe
-        title={`twitch-${id}`}
-        src={`https://player.twitch.tv/?autoplay=${autoPlay}&t=${h}h${m}m${s}s&video=v${id}`}
+        title={`twitch-${twitchId}`}
+        src={`https://player.twitch.tv/?autoplay=${autoPlay}&t=${h}h${m}m${s}s&video=v${twitchId}`}
         frameBorder="0"
         allow="autoplay; fullscreen"
         allowFullScreen
@@ -36,7 +36,7 @@ Twitch.propTypes = {
   /**
    * Twitch id
    */
-  id: PropTypes.string.isRequired,
+  twitchId: PropTypes.string.isRequired,
   /**
    * Skip to a time in the video
    */

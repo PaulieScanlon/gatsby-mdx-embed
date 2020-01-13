@@ -1,10 +1,10 @@
 import React from "react"
 import PropTypes from "prop-types"
 
-export const CodeSandbox = ({ id }) => (
+export const CodeSandbox = ({ codeSandboxId }) => (
   <iframe
-    title={`codeSandbox-${id}`}
-    src={`https://codesandbox.io/embed/${id}`}
+    title={`codeSandbox-${codeSandboxId}`}
+    src={`https://codesandbox.io/embed/${codeSandboxId}`}
     allow="geolocation; microphone; camera; midi; vr; accelerometer; gyroscope; payment; ambient-light-sensor; encrypted-media; usb"
     sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"
     style={{
@@ -21,5 +21,5 @@ CodeSandbox.propTypes = {
   /**
    * CodeSandbox id
    */
-  id: PropTypes.string.isRequired,
+  codeSandboxId: PropTypes.string.isRequired,
 }

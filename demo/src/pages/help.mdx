@@ -4,13 +4,13 @@ Here you'll find documentation about how to use each of the components and where
 
 ## CodePen
 
-To embed a CodePen using the `<CodePen />` component grab the `id` from the URL.
+To embed a CodePen using the `<CodePen />` component grab the `codePenId` from the URL.
 
 ```
 https://codepen.io/team/codepen/pen/PNaGbb
 ```
 
-The `id` is this bit.
+The `codePenId` is this bit.
 
 ```
 PNaGbb
@@ -19,18 +19,18 @@ PNaGbb
 Then use it in the component like this.
 
 ```js
-<CodePen id="PNaGbb" />
+<CodePen codePenId="PNaGbb" />
 ```
 
 ## CodeSandbox
 
-To embed a CodeSandbox using the `<CodeSandbox />` component grab the `id` from the URL.
+To embed a CodeSandbox using the `<CodeSandbox />` component grab the `codeSandboxId` from the URL.
 
 ```
 https://codesandbox.io/s/react-new
 ```
 
-The `id` is this bit.
+The `codeSandboxId` is this bit.
 
 ```
 react-new
@@ -39,7 +39,7 @@ react-new
 Then use it in the component like this.
 
 ```js
-<CodeSandbox id="react-new" />
+<CodeSandbox codeSandboxId="react-new" />
 ```
 
 ## Flickr
@@ -69,13 +69,13 @@ To embed a Flickr image using the `<Flickr />` component find the img `src` in t
 The img `src` is this bit.
 
 ```
-https://live.staticflickr.com/458/30740580204_7283c9987e_k.jpg
+458/30740580204_7283c9987e_k.jpg
 ```
 
 Then use it in the component like this.
 
 ```js
-<Flickr id="458/30740580204_7283c9987e_k.jpg" />
+<Flickr flickrLink="458/30740580204_7283c9987e_k.jpg" />
 ```
 
 ## Gist
@@ -95,18 +95,18 @@ PaulieScanlon/ca0cc9239176066492cb2aba435edbf7
 Then use it in the component like this.
 
 ```js
-<Gist id="PaulieScanlon/ca0cc9239176066492cb2aba435edbf7" />
+<Gist gistLink="PaulieScanlon/ca0cc9239176066492cb2aba435edbf7" />
 ```
 
 ## Instagram
 
-To embed an Instagram post using the `<Instagram />` component grab the `id` from the posts URL.
+To embed an Instagram post using the `<Instagram />` component grab the `instagramId` from the posts URL.
 
 ```
 https://www.instagram.com/p/B7ISOoHne6s/
 ```
 
-The `id` is this bit.
+The `instagramId` is this bit.
 
 ```
 B7ISOoHne6s
@@ -115,7 +115,7 @@ B7ISOoHne6s
 Then use it in the component like this.
 
 ```js
-<Instagram id="B7ISOoHne6s" />
+<Instagram instagramId="B7ISOoHne6s" />
 ```
 
 ## SoundCloud
@@ -142,7 +142,7 @@ tracks/499997862
 Then use it in the component like this.
 
 ```js
-<SoundCloud id="tracks/499997862" />
+<SoundCloud soundCloudLink="tracks/499997862" />
 ```
 
 ## Spotify
@@ -180,18 +180,18 @@ album/65KwtzkJXw7oT819NFWmEP
 Then use it in the component like this.
 
 ```js
-<Spotify id="album/65KwtzkJXw7oT819NFWmEP" />
+<Spotify spotifyLink="album/65KwtzkJXw7oT819NFWmEP" />
 ```
 
 ## Twitch
 
-To embed a Twitch video using the `<Twitch />` component grab the `id` from the share Video Link URL.
+To embed a Twitch video using the `<Twitch />` component grab the `twitchId` from the share Video Link URL.
 
 ```
 https://www.twitch.tv/videos/510143691
 ```
 
-The `id` is this bit.
+The `twitchId` is this bit.
 
 ```
 510143691
@@ -200,7 +200,7 @@ The `id` is this bit.
 Then use it in the component like this.
 
 ```js
-<Twitch id="510143691" />
+<Twitch twitchId="510143691" />
 ```
 
 ## Tweet
@@ -220,18 +220,18 @@ PaulieScanlon/status/1201514996838141952
 Then use it in the component like this.
 
 ```js
-<Tweet id="PaulieScanlon/status/1201514996838141952" />
+<Tweet tweetLink="PaulieScanlon/status/1201514996838141952" />
 ```
 
 ## Vimeo
 
-To embed a Vimeo video using the `<Vimeo />` component grab the `id` from the URL.
+To embed a Vimeo video using the `<Vimeo />` component grab the `vimeoId` from the URL.
 
 ```
 https://vimeo.com/38445453
 ```
 
-The `id` is this bit.
+The `vimeoId` is this bit.
 
 ```
 38445453
@@ -240,18 +240,18 @@ The `id` is this bit.
 Then use it in the component like this.
 
 ```js
-<Vimeo id="38445453" />
+<Vimeo vimeoId="38445453" />
 ```
 
 ## YouTube
 
-To embed a YouTube video using the `<YouTube />` component grab the `id` from the URL.
+To embed a YouTube video using the `<YouTube />` component grab the `youTubeId` from the URL.
 
 ```
 https://www.youtube.com/watch?v=WUgvvPRH7Oc
 ```
 
-The `id` is this bit.
+The `youTubeId` is this bit.
 
 ```
 WUgvvPRH7Oc
@@ -260,5 +260,5 @@ WUgvvPRH7Oc
 Then use it in the component like this.
 
 ```js
-<YouTube id="WUgvvPRH7Oc" />
+<YouTube youTubeId="WUgvvPRH7Oc" />
 ```

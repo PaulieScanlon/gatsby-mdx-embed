@@ -580,73 +580,6 @@
   ],
   "props": [
     {
-      "key": "../@pauliescanlon/gatsby-mdx-embed/src/components/CodePen/CodePen.js",
-      "value": [
-        {
-          "description": "",
-          "displayName": "CodePen",
-          "methods": [],
-          "actualName": "CodePen",
-          "props": {
-            "id": {
-              "type": {
-                "name": "string"
-              },
-              "required": true,
-              "description": "CodePen id"
-            },
-            "height": {
-              "type": {
-                "name": "number"
-              },
-              "required": false,
-              "description": "Height for the iFrame",
-              "defaultValue": {
-                "value": "500",
-                "computed": false
-              }
-            },
-            "tabs": {
-              "type": {
-                "name": "arrayOf",
-                "value": {
-                  "name": "enum",
-                  "value": [
-                    {
-                      "value": "\"js\"",
-                      "computed": false
-                    },
-                    {
-                      "value": "\"css\"",
-                      "computed": false
-                    },
-                    {
-                      "value": "\"scss\"",
-                      "computed": false
-                    },
-                    {
-                      "value": "\"less\"",
-                      "computed": false
-                    },
-                    {
-                      "value": "\"result\"",
-                      "computed": false
-                    }
-                  ]
-                }
-              },
-              "required": false,
-              "description": "Which tabs to display",
-              "defaultValue": {
-                "value": "[\"result\"]",
-                "computed": false
-              }
-            }
-          }
-        }
-      ]
-    },
-    {
       "key": "../@pauliescanlon/gatsby-mdx-embed/src/components/CodeSandbox/CodeSandbox.js",
       "value": [
         {
@@ -655,32 +588,12 @@
           "methods": [],
           "actualName": "CodeSandbox",
           "props": {
-            "id": {
+            "codeSandboxId": {
               "type": {
                 "name": "string"
               },
               "required": true,
               "description": "CodeSandbox id"
-            }
-          }
-        }
-      ]
-    },
-    {
-      "key": "../@pauliescanlon/gatsby-mdx-embed/src/components/Flickr/Flickr.js",
-      "value": [
-        {
-          "description": "",
-          "displayName": "Flickr",
-          "methods": [],
-          "actualName": "Flickr",
-          "props": {
-            "id": {
-              "type": {
-                "name": "string"
-              },
-              "required": true,
-              "description": "Flickr id"
             }
           }
         }
@@ -695,12 +608,32 @@
           "methods": [],
           "actualName": "Gist",
           "props": {
-            "id": {
+            "gistLink": {
               "type": {
                 "name": "string"
               },
               "required": true,
-              "description": "Gist id"
+              "description": "Gist link"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "key": "../@pauliescanlon/gatsby-mdx-embed/src/components/Flickr/Flickr.js",
+      "value": [
+        {
+          "description": "",
+          "displayName": "Flickr",
+          "methods": [],
+          "actualName": "Flickr",
+          "props": {
+            "flickrLink": {
+              "type": {
+                "name": "string"
+              },
+              "required": true,
+              "description": "Flickr image link"
             }
           }
         }
@@ -715,7 +648,7 @@
           "methods": [],
           "actualName": "Instagram",
           "props": {
-            "id": {
+            "instagramId": {
               "type": {
                 "name": "string"
               },
@@ -723,17 +656,6 @@
               "description": "Instagram id"
             }
           }
-        }
-      ]
-    },
-    {
-      "key": "../@pauliescanlon/gatsby-mdx-embed/src/components/MdxEmbedProvider/MdxEmbedProvider.js",
-      "value": [
-        {
-          "description": "",
-          "displayName": "MdxEmbedProvider",
-          "methods": [],
-          "actualName": "MdxEmbedProvider"
         }
       ]
     },
@@ -746,12 +668,12 @@
           "methods": [],
           "actualName": "SoundCloud",
           "props": {
-            "id": {
+            "soundCloudLink": {
               "type": {
                 "name": "string"
               },
               "required": true,
-              "description": "SoundCloud id"
+              "description": "SoundCloud link"
             },
             "autoPlay": {
               "type": {
@@ -825,6 +747,17 @@
       ]
     },
     {
+      "key": "../@pauliescanlon/gatsby-mdx-embed/src/components/MdxEmbedProvider/MdxEmbedProvider.js",
+      "value": [
+        {
+          "description": "",
+          "displayName": "MdxEmbedProvider",
+          "methods": [],
+          "actualName": "MdxEmbedProvider"
+        }
+      ]
+    },
+    {
       "key": "../@pauliescanlon/gatsby-mdx-embed/src/components/Spotify/Spotify.js",
       "value": [
         {
@@ -833,12 +766,12 @@
           "methods": [],
           "actualName": "Spotify",
           "props": {
-            "id": {
+            "spotifyLink": {
               "type": {
                 "name": "string"
               },
               "required": true,
-              "description": "Spotify id"
+              "description": "Spotify link"
             },
             "width": {
               "type": {
@@ -891,7 +824,7 @@
           "methods": [],
           "actualName": "Twitch",
           "props": {
-            "id": {
+            "twitchId": {
               "type": {
                 "name": "string"
               },
@@ -947,12 +880,12 @@
           "methods": [],
           "actualName": "Tweet",
           "props": {
-            "id": {
+            "tweetLink": {
               "type": {
                 "name": "string"
               },
               "required": true,
-              "description": "Tweet id"
+              "description": "Tweet link"
             },
             "theme": {
               "type": {
@@ -1005,6 +938,77 @@
       ]
     },
     {
+      "key": "../@pauliescanlon/gatsby-mdx-embed/src/components/Twitter/TwitterFollowButton.js",
+      "value": [
+        {
+          "description": "",
+          "displayName": "TwitterFollowButton",
+          "methods": [],
+          "actualName": "TwitterFollowButton",
+          "props": {
+            "username": {
+              "type": {
+                "name": "string"
+              },
+              "required": true,
+              "description": "Twitter username"
+            },
+            "showFollowers": {
+              "type": {
+                "name": "bool"
+              },
+              "required": false,
+              "description": "Show the follower count",
+              "defaultValue": {
+                "value": "false",
+                "computed": false
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "key": "../@pauliescanlon/gatsby-mdx-embed/src/components/Twitter/TwitterHashtagButton.js",
+      "value": [
+        {
+          "description": "",
+          "displayName": "TwitterHashtagButton",
+          "methods": [],
+          "actualName": "TwitterHashtagButton",
+          "props": {
+            "hashtag": {
+              "type": {
+                "name": "string"
+              },
+              "required": true,
+              "description": "Twitter hashtag"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "key": "../@pauliescanlon/gatsby-mdx-embed/src/components/Twitter/TwitterMentionButton.js",
+      "value": [
+        {
+          "description": "",
+          "displayName": "TwitterMentionButton",
+          "methods": [],
+          "actualName": "TwitterMentionButton",
+          "props": {
+            "username": {
+              "type": {
+                "name": "string"
+              },
+              "required": true,
+              "description": "Twitter username"
+            }
+          }
+        }
+      ]
+    },
+    {
       "key": "../@pauliescanlon/gatsby-mdx-embed/src/components/Vimeo/Vimeo.js",
       "value": [
         {
@@ -1013,7 +1017,7 @@
           "methods": [],
           "actualName": "Vimeo",
           "props": {
-            "id": {
+            "vimeoId": {
               "type": {
                 "name": "string"
               },
@@ -1069,12 +1073,12 @@
           "methods": [],
           "actualName": "Wikipedia",
           "props": {
-            "id": {
+            "wikipediaLink": {
               "type": {
                 "name": "string"
               },
               "required": true,
-              "description": "Wikipedia page id"
+              "description": "Wikipedia page link"
             },
             "height": {
               "type": {
@@ -1108,7 +1112,7 @@
           "methods": [],
           "actualName": "YouTube",
           "props": {
-            "id": {
+            "youTubeId": {
               "type": {
                 "name": "string"
               },
@@ -1189,69 +1193,65 @@
       ]
     },
     {
-      "key": "../@pauliescanlon/gatsby-mdx-embed/src/components/Twitter/TwitterHashtagButton.js",
+      "key": "../@pauliescanlon/gatsby-mdx-embed/src/components/CodePen/CodePen.js",
       "value": [
         {
           "description": "",
-          "displayName": "TwitterHashtagButton",
+          "displayName": "CodePen",
           "methods": [],
-          "actualName": "TwitterHashtagButton",
+          "actualName": "CodePen",
           "props": {
-            "hashtag": {
+            "codePenId": {
               "type": {
                 "name": "string"
               },
               "required": true,
-              "description": "Twitter hashtag"
-            }
-          }
-        }
-      ]
-    },
-    {
-      "key": "../@pauliescanlon/gatsby-mdx-embed/src/components/Twitter/TwitterMentionButton.js",
-      "value": [
-        {
-          "description": "",
-          "displayName": "TwitterMentionButton",
-          "methods": [],
-          "actualName": "TwitterMentionButton",
-          "props": {
-            "username": {
-              "type": {
-                "name": "string"
-              },
-              "required": true,
-              "description": "Twitter username"
-            }
-          }
-        }
-      ]
-    },
-    {
-      "key": "../@pauliescanlon/gatsby-mdx-embed/src/components/Twitter/TwitterFollowButton.js",
-      "value": [
-        {
-          "description": "",
-          "displayName": "TwitterFollowButton",
-          "methods": [],
-          "actualName": "TwitterFollowButton",
-          "props": {
-            "username": {
-              "type": {
-                "name": "string"
-              },
-              "required": true,
-              "description": "Twitter username"
+              "description": "CodePen id"
             },
-            "showFollowers": {
+            "height": {
               "type": {
-                "name": "bool"
+                "name": "number"
               },
               "required": false,
-              "description": "Show the follower count",
+              "description": "Height for the iFrame",
               "defaultValue": {
-                "value": "false",
+                "value": "500",
+                "computed": false
+              }
+            },
+            "tabs": {
+              "type": {
+                "name": "arrayOf",
+                "value": {
+                  "name": "enum",
+                  "value": [
+                    {
+                      "value": "\"js\"",
+                      "computed": false
+                    },
+                    {
+                      "value": "\"css\"",
+                      "computed": false
+                    },
+                    {
+                      "value": "\"scss\"",
+                      "computed": false
+                    },
+                    {
+                      "value": "\"less\"",
+                      "computed": false
+                    },
+                    {
+                      "value": "\"result\"",
+                      "computed": false
+                    }
+                  ]
+                }
+              },
+              "required": false,
+              "description": "Which tabs to display",
+              "defaultValue": {
+                "value": "[\"result\"]",
                 "computed": false
               }
             }
