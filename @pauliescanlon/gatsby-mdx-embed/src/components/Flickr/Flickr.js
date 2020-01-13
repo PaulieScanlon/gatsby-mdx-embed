@@ -1,7 +1,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 
-export const Flickr = ({ id }) => (
+export const Flickr = ({ flickrLink }) => (
   <span
     className="flickr-embed-mdx"
     data-flickr-embed="true"
@@ -9,17 +9,17 @@ export const Flickr = ({ id }) => (
     data-footer="true"
   >
     <img
-      src={`https://live.staticflickr.com/${id}`}
+      src={`https://live.staticflickr.com/${flickrLink}`}
       width="100%"
       height="auto"
-      alt={id}
+      alt={flickrLink}
     />
   </span>
 )
 
 Flickr.propTypes = {
   /**
-   * Flickr id
+   * Flickr image link
    */
-  id: PropTypes.string.isRequired,
+  flickrLink: PropTypes.string.isRequired,
 }

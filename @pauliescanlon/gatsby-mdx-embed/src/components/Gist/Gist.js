@@ -3,7 +3,7 @@ import PropTypes from "prop-types"
 
 import { createScriptTag, createStyleSheet } from "../../utils"
 
-export const Gist = ({ id }) => {
+export const Gist = ({ gistLink }) => {
   const [gistResponse, setGistResponse] = useState({
     isLoading: true,
     div: "",
@@ -11,8 +11,8 @@ export const Gist = ({ id }) => {
   })
 
   const root = `https://gist.github.com/`
-  const gistId = id.split("/")[1]
-  const gistEmbedScript = `${root}${id}.json?callback=gist_callback_${gistId}`
+  const gistId = gistLink.split("/")[1]
+  const gistEmbedScript = `${root}${gistLink}.json?callback=gist_callback_${gistId}`
 
   useEffect(() => {
     window[`gist_callback_${gistId}`] = gist => {
@@ -31,7 +31,7 @@ export const Gist = ({ id }) => {
       <Fragment>
         <div className="gist gist-file">
           <div className="gist-meta">
-            <a href={`${root}/${id}`}>{gistResponse.files}</a>
+            <a href={`${root}/${gistLink}`}>{gistResponse.files}</a>
           </div>
         </div>
 
@@ -43,7 +43,7 @@ export const Gist = ({ id }) => {
 
 Gist.propTypes = {
   /**
-   * Gist id
+   * Gist link
    */
-  id: PropTypes.string.isRequired,
+  gistLink: PropTypes.string.isRequired,
 }

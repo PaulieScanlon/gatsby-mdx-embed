@@ -3,7 +3,7 @@ import PropTypes from "prop-types"
 
 import { getPadding } from "../../utils"
 
-export const YouTube = ({ id, aspectRatio, autoPlay, skipTo }) => {
+export const YouTube = ({ youTubeId, aspectRatio, autoPlay, skipTo }) => {
   const { h, m, s } = skipTo
 
   const tH = h * 60
@@ -20,8 +20,8 @@ export const YouTube = ({ id, aspectRatio, autoPlay, skipTo }) => {
       }}
     >
       <iframe
-        title={`youTube-${id}`}
-        src={`https://www.youtube.com/embed/${id}?&autoplay=${autoPlay}&start=${startTime}`}
+        title={`youTube-${youTubeId}`}
+        src={`https://www.youtube.com/embed/${youTubeId}?&autoplay=${autoPlay}&start=${startTime}`}
         frameBorder="0"
         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
         allowFullScreen
@@ -41,7 +41,7 @@ YouTube.propTypes = {
   /**
    * YouTube id
    */
-  id: PropTypes.string.isRequired,
+  youTubeId: PropTypes.string.isRequired,
   /**
    * Aspect ratio of YouTube video
    */

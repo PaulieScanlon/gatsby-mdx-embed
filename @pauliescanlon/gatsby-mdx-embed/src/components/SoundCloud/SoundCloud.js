@@ -1,23 +1,30 @@
 import React from "react"
 import PropTypes from "prop-types"
 
-export const SoundCloud = ({ id, width, height, autoPlay, visual, color }) => (
+export const SoundCloud = ({
+  soundCloudLink,
+  width,
+  height,
+  autoPlay,
+  visual,
+  color,
+}) => (
   <iframe
-    title={`soundCloud-${id}`}
+    title={`sound-cloud-${soundCloudLink}`}
     width={width}
     height={height}
     scrolling="no"
     frameBorder="no"
     allow="autoplay"
-    src={`https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/${id}&color=%23${color}&auto_play=${autoPlay}&visual=${visual}`}
+    src={`https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/${soundCloudLink}&color=%23${color}&auto_play=${autoPlay}&visual=${visual}`}
   />
 )
 
 SoundCloud.propTypes = {
   /**
-   * SoundCloud id
+   * SoundCloud link
    */
-  id: PropTypes.string.isRequired,
+  soundCloudLink: PropTypes.string.isRequired,
   /**
    * Auto play audio
    */

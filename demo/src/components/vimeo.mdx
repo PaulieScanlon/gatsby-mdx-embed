@@ -8,18 +8,18 @@ import { Vimeo } from "@pauliescanlon/gatsby-mdx-embed"
 
 # Vimeo
 
-Display a Vimeo video by including the component in your `.mdx`. An `id` is required. There are a number additional props available.
+Display a Vimeo video by including the component in your `.mdx`. The `vimeoId` prop is required.
 
 <Props of={Vimeo} />
 
 ## Basic usage
 
 <Playground>
-  <Vimeo id="38445453" />
+  <Vimeo vimeoId="38445453" />
 </Playground>
 
 ## Skip to
 
 <Playground>
-  <Vimeo id="38445453" skipTo={{ h: 0, m: 1, s: 15 }} />
+  <Vimeo vimeoId="38445453" skipTo={{ h: 0, m: 1, s: 15 }} />
 </Playground>

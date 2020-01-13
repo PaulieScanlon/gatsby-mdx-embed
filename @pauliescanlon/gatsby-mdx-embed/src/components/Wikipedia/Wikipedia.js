@@ -2,14 +2,14 @@ import React, { Fragment, useEffect, useState } from "react"
 
 import PropTypes from "prop-types"
 
-export const Wikipedia = ({ id, height }) => {
+export const Wikipedia = ({ wikipediaLink, height }) => {
   const [wikiResponse, setWikiResponse] = useState({
     isLoading: true,
     hasError: false,
     body: "",
   })
 
-  const wikipediaEmbedUrl = `https://en.wikipedia.org/api/rest_v1/page/html/${id}`
+  const wikipediaEmbedUrl = `https://en.wikipedia.org/api/rest_v1/page/html/${wikipediaLink}`
 
   useEffect(() => {
     fetch(wikipediaEmbedUrl)
@@ -39,7 +39,7 @@ export const Wikipedia = ({ id, height }) => {
     !wikiResponse.isLoading && (
       <Fragment>
         <iframe
-          title={id}
+          title={wikipediaLink}
           frameBorder="0"
           border="0"
           style={{
@@ -55,9 +55,9 @@ export const Wikipedia = ({ id, height }) => {
 
 Wikipedia.propTypes = {
   /**
-   * Wikipedia page id
+   * Wikipedia page link
    */
-  id: PropTypes.string.isRequired,
+  wikipediaLink: PropTypes.string.isRequired,
   /**
    * Height for the iFrame
    */

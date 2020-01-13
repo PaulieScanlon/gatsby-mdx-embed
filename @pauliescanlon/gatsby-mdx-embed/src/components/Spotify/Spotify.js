@@ -1,10 +1,10 @@
 import React from "react"
 import PropTypes from "prop-types"
 
-export const Spotify = ({ id, width, height }) => (
+export const Spotify = ({ spotifyLink, width, height }) => (
   <iframe
-    title={`spotify-${id}`}
-    src={`https://open.spotify.com/embed/${id}`}
+    title={`spotify-${spotifyLink}`}
+    src={`https://open.spotify.com/embed/${spotifyLink}`}
     width={width}
     height={height}
     frameBorder="0"
@@ -15,9 +15,9 @@ export const Spotify = ({ id, width, height }) => (
 
 Spotify.propTypes = {
   /**
-   * Spotify id
+   * Spotify link
    */
-  id: PropTypes.string.isRequired,
+  spotifyLink: PropTypes.string.isRequired,
   /**
    * Width for the iFrame
    */
