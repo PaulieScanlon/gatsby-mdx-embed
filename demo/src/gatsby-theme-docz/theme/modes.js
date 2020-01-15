@@ -1,9 +1,13 @@
 import * as colors from "./colors"
+import styles from "./styles"
 import prismDark from "gatsby-theme-docz/src/theme/prism/dark"
 import prismLight from "gatsby-theme-docz/src/theme/prism/light"
 
 export const light = {
   ...colors,
+  styles: {
+    ...styles,
+  },
   primary: colors.primaryLightMode,
   text: colors.grayDark,
   muted: colors.gray,

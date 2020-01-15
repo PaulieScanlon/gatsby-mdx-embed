@@ -180,56 +180,6 @@
       ]
     },
     {
-      "key": "../@pauliescanlon/gatsby-mdx-embed/src/components/Gist/Gist.tsx",
-      "value": [
-        {
-          "description": "",
-          "displayName": "Gist",
-          "methods": [],
-          "props": {
-            "gistLink": {
-              "defaultValue": null,
-              "description": "Gist link",
-              "name": "gistLink",
-              "parent": {
-                "fileName": "../@pauliescanlon/gatsby-mdx-embed/src/components/Gist/Gist.tsx",
-                "name": "IGistProps"
-              },
-              "required": true,
-              "type": {
-                "name": "string"
-              }
-            }
-          }
-        }
-      ]
-    },
-    {
-      "key": "../@pauliescanlon/gatsby-mdx-embed/src/components/Gist/index.ts",
-      "value": [
-        {
-          "description": "",
-          "displayName": "Gist",
-          "methods": [],
-          "props": {
-            "gistLink": {
-              "defaultValue": null,
-              "description": "Gist link",
-              "name": "gistLink",
-              "parent": {
-                "fileName": "../@pauliescanlon/gatsby-mdx-embed/src/components/Gist/Gist.tsx",
-                "name": "IGistProps"
-              },
-              "required": true,
-              "type": {
-                "name": "string"
-              }
-            }
-          }
-        }
-      ]
-    },
-    {
       "key": "../@pauliescanlon/gatsby-mdx-embed/src/components/Flickr/Flickr.tsx",
       "value": [
         {
@@ -330,97 +280,24 @@
       ]
     },
     {
-      "key": "../@pauliescanlon/gatsby-mdx-embed/src/components/SoundCloud/SoundCloud.tsx",
+      "key": "../@pauliescanlon/gatsby-mdx-embed/src/components/Gist/Gist.tsx",
       "value": [
         {
           "description": "",
-          "displayName": "SoundCloud",
+          "displayName": "Gist",
           "methods": [],
           "props": {
-            "soundCloudLink": {
+            "gistLink": {
               "defaultValue": null,
-              "description": "SoundCloud link",
-              "name": "soundCloudLink",
+              "description": "Gist link",
+              "name": "gistLink",
               "parent": {
-                "fileName": "../@pauliescanlon/gatsby-mdx-embed/src/components/SoundCloud/SoundCloud.tsx",
-                "name": "ISoundCloudProps"
+                "fileName": "../@pauliescanlon/gatsby-mdx-embed/src/components/Gist/Gist.tsx",
+                "name": "IGistProps"
               },
               "required": true,
               "type": {
                 "name": "string"
-              }
-            },
-            "autoPlay": {
-              "defaultValue": {
-                "value": false
-              },
-              "description": "Auto play audio",
-              "name": "autoPlay",
-              "parent": {
-                "fileName": "../@pauliescanlon/gatsby-mdx-embed/src/components/SoundCloud/SoundCloud.tsx",
-                "name": "ISoundCloudProps"
-              },
-              "required": false,
-              "type": {
-                "name": "boolean | undefined"
-              }
-            },
-            "visual": {
-              "defaultValue": {
-                "value": false
-              },
-              "description": "Show the visual artwork",
-              "name": "visual",
-              "parent": {
-                "fileName": "../@pauliescanlon/gatsby-mdx-embed/src/components/SoundCloud/SoundCloud.tsx",
-                "name": "ISoundCloudProps"
-              },
-              "required": false,
-              "type": {
-                "name": "boolean | undefined"
-              }
-            },
-            "width": {
-              "defaultValue": {
-                "value": "100%"
-              },
-              "description": "Width for the iFrame",
-              "name": "width",
-              "parent": {
-                "fileName": "../@pauliescanlon/gatsby-mdx-embed/src/components/SoundCloud/SoundCloud.tsx",
-                "name": "ISoundCloudProps"
-              },
-              "required": false,
-              "type": {
-                "name": "string | number | undefined"
-              }
-            },
-            "height": {
-              "defaultValue": {
-                "value": "auto"
-              },
-              "description": "Height for the iFrame",
-              "name": "height",
-              "parent": {
-                "fileName": "../@pauliescanlon/gatsby-mdx-embed/src/components/SoundCloud/SoundCloud.tsx",
-                "name": "ISoundCloudProps"
-              },
-              "required": false,
-              "type": {
-                "name": "string | number | undefined"
-              }
-            },
-            "color": {
-              "defaultValue": null,
-              "description": "The color of the play button without the #",
-              "name": "color",
-              "parent": {
-                "fileName": "../@pauliescanlon/gatsby-mdx-embed/src/components/SoundCloud/SoundCloud.tsx",
-                "name": "ISoundCloudProps"
-              },
-              "required": false,
-              "type": {
-                "name": "string | undefined"
               }
             }
           }
@@ -428,89 +305,24 @@
       ]
     },
     {
-      "key": "../@pauliescanlon/gatsby-mdx-embed/src/components/SoundCloud/index.ts",
+      "key": "../@pauliescanlon/gatsby-mdx-embed/src/components/Gist/index.ts",
       "value": [
         {
           "description": "",
-          "displayName": "SoundCloud",
+          "displayName": "Gist",
           "methods": [],
           "props": {
-            "soundCloudLink": {
+            "gistLink": {
               "defaultValue": null,
-              "description": "SoundCloud link",
-              "name": "soundCloudLink",
+              "description": "Gist link",
+              "name": "gistLink",
               "parent": {
-                "fileName": "../@pauliescanlon/gatsby-mdx-embed/src/components/SoundCloud/SoundCloud.tsx",
-                "name": "ISoundCloudProps"
+                "fileName": "../@pauliescanlon/gatsby-mdx-embed/src/components/Gist/Gist.tsx",
+                "name": "IGistProps"
               },
               "required": true,
               "type": {
                 "name": "string"
-              }
-            },
-            "autoPlay": {
-              "defaultValue": null,
-              "description": "Auto play audio",
-              "name": "autoPlay",
-              "parent": {
-                "fileName": "../@pauliescanlon/gatsby-mdx-embed/src/components/SoundCloud/SoundCloud.tsx",
-                "name": "ISoundCloudProps"
-              },
-              "required": false,
-              "type": {
-                "name": "boolean | undefined"
-              }
-            },
-            "visual": {
-              "defaultValue": null,
-              "description": "Show the visual artwork",
-              "name": "visual",
-              "parent": {
-                "fileName": "../@pauliescanlon/gatsby-mdx-embed/src/components/SoundCloud/SoundCloud.tsx",
-                "name": "ISoundCloudProps"
-              },
-              "required": false,
-              "type": {
-                "name": "boolean | undefined"
-              }
-            },
-            "width": {
-              "defaultValue": null,
-              "description": "Width for the iFrame",
-              "name": "width",
-              "parent": {
-                "fileName": "../@pauliescanlon/gatsby-mdx-embed/src/components/SoundCloud/SoundCloud.tsx",
-                "name": "ISoundCloudProps"
-              },
-              "required": false,
-              "type": {
-                "name": "string | number | undefined"
-              }
-            },
-            "height": {
-              "defaultValue": null,
-              "description": "Height for the iFrame",
-              "name": "height",
-              "parent": {
-                "fileName": "../@pauliescanlon/gatsby-mdx-embed/src/components/SoundCloud/SoundCloud.tsx",
-                "name": "ISoundCloudProps"
-              },
-              "required": false,
-              "type": {
-                "name": "string | number | undefined"
-              }
-            },
-            "color": {
-              "defaultValue": null,
-              "description": "The color of the play button without the #",
-              "name": "color",
-              "parent": {
-                "fileName": "../@pauliescanlon/gatsby-mdx-embed/src/components/SoundCloud/SoundCloud.tsx",
-                "name": "ISoundCloudProps"
-              },
-              "required": false,
-              "type": {
-                "name": "string | undefined"
               }
             }
           }
@@ -536,6 +348,194 @@
           "displayName": "MdxEmbedProvider",
           "methods": [],
           "props": {}
+        }
+      ]
+    },
+    {
+      "key": "../@pauliescanlon/gatsby-mdx-embed/src/components/SoundCloud/SoundCloud.tsx",
+      "value": [
+        {
+          "description": "",
+          "displayName": "SoundCloud",
+          "methods": [],
+          "props": {
+            "soundCloudLink": {
+              "defaultValue": null,
+              "description": "SoundCloud link",
+              "name": "soundCloudLink",
+              "parent": {
+                "fileName": "/Users/paulscanlon/Desktop/_development/gatsby-mdx-embed/@pauliescanlon/gatsby-mdx-embed/src/components/SoundCloud/SoundCloud.tsx",
+                "name": "ISoundCloudProps"
+              },
+              "required": true,
+              "type": {
+                "name": "string"
+              }
+            },
+            "autoPlay": {
+              "defaultValue": {
+                "value": false
+              },
+              "description": "Auto play audio",
+              "name": "autoPlay",
+              "parent": {
+                "fileName": "/Users/paulscanlon/Desktop/_development/gatsby-mdx-embed/@pauliescanlon/gatsby-mdx-embed/src/components/SoundCloud/SoundCloud.tsx",
+                "name": "ISoundCloudProps"
+              },
+              "required": false,
+              "type": {
+                "name": "boolean | undefined"
+              }
+            },
+            "visual": {
+              "defaultValue": {
+                "value": false
+              },
+              "description": "Show the visual artwork",
+              "name": "visual",
+              "parent": {
+                "fileName": "/Users/paulscanlon/Desktop/_development/gatsby-mdx-embed/@pauliescanlon/gatsby-mdx-embed/src/components/SoundCloud/SoundCloud.tsx",
+                "name": "ISoundCloudProps"
+              },
+              "required": false,
+              "type": {
+                "name": "boolean | undefined"
+              }
+            },
+            "width": {
+              "defaultValue": {
+                "value": "100%"
+              },
+              "description": "Width for the iFrame",
+              "name": "width",
+              "parent": {
+                "fileName": "/Users/paulscanlon/Desktop/_development/gatsby-mdx-embed/@pauliescanlon/gatsby-mdx-embed/src/components/SoundCloud/SoundCloud.tsx",
+                "name": "ISoundCloudProps"
+              },
+              "required": false,
+              "type": {
+                "name": "string | number | undefined"
+              }
+            },
+            "height": {
+              "defaultValue": {
+                "value": "auto"
+              },
+              "description": "Height for the iFrame",
+              "name": "height",
+              "parent": {
+                "fileName": "/Users/paulscanlon/Desktop/_development/gatsby-mdx-embed/@pauliescanlon/gatsby-mdx-embed/src/components/SoundCloud/SoundCloud.tsx",
+                "name": "ISoundCloudProps"
+              },
+              "required": false,
+              "type": {
+                "name": "string | number | undefined"
+              }
+            },
+            "color": {
+              "defaultValue": null,
+              "description": "The color of the play button without the #",
+              "name": "color",
+              "parent": {
+                "fileName": "/Users/paulscanlon/Desktop/_development/gatsby-mdx-embed/@pauliescanlon/gatsby-mdx-embed/src/components/SoundCloud/SoundCloud.tsx",
+                "name": "ISoundCloudProps"
+              },
+              "required": false,
+              "type": {
+                "name": "string | undefined"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "key": "../@pauliescanlon/gatsby-mdx-embed/src/components/SoundCloud/index.ts",
+      "value": [
+        {
+          "description": "",
+          "displayName": "SoundCloud",
+          "methods": [],
+          "props": {
+            "soundCloudLink": {
+              "defaultValue": null,
+              "description": "SoundCloud link",
+              "name": "soundCloudLink",
+              "parent": {
+                "fileName": "/Users/paulscanlon/Desktop/_development/gatsby-mdx-embed/@pauliescanlon/gatsby-mdx-embed/src/components/SoundCloud/SoundCloud.tsx",
+                "name": "ISoundCloudProps"
+              },
+              "required": true,
+              "type": {
+                "name": "string"
+              }
+            },
+            "autoPlay": {
+              "defaultValue": null,
+              "description": "Auto play audio",
+              "name": "autoPlay",
+              "parent": {
+                "fileName": "/Users/paulscanlon/Desktop/_development/gatsby-mdx-embed/@pauliescanlon/gatsby-mdx-embed/src/components/SoundCloud/SoundCloud.tsx",
+                "name": "ISoundCloudProps"
+              },
+              "required": false,
+              "type": {
+                "name": "boolean | undefined"
+              }
+            },
+            "visual": {
+              "defaultValue": null,
+              "description": "Show the visual artwork",
+              "name": "visual",
+              "parent": {
+                "fileName": "/Users/paulscanlon/Desktop/_development/gatsby-mdx-embed/@pauliescanlon/gatsby-mdx-embed/src/components/SoundCloud/SoundCloud.tsx",
+                "name": "ISoundCloudProps"
+              },
+              "required": false,
+              "type": {
+                "name": "boolean | undefined"
+              }
+            },
+            "width": {
+              "defaultValue": null,
+              "description": "Width for the iFrame",
+              "name": "width",
+              "parent": {
+                "fileName": "/Users/paulscanlon/Desktop/_development/gatsby-mdx-embed/@pauliescanlon/gatsby-mdx-embed/src/components/SoundCloud/SoundCloud.tsx",
+                "name": "ISoundCloudProps"
+              },
+              "required": false,
+              "type": {
+                "name": "string | number | undefined"
+              }
+            },
+            "height": {
+              "defaultValue": null,
+              "description": "Height for the iFrame",
+              "name": "height",
+              "parent": {
+                "fileName": "/Users/paulscanlon/Desktop/_development/gatsby-mdx-embed/@pauliescanlon/gatsby-mdx-embed/src/components/SoundCloud/SoundCloud.tsx",
+                "name": "ISoundCloudProps"
+              },
+              "required": false,
+              "type": {
+                "name": "string | number | undefined"
+              }
+            },
+            "color": {
+              "defaultValue": null,
+              "description": "The color of the play button without the #",
+              "name": "color",
+              "parent": {
+                "fileName": "/Users/paulscanlon/Desktop/_development/gatsby-mdx-embed/@pauliescanlon/gatsby-mdx-embed/src/components/SoundCloud/SoundCloud.tsx",
+                "name": "ISoundCloudProps"
+              },
+              "required": false,
+              "type": {
+                "name": "string | undefined"
+              }
+            }
+          }
         }
       ]
     },
