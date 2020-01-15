@@ -10,7 +10,7 @@ export interface ITwitterListProps {
   /** Width for the iFrame */
   width?: number | string
   /** Height for the iFrame. Null is full height */
-  height?: number | string
+  height?: number | string | null
 }
 
 export const TwitterList: FunctionComponent<ITwitterListProps> = ({

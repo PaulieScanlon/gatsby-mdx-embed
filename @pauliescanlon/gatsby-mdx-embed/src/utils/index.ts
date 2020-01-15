@@ -1,7 +1,7 @@
 export const getPadding = (aspectRatio: string) => {
   const config = {
     '1:1': {
-      getPadding: '100%'
+      paddingTop: '100%'
     },
     '16:9': {
       paddingTop: '56.25%'
@@ -16,12 +16,13 @@ export const getPadding = (aspectRatio: string) => {
       paddingTop: '62.5%'
     }
   }
+  // @ts-ignore
   return config[aspectRatio]
 }
 
 export const createScriptTag = (
-  providerEmbedUrl: string,
-  providerEmbedScript: string
+  providerEmbedUrl: string | null,
+  providerEmbedScript: string | null
 ) => {
   const script = document.createElement(`script`)
 
@@ -42,7 +43,7 @@ export const createScriptTag = (
   document.getElementsByTagName(`head`)[0].appendChild(script)
 }
 
-export const createStyleSheet = href => {
+export const createStyleSheet = (href: string) => {
   const link = document.createElement(`link`)
 
   link.type = `text/css`

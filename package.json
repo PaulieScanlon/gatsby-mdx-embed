@@ -8,7 +8,7 @@
     "test": "yarn workspace @pauliescanlon/gatsby-mdx-embed test",
     "test:watch": "yarn workspace @pauliescanlon/gatsby-mdx-embed test:watch",
     "test:coverage": "yarn workspace @pauliescanlon/gatsby-mdx-embed test:coverage",
-    "release": "node copy-readme.js && yarn workspace @pauliescanlon/gatsby-mdx-embed publish"
+    "release": "tsc && node copy-readme.js && yarn workspace @pauliescanlon/gatsby-mdx-embed thing"
   },
   "workspaces": [
     "demo",

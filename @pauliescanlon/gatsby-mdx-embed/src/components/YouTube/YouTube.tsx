@@ -25,7 +25,7 @@ export const YouTube: FunctionComponent<IYouTubeProps> = ({
 }: IYouTubeProps) => {
   const { h, m, s } = skipTo
 
-  const tH = h * 60
+  const tH = h! * 60
   const tM = m * 60
 
   const startTime = tH + tM + s
