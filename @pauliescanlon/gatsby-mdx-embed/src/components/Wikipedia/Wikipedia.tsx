@@ -1,12 +1,29 @@
-import React, { Fragment, useEffect, useState } from "react"
+import React, { FunctionComponent, Fragment, useEffect, useState } from 'react'
 
-import PropTypes from "prop-types"
+export interface IWikipediaProps {
+  /** Wikipedia page link */
+  wikipediaLink: string
+  /** Height for the iFrame */
+  height?: number | string
+}
 
-export const Wikipedia = ({ wikipediaLink, height }) => {
-  const [wikiResponse, setWikiResponse] = useState({
+interface IWikipediaState {
+  /** Loading status */
+  isLoading: boolean
+  /** Error status */
+  hasError: boolean
+  /** HTML response from api  */
+  body?: string
+}
+
+export const Wikipedia: FunctionComponent<IWikipediaProps> = ({
+  wikipediaLink,
+  height = 600
+}: IWikipediaProps) => {
+  const [wikiResponse, setWikiResponse] = useState<IWikipediaState>({
     isLoading: true,
     hasError: false,
-    body: "",
+    body: ''
   })
 
   const wikipediaEmbedUrl = `https://en.wikipedia.org/api/rest_v1/page/html/${wikipediaLink}`
@@ -22,48 +39,32 @@ export const Wikipedia = ({ wikipediaLink, height }) => {
             body: response.replace(
               /<a rel="mw:WikiLink"/g,
               '<a target="_blank" rel="mw:WikiLink"'
-            ),
+            )
           })
         }
 
         if (!response) {
           setWikiResponse({
             isLoading: false,
-            hasError: true,
+            hasError: true
           })
         }
       })
   }, [wikipediaEmbedUrl])
 
   return (
-    !wikiResponse.isLoading && (
-      <Fragment>
+    <Fragment>
+      {!wikiResponse.isLoading && (
         <iframe
           title={wikipediaLink}
           frameBorder="0"
-          border="0"
           style={{
-            width: "100%",
-            minHeight: height,
+            width: '100%',
+            minHeight: height
           }}
           srcDoc={wikiResponse.body}
         />
-      </Fragment>
-    )
+      )}
+    </Fragment>
   )
-}
-
-Wikipedia.propTypes = {
-  /**
-   * Wikipedia page link
-   */
-  wikipediaLink: PropTypes.string.isRequired,
-  /**
-   * Height for the iFrame
-   */
-  height: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
-}
-
-Wikipedia.defaultProps = {
-  height: 600,
 }

@@ -18,7 +18,14 @@
     "prop-types": "^15.7.2"
   },
   "devDependencies": {
-    "prettier": "^1.19.1"
+    "@types/react": "^16.9.17",
+    "eslint-config-prettier": "^6.9.0",
+    "eslint-config-react": "^1.1.7",
+    "eslint-plugin-prettier": "^3.1.2",
+    "eslint-plugin-react": "^7.17.0",
+    "gatsby-plugin-typescript": "^2.1.26",
+    "prettier": "^1.19.1",
+    "typescript": "^3.7.4"
   },
   "peerDependencies": {
     "@mdx-js/react": "^1.5.3",
