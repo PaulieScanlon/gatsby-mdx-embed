@@ -6,6 +6,8 @@ export { Instagram } from "./src/components/Instagram"
 export { Spotify } from "./src/components/Spotify"
 export {
   Tweet,
+  TwitterTimeline,
+  TwitterList,
   TwitterFollowButton,
   TwitterMentionButton,
   TwitterHashtagButton,

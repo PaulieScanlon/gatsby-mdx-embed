@@ -7,6 +7,8 @@ import { CodePen } from "../CodePen"
 import { Vimeo } from "../Vimeo"
 import {
   Tweet,
+  TwitterTimeline,
+  TwitterList,
   TwitterFollowButton,
   TwitterMentionButton,
   TwitterHashtagButton,
@@ -25,6 +27,8 @@ const components = {
   Flickr: props => <Flickr {...props} />,
   Vimeo: props => <Vimeo {...props} />,
   Tweet: props => <Tweet {...props} />,
+  TwitterTimeline: props => <TwitterTimeline {...props} />,
+  TwitterList: props => <TwitterList {...props} />,
   TwitterFollowButton: props => <TwitterFollowButton {...props} />,
   TwitterMentionButton: props => <TwitterMentionButton {...props} />,
   TwitterHashtagButton: props => <TwitterHashtagButton {...props} />,

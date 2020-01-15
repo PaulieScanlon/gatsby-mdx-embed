@@ -19,11 +19,11 @@ Tweet.propTypes = {
    */
   tweetLink: PropTypes.string.isRequired,
   /**
-   * Color theme of Tweet
+   * Color theme of the Tweet
    */
   theme: PropTypes.oneOf(["light", "dark"]),
   /**
-   * Alignment of Tweet
+   * Alignment of the Tweet
    */
   align: PropTypes.oneOf(["left", "center", "right"]),
 }

@@ -1,0 +1,41 @@
+---
+name: TwitterList
+menu: Components
+---
+
+import { Playground, Props } from "docz"
+import { TwitterList } from "@pauliescanlon/gatsby-mdx-embed"
+
+# TwitterList
+
+Display a TwitterList by including the component in your `.mdx`. The `username` and `listName` props are required.
+
+<Props of={TwitterList} />
+
+## Basic usage
+
+<Playground>
+  <TwitterList username="PaulieScanlon" listName="ask-gatsby" height="400px" />
+</Playground>
+
+## Width
+
+<Playground>
+  <TwitterList
+    username="PaulieScanlon"
+    listName="ask-gatsby"
+    height="400px"
+    width="100%"
+  />
+</Playground>
+
+## Theme
+
+<Playground>
+  <TwitterList
+    username="PaulieScanlon"
+    listName="ask-gatsby"
+    theme="dark"
+    height="400px"
+  />
+</Playground>

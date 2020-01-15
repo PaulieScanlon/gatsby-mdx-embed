@@ -4,6 +4,7 @@ export { wrapRootElement } from "./src/wrapRootElement"
 let isTwttrScriptAdded = false
 const twttrClassNames = [
   `.twitter-tweet`,
+  `.twitter-timeline`,
   `.twitter-follow-button`,
   `.twitter-mention-button`,
   `.twitter-hashtag-button`,

@@ -308,6 +308,16 @@
             "slug": "show-followers",
             "depth": 2,
             "value": "Show followers"
+          },
+          {
+            "slug": "show-username",
+            "depth": 2,
+            "value": "Show username"
+          },
+          {
+            "slug": "size",
+            "depth": 2,
+            "value": "Size"
           }
         ]
       }
@@ -333,6 +343,46 @@
             "slug": "basic-usage",
             "depth": 2,
             "value": "Basic usage"
+          },
+          {
+            "slug": "size",
+            "depth": 2,
+            "value": "Size"
+          }
+        ]
+      }
+    },
+    {
+      "key": "src/components/twitterList.mdx",
+      "value": {
+        "name": "TwitterList",
+        "menu": "Components",
+        "id": "ac9adfa11c30cb6409cfa4753c00b164",
+        "filepath": "src/components/twitterList.mdx",
+        "fullpath": "/Users/paulscanlon/Desktop/_development/gatsby-mdx-embed/demo/src/components/twitterList.mdx",
+        "link": "https://github.com/PaulieScanlon/gatsby-mdx-embed/edit/master/demo/src/components/twitterList.mdx",
+        "slug": "src-components-twitter-list",
+        "route": "/src-components-twitter-list",
+        "headings": [
+          {
+            "slug": "twitterlist",
+            "depth": 1,
+            "value": "TwitterList"
+          },
+          {
+            "slug": "basic-usage",
+            "depth": 2,
+            "value": "Basic usage"
+          },
+          {
+            "slug": "width",
+            "depth": 2,
+            "value": "Width"
+          },
+          {
+            "slug": "theme",
+            "depth": 2,
+            "value": "Theme"
           }
         ]
       }
@@ -358,6 +408,51 @@
             "slug": "basic-usage",
             "depth": 2,
             "value": "Basic usage"
+          },
+          {
+            "slug": "size",
+            "depth": 2,
+            "value": "Size"
+          }
+        ]
+      }
+    },
+    {
+      "key": "src/components/twitterTimeline.mdx",
+      "value": {
+        "name": "TwitterTimeline",
+        "menu": "Components",
+        "id": "f3ed43942b632bbdfb0485f8d2d77cc3",
+        "filepath": "src/components/twitterTimeline.mdx",
+        "fullpath": "/Users/paulscanlon/Desktop/_development/gatsby-mdx-embed/demo/src/components/twitterTimeline.mdx",
+        "link": "https://github.com/PaulieScanlon/gatsby-mdx-embed/edit/master/demo/src/components/twitterTimeline.mdx",
+        "slug": "src-components-twitter-timeline",
+        "route": "/src-components-twitter-timeline",
+        "headings": [
+          {
+            "slug": "twittertimeline",
+            "depth": 1,
+            "value": "TwitterTimeline"
+          },
+          {
+            "slug": "basic-usage",
+            "depth": 2,
+            "value": "Basic usage"
+          },
+          {
+            "slug": "width",
+            "depth": 2,
+            "value": "Width"
+          },
+          {
+            "slug": "theme",
+            "depth": 2,
+            "value": "Theme"
+          },
+          {
+            "slug": "show-likes",
+            "depth": 2,
+            "value": "Show Likes"
           }
         ]
       }
@@ -520,6 +615,31 @@
             "value": "Tweet"
           },
           {
+            "slug": "twittertimeline",
+            "depth": 2,
+            "value": "TwitterTimeline"
+          },
+          {
+            "slug": "twitterlist",
+            "depth": 2,
+            "value": "TwitterList"
+          },
+          {
+            "slug": "twitterfollowbutton",
+            "depth": 2,
+            "value": "TwitterFollowButton"
+          },
+          {
+            "slug": "twitterhashtagbutton",
+            "depth": 2,
+            "value": "TwitterHashtagButton"
+          },
+          {
+            "slug": "twittermentionbutton",
+            "depth": 2,
+            "value": "TwitterMentionButton"
+          },
+          {
             "slug": "vimeo",
             "depth": 2,
             "value": "Vimeo"
@@ -580,6 +700,73 @@
   ],
   "props": [
     {
+      "key": "../@pauliescanlon/gatsby-mdx-embed/src/components/CodePen/CodePen.js",
+      "value": [
+        {
+          "description": "",
+          "displayName": "CodePen",
+          "methods": [],
+          "actualName": "CodePen",
+          "props": {
+            "codePenId": {
+              "type": {
+                "name": "string"
+              },
+              "required": true,
+              "description": "CodePen id"
+            },
+            "height": {
+              "type": {
+                "name": "number"
+              },
+              "required": false,
+              "description": "Height for the iFrame",
+              "defaultValue": {
+                "value": "500",
+                "computed": false
+              }
+            },
+            "tabs": {
+              "type": {
+                "name": "arrayOf",
+                "value": {
+                  "name": "enum",
+                  "value": [
+                    {
+                      "value": "\"js\"",
+                      "computed": false
+                    },
+                    {
+                      "value": "\"css\"",
+                      "computed": false
+                    },
+                    {
+                      "value": "\"scss\"",
+                      "computed": false
+                    },
+                    {
+                      "value": "\"less\"",
+                      "computed": false
+                    },
+                    {
+                      "value": "\"result\"",
+                      "computed": false
+                    }
+                  ]
+                }
+              },
+              "required": false,
+              "description": "Which tabs to display",
+              "defaultValue": {
+                "value": "[\"result\"]",
+                "computed": false
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
       "key": "../@pauliescanlon/gatsby-mdx-embed/src/components/CodeSandbox/CodeSandbox.js",
       "value": [
         {
@@ -594,26 +781,6 @@
               },
               "required": true,
               "description": "CodeSandbox id"
-            }
-          }
-        }
-      ]
-    },
-    {
-      "key": "../@pauliescanlon/gatsby-mdx-embed/src/components/Gist/Gist.js",
-      "value": [
-        {
-          "description": "",
-          "displayName": "Gist",
-          "methods": [],
-          "actualName": "Gist",
-          "props": {
-            "gistLink": {
-              "type": {
-                "name": "string"
-              },
-              "required": true,
-              "description": "Gist link"
             }
           }
         }
@@ -654,6 +821,26 @@
               },
               "required": true,
               "description": "Instagram id"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "key": "../@pauliescanlon/gatsby-mdx-embed/src/components/Gist/Gist.js",
+      "value": [
+        {
+          "description": "",
+          "displayName": "Gist",
+          "methods": [],
+          "actualName": "Gist",
+          "props": {
+            "gistLink": {
+              "type": {
+                "name": "string"
+              },
+              "required": true,
+              "description": "Gist link"
             }
           }
         }
@@ -902,7 +1089,7 @@
                 ]
               },
               "required": false,
-              "description": "Color theme of Tweet",
+              "description": "Color theme of the Tweet",
               "defaultValue": {
                 "value": "\"light\"",
                 "computed": false
@@ -927,7 +1114,7 @@
                 ]
               },
               "required": false,
-              "description": "Alignment of Tweet",
+              "description": "Alignment of the Tweet",
               "defaultValue": {
                 "value": "\"left\"",
                 "computed": false
@@ -963,6 +1150,38 @@
                 "value": "false",
                 "computed": false
               }
+            },
+            "showUsername": {
+              "type": {
+                "name": "bool"
+              },
+              "required": false,
+              "description": "Show the username",
+              "defaultValue": {
+                "value": "true",
+                "computed": false
+              }
+            },
+            "size": {
+              "type": {
+                "name": "enum",
+                "value": [
+                  {
+                    "value": "\"large\"",
+                    "computed": false
+                  },
+                  {
+                    "value": "\"small\"",
+                    "computed": false
+                  }
+                ]
+              },
+              "required": false,
+              "description": "The size of the button",
+              "defaultValue": {
+                "value": "\"small\"",
+                "computed": false
+              }
             }
           }
         }
@@ -983,6 +1202,113 @@
               },
               "required": true,
               "description": "Twitter hashtag"
+            },
+            "size": {
+              "type": {
+                "name": "enum",
+                "value": [
+                  {
+                    "value": "\"large\"",
+                    "computed": false
+                  },
+                  {
+                    "value": "\"small\"",
+                    "computed": false
+                  }
+                ]
+              },
+              "required": false,
+              "description": "The size of the button",
+              "defaultValue": {
+                "value": "\"small\"",
+                "computed": false
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "key": "../@pauliescanlon/gatsby-mdx-embed/src/components/Twitter/TwitterList.js",
+      "value": [
+        {
+          "description": "",
+          "displayName": "TwitterList",
+          "methods": [],
+          "actualName": "TwitterList",
+          "props": {
+            "username": {
+              "type": {
+                "name": "string"
+              },
+              "required": true,
+              "description": "Twitter username"
+            },
+            "listName": {
+              "type": {
+                "name": "string"
+              },
+              "required": true,
+              "description": "The Twitter list name"
+            },
+            "theme": {
+              "type": {
+                "name": "enum",
+                "value": [
+                  {
+                    "value": "\"light\"",
+                    "computed": false
+                  },
+                  {
+                    "value": "\"dark\"",
+                    "computed": false
+                  }
+                ]
+              },
+              "required": false,
+              "description": "Color theme of the Timeline",
+              "defaultValue": {
+                "value": "\"light\"",
+                "computed": false
+              }
+            },
+            "width": {
+              "type": {
+                "name": "union",
+                "value": [
+                  {
+                    "name": "number"
+                  },
+                  {
+                    "name": "string"
+                  }
+                ]
+              },
+              "required": false,
+              "description": "Width for the iFrame",
+              "defaultValue": {
+                "value": "\"498px\"",
+                "computed": false
+              }
+            },
+            "height": {
+              "type": {
+                "name": "union",
+                "value": [
+                  {
+                    "name": "number"
+                  },
+                  {
+                    "name": "string"
+                  }
+                ]
+              },
+              "required": false,
+              "description": "Height for the iFrame. Null is full height",
+              "defaultValue": {
+                "value": "null",
+                "computed": false
+              }
             }
           }
         }
@@ -1003,6 +1329,117 @@
               },
               "required": true,
               "description": "Twitter username"
+            },
+            "size": {
+              "type": {
+                "name": "enum",
+                "value": [
+                  {
+                    "value": "\"large\"",
+                    "computed": false
+                  },
+                  {
+                    "value": "\"small\"",
+                    "computed": false
+                  }
+                ]
+              },
+              "required": false,
+              "description": "The size of the button",
+              "defaultValue": {
+                "value": "\"small\"",
+                "computed": false
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "key": "../@pauliescanlon/gatsby-mdx-embed/src/components/Twitter/TwitterTimeline.js",
+      "value": [
+        {
+          "description": "",
+          "displayName": "TwitterTimeline",
+          "methods": [],
+          "actualName": "TwitterTimeline",
+          "props": {
+            "username": {
+              "type": {
+                "name": "string"
+              },
+              "required": true,
+              "description": "Twitter username"
+            },
+            "showLikes": {
+              "type": {
+                "name": "string"
+              },
+              "required": false,
+              "description": "Show Tweets liked bythe username",
+              "defaultValue": {
+                "value": "null",
+                "computed": false
+              }
+            },
+            "theme": {
+              "type": {
+                "name": "enum",
+                "value": [
+                  {
+                    "value": "\"light\"",
+                    "computed": false
+                  },
+                  {
+                    "value": "\"dark\"",
+                    "computed": false
+                  }
+                ]
+              },
+              "required": false,
+              "description": "Color theme of the Timeline",
+              "defaultValue": {
+                "value": "\"light\"",
+                "computed": false
+              }
+            },
+            "width": {
+              "type": {
+                "name": "union",
+                "value": [
+                  {
+                    "name": "number"
+                  },
+                  {
+                    "name": "string"
+                  }
+                ]
+              },
+              "required": false,
+              "description": "Width for the iFrame",
+              "defaultValue": {
+                "value": "\"498px\"",
+                "computed": false
+              }
+            },
+            "height": {
+              "type": {
+                "name": "union",
+                "value": [
+                  {
+                    "name": "number"
+                  },
+                  {
+                    "name": "string"
+                  }
+                ]
+              },
+              "required": false,
+              "description": "Height for the iFrame. Null is full height",
+              "defaultValue": {
+                "value": "null",
+                "computed": false
+              }
             }
           }
         }
@@ -1185,73 +1622,6 @@
               "description": "Auto play the video",
               "defaultValue": {
                 "value": "false",
-                "computed": false
-              }
-            }
-          }
-        }
-      ]
-    },
-    {
-      "key": "../@pauliescanlon/gatsby-mdx-embed/src/components/CodePen/CodePen.js",
-      "value": [
-        {
-          "description": "",
-          "displayName": "CodePen",
-          "methods": [],
-          "actualName": "CodePen",
-          "props": {
-            "codePenId": {
-              "type": {
-                "name": "string"
-              },
-              "required": true,
-              "description": "CodePen id"
-            },
-            "height": {
-              "type": {
-                "name": "number"
-              },
-              "required": false,
-              "description": "Height for the iFrame",
-              "defaultValue": {
-                "value": "500",
-                "computed": false
-              }
-            },
-            "tabs": {
-              "type": {
-                "name": "arrayOf",
-                "value": {
-                  "name": "enum",
-                  "value": [
-                    {
-                      "value": "\"js\"",
-                      "computed": false
-                    },
-                    {
-                      "value": "\"css\"",
-                      "computed": false
-                    },
-                    {
-                      "value": "\"scss\"",
-                      "computed": false
-                    },
-                    {
-                      "value": "\"less\"",
-                      "computed": false
-                    },
-                    {
-                      "value": "\"result\"",
-                      "computed": false
-                    }
-                  ]
-                }
-              },
-              "required": false,
-              "description": "Which tabs to display",
-              "defaultValue": {
-                "value": "[\"result\"]",
                 "computed": false
               }
             }
