@@ -3,7 +3,9 @@
     "title": "gatsby-mdx-embed",
     "description": "gatsby-mdx-embed is an mdx plugin to embed YouTube, Twitter etc into .mdx without imports",
     "menu": [
-      "Getting Started",
+      {
+        "name": "Getting Started"
+      },
       {
         "name": "Components"
       }
@@ -992,7 +994,7 @@
               },
               "required": false,
               "type": {
-                "name": "string | number | undefined"
+                "name": "string | number | null | undefined"
               }
             }
           }
@@ -1765,6 +1767,126 @@
   ],
   "entries": [
     {
+      "key": "src/pages/help.mdx",
+      "value": {
+        "id": "36fbc839afce02f710663a15c63b5026",
+        "filepath": "src/pages/help.mdx",
+        "fullpath": "/Users/paulscanlon/Desktop/_development/gatsby-mdx-embed/demo/src/pages/help.mdx",
+        "link": "https://github.com/PaulieScanlon/gatsby-mdx-embed/edit/master/demo/src/pages/help.mdx",
+        "slug": "src-pages-help",
+        "route": "/src-pages-help",
+        "name": "Help",
+        "menu": "",
+        "headings": [
+          {
+            "slug": "help-♂️",
+            "depth": 1,
+            "value": "Help 💁‍♂️"
+          },
+          {
+            "slug": "codepen",
+            "depth": 2,
+            "value": "CodePen"
+          },
+          {
+            "slug": "codesandbox",
+            "depth": 2,
+            "value": "CodeSandbox"
+          },
+          {
+            "slug": "flickr",
+            "depth": 2,
+            "value": "Flickr"
+          },
+          {
+            "slug": "gist",
+            "depth": 2,
+            "value": "Gist"
+          },
+          {
+            "slug": "instagram",
+            "depth": 2,
+            "value": "Instagram"
+          },
+          {
+            "slug": "soundcloud",
+            "depth": 2,
+            "value": "SoundCloud"
+          },
+          {
+            "slug": "spotify",
+            "depth": 2,
+            "value": "Spotify"
+          },
+          {
+            "slug": "twitch",
+            "depth": 2,
+            "value": "Twitch"
+          },
+          {
+            "slug": "tweet",
+            "depth": 2,
+            "value": "Tweet"
+          },
+          {
+            "slug": "vimeo",
+            "depth": 2,
+            "value": "Vimeo"
+          },
+          {
+            "slug": "youtube",
+            "depth": 2,
+            "value": "YouTube"
+          }
+        ]
+      }
+    },
+    {
+      "key": "src/pages/index.mdx",
+      "value": {
+        "name": "Getting Started",
+        "route": "/",
+        "id": "522b7407e210088f3588b943aec44115",
+        "filepath": "src/pages/index.mdx",
+        "fullpath": "/Users/paulscanlon/Desktop/_development/gatsby-mdx-embed/demo/src/pages/index.mdx",
+        "link": "https://github.com/PaulieScanlon/gatsby-mdx-embed/edit/master/demo/src/pages/index.mdx",
+        "slug": "src-pages-index",
+        "menu": "",
+        "headings": [
+          {
+            "slug": "gatsby-mdx-embed-🧼",
+            "depth": 1,
+            "value": "Gatsby Mdx Embed 🧼"
+          },
+          {
+            "slug": "install",
+            "depth": 3,
+            "value": "Install"
+          },
+          {
+            "slug": "install-peer-dependencies",
+            "depth": 3,
+            "value": "Install peer dependencies"
+          },
+          {
+            "slug": "no-import-required",
+            "depth": 2,
+            "value": "No import required!"
+          },
+          {
+            "slug": "which-renders-as-",
+            "depth": 2,
+            "value": "Which renders as 👇"
+          },
+          {
+            "slug": "my-cool-pen",
+            "depth": 4,
+            "value": "My cool pen"
+          }
+        ]
+      }
+    },
+    {
       "key": "src/components/codePen.mdx",
       "value": {
         "name": "CodePen",
@@ -1990,176 +2112,6 @@
       }
     },
     {
-      "key": "src/components/twitter.mdx",
-      "value": {
-        "name": "Tweet",
-        "menu": "Components",
-        "id": "b5429cc0a98a187c89a19aad6e38ecb6",
-        "filepath": "src/components/twitter.mdx",
-        "fullpath": "/Users/paulscanlon/Desktop/_development/gatsby-mdx-embed/demo/src/components/twitter.mdx",
-        "link": "https://github.com/PaulieScanlon/gatsby-mdx-embed/edit/master/demo/src/components/twitter.mdx",
-        "slug": "src-components-twitter",
-        "route": "/src-components-twitter",
-        "headings": [
-          {
-            "slug": "tweet",
-            "depth": 1,
-            "value": "Tweet"
-          },
-          {
-            "slug": "basic-usage",
-            "depth": 2,
-            "value": "Basic usage"
-          },
-          {
-            "slug": "theme",
-            "depth": 2,
-            "value": "Theme"
-          },
-          {
-            "slug": "align",
-            "depth": 2,
-            "value": "Align"
-          }
-        ]
-      }
-    },
-    {
-      "key": "src/components/twitterFollowButton.mdx",
-      "value": {
-        "name": "TwitterTwitterFollowButton",
-        "menu": "Components",
-        "id": "58cccbf9e056f771f58c1adb41752e42",
-        "filepath": "src/components/twitterFollowButton.mdx",
-        "fullpath": "/Users/paulscanlon/Desktop/_development/gatsby-mdx-embed/demo/src/components/twitterFollowButton.mdx",
-        "link": "https://github.com/PaulieScanlon/gatsby-mdx-embed/edit/master/demo/src/components/twitterFollowButton.mdx",
-        "slug": "src-components-twitter-follow-button",
-        "route": "/src-components-twitter-follow-button",
-        "headings": [
-          {
-            "slug": "twitterfollowbutton",
-            "depth": 1,
-            "value": "TwitterFollowButton"
-          },
-          {
-            "slug": "basic-usage",
-            "depth": 2,
-            "value": "Basic usage"
-          },
-          {
-            "slug": "show-followers",
-            "depth": 2,
-            "value": "Show followers"
-          },
-          {
-            "slug": "show-username",
-            "depth": 2,
-            "value": "Show username"
-          },
-          {
-            "slug": "size",
-            "depth": 2,
-            "value": "Size"
-          }
-        ]
-      }
-    },
-    {
-      "key": "src/components/twitterHashtagButton.mdx",
-      "value": {
-        "name": "TwitterHashtagButton",
-        "menu": "Components",
-        "id": "2a29971ebfa10ff849ffe947ebec9e9f",
-        "filepath": "src/components/twitterHashtagButton.mdx",
-        "fullpath": "/Users/paulscanlon/Desktop/_development/gatsby-mdx-embed/demo/src/components/twitterHashtagButton.mdx",
-        "link": "https://github.com/PaulieScanlon/gatsby-mdx-embed/edit/master/demo/src/components/twitterHashtagButton.mdx",
-        "slug": "src-components-twitter-hashtag-button",
-        "route": "/src-components-twitter-hashtag-button",
-        "headings": [
-          {
-            "slug": "twitterhashtagbutton",
-            "depth": 1,
-            "value": "TwitterHashtagButton"
-          },
-          {
-            "slug": "basic-usage",
-            "depth": 2,
-            "value": "Basic usage"
-          },
-          {
-            "slug": "size",
-            "depth": 2,
-            "value": "Size"
-          }
-        ]
-      }
-    },
-    {
-      "key": "src/components/twitterList.mdx",
-      "value": {
-        "name": "TwitterList",
-        "menu": "Components",
-        "id": "ac9adfa11c30cb6409cfa4753c00b164",
-        "filepath": "src/components/twitterList.mdx",
-        "fullpath": "/Users/paulscanlon/Desktop/_development/gatsby-mdx-embed/demo/src/components/twitterList.mdx",
-        "link": "https://github.com/PaulieScanlon/gatsby-mdx-embed/edit/master/demo/src/components/twitterList.mdx",
-        "slug": "src-components-twitter-list",
-        "route": "/src-components-twitter-list",
-        "headings": [
-          {
-            "slug": "twitterlist",
-            "depth": 1,
-            "value": "TwitterList"
-          },
-          {
-            "slug": "basic-usage",
-            "depth": 2,
-            "value": "Basic usage"
-          },
-          {
-            "slug": "width",
-            "depth": 2,
-            "value": "Width"
-          },
-          {
-            "slug": "theme",
-            "depth": 2,
-            "value": "Theme"
-          }
-        ]
-      }
-    },
-    {
-      "key": "src/components/twitterMentionButton.mdx",
-      "value": {
-        "name": "TwitterMentionButton",
-        "menu": "Components",
-        "id": "32814c91e773ca3310df5acd27ea7df5",
-        "filepath": "src/components/twitterMentionButton.mdx",
-        "fullpath": "/Users/paulscanlon/Desktop/_development/gatsby-mdx-embed/demo/src/components/twitterMentionButton.mdx",
-        "link": "https://github.com/PaulieScanlon/gatsby-mdx-embed/edit/master/demo/src/components/twitterMentionButton.mdx",
-        "slug": "src-components-twitter-mention-button",
-        "route": "/src-components-twitter-mention-button",
-        "headings": [
-          {
-            "slug": "twittermentionbutton",
-            "depth": 1,
-            "value": "TwitterMentionButton"
-          },
-          {
-            "slug": "basic-usage",
-            "depth": 2,
-            "value": "Basic usage"
-          },
-          {
-            "slug": "size",
-            "depth": 2,
-            "value": "Size"
-          }
-        ]
-      }
-    },
-    {
       "key": "src/components/twitterTimeline.mdx",
       "value": {
         "name": "TwitterTimeline",
@@ -2295,121 +2247,171 @@
       }
     },
     {
-      "key": "src/pages/help.mdx",
+      "key": "src/components/twitter/tweet.mdx",
       "value": {
-        "id": "36fbc839afce02f710663a15c63b5026",
-        "filepath": "src/pages/help.mdx",
-        "fullpath": "/Users/paulscanlon/Desktop/_development/gatsby-mdx-embed/demo/src/pages/help.mdx",
-        "link": "https://github.com/PaulieScanlon/gatsby-mdx-embed/edit/master/demo/src/pages/help.mdx",
-        "slug": "src-pages-help",
-        "route": "/src-pages-help",
-        "name": "Help",
-        "menu": "",
+        "name": "Tweet",
+        "menu": "Components",
+        "id": "ed8b884d2e923c85753e35df5b2a5bd7",
+        "filepath": "src/components/twitter/tweet.mdx",
+        "fullpath": "/Users/paulscanlon/Desktop/_development/gatsby-mdx-embed/demo/src/components/twitter/tweet.mdx",
+        "link": "https://github.com/PaulieScanlon/gatsby-mdx-embed/edit/master/demo/src/components/twitter/tweet.mdx",
+        "slug": "src-components-twitter-tweet",
+        "route": "/src-components-twitter-tweet",
         "headings": [
           {
-            "slug": "help-♂️",
-            "depth": 1,
-            "value": "Help 💁‍♂️"
-          },
-          {
-            "slug": "codepen",
-            "depth": 2,
-            "value": "CodePen"
-          },
-          {
-            "slug": "codesandbox",
-            "depth": 2,
-            "value": "CodeSandbox"
-          },
-          {
-            "slug": "flickr",
-            "depth": 2,
-            "value": "Flickr"
-          },
-          {
-            "slug": "gist",
-            "depth": 2,
-            "value": "Gist"
-          },
-          {
-            "slug": "instagram",
-            "depth": 2,
-            "value": "Instagram"
-          },
-          {
-            "slug": "soundcloud",
-            "depth": 2,
-            "value": "SoundCloud"
-          },
-          {
-            "slug": "spotify",
-            "depth": 2,
-            "value": "Spotify"
-          },
-          {
-            "slug": "twitch",
-            "depth": 2,
-            "value": "Twitch"
-          },
-          {
             "slug": "tweet",
-            "depth": 2,
+            "depth": 1,
             "value": "Tweet"
           },
           {
-            "slug": "vimeo",
+            "slug": "basic-usage",
             "depth": 2,
-            "value": "Vimeo"
+            "value": "Basic usage"
           },
           {
-            "slug": "youtube",
+            "slug": "theme",
             "depth": 2,
-            "value": "YouTube"
+            "value": "Theme"
+          },
+          {
+            "slug": "align",
+            "depth": 2,
+            "value": "Align"
           }
         ]
       }
     },
     {
-      "key": "src/pages/index.mdx",
+      "key": "src/components/twitter/twitterFollowButton.mdx",
       "value": {
-        "name": "Getting Started",
-        "route": "/",
-        "id": "522b7407e210088f3588b943aec44115",
-        "filepath": "src/pages/index.mdx",
-        "fullpath": "/Users/paulscanlon/Desktop/_development/gatsby-mdx-embed/demo/src/pages/index.mdx",
-        "link": "https://github.com/PaulieScanlon/gatsby-mdx-embed/edit/master/demo/src/pages/index.mdx",
-        "slug": "src-pages-index",
-        "menu": "",
+        "name": "TwitterFollowButton",
+        "menu": "Components",
+        "id": "40007ff0548f33f9e4eba807cc3d6fb4",
+        "filepath": "src/components/twitter/twitterFollowButton.mdx",
+        "fullpath": "/Users/paulscanlon/Desktop/_development/gatsby-mdx-embed/demo/src/components/twitter/twitterFollowButton.mdx",
+        "link": "https://github.com/PaulieScanlon/gatsby-mdx-embed/edit/master/demo/src/components/twitter/twitterFollowButton.mdx",
+        "slug": "src-components-twitter-twitter-follow-button",
+        "route": "/src-components-twitter-twitter-follow-button",
         "headings": [
           {
-            "slug": "gatsby-mdx-embed-🧼",
+            "slug": "twitterfollowbutton",
             "depth": 1,
-            "value": "Gatsby Mdx Embed 🧼"
+            "value": "TwitterFollowButton"
           },
           {
-            "slug": "install",
-            "depth": 3,
-            "value": "Install"
-          },
-          {
-            "slug": "install-peer-dependencies",
-            "depth": 3,
-            "value": "Install peer dependencies"
-          },
-          {
-            "slug": "no-import-required",
+            "slug": "basic-usage",
             "depth": 2,
-            "value": "No import required!"
+            "value": "Basic usage"
           },
           {
-            "slug": "which-renders-as-",
+            "slug": "show-followers",
             "depth": 2,
-            "value": "Which renders as 👇"
+            "value": "Show followers"
           },
           {
-            "slug": "my-cool-pen",
-            "depth": 4,
-            "value": "My cool pen"
+            "slug": "show-username",
+            "depth": 2,
+            "value": "Show username"
+          },
+          {
+            "slug": "size",
+            "depth": 2,
+            "value": "Size"
+          }
+        ]
+      }
+    },
+    {
+      "key": "src/components/twitter/twitterHashtagButton.mdx",
+      "value": {
+        "name": "TwitterHashtagButton",
+        "menu": "Components",
+        "id": "bce7f3cf658900fde390f374b68fea5a",
+        "filepath": "src/components/twitter/twitterHashtagButton.mdx",
+        "fullpath": "/Users/paulscanlon/Desktop/_development/gatsby-mdx-embed/demo/src/components/twitter/twitterHashtagButton.mdx",
+        "link": "https://github.com/PaulieScanlon/gatsby-mdx-embed/edit/master/demo/src/components/twitter/twitterHashtagButton.mdx",
+        "slug": "src-components-twitter-twitter-hashtag-button",
+        "route": "/src-components-twitter-twitter-hashtag-button",
+        "headings": [
+          {
+            "slug": "twitterhashtagbutton",
+            "depth": 1,
+            "value": "TwitterHashtagButton"
+          },
+          {
+            "slug": "basic-usage",
+            "depth": 2,
+            "value": "Basic usage"
+          },
+          {
+            "slug": "size",
+            "depth": 2,
+            "value": "Size"
+          }
+        ]
+      }
+    },
+    {
+      "key": "src/components/twitter/twitterList.mdx",
+      "value": {
+        "name": "TwitterList",
+        "menu": "Components",
+        "id": "93c4dc4f29c8e941996cd805284b1b1b",
+        "filepath": "src/components/twitter/twitterList.mdx",
+        "fullpath": "/Users/paulscanlon/Desktop/_development/gatsby-mdx-embed/demo/src/components/twitter/twitterList.mdx",
+        "link": "https://github.com/PaulieScanlon/gatsby-mdx-embed/edit/master/demo/src/components/twitter/twitterList.mdx",
+        "slug": "src-components-twitter-twitter-list",
+        "route": "/src-components-twitter-twitter-list",
+        "headings": [
+          {
+            "slug": "twitterlist",
+            "depth": 1,
+            "value": "TwitterList"
+          },
+          {
+            "slug": "basic-usage",
+            "depth": 2,
+            "value": "Basic usage"
+          },
+          {
+            "slug": "width",
+            "depth": 2,
+            "value": "Width"
+          },
+          {
+            "slug": "theme",
+            "depth": 2,
+            "value": "Theme"
+          }
+        ]
+      }
+    },
+    {
+      "key": "src/components/twitter/twitterMentionButton.mdx",
+      "value": {
+        "name": "TwitterMentionButton",
+        "menu": "Components",
+        "id": "4c1507fac92e776d99f09bd9ef57cd51",
+        "filepath": "src/components/twitter/twitterMentionButton.mdx",
+        "fullpath": "/Users/paulscanlon/Desktop/_development/gatsby-mdx-embed/demo/src/components/twitter/twitterMentionButton.mdx",
+        "link": "https://github.com/PaulieScanlon/gatsby-mdx-embed/edit/master/demo/src/components/twitter/twitterMentionButton.mdx",
+        "slug": "src-components-twitter-twitter-mention-button",
+        "route": "/src-components-twitter-twitter-mention-button",
+        "headings": [
+          {
+            "slug": "twittermentionbutton",
+            "depth": 1,
+            "value": "TwitterMentionButton"
+          },
+          {
+            "slug": "basic-usage",
+            "depth": 2,
+            "value": "Basic usage"
+          },
+          {
+            "slug": "size",
+            "depth": 2,
+            "value": "Size"
           }
         ]
       }

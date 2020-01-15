@@ -11,7 +11,7 @@ export default {
     "gatsby-mdx-embed is an mdx plugin to embed YouTube, Twitter etc into .mdx without imports",
   base: "https://gatsby-mdx-embed.netlify.com/",
   ogImage: "mdx-embed-main-og-image.jpg",
-  menu: ["Getting Started", { name: "Components" }],
+  menu: [{ name: "Getting Started" }, { name: "Components" }],
   typescript: true,
   docgenConfig: {
     searchPath: directoryPath,
