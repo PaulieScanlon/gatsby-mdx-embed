@@ -12,6 +12,7 @@ export default {
   base: "https://gatsby-mdx-embed.netlify.com/",
   ogImage: "mdx-embed-main-og-image.jpg",
   menu: ["Getting Started", { name: "Components" }],
+  typescript: true,
   docgenConfig: {
     searchPath: directoryPath,
   },

@@ -1,25 +1,28 @@
-export const getPadding = aspectRatio => {
+export const getPadding = (aspectRatio: string) => {
   const config = {
-    "1:1": {
-      getPadding: "100%",
+    '1:1': {
+      getPadding: '100%'
     },
-    "16:9": {
-      paddingTop: "56.25%",
+    '16:9': {
+      paddingTop: '56.25%'
     },
-    "4:3": {
-      paddingTop: "75%",
+    '4:3': {
+      paddingTop: '75%'
     },
-    "3:2": {
-      paddingTop: "66.66%",
+    '3:2': {
+      paddingTop: '66.66%'
     },
-    "8.5": {
-      paddingTop: "62.5%",
-    },
+    '8.5': {
+      paddingTop: '62.5%'
+    }
   }
   return config[aspectRatio]
 }
 
-export const createScriptTag = (providerEmbedUrl, providerEmbedScript) => {
+export const createScriptTag = (
+  providerEmbedUrl: string,
+  providerEmbedScript: string
+) => {
   const script = document.createElement(`script`)
 
   script.type = `text/javascript`
@@ -33,7 +36,7 @@ export const createScriptTag = (providerEmbedUrl, providerEmbedScript) => {
   }
 
   script.onerror = error => {
-    console.error(`MdxEmbedProvider ${error.type}`, error)
+    console.error(`MdxEmbedProvider ${(error as any).type}`, error)
   }
 
   document.getElementsByTagName(`head`)[0].appendChild(script)

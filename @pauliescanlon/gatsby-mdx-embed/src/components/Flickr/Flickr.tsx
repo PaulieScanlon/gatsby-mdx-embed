@@ -1,7 +1,13 @@
-import React from "react"
-import PropTypes from "prop-types"
+import React, { FunctionComponent } from 'react'
 
-export const Flickr = ({ flickrLink }) => (
+export interface IFlickrProps {
+  /** Flickr image link*/
+  flickrLink: string
+}
+
+export const Flickr: FunctionComponent<IFlickrProps> = ({
+  flickrLink
+}: IFlickrProps) => (
   <span
     className="flickr-embed-mdx"
     data-flickr-embed="true"
@@ -16,10 +22,3 @@ export const Flickr = ({ flickrLink }) => (
     />
   </span>
 )
-
-Flickr.propTypes = {
-  /**
-   * Flickr image link
-   */
-  flickrLink: PropTypes.string.isRequired,
-}
