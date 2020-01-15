@@ -2357,31 +2357,6 @@
             "value": "Tweet"
           },
           {
-            "slug": "twittertimeline",
-            "depth": 2,
-            "value": "TwitterTimeline"
-          },
-          {
-            "slug": "twitterlist",
-            "depth": 2,
-            "value": "TwitterList"
-          },
-          {
-            "slug": "twitterfollowbutton",
-            "depth": 2,
-            "value": "TwitterFollowButton"
-          },
-          {
-            "slug": "twitterhashtagbutton",
-            "depth": 2,
-            "value": "TwitterHashtagButton"
-          },
-          {
-            "slug": "twittermentionbutton",
-            "depth": 2,
-            "value": "TwitterMentionButton"
-          },
-          {
             "slug": "vimeo",
             "depth": 2,
             "value": "Vimeo"
