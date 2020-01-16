@@ -1,4 +1,4 @@
-import React, { FunctionComponent, Fragment } from 'react'
+import React, { FunctionComponent } from 'react'
 
 export interface ITwitterMentionButtonProps {
   /** Twitter username */
@@ -10,14 +10,10 @@ export interface ITwitterMentionButtonProps {
 export const TwitterMentionButton: FunctionComponent<ITwitterMentionButtonProps> = ({
   username,
   size = 'small'
-}: ITwitterMentionButtonProps) => {
-  return (
-    <Fragment>
-      <a
-        href={`https://twitter.com/intent/tweet?screen_name=${username}&ref_src=twsrc%5Etfw`}
-        className="twitter-mention-button"
-        data-size={size}
-      >{`Tweet to @${username}`}</a>
-    </Fragment>
-  )
-}
+}: ITwitterMentionButtonProps) => (
+  <a
+    href={`https://twitter.com/intent/tweet?screen_name=${username}&ref_src=twsrc%5Etfw`}
+    className="twitter-mention-button"
+    data-size={size}
+  >{`Tweet to @${username}`}</a>
+)

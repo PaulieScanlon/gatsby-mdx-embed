@@ -19,20 +19,18 @@ export const TwitterTimeline: FunctionComponent<ITwitterTimelineProps> = ({
   showLikes = null,
   width = '498px',
   height = null
-}: ITwitterTimelineProps) => {
-  return (
-    <div style={{ overflow: 'auto' }}>
-      <a
-        className="twitter-timeline"
-        data-theme={theme}
-        data-width={width}
-        data-height={height}
-        href={`https://twitter.com/${username}${
-          showLikes ? `/likes` : ''
-        }?ref_src=twsrc%5Etfw`}
-      >
-        {`Tweets by @${username}`}
-      </a>
-    </div>
-  )
-}
+}: ITwitterTimelineProps) => (
+  <div style={{ overflow: 'auto' }}>
+    <a
+      className="twitter-timeline"
+      data-theme={theme}
+      data-width={width}
+      data-height={height}
+      href={`https://twitter.com/${username}${
+        showLikes ? `/likes` : ''
+      }?ref_src=twsrc%5Etfw`}
+    >
+      {`Tweets by @${username}`}
+    </a>
+  </div>
+)

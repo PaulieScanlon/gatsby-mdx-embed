@@ -23,7 +23,6 @@ export const CodePen: FunctionComponent<ICodePenProps> = ({
     scrolling="no"
     src={`https://codepen.io/team/codepen/embed/${codePenId}?height=265&theme-id=default&default-tab=${tabs}`}
     frameBorder="no"
-    allowTransparency={true}
     allowFullScreen
   />
 )

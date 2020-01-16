@@ -1,4 +1,4 @@
-import React, { FunctionComponent, Fragment } from 'react'
+import React, { FunctionComponent } from 'react'
 
 export interface ITwitterFollowButtonProps {
   /** Twitter username */
@@ -16,16 +16,12 @@ export const TwitterFollowButton: FunctionComponent<ITwitterFollowButtonProps> =
   showFollowers = false,
   showUsername = true,
   size = 'small'
-}: ITwitterFollowButtonProps) => {
-  return (
-    <Fragment>
-      <a
-        href={`https://twitter.com/${username}?ref_src=twsrc%5Etfw`}
-        className="twitter-follow-button"
-        data-show-count={showFollowers}
-        data-show-screen-name={showUsername}
-        data-size={size}
-      >{`Follow @${username}`}</a>
-    </Fragment>
-  )
-}
+}: ITwitterFollowButtonProps) => (
+  <a
+    href={`https://twitter.com/${username}?ref_src=twsrc%5Etfw`}
+    className="twitter-follow-button"
+    data-show-count={showFollowers}
+    data-show-screen-name={showUsername}
+    data-size={size}
+  >{`Follow @${username}`}</a>
+)

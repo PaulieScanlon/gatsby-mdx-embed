@@ -1,5 +1,5 @@
-import { createScriptTag } from "./src/utils"
-export { wrapRootElement } from "./src/wrapRootElement"
+import { createScriptTag } from './src/utils'
+export { wrapRootElement } from './src/wrapRootElement'
 
 let isTwttrScriptAdded = false
 const twttrClassNames = [
@@ -7,7 +7,7 @@ const twttrClassNames = [
   `.twitter-timeline`,
   `.twitter-follow-button`,
   `.twitter-mention-button`,
-  `.twitter-hashtag-button`,
+  `.twitter-hashtag-button`
 ].join(`,`)
 const twttrEmbedScript = `
 !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs")
@@ -26,7 +26,7 @@ const twttrLoad = () => {
 let isInstgrmScriptAdded = false
 const instgrmClassNames = [
   `.instagram-media`,
-  `.instagram-media-rendered`,
+  `.instagram-media-rendered`
 ].join(`,`)
 const instgrmEmbedUrl = `https://www.instagram.com/embed.js`
 
@@ -43,6 +43,24 @@ const instgrmProcess = () => {
 let isFlickrScriptAdded = false
 const flickrEmbedClassNames = [`.flickr-embed-mdx`].join(`,`)
 const flickrEmbedUrl = `https://embedr.flickr.com/assets/client-code.js`
+
+const pinterestBuild = () => {
+  if (
+    typeof window.PinUtils !== `undefined` &&
+    window.PinUtils &&
+    typeof window.PinUtils.build === `function`
+  ) {
+    window.PinUtils.build()
+  }
+}
+
+let isPinterestScriptAdded = false
+const pinterestEmbedClassNames = [
+  `.pinterest-pin`,
+  `.pinterest-board`,
+  `.pinterest-follow-button`
+].join(`,`)
+const pinterestEmbedScript = `!function(a,b,c){var d,e,f;d="PIN_"+~~((new Date).getTime()/864e5),a[d]?a[d]+=1:(a[d]=1,a.setTimeout(function(){e=b.getElementsByTagName("SCRIPT")[0],f=b.createElement("SCRIPT"),f.type="text/javascript",f.async=!0,f.src=c.mainUrl+"?"+Math.random(),e.parentNode.insertBefore(f,e)},10))}(window,document,{mainUrl:"//assets.pinterest.com/js/pinit_main.js"});`
 
 export const onRouteUpdate = () => {
   if (document.querySelector(twttrClassNames) !== null) {
@@ -66,6 +84,14 @@ export const onRouteUpdate = () => {
     }
   }
 
+  if (document.querySelector(pinterestEmbedClassNames) !== null) {
+    if (!isPinterestScriptAdded) {
+      createScriptTag(null, pinterestEmbedScript)
+      isPinterestScriptAdded = true
+    }
+  }
+
+  pinterestBuild()
   twttrLoad()
   instgrmProcess()
 }

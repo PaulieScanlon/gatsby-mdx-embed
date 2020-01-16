@@ -354,6 +354,286 @@
       ]
     },
     {
+      "key": "../@pauliescanlon/gatsby-mdx-embed/src/components/Pinterest/Pin.tsx",
+      "value": [
+        {
+          "description": "",
+          "displayName": "Pin",
+          "methods": [],
+          "props": {
+            "pinId": {
+              "defaultValue": null,
+              "description": "Pinterest id",
+              "name": "pinId",
+              "parent": {
+                "fileName": "/Users/paulscanlon/Desktop/_development/gatsby-mdx-embed/@pauliescanlon/gatsby-mdx-embed/src/components/Pinterest/Pin.tsx",
+                "name": "IPinProps"
+              },
+              "required": true,
+              "type": {
+                "name": "string"
+              }
+            },
+            "size": {
+              "defaultValue": {
+                "value": "small"
+              },
+              "description": "Size",
+              "name": "size",
+              "parent": {
+                "fileName": "/Users/paulscanlon/Desktop/_development/gatsby-mdx-embed/@pauliescanlon/gatsby-mdx-embed/src/components/Pinterest/Pin.tsx",
+                "name": "IPinProps"
+              },
+              "required": false,
+              "type": {
+                "name": "\"small\" | \"medium\" | \"large\""
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "key": "../@pauliescanlon/gatsby-mdx-embed/src/components/Pinterest/PinterestBoard.tsx",
+      "value": [
+        {
+          "description": "",
+          "displayName": "PinterestBoard",
+          "methods": [],
+          "props": {
+            "pinterestLink": {
+              "defaultValue": null,
+              "description": "Pinterest link",
+              "name": "pinterestLink",
+              "parent": {
+                "fileName": "/Users/paulscanlon/Desktop/_development/gatsby-mdx-embed/@pauliescanlon/gatsby-mdx-embed/src/components/Pinterest/PinterestBoard.tsx",
+                "name": "IPinterestBoardProps"
+              },
+              "required": true,
+              "type": {
+                "name": "string"
+              }
+            },
+            "width": {
+              "defaultValue": {
+                "value": 400
+              },
+              "description": "Width for the board",
+              "name": "width",
+              "parent": {
+                "fileName": "/Users/paulscanlon/Desktop/_development/gatsby-mdx-embed/@pauliescanlon/gatsby-mdx-embed/src/components/Pinterest/PinterestBoard.tsx",
+                "name": "IPinterestBoardProps"
+              },
+              "required": false,
+              "type": {
+                "name": "number | undefined"
+              }
+            },
+            "height": {
+              "defaultValue": {
+                "value": 250
+              },
+              "description": "Height for the board",
+              "name": "height",
+              "parent": {
+                "fileName": "/Users/paulscanlon/Desktop/_development/gatsby-mdx-embed/@pauliescanlon/gatsby-mdx-embed/src/components/Pinterest/PinterestBoard.tsx",
+                "name": "IPinterestBoardProps"
+              },
+              "required": false,
+              "type": {
+                "name": "number | undefined"
+              }
+            },
+            "imageWidth": {
+              "defaultValue": {
+                "value": 80
+              },
+              "description": "Size of the thumbnails",
+              "name": "imageWidth",
+              "parent": {
+                "fileName": "/Users/paulscanlon/Desktop/_development/gatsby-mdx-embed/@pauliescanlon/gatsby-mdx-embed/src/components/Pinterest/PinterestBoard.tsx",
+                "name": "IPinterestBoardProps"
+              },
+              "required": false,
+              "type": {
+                "name": "number | undefined"
+              }
+            },
+            "variant": {
+              "defaultValue": {
+                "value": "board"
+              },
+              "description": "The type of board",
+              "name": "variant",
+              "parent": {
+                "fileName": "/Users/paulscanlon/Desktop/_development/gatsby-mdx-embed/@pauliescanlon/gatsby-mdx-embed/src/components/Pinterest/PinterestBoard.tsx",
+                "name": "IPinterestBoardProps"
+              },
+              "required": false,
+              "type": {
+                "name": "\"board\" | \"user\" | undefined"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "key": "../@pauliescanlon/gatsby-mdx-embed/src/components/Pinterest/PinterestFollowButton.tsx",
+      "value": [
+        {
+          "description": "",
+          "displayName": "PinterestFollowButton",
+          "methods": [],
+          "props": {
+            "username": {
+              "defaultValue": null,
+              "description": "Pinterest username",
+              "name": "username",
+              "parent": {
+                "fileName": "/Users/paulscanlon/Desktop/_development/gatsby-mdx-embed/@pauliescanlon/gatsby-mdx-embed/src/components/Pinterest/PinterestFollowButton.tsx",
+                "name": "IPinterestFollowButtonProps"
+              },
+              "required": true,
+              "type": {
+                "name": "string"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "key": "../@pauliescanlon/gatsby-mdx-embed/src/components/Pinterest/index.ts",
+      "value": [
+        {
+          "description": "",
+          "displayName": "Pin",
+          "methods": [],
+          "props": {
+            "pinId": {
+              "defaultValue": null,
+              "description": "Pinterest id",
+              "name": "pinId",
+              "parent": {
+                "fileName": "/Users/paulscanlon/Desktop/_development/gatsby-mdx-embed/@pauliescanlon/gatsby-mdx-embed/src/components/Pinterest/Pin.tsx",
+                "name": "IPinProps"
+              },
+              "required": true,
+              "type": {
+                "name": "string"
+              }
+            },
+            "size": {
+              "defaultValue": null,
+              "description": "Size",
+              "name": "size",
+              "parent": {
+                "fileName": "/Users/paulscanlon/Desktop/_development/gatsby-mdx-embed/@pauliescanlon/gatsby-mdx-embed/src/components/Pinterest/Pin.tsx",
+                "name": "IPinProps"
+              },
+              "required": true,
+              "type": {
+                "name": "\"small\" | \"medium\" | \"large\""
+              }
+            }
+          }
+        },
+        {
+          "description": "",
+          "displayName": "PinterestBoard",
+          "methods": [],
+          "props": {
+            "pinterestLink": {
+              "defaultValue": null,
+              "description": "Pinterest link",
+              "name": "pinterestLink",
+              "parent": {
+                "fileName": "/Users/paulscanlon/Desktop/_development/gatsby-mdx-embed/@pauliescanlon/gatsby-mdx-embed/src/components/Pinterest/PinterestBoard.tsx",
+                "name": "IPinterestBoardProps"
+              },
+              "required": true,
+              "type": {
+                "name": "string"
+              }
+            },
+            "width": {
+              "defaultValue": null,
+              "description": "Width for the board",
+              "name": "width",
+              "parent": {
+                "fileName": "/Users/paulscanlon/Desktop/_development/gatsby-mdx-embed/@pauliescanlon/gatsby-mdx-embed/src/components/Pinterest/PinterestBoard.tsx",
+                "name": "IPinterestBoardProps"
+              },
+              "required": false,
+              "type": {
+                "name": "number | undefined"
+              }
+            },
+            "height": {
+              "defaultValue": null,
+              "description": "Height for the board",
+              "name": "height",
+              "parent": {
+                "fileName": "/Users/paulscanlon/Desktop/_development/gatsby-mdx-embed/@pauliescanlon/gatsby-mdx-embed/src/components/Pinterest/PinterestBoard.tsx",
+                "name": "IPinterestBoardProps"
+              },
+              "required": false,
+              "type": {
+                "name": "number | undefined"
+              }
+            },
+            "imageWidth": {
+              "defaultValue": null,
+              "description": "Size of the thumbnails",
+              "name": "imageWidth",
+              "parent": {
+                "fileName": "/Users/paulscanlon/Desktop/_development/gatsby-mdx-embed/@pauliescanlon/gatsby-mdx-embed/src/components/Pinterest/PinterestBoard.tsx",
+                "name": "IPinterestBoardProps"
+              },
+              "required": false,
+              "type": {
+                "name": "number | undefined"
+              }
+            },
+            "variant": {
+              "defaultValue": null,
+              "description": "The type of board",
+              "name": "variant",
+              "parent": {
+                "fileName": "/Users/paulscanlon/Desktop/_development/gatsby-mdx-embed/@pauliescanlon/gatsby-mdx-embed/src/components/Pinterest/PinterestBoard.tsx",
+                "name": "IPinterestBoardProps"
+              },
+              "required": false,
+              "type": {
+                "name": "\"board\" | \"user\" | undefined"
+              }
+            }
+          }
+        },
+        {
+          "description": "",
+          "displayName": "PinterestFollowButton",
+          "methods": [],
+          "props": {
+            "username": {
+              "defaultValue": null,
+              "description": "Pinterest username",
+              "name": "username",
+              "parent": {
+                "fileName": "/Users/paulscanlon/Desktop/_development/gatsby-mdx-embed/@pauliescanlon/gatsby-mdx-embed/src/components/Pinterest/PinterestFollowButton.tsx",
+                "name": "IPinterestFollowButtonProps"
+              },
+              "required": true,
+              "type": {
+                "name": "string"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
       "key": "../@pauliescanlon/gatsby-mdx-embed/src/components/SoundCloud/SoundCloud.tsx",
       "value": [
         {
@@ -871,7 +1151,7 @@
               },
               "required": false,
               "type": {
-                "name": "\"large\" | \"small\" | undefined"
+                "name": "\"small\" | \"large\" | undefined"
               }
             }
           }
@@ -911,7 +1191,7 @@
               },
               "required": false,
               "type": {
-                "name": "\"large\" | \"small\" | undefined"
+                "name": "\"small\" | \"large\" | undefined"
               }
             }
           }
@@ -1034,7 +1314,7 @@
               },
               "required": false,
               "type": {
-                "name": "\"large\" | \"small\" | undefined"
+                "name": "\"small\" | \"large\" | undefined"
               }
             }
           }
@@ -1314,7 +1594,7 @@
               },
               "required": false,
               "type": {
-                "name": "string | number | undefined"
+                "name": "string | number | null | undefined"
               }
             }
           }
@@ -1373,7 +1653,7 @@
               },
               "required": false,
               "type": {
-                "name": "\"large\" | \"small\" | undefined"
+                "name": "\"small\" | \"large\" | undefined"
               }
             }
           }
@@ -1406,7 +1686,7 @@
               },
               "required": false,
               "type": {
-                "name": "\"large\" | \"small\" | undefined"
+                "name": "\"small\" | \"large\" | undefined"
               }
             }
           }
@@ -1439,7 +1719,7 @@
               },
               "required": false,
               "type": {
-                "name": "\"large\" | \"small\" | undefined"
+                "name": "\"small\" | \"large\" | undefined"
               }
             }
           }
@@ -1767,126 +2047,6 @@
   ],
   "entries": [
     {
-      "key": "src/pages/help.mdx",
-      "value": {
-        "id": "36fbc839afce02f710663a15c63b5026",
-        "filepath": "src/pages/help.mdx",
-        "fullpath": "/Users/paulscanlon/Desktop/_development/gatsby-mdx-embed/demo/src/pages/help.mdx",
-        "link": "https://github.com/PaulieScanlon/gatsby-mdx-embed/edit/master/demo/src/pages/help.mdx",
-        "slug": "src-pages-help",
-        "route": "/src-pages-help",
-        "name": "Help",
-        "menu": "",
-        "headings": [
-          {
-            "slug": "help-♂️",
-            "depth": 1,
-            "value": "Help 💁‍♂️"
-          },
-          {
-            "slug": "codepen",
-            "depth": 2,
-            "value": "CodePen"
-          },
-          {
-            "slug": "codesandbox",
-            "depth": 2,
-            "value": "CodeSandbox"
-          },
-          {
-            "slug": "flickr",
-            "depth": 2,
-            "value": "Flickr"
-          },
-          {
-            "slug": "gist",
-            "depth": 2,
-            "value": "Gist"
-          },
-          {
-            "slug": "instagram",
-            "depth": 2,
-            "value": "Instagram"
-          },
-          {
-            "slug": "soundcloud",
-            "depth": 2,
-            "value": "SoundCloud"
-          },
-          {
-            "slug": "spotify",
-            "depth": 2,
-            "value": "Spotify"
-          },
-          {
-            "slug": "twitch",
-            "depth": 2,
-            "value": "Twitch"
-          },
-          {
-            "slug": "tweet",
-            "depth": 2,
-            "value": "Tweet"
-          },
-          {
-            "slug": "vimeo",
-            "depth": 2,
-            "value": "Vimeo"
-          },
-          {
-            "slug": "youtube",
-            "depth": 2,
-            "value": "YouTube"
-          }
-        ]
-      }
-    },
-    {
-      "key": "src/pages/index.mdx",
-      "value": {
-        "name": "Getting Started",
-        "route": "/",
-        "id": "522b7407e210088f3588b943aec44115",
-        "filepath": "src/pages/index.mdx",
-        "fullpath": "/Users/paulscanlon/Desktop/_development/gatsby-mdx-embed/demo/src/pages/index.mdx",
-        "link": "https://github.com/PaulieScanlon/gatsby-mdx-embed/edit/master/demo/src/pages/index.mdx",
-        "slug": "src-pages-index",
-        "menu": "",
-        "headings": [
-          {
-            "slug": "gatsby-mdx-embed-🧼",
-            "depth": 1,
-            "value": "Gatsby Mdx Embed 🧼"
-          },
-          {
-            "slug": "install",
-            "depth": 3,
-            "value": "Install"
-          },
-          {
-            "slug": "install-peer-dependencies",
-            "depth": 3,
-            "value": "Install peer dependencies"
-          },
-          {
-            "slug": "no-import-required",
-            "depth": 2,
-            "value": "No import required!"
-          },
-          {
-            "slug": "which-renders-as-",
-            "depth": 2,
-            "value": "Which renders as 👇"
-          },
-          {
-            "slug": "my-cool-pen",
-            "depth": 4,
-            "value": "My cool pen"
-          }
-        ]
-      }
-    },
-    {
       "key": "src/components/codePen.mdx",
       "value": {
         "name": "CodePen",
@@ -1907,6 +2067,11 @@
             "slug": "basic-usage",
             "depth": 2,
             "value": "Basic usage"
+          },
+          {
+            "slug": "tabs",
+            "depth": 2,
+            "value": "Tabs"
           }
         ]
       }
@@ -2242,6 +2407,216 @@
             "slug": "skip-to",
             "depth": 2,
             "value": "Skip to"
+          }
+        ]
+      }
+    },
+    {
+      "key": "src/pages/help.mdx",
+      "value": {
+        "id": "36fbc839afce02f710663a15c63b5026",
+        "filepath": "src/pages/help.mdx",
+        "fullpath": "/Users/paulscanlon/Desktop/_development/gatsby-mdx-embed/demo/src/pages/help.mdx",
+        "link": "https://github.com/PaulieScanlon/gatsby-mdx-embed/edit/master/demo/src/pages/help.mdx",
+        "slug": "src-pages-help",
+        "route": "/src-pages-help",
+        "name": "Help",
+        "menu": "",
+        "headings": [
+          {
+            "slug": "help-♂️",
+            "depth": 1,
+            "value": "Help 💁‍♂️"
+          },
+          {
+            "slug": "codepen",
+            "depth": 2,
+            "value": "CodePen"
+          },
+          {
+            "slug": "codesandbox",
+            "depth": 2,
+            "value": "CodeSandbox"
+          },
+          {
+            "slug": "flickr",
+            "depth": 2,
+            "value": "Flickr"
+          },
+          {
+            "slug": "gist",
+            "depth": 2,
+            "value": "Gist"
+          },
+          {
+            "slug": "instagram",
+            "depth": 2,
+            "value": "Instagram"
+          },
+          {
+            "slug": "soundcloud",
+            "depth": 2,
+            "value": "SoundCloud"
+          },
+          {
+            "slug": "spotify",
+            "depth": 2,
+            "value": "Spotify"
+          },
+          {
+            "slug": "twitch",
+            "depth": 2,
+            "value": "Twitch"
+          },
+          {
+            "slug": "tweet",
+            "depth": 2,
+            "value": "Tweet"
+          },
+          {
+            "slug": "vimeo",
+            "depth": 2,
+            "value": "Vimeo"
+          },
+          {
+            "slug": "youtube",
+            "depth": 2,
+            "value": "YouTube"
+          }
+        ]
+      }
+    },
+    {
+      "key": "src/pages/index.mdx",
+      "value": {
+        "name": "Getting Started",
+        "route": "/",
+        "id": "522b7407e210088f3588b943aec44115",
+        "filepath": "src/pages/index.mdx",
+        "fullpath": "/Users/paulscanlon/Desktop/_development/gatsby-mdx-embed/demo/src/pages/index.mdx",
+        "link": "https://github.com/PaulieScanlon/gatsby-mdx-embed/edit/master/demo/src/pages/index.mdx",
+        "slug": "src-pages-index",
+        "menu": "",
+        "headings": [
+          {
+            "slug": "gatsby-mdx-embed-🧼",
+            "depth": 1,
+            "value": "Gatsby Mdx Embed 🧼"
+          },
+          {
+            "slug": "install",
+            "depth": 3,
+            "value": "Install"
+          },
+          {
+            "slug": "install-peer-dependencies",
+            "depth": 3,
+            "value": "Install peer dependencies"
+          },
+          {
+            "slug": "no-import-required",
+            "depth": 2,
+            "value": "No import required!"
+          },
+          {
+            "slug": "which-renders-as-",
+            "depth": 2,
+            "value": "Which renders as 👇"
+          },
+          {
+            "slug": "my-cool-pen",
+            "depth": 4,
+            "value": "My cool pen"
+          }
+        ]
+      }
+    },
+    {
+      "key": "src/components/pinterest/Pin.mdx",
+      "value": {
+        "name": "Pin",
+        "menu": "Components",
+        "id": "8edfdd01a26aa25546c96e6edbe42aa6",
+        "filepath": "src/components/pinterest/Pin.mdx",
+        "fullpath": "/Users/paulscanlon/Desktop/_development/gatsby-mdx-embed/demo/src/components/pinterest/Pin.mdx",
+        "link": "https://github.com/PaulieScanlon/gatsby-mdx-embed/edit/master/demo/src/components/pinterest/Pin.mdx",
+        "slug": "src-components-pinterest-pin",
+        "route": "/src-components-pinterest-pin",
+        "headings": [
+          {
+            "slug": "pin",
+            "depth": 1,
+            "value": "Pin"
+          },
+          {
+            "slug": "basic-usage",
+            "depth": 2,
+            "value": "Basic usage"
+          },
+          {
+            "slug": "size",
+            "depth": 2,
+            "value": "Size"
+          }
+        ]
+      }
+    },
+    {
+      "key": "src/components/pinterest/pinterestBoard.mdx",
+      "value": {
+        "name": "PinterestBoard",
+        "menu": "Components",
+        "id": "21df1d390a0c3638a8923d8b67717938",
+        "filepath": "src/components/pinterest/pinterestBoard.mdx",
+        "fullpath": "/Users/paulscanlon/Desktop/_development/gatsby-mdx-embed/demo/src/components/pinterest/pinterestBoard.mdx",
+        "link": "https://github.com/PaulieScanlon/gatsby-mdx-embed/edit/master/demo/src/components/pinterest/pinterestBoard.mdx",
+        "slug": "src-components-pinterest-pinterest-board",
+        "route": "/src-components-pinterest-pinterest-board",
+        "headings": [
+          {
+            "slug": "pinterestboard",
+            "depth": 1,
+            "value": "PinterestBoard"
+          },
+          {
+            "slug": "basic-usage",
+            "depth": 2,
+            "value": "Basic usage"
+          },
+          {
+            "slug": "width",
+            "depth": 2,
+            "value": "Width"
+          },
+          {
+            "slug": "variant",
+            "depth": 2,
+            "value": "Variant"
+          }
+        ]
+      }
+    },
+    {
+      "key": "src/components/pinterest/pinterestFollowButton.mdx",
+      "value": {
+        "name": "PinterestFollowButton",
+        "menu": "Components",
+        "id": "dfa4061173ed69bd1ce4ce0d874e6353",
+        "filepath": "src/components/pinterest/pinterestFollowButton.mdx",
+        "fullpath": "/Users/paulscanlon/Desktop/_development/gatsby-mdx-embed/demo/src/components/pinterest/pinterestFollowButton.mdx",
+        "link": "https://github.com/PaulieScanlon/gatsby-mdx-embed/edit/master/demo/src/components/pinterest/pinterestFollowButton.mdx",
+        "slug": "src-components-pinterest-pinterest-follow-button",
+        "route": "/src-components-pinterest-pinterest-follow-button",
+        "headings": [
+          {
+            "slug": "pinterestfollowbutton",
+            "depth": 1,
+            "value": "PinterestFollowButton"
+          },
+          {
+            "slug": "basic-usage",
+            "depth": 2,
+            "value": "Basic usage"
           }
         ]
       }

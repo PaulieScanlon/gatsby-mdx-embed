@@ -19,18 +19,16 @@ export const TwitterList: FunctionComponent<ITwitterListProps> = ({
   listName,
   width = '498px',
   height = null
-}: ITwitterListProps) => {
-  return (
-    <div style={{ overflow: 'auto' }}>
-      <a
-        className="twitter-timeline"
-        data-theme={theme}
-        data-width={width}
-        data-height={height}
-        href={`https://twitter.com/${username}/lists/${listName}?ref_src=twsrc%5Etfw`}
-      >
-        {`A Twitter List by @${username}`}
-      </a>
-    </div>
-  )
-}
+}: ITwitterListProps) => (
+  <div style={{ overflow: 'auto' }}>
+    <a
+      className="twitter-timeline"
+      data-theme={theme}
+      data-width={width}
+      data-height={height}
+      href={`https://twitter.com/${username}/lists/${listName}?ref_src=twsrc%5Etfw`}
+    >
+      {`A Twitter List by @${username}`}
+    </a>
+  </div>
+)

@@ -7,6 +7,14 @@ import { Flickr, IFlickrProps } from '../Flickr'
 import { Gist, IGistProps } from '../Gist'
 import { Vimeo, IVimeoProps } from '../Vimeo'
 import { Instagram, IInstagramProps } from '../Instagram'
+import {
+  Pin,
+  IPinProps,
+  PinterestBoard,
+  IPinterestBoardProps,
+  PinterestFollowButton,
+  IPinterestFollowButtonProps
+} from '../Pinterest'
 import { SoundCloud, ISoundCloudProps } from '../SoundCloud'
 import { Spotify, ISpotifyProps } from '../Spotify'
 import { Twitch, ITwitchProps } from '../Twitch'
@@ -33,6 +41,13 @@ const components = {
   Flickr: (props: IFlickrProps) => <Flickr {...props} />,
   Gist: (props: IGistProps) => <Gist {...props} />,
   Instagram: (props: IInstagramProps) => <Instagram {...props} />,
+  Pin: (props: IPinProps) => <Pin {...props} />,
+  PinterestBoard: (props: IPinterestBoardProps) => (
+    <PinterestBoard {...props} />
+  ),
+  PinterestFollowButton: (props: IPinterestFollowButtonProps) => (
+    <PinterestFollowButton {...props} />
+  ),
   SoundCloud: (props: ISoundCloudProps) => <SoundCloud {...props} />,
   Spotify: (props: ISpotifyProps) => <Spotify {...props} />,
   Twitch: (props: ITwitchProps) => <Twitch {...props} />,

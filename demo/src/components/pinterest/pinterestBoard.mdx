@@ -1,0 +1,31 @@
+---
+name: PinterestBoard
+menu: Components
+---
+
+import { Playground, Props } from "docz"
+import { PinterestBoard } from "@pauliescanlon/gatsby-mdx-embed"
+
+# PinterestBoard
+
+Display a PinterestBoard by including the component in your `.mdx`. The `pinterestLink` prop is required.
+
+<Props of={PinterestBoard} />
+
+## Basic usage
+
+<Playground>
+  <PinterestBoard pinterestLink="fromspacewithlove/astronauts/" />
+</Playground>
+
+## Width
+
+<Playground>
+  <PinterestBoard pinterestLink="fromspacewithlove/astronauts/" width={900} />
+</Playground>
+
+## Variant
+
+<Playground>
+  <PinterestBoard pinterestLink="fromspacewithlove" variant="user" />
+</Playground>

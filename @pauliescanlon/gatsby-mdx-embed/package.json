@@ -12,7 +12,8 @@
     "test": "jest",
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage",
-    "publish": "npm login"
+    "publish": "npm login",
+    "tsc": "tsc"
   },
   "dependencies": {
     "prop-types": "^15.7.2"

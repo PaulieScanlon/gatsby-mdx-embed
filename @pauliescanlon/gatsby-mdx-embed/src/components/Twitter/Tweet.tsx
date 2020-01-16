@@ -13,20 +13,14 @@ export const Tweet: FunctionComponent<ITweetProps> = ({
   tweetLink,
   theme = 'light',
   align = 'left'
-}: ITweetProps) => {
-  return (
-    <div style={{ overflow: 'auto' }}>
-      <blockquote
-        className="twitter-tweet"
-        data-theme={theme}
-        data-align={align}
-      >
-        <a href={`https://twitter.com/${tweetLink}?ref_src=twsrc%5Etfw`}>
-          {typeof window !== 'undefined' && !(window as any).twttr
-            ? 'Loading'
-            : ''}
-        </a>
-      </blockquote>
-    </div>
-  )
-}
+}: ITweetProps) => (
+  <div style={{ overflow: 'auto' }}>
+    <blockquote className="twitter-tweet" data-theme={theme} data-align={align}>
+      <a href={`https://twitter.com/${tweetLink}?ref_src=twsrc%5Etfw`}>
+        {typeof window !== 'undefined' && !(window as any).twttr
+          ? 'Loading'
+          : ''}
+      </a>
+    </blockquote>
+  </div>
+)
