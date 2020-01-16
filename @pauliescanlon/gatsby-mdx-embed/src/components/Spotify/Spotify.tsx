@@ -20,7 +20,6 @@ export const Spotify: FunctionComponent<ISpotifyProps> = ({
     width={width}
     height={height}
     frameBorder="0"
-    allowTransparency={true}
     allow="encrypted-media"
   />
 )

@@ -44,6 +44,14 @@ let isFlickrScriptAdded = false
 const flickrEmbedClassNames = [`.flickr-embed-mdx`].join(`,`)
 const flickrEmbedUrl = `https://embedr.flickr.com/assets/client-code.js`
 
+let isPinterestScriptAdded = false
+const pinterestEmbedClassNames = [
+  `.pinterest-pin`,
+  `.pinterest-board`,
+  `.pinterest-follow-button`
+].join(`,`)
+const pinterestEmbedScript = `!function(a,b,c){var d,e,f;d="PIN_"+~~((new Date).getTime()/864e5),a[d]?a[d]+=1:(a[d]=1,a.setTimeout(function(){e=b.getElementsByTagName("SCRIPT")[0],f=b.createElement("SCRIPT"),f.type="text/javascript",f.async=!0,f.src=c.mainUrl+"?"+Math.random(),e.parentNode.insertBefore(f,e)},10))}(window,document,{mainUrl:"//assets.pinterest.com/js/pinit_main.js"});`
+
 const pinterestBuild = () => {
   if (
     typeof window.PinUtils !== `undefined` &&
@@ -53,14 +61,6 @@ const pinterestBuild = () => {
     window.PinUtils.build()
   }
 }
-
-let isPinterestScriptAdded = false
-const pinterestEmbedClassNames = [
-  `.pinterest-pin`,
-  `.pinterest-board`,
-  `.pinterest-follow-button`
-].join(`,`)
-const pinterestEmbedScript = `!function(a,b,c){var d,e,f;d="PIN_"+~~((new Date).getTime()/864e5),a[d]?a[d]+=1:(a[d]=1,a.setTimeout(function(){e=b.getElementsByTagName("SCRIPT")[0],f=b.createElement("SCRIPT"),f.type="text/javascript",f.async=!0,f.src=c.mainUrl+"?"+Math.random(),e.parentNode.insertBefore(f,e)},10))}(window,document,{mainUrl:"//assets.pinterest.com/js/pinit_main.js"});`
 
 export const onRouteUpdate = () => {
   if (document.querySelector(twttrClassNames) !== null) {
