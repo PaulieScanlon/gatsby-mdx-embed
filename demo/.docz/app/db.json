@@ -3,12 +3,7 @@
     "title": "gatsby-mdx-embed",
     "description": "gatsby-mdx-embed is an mdx plugin to embed YouTube, Twitter etc into .mdx without imports",
     "menu": [
-      {
-        "name": "Getting Started"
-      },
-      {
-        "name": "Components"
-      }
+      "Getting Started"
     ],
     "version": "0.1.0",
     "repository": "https://github.com/PaulieScanlon/gatsby-mdx-embed",
@@ -232,56 +227,6 @@
       ]
     },
     {
-      "key": "../@pauliescanlon/gatsby-mdx-embed/src/components/Instagram/Instagram.tsx",
-      "value": [
-        {
-          "description": "",
-          "displayName": "Instagram",
-          "methods": [],
-          "props": {
-            "instagramId": {
-              "defaultValue": null,
-              "description": "Instagram id",
-              "name": "instagramId",
-              "parent": {
-                "fileName": "../@pauliescanlon/gatsby-mdx-embed/src/components/Instagram/Instagram.tsx",
-                "name": "IInstagramProps"
-              },
-              "required": true,
-              "type": {
-                "name": "string"
-              }
-            }
-          }
-        }
-      ]
-    },
-    {
-      "key": "../@pauliescanlon/gatsby-mdx-embed/src/components/Instagram/index.ts",
-      "value": [
-        {
-          "description": "",
-          "displayName": "Instagram",
-          "methods": [],
-          "props": {
-            "instagramId": {
-              "defaultValue": null,
-              "description": "Instagram id",
-              "name": "instagramId",
-              "parent": {
-                "fileName": "../@pauliescanlon/gatsby-mdx-embed/src/components/Instagram/Instagram.tsx",
-                "name": "IInstagramProps"
-              },
-              "required": true,
-              "type": {
-                "name": "string"
-              }
-            }
-          }
-        }
-      ]
-    },
-    {
       "key": "../@pauliescanlon/gatsby-mdx-embed/src/components/Gist/Gist.tsx",
       "value": [
         {
@@ -321,6 +266,56 @@
               "parent": {
                 "fileName": "../@pauliescanlon/gatsby-mdx-embed/src/components/Gist/Gist.tsx",
                 "name": "IGistProps"
+              },
+              "required": true,
+              "type": {
+                "name": "string"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "key": "../@pauliescanlon/gatsby-mdx-embed/src/components/Instagram/Instagram.tsx",
+      "value": [
+        {
+          "description": "",
+          "displayName": "Instagram",
+          "methods": [],
+          "props": {
+            "instagramId": {
+              "defaultValue": null,
+              "description": "Instagram id",
+              "name": "instagramId",
+              "parent": {
+                "fileName": "../@pauliescanlon/gatsby-mdx-embed/src/components/Instagram/Instagram.tsx",
+                "name": "IInstagramProps"
+              },
+              "required": true,
+              "type": {
+                "name": "string"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "key": "../@pauliescanlon/gatsby-mdx-embed/src/components/Instagram/index.ts",
+      "value": [
+        {
+          "description": "",
+          "displayName": "Instagram",
+          "methods": [],
+          "props": {
+            "instagramId": {
+              "defaultValue": null,
+              "description": "Instagram id",
+              "name": "instagramId",
+              "parent": {
+                "fileName": "../@pauliescanlon/gatsby-mdx-embed/src/components/Instagram/Instagram.tsx",
+                "name": "IInstagramProps"
               },
               "required": true,
               "type": {
@@ -2277,46 +2272,6 @@
       }
     },
     {
-      "key": "src/components/twitterTimeline.mdx",
-      "value": {
-        "name": "TwitterTimeline",
-        "menu": "Components",
-        "id": "f3ed43942b632bbdfb0485f8d2d77cc3",
-        "filepath": "src/components/twitterTimeline.mdx",
-        "fullpath": "/Users/paulscanlon/Desktop/_development/gatsby-mdx-embed/demo/src/components/twitterTimeline.mdx",
-        "link": "https://github.com/PaulieScanlon/gatsby-mdx-embed/edit/master/demo/src/components/twitterTimeline.mdx",
-        "slug": "src-components-twitter-timeline",
-        "route": "/src-components-twitter-timeline",
-        "headings": [
-          {
-            "slug": "twittertimeline",
-            "depth": 1,
-            "value": "TwitterTimeline"
-          },
-          {
-            "slug": "basic-usage",
-            "depth": 2,
-            "value": "Basic usage"
-          },
-          {
-            "slug": "width",
-            "depth": 2,
-            "value": "Width"
-          },
-          {
-            "slug": "theme",
-            "depth": 2,
-            "value": "Theme"
-          },
-          {
-            "slug": "show-likes",
-            "depth": 2,
-            "value": "Show Likes"
-          }
-        ]
-      }
-    },
-    {
       "key": "src/components/vimeo.mdx",
       "value": {
         "name": "Vimeo",
@@ -2414,13 +2369,13 @@
     {
       "key": "src/pages/help.mdx",
       "value": {
+        "name": "Help",
         "id": "36fbc839afce02f710663a15c63b5026",
         "filepath": "src/pages/help.mdx",
         "fullpath": "/Users/paulscanlon/Desktop/_development/gatsby-mdx-embed/demo/src/pages/help.mdx",
         "link": "https://github.com/PaulieScanlon/gatsby-mdx-embed/edit/master/demo/src/pages/help.mdx",
         "slug": "src-pages-help",
         "route": "/src-pages-help",
-        "name": "Help",
         "menu": "",
         "headings": [
           {
@@ -2536,6 +2491,7 @@
       "value": {
         "name": "Pin",
         "menu": "Components",
+        "submenu": "Pinterest",
         "id": "8edfdd01a26aa25546c96e6edbe42aa6",
         "filepath": "src/components/pinterest/Pin.mdx",
         "fullpath": "/Users/paulscanlon/Desktop/_development/gatsby-mdx-embed/demo/src/components/pinterest/Pin.mdx",
@@ -2566,6 +2522,7 @@
       "value": {
         "name": "PinterestBoard",
         "menu": "Components",
+        "submenu": "Pinterest",
         "id": "21df1d390a0c3638a8923d8b67717938",
         "filepath": "src/components/pinterest/pinterestBoard.mdx",
         "fullpath": "/Users/paulscanlon/Desktop/_development/gatsby-mdx-embed/demo/src/components/pinterest/pinterestBoard.mdx",
@@ -2601,6 +2558,7 @@
       "value": {
         "name": "PinterestFollowButton",
         "menu": "Components",
+        "submenu": "Pinterest",
         "id": "dfa4061173ed69bd1ce4ce0d874e6353",
         "filepath": "src/components/pinterest/pinterestFollowButton.mdx",
         "fullpath": "/Users/paulscanlon/Desktop/_development/gatsby-mdx-embed/demo/src/components/pinterest/pinterestFollowButton.mdx",
@@ -2626,6 +2584,7 @@
       "value": {
         "name": "Tweet",
         "menu": "Components",
+        "submenu": "Twitter",
         "id": "ed8b884d2e923c85753e35df5b2a5bd7",
         "filepath": "src/components/twitter/tweet.mdx",
         "fullpath": "/Users/paulscanlon/Desktop/_development/gatsby-mdx-embed/demo/src/components/twitter/tweet.mdx",
@@ -2661,6 +2620,7 @@
       "value": {
         "name": "TwitterFollowButton",
         "menu": "Components",
+        "submenu": "Twitter",
         "id": "40007ff0548f33f9e4eba807cc3d6fb4",
         "filepath": "src/components/twitter/twitterFollowButton.mdx",
         "fullpath": "/Users/paulscanlon/Desktop/_development/gatsby-mdx-embed/demo/src/components/twitter/twitterFollowButton.mdx",
@@ -2701,6 +2661,7 @@
       "value": {
         "name": "TwitterHashtagButton",
         "menu": "Components",
+        "submenu": "Twitter",
         "id": "bce7f3cf658900fde390f374b68fea5a",
         "filepath": "src/components/twitter/twitterHashtagButton.mdx",
         "fullpath": "/Users/paulscanlon/Desktop/_development/gatsby-mdx-embed/demo/src/components/twitter/twitterHashtagButton.mdx",
@@ -2731,6 +2692,7 @@
       "value": {
         "name": "TwitterList",
         "menu": "Components",
+        "submenu": "Twitter",
         "id": "93c4dc4f29c8e941996cd805284b1b1b",
         "filepath": "src/components/twitter/twitterList.mdx",
         "fullpath": "/Users/paulscanlon/Desktop/_development/gatsby-mdx-embed/demo/src/components/twitter/twitterList.mdx",
@@ -2766,6 +2728,7 @@
       "value": {
         "name": "TwitterMentionButton",
         "menu": "Components",
+        "submenu": "Twitter",
         "id": "4c1507fac92e776d99f09bd9ef57cd51",
         "filepath": "src/components/twitter/twitterMentionButton.mdx",
         "fullpath": "/Users/paulscanlon/Desktop/_development/gatsby-mdx-embed/demo/src/components/twitter/twitterMentionButton.mdx",
@@ -2787,6 +2750,47 @@
             "slug": "size",
             "depth": 2,
             "value": "Size"
+          }
+        ]
+      }
+    },
+    {
+      "key": "src/components/twitter/twitterTimeline.mdx",
+      "value": {
+        "name": "TwitterTimeline",
+        "menu": "Components",
+        "submenu": "Twitter",
+        "id": "d32113da152ea0432f0011363c352f76",
+        "filepath": "src/components/twitter/twitterTimeline.mdx",
+        "fullpath": "/Users/paulscanlon/Desktop/_development/gatsby-mdx-embed/demo/src/components/twitter/twitterTimeline.mdx",
+        "link": "https://github.com/PaulieScanlon/gatsby-mdx-embed/edit/master/demo/src/components/twitter/twitterTimeline.mdx",
+        "slug": "src-components-twitter-twitter-timeline",
+        "route": "/src-components-twitter-twitter-timeline",
+        "headings": [
+          {
+            "slug": "twittertimeline",
+            "depth": 1,
+            "value": "TwitterTimeline"
+          },
+          {
+            "slug": "basic-usage",
+            "depth": 2,
+            "value": "Basic usage"
+          },
+          {
+            "slug": "width",
+            "depth": 2,
+            "value": "Width"
+          },
+          {
+            "slug": "theme",
+            "depth": 2,
+            "value": "Theme"
+          },
+          {
+            "slug": "show-likes",
+            "depth": 2,
+            "value": "Show Likes"
           }
         ]
       }
