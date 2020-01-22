@@ -16,6 +16,7 @@ export const Spotify: FunctionComponent<ISpotifyProps> = ({
 }: ISpotifyProps) => (
   <iframe
     title={`spotify-${spotifyLink}`}
+    className="spotify-mdx-embed"
     src={`https://open.spotify.com/embed/${spotifyLink}`}
     width={width}
     height={height}

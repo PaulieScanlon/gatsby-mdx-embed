@@ -45,7 +45,7 @@ export const Gist: FunctionComponent<IGistProps> = ({
     <Fragment>
       {!gistResponse.isLoading && (
         <Fragment>
-          <div className="gist gist-file">
+          <div className="gist gist-file gist-mdx-embed">
             <div className="gist-meta">
               <a href={`${root}/${gistLink}`}>{gistResponse.file}</a>
             </div>

@@ -24,6 +24,7 @@ export const Twitch: FunctionComponent<ITwitchProps> = ({
 
   return (
     <div
+      className="twitch-mdx-embed"
       style={{
         position: 'relative',
         width: '100%',

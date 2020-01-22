@@ -19,7 +19,7 @@ export const TwitterFollowButton: FunctionComponent<ITwitterFollowButtonProps> =
 }: ITwitterFollowButtonProps) => (
   <a
     href={`https://twitter.com/${username}?ref_src=twsrc%5Etfw`}
-    className="twitter-follow-button"
+    className="twitter-follow-button twitter-follow-button-mdx-embed"
     data-show-count={showFollowers}
     data-show-screen-name={showUsername}
     data-size={size}

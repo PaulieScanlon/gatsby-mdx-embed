@@ -9,7 +9,7 @@ export const Instagram: FunctionComponent<IInstagramProps> = ({
   instagramId
 }: IInstagramProps) => (
   <blockquote
-    className="instagram-media"
+    className="instagram-media instagram-mdx-embed"
     data-instgrm-version="12"
     // data-instgrm-captioned
   >

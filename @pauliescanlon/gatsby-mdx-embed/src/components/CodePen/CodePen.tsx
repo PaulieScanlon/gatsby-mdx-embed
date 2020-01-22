@@ -16,6 +16,7 @@ export const CodePen: FunctionComponent<ICodePenProps> = ({
 }: ICodePenProps) => (
   <iframe
     title={`codePen-${codePenId}`}
+    className="codepen-mdx-embed"
     height={height}
     style={{
       width: '100%'

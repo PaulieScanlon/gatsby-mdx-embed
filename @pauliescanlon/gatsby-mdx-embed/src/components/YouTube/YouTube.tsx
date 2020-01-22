@@ -32,6 +32,7 @@ export const YouTube: FunctionComponent<IYouTubeProps> = ({
 
   return (
     <div
+      className="youtube-mdx-embed"
       style={{
         position: 'relative',
         width: '100%',

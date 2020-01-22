@@ -21,7 +21,7 @@ export const PinterestBoard: FunctionComponent<IPinterestBoardProps> = ({
   variant = 'board'
 }: IPinterestBoardProps) => (
   <a
-    className="pinterest-board"
+    className="pinterest-board pinterest-board-mdx-embed"
     data-pin-do={`embed${variant.charAt(0).toUpperCase()}${variant.slice(1)}`}
     data-pin-board-width={width}
     data-pin-scale-height={height}

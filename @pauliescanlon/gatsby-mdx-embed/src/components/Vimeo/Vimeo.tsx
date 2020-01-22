@@ -24,6 +24,7 @@ export const Vimeo: FunctionComponent<IVimeoProps> = ({
 
   return (
     <div
+      className="vimeo-mdx-embed"
       style={{
         position: 'relative',
         width: '100%',

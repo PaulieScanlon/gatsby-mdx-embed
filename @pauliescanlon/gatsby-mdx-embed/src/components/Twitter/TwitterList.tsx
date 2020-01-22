@@ -22,7 +22,7 @@ export const TwitterList: FunctionComponent<ITwitterListProps> = ({
 }: ITwitterListProps) => (
   <div style={{ overflow: 'auto' }}>
     <a
-      className="twitter-timeline"
+      className="twitter-timeline twitter-timeline-mdx-embed"
       data-theme={theme}
       data-width={width}
       data-height={height}

@@ -13,7 +13,7 @@ export const TwitterMentionButton: FunctionComponent<ITwitterMentionButtonProps>
 }: ITwitterMentionButtonProps) => (
   <a
     href={`https://twitter.com/intent/tweet?screen_name=${username}&ref_src=twsrc%5Etfw`}
-    className="twitter-mention-button"
+    className="twitter-mention-button twitter-mention-button-mdx-embed"
     data-size={size}
   >{`Tweet to @${username}`}</a>
 )

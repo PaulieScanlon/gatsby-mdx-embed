@@ -9,7 +9,7 @@ export const PinterestFollowButton: FunctionComponent<IPinterestFollowButtonProp
   username
 }: IPinterestFollowButtonProps) => (
   <a
-    className="pinterest-follow-button"
+    className="pinterest-follow-button pinterest-follow-button-mdx-embed"
     data-pin-do="buttonFollow"
     href={`https://www.pinterest.com/${username}/`}
   >

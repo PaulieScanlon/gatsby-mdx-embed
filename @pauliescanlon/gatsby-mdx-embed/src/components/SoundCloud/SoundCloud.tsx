@@ -25,6 +25,7 @@ export const SoundCloud: FunctionComponent<ISoundCloudProps> = ({
 }: ISoundCloudProps) => (
   <iframe
     title={`sound-cloud-${soundCloudLink}`}
+    className="soundcloud-mdx-embed"
     width={width}
     height={height}
     scrolling="no"
