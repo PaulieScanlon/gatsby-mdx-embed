@@ -3,13 +3,14 @@
   "scripts": {
     "clean": "yarn workspace demo clean",
     "serve": "yarn workspace demo serve",
-    "develop": "yarn workspace demo develop",
+    "develop": "yarn workspace @pauliescanlon/gatsby-mdx-embed build && yarn workspace demo develop",
     "build": "yarn workspace demo build",
     "test": "yarn workspace @pauliescanlon/gatsby-mdx-embed test",
     "test:watch": "yarn workspace @pauliescanlon/gatsby-mdx-embed test:watch",
     "test:coverage": "yarn workspace @pauliescanlon/gatsby-mdx-embed test:coverage",
     "release": "node copy-readme.js && yarn workspace @pauliescanlon/gatsby-mdx-embed publish",
-    "tsc": "yarn workspace @pauliescanlon/gatsby-mdx-embed tsc"
+    "build:plugin": "yarn workspace @pauliescanlon/gatsby-mdx-embed build",
+    "tsc:plugin": "yarn workspace @pauliescanlon/gatsby-mdx-embed tsc"
   },
   "workspaces": [
     "demo",

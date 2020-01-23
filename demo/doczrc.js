@@ -2,7 +2,7 @@ const path = require("path")
 
 const directoryPath = path.join(
   process.cwd(),
-  "../@pauliescanlon/gatsby-mdx-embed/src/components"
+  "../@pauliescanlon/gatsby-mdx-embed/lib/src/components"
 )
 
 export default {

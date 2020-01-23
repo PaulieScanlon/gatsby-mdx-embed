@@ -19,7 +19,8 @@ export const CodePen: FunctionComponent<ICodePenProps> = ({
     className="codepen-mdx-embed"
     height={height}
     style={{
-      width: '100%'
+      width: '100%',
+      border: '1px solid blue'
     }}
     scrolling="no"
     src={`https://codepen.io/team/codepen/embed/${codePenId}?height=265&theme-id=default&default-tab=${tabs}`}
