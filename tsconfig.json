@@ -1,0 +1,3 @@
+{
+  "include": ["@pauliescanlon/gatsby-mdx-embed/src/**/*"]
+}

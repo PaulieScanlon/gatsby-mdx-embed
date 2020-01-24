@@ -14,10 +14,1131 @@
     "separator": "-",
     "base": "https://gatsby-mdx-embed.netlify.com/",
     "ogImage": "mdx-embed-main-og-image.jpg",
+    "typescript": true,
     "docgenConfig": {
-      "searchPath": "/Users/paulscanlon/Desktop/_development/gatsby-mdx-embed/@pauliescanlon/gatsby-mdx-embed/components"
+      "searchPath": "/Users/paulscanlon/Desktop/_development/gatsby-mdx-embed/@pauliescanlon/gatsby-mdx-embed/src/components"
     }
   },
+  "props": [
+    {
+      "key": "../@pauliescanlon/gatsby-mdx-embed/src/components/CodePen/CodePen.tsx",
+      "value": [
+        {
+          "description": "",
+          "displayName": "CodePen",
+          "methods": [],
+          "props": {
+            "codePenId": {
+              "defaultValue": null,
+              "description": "CodePen id",
+              "name": "codePenId",
+              "parent": {
+                "fileName": "../@pauliescanlon/gatsby-mdx-embed/src/components/CodePen/CodePen.tsx",
+                "name": "ICodePenProps"
+              },
+              "required": true,
+              "type": {
+                "name": "string"
+              }
+            },
+            "height": {
+              "defaultValue": {
+                "value": 500
+              },
+              "description": "Height for the iFrame",
+              "name": "height",
+              "parent": {
+                "fileName": "../@pauliescanlon/gatsby-mdx-embed/src/components/CodePen/CodePen.tsx",
+                "name": "ICodePenProps"
+              },
+              "required": false,
+              "type": {
+                "name": "number"
+              }
+            },
+            "tabs": {
+              "defaultValue": {
+                "value": "result"
+              },
+              "description": "Which tabs to display",
+              "name": "tabs",
+              "parent": {
+                "fileName": "../@pauliescanlon/gatsby-mdx-embed/src/components/CodePen/CodePen.tsx",
+                "name": "ICodePenProps"
+              },
+              "required": false,
+              "type": {
+                "name": "string[] | \"js\" | \"css\" | \"scss\" | \"less\" | \"result\""
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "key": "../@pauliescanlon/gatsby-mdx-embed/src/components/CodePen/index.tsx",
+      "value": []
+    },
+    {
+      "key": "../@pauliescanlon/gatsby-mdx-embed/src/components/CodeSandbox/CodeSandbox.tsx",
+      "value": [
+        {
+          "description": "",
+          "displayName": "CodeSandbox",
+          "methods": [],
+          "props": {
+            "codeSandboxId": {
+              "defaultValue": null,
+              "description": "CodeSandbox id",
+              "name": "codeSandboxId",
+              "parent": {
+                "fileName": "../@pauliescanlon/gatsby-mdx-embed/src/components/CodeSandbox/CodeSandbox.tsx",
+                "name": "ICodeSandboxProps"
+              },
+              "required": true,
+              "type": {
+                "name": "string"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "key": "../@pauliescanlon/gatsby-mdx-embed/src/components/CodeSandbox/index.ts",
+      "value": []
+    },
+    {
+      "key": "../@pauliescanlon/gatsby-mdx-embed/src/components/Gist/Gist.tsx",
+      "value": [
+        {
+          "description": "",
+          "displayName": "Gist",
+          "methods": [],
+          "props": {
+            "gistLink": {
+              "defaultValue": null,
+              "description": "Gist link",
+              "name": "gistLink",
+              "parent": {
+                "fileName": "../@pauliescanlon/gatsby-mdx-embed/src/components/Gist/Gist.tsx",
+                "name": "IGistProps"
+              },
+              "required": true,
+              "type": {
+                "name": "string"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "key": "../@pauliescanlon/gatsby-mdx-embed/src/components/Gist/index.ts",
+      "value": []
+    },
+    {
+      "key": "../@pauliescanlon/gatsby-mdx-embed/src/components/Flickr/Flickr.tsx",
+      "value": [
+        {
+          "description": "",
+          "displayName": "Flickr",
+          "methods": [],
+          "props": {
+            "flickrLink": {
+              "defaultValue": null,
+              "description": "Flickr image link",
+              "name": "flickrLink",
+              "parent": {
+                "fileName": "../@pauliescanlon/gatsby-mdx-embed/src/components/Flickr/Flickr.tsx",
+                "name": "IFlickrProps"
+              },
+              "required": true,
+              "type": {
+                "name": "string"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "key": "../@pauliescanlon/gatsby-mdx-embed/src/components/Flickr/index.ts",
+      "value": []
+    },
+    {
+      "key": "../@pauliescanlon/gatsby-mdx-embed/src/components/Instagram/Instagram.tsx",
+      "value": [
+        {
+          "description": "",
+          "displayName": "Instagram",
+          "methods": [],
+          "props": {
+            "instagramId": {
+              "defaultValue": null,
+              "description": "Instagram id",
+              "name": "instagramId",
+              "parent": {
+                "fileName": "../@pauliescanlon/gatsby-mdx-embed/src/components/Instagram/Instagram.tsx",
+                "name": "IInstagramProps"
+              },
+              "required": true,
+              "type": {
+                "name": "string"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "key": "../@pauliescanlon/gatsby-mdx-embed/src/components/Instagram/index.ts",
+      "value": []
+    },
+    {
+      "key": "../@pauliescanlon/gatsby-mdx-embed/src/components/MdxEmbedProvider/MdxEmbedProvider.tsx",
+      "value": [
+        {
+          "description": "",
+          "displayName": "MdxEmbedProvider",
+          "methods": [],
+          "props": {}
+        }
+      ]
+    },
+    {
+      "key": "../@pauliescanlon/gatsby-mdx-embed/src/components/MdxEmbedProvider/index.ts",
+      "value": []
+    },
+    {
+      "key": "../@pauliescanlon/gatsby-mdx-embed/src/components/Pinterest/Pin.tsx",
+      "value": [
+        {
+          "description": "",
+          "displayName": "Pin",
+          "methods": [],
+          "props": {
+            "pinId": {
+              "defaultValue": null,
+              "description": "Pinterest id",
+              "name": "pinId",
+              "parent": {
+                "fileName": "../@pauliescanlon/gatsby-mdx-embed/src/components/Pinterest/Pin.tsx",
+                "name": "IPinProps"
+              },
+              "required": true,
+              "type": {
+                "name": "string"
+              }
+            },
+            "size": {
+              "defaultValue": {
+                "value": "small"
+              },
+              "description": "Size",
+              "name": "size",
+              "parent": {
+                "fileName": "../@pauliescanlon/gatsby-mdx-embed/src/components/Pinterest/Pin.tsx",
+                "name": "IPinProps"
+              },
+              "required": false,
+              "type": {
+                "name": "\"small\" | \"medium\" | \"large\""
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "key": "../@pauliescanlon/gatsby-mdx-embed/src/components/Pinterest/PinterestBoard.tsx",
+      "value": [
+        {
+          "description": "",
+          "displayName": "PinterestBoard",
+          "methods": [],
+          "props": {
+            "pinterestLink": {
+              "defaultValue": null,
+              "description": "Pinterest link",
+              "name": "pinterestLink",
+              "parent": {
+                "fileName": "../@pauliescanlon/gatsby-mdx-embed/src/components/Pinterest/PinterestBoard.tsx",
+                "name": "IPinterestBoardProps"
+              },
+              "required": true,
+              "type": {
+                "name": "string"
+              }
+            },
+            "width": {
+              "defaultValue": {
+                "value": 400
+              },
+              "description": "Width for the board",
+              "name": "width",
+              "parent": {
+                "fileName": "../@pauliescanlon/gatsby-mdx-embed/src/components/Pinterest/PinterestBoard.tsx",
+                "name": "IPinterestBoardProps"
+              },
+              "required": false,
+              "type": {
+                "name": "number"
+              }
+            },
+            "height": {
+              "defaultValue": {
+                "value": 250
+              },
+              "description": "Height for the board",
+              "name": "height",
+              "parent": {
+                "fileName": "../@pauliescanlon/gatsby-mdx-embed/src/components/Pinterest/PinterestBoard.tsx",
+                "name": "IPinterestBoardProps"
+              },
+              "required": false,
+              "type": {
+                "name": "number"
+              }
+            },
+            "imageWidth": {
+              "defaultValue": {
+                "value": 80
+              },
+              "description": "Size of the thumbnails",
+              "name": "imageWidth",
+              "parent": {
+                "fileName": "../@pauliescanlon/gatsby-mdx-embed/src/components/Pinterest/PinterestBoard.tsx",
+                "name": "IPinterestBoardProps"
+              },
+              "required": false,
+              "type": {
+                "name": "number"
+              }
+            },
+            "variant": {
+              "defaultValue": {
+                "value": "board"
+              },
+              "description": "The type of board",
+              "name": "variant",
+              "parent": {
+                "fileName": "../@pauliescanlon/gatsby-mdx-embed/src/components/Pinterest/PinterestBoard.tsx",
+                "name": "IPinterestBoardProps"
+              },
+              "required": false,
+              "type": {
+                "name": "\"board\" | \"user\""
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "key": "../@pauliescanlon/gatsby-mdx-embed/src/components/Pinterest/PinterestFollowButton.tsx",
+      "value": [
+        {
+          "description": "",
+          "displayName": "PinterestFollowButton",
+          "methods": [],
+          "props": {
+            "username": {
+              "defaultValue": null,
+              "description": "Pinterest username",
+              "name": "username",
+              "parent": {
+                "fileName": "../@pauliescanlon/gatsby-mdx-embed/src/components/Pinterest/PinterestFollowButton.tsx",
+                "name": "IPinterestFollowButtonProps"
+              },
+              "required": true,
+              "type": {
+                "name": "string"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "key": "../@pauliescanlon/gatsby-mdx-embed/src/components/Pinterest/index.ts",
+      "value": []
+    },
+    {
+      "key": "../@pauliescanlon/gatsby-mdx-embed/src/components/SoundCloud/SoundCloud.tsx",
+      "value": [
+        {
+          "description": "",
+          "displayName": "SoundCloud",
+          "methods": [],
+          "props": {
+            "soundCloudLink": {
+              "defaultValue": null,
+              "description": "SoundCloud link",
+              "name": "soundCloudLink",
+              "parent": {
+                "fileName": "../@pauliescanlon/gatsby-mdx-embed/src/components/SoundCloud/SoundCloud.tsx",
+                "name": "ISoundCloudProps"
+              },
+              "required": true,
+              "type": {
+                "name": "string"
+              }
+            },
+            "autoPlay": {
+              "defaultValue": {
+                "value": false
+              },
+              "description": "Auto play audio",
+              "name": "autoPlay",
+              "parent": {
+                "fileName": "../@pauliescanlon/gatsby-mdx-embed/src/components/SoundCloud/SoundCloud.tsx",
+                "name": "ISoundCloudProps"
+              },
+              "required": false,
+              "type": {
+                "name": "boolean"
+              }
+            },
+            "visual": {
+              "defaultValue": {
+                "value": false
+              },
+              "description": "Show the visual artwork",
+              "name": "visual",
+              "parent": {
+                "fileName": "../@pauliescanlon/gatsby-mdx-embed/src/components/SoundCloud/SoundCloud.tsx",
+                "name": "ISoundCloudProps"
+              },
+              "required": false,
+              "type": {
+                "name": "boolean"
+              }
+            },
+            "width": {
+              "defaultValue": {
+                "value": "100%"
+              },
+              "description": "Width for the iFrame",
+              "name": "width",
+              "parent": {
+                "fileName": "../@pauliescanlon/gatsby-mdx-embed/src/components/SoundCloud/SoundCloud.tsx",
+                "name": "ISoundCloudProps"
+              },
+              "required": false,
+              "type": {
+                "name": "ReactText"
+              }
+            },
+            "height": {
+              "defaultValue": {
+                "value": "auto"
+              },
+              "description": "Height for the iFrame",
+              "name": "height",
+              "parent": {
+                "fileName": "../@pauliescanlon/gatsby-mdx-embed/src/components/SoundCloud/SoundCloud.tsx",
+                "name": "ISoundCloudProps"
+              },
+              "required": false,
+              "type": {
+                "name": "ReactText"
+              }
+            },
+            "color": {
+              "defaultValue": null,
+              "description": "The color of the play button without the #",
+              "name": "color",
+              "parent": {
+                "fileName": "../@pauliescanlon/gatsby-mdx-embed/src/components/SoundCloud/SoundCloud.tsx",
+                "name": "ISoundCloudProps"
+              },
+              "required": false,
+              "type": {
+                "name": "string"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "key": "../@pauliescanlon/gatsby-mdx-embed/src/components/SoundCloud/index.ts",
+      "value": []
+    },
+    {
+      "key": "../@pauliescanlon/gatsby-mdx-embed/src/components/Spotify/Spotify.tsx",
+      "value": [
+        {
+          "description": "",
+          "displayName": "Spotify",
+          "methods": [],
+          "props": {
+            "spotifyLink": {
+              "defaultValue": null,
+              "description": "Spotify link",
+              "name": "spotifyLink",
+              "parent": {
+                "fileName": "../@pauliescanlon/gatsby-mdx-embed/src/components/Spotify/Spotify.tsx",
+                "name": "ISpotifyProps"
+              },
+              "required": true,
+              "type": {
+                "name": "string"
+              }
+            },
+            "width": {
+              "defaultValue": {
+                "value": 320
+              },
+              "description": "Width for the iFrame",
+              "name": "width",
+              "parent": {
+                "fileName": "../@pauliescanlon/gatsby-mdx-embed/src/components/Spotify/Spotify.tsx",
+                "name": "ISpotifyProps"
+              },
+              "required": false,
+              "type": {
+                "name": "ReactText"
+              }
+            },
+            "height": {
+              "defaultValue": {
+                "value": 380
+              },
+              "description": "Height for the iFrame",
+              "name": "height",
+              "parent": {
+                "fileName": "../@pauliescanlon/gatsby-mdx-embed/src/components/Spotify/Spotify.tsx",
+                "name": "ISpotifyProps"
+              },
+              "required": false,
+              "type": {
+                "name": "ReactText"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "key": "../@pauliescanlon/gatsby-mdx-embed/src/components/Spotify/index.ts",
+      "value": []
+    },
+    {
+      "key": "../@pauliescanlon/gatsby-mdx-embed/src/components/Twitch/Twitch.tsx",
+      "value": [
+        {
+          "description": "",
+          "displayName": "Twitch",
+          "methods": [],
+          "props": {
+            "twitchId": {
+              "defaultValue": null,
+              "description": "Twitch id",
+              "name": "twitchId",
+              "parent": {
+                "fileName": "../@pauliescanlon/gatsby-mdx-embed/src/components/Twitch/Twitch.tsx",
+                "name": "ITwitchProps"
+              },
+              "required": true,
+              "type": {
+                "name": "string"
+              }
+            },
+            "skipTo": {
+              "defaultValue": {
+                "value": "{ h: 0, m: 0, s: 0 }"
+              },
+              "description": "Skip to a time in the video",
+              "name": "skipTo",
+              "parent": {
+                "fileName": "../@pauliescanlon/gatsby-mdx-embed/src/components/Twitch/Twitch.tsx",
+                "name": "ITwitchProps"
+              },
+              "required": false,
+              "type": {
+                "name": "{ h?: number; m: number; s: number; }"
+              }
+            },
+            "autoPlay": {
+              "defaultValue": {
+                "value": false
+              },
+              "description": "Auto play the video",
+              "name": "autoPlay",
+              "parent": {
+                "fileName": "../@pauliescanlon/gatsby-mdx-embed/src/components/Twitch/Twitch.tsx",
+                "name": "ITwitchProps"
+              },
+              "required": false,
+              "type": {
+                "name": "boolean"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "key": "../@pauliescanlon/gatsby-mdx-embed/src/components/Twitch/index.ts",
+      "value": []
+    },
+    {
+      "key": "../@pauliescanlon/gatsby-mdx-embed/src/components/Twitter/Tweet.tsx",
+      "value": [
+        {
+          "description": "",
+          "displayName": "Tweet",
+          "methods": [],
+          "props": {
+            "tweetLink": {
+              "defaultValue": null,
+              "description": "Tweet link",
+              "name": "tweetLink",
+              "parent": {
+                "fileName": "../@pauliescanlon/gatsby-mdx-embed/src/components/Twitter/Tweet.tsx",
+                "name": "ITweetProps"
+              },
+              "required": true,
+              "type": {
+                "name": "string"
+              }
+            },
+            "theme": {
+              "defaultValue": {
+                "value": "light"
+              },
+              "description": "Color theme of the Tweet",
+              "name": "theme",
+              "parent": {
+                "fileName": "../@pauliescanlon/gatsby-mdx-embed/src/components/Twitter/Tweet.tsx",
+                "name": "ITweetProps"
+              },
+              "required": false,
+              "type": {
+                "name": "\"light\" | \"dark\""
+              }
+            },
+            "align": {
+              "defaultValue": {
+                "value": "left"
+              },
+              "description": "Alignment of the Tweet",
+              "name": "align",
+              "parent": {
+                "fileName": "../@pauliescanlon/gatsby-mdx-embed/src/components/Twitter/Tweet.tsx",
+                "name": "ITweetProps"
+              },
+              "required": false,
+              "type": {
+                "name": "\"left\" | \"center\" | \"right\""
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "key": "../@pauliescanlon/gatsby-mdx-embed/src/components/Twitter/TwitterFollowButton.tsx",
+      "value": [
+        {
+          "description": "",
+          "displayName": "TwitterFollowButton",
+          "methods": [],
+          "props": {
+            "username": {
+              "defaultValue": null,
+              "description": "Twitter username",
+              "name": "username",
+              "parent": {
+                "fileName": "../@pauliescanlon/gatsby-mdx-embed/src/components/Twitter/TwitterFollowButton.tsx",
+                "name": "ITwitterFollowButtonProps"
+              },
+              "required": true,
+              "type": {
+                "name": "string"
+              }
+            },
+            "showFollowers": {
+              "defaultValue": {
+                "value": false
+              },
+              "description": "Show the follower count",
+              "name": "showFollowers",
+              "parent": {
+                "fileName": "../@pauliescanlon/gatsby-mdx-embed/src/components/Twitter/TwitterFollowButton.tsx",
+                "name": "ITwitterFollowButtonProps"
+              },
+              "required": false,
+              "type": {
+                "name": "boolean"
+              }
+            },
+            "showUsername": {
+              "defaultValue": {
+                "value": true
+              },
+              "description": "Show the username",
+              "name": "showUsername",
+              "parent": {
+                "fileName": "../@pauliescanlon/gatsby-mdx-embed/src/components/Twitter/TwitterFollowButton.tsx",
+                "name": "ITwitterFollowButtonProps"
+              },
+              "required": false,
+              "type": {
+                "name": "boolean"
+              }
+            },
+            "size": {
+              "defaultValue": {
+                "value": "small"
+              },
+              "description": "The size of the button",
+              "name": "size",
+              "parent": {
+                "fileName": "../@pauliescanlon/gatsby-mdx-embed/src/components/Twitter/TwitterFollowButton.tsx",
+                "name": "ITwitterFollowButtonProps"
+              },
+              "required": false,
+              "type": {
+                "name": "\"small\" | \"large\""
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "key": "../@pauliescanlon/gatsby-mdx-embed/src/components/Twitter/TwitterHashtagButton.tsx",
+      "value": [
+        {
+          "description": "",
+          "displayName": "TwitterHashtagButton",
+          "methods": [],
+          "props": {
+            "hashtag": {
+              "defaultValue": null,
+              "description": "Twitter hashtag",
+              "name": "hashtag",
+              "parent": {
+                "fileName": "../@pauliescanlon/gatsby-mdx-embed/src/components/Twitter/TwitterHashtagButton.tsx",
+                "name": "ITwitterHashtagButtonProps"
+              },
+              "required": true,
+              "type": {
+                "name": "string"
+              }
+            },
+            "size": {
+              "defaultValue": {
+                "value": "small"
+              },
+              "description": "The size of the button",
+              "name": "size",
+              "parent": {
+                "fileName": "../@pauliescanlon/gatsby-mdx-embed/src/components/Twitter/TwitterHashtagButton.tsx",
+                "name": "ITwitterHashtagButtonProps"
+              },
+              "required": false,
+              "type": {
+                "name": "\"small\" | \"large\""
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "key": "../@pauliescanlon/gatsby-mdx-embed/src/components/Twitter/TwitterList.tsx",
+      "value": [
+        {
+          "description": "",
+          "displayName": "TwitterList",
+          "methods": [],
+          "props": {
+            "username": {
+              "defaultValue": null,
+              "description": "Twitter username",
+              "name": "username",
+              "parent": {
+                "fileName": "../@pauliescanlon/gatsby-mdx-embed/src/components/Twitter/TwitterList.tsx",
+                "name": "ITwitterListProps"
+              },
+              "required": true,
+              "type": {
+                "name": "string"
+              }
+            },
+            "listName": {
+              "defaultValue": null,
+              "description": "The Twitter list name",
+              "name": "listName",
+              "parent": {
+                "fileName": "../@pauliescanlon/gatsby-mdx-embed/src/components/Twitter/TwitterList.tsx",
+                "name": "ITwitterListProps"
+              },
+              "required": true,
+              "type": {
+                "name": "string"
+              }
+            },
+            "theme": {
+              "defaultValue": {
+                "value": "light"
+              },
+              "description": "Color theme of the Timeline",
+              "name": "theme",
+              "parent": {
+                "fileName": "../@pauliescanlon/gatsby-mdx-embed/src/components/Twitter/TwitterList.tsx",
+                "name": "ITwitterListProps"
+              },
+              "required": false,
+              "type": {
+                "name": "\"light\" | \"dark\""
+              }
+            },
+            "width": {
+              "defaultValue": {
+                "value": "498px"
+              },
+              "description": "Width for the iFrame",
+              "name": "width",
+              "parent": {
+                "fileName": "../@pauliescanlon/gatsby-mdx-embed/src/components/Twitter/TwitterList.tsx",
+                "name": "ITwitterListProps"
+              },
+              "required": false,
+              "type": {
+                "name": "ReactText"
+              }
+            },
+            "height": {
+              "defaultValue": {
+                "value": null
+              },
+              "description": "Height for the iFrame. Null is full height",
+              "name": "height",
+              "parent": {
+                "fileName": "../@pauliescanlon/gatsby-mdx-embed/src/components/Twitter/TwitterList.tsx",
+                "name": "ITwitterListProps"
+              },
+              "required": false,
+              "type": {
+                "name": "ReactText"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "key": "../@pauliescanlon/gatsby-mdx-embed/src/components/Twitter/TwitterMentionButton.tsx",
+      "value": [
+        {
+          "description": "",
+          "displayName": "TwitterMentionButton",
+          "methods": [],
+          "props": {
+            "username": {
+              "defaultValue": null,
+              "description": "Twitter username",
+              "name": "username",
+              "parent": {
+                "fileName": "../@pauliescanlon/gatsby-mdx-embed/src/components/Twitter/TwitterMentionButton.tsx",
+                "name": "ITwitterMentionButtonProps"
+              },
+              "required": true,
+              "type": {
+                "name": "string"
+              }
+            },
+            "size": {
+              "defaultValue": {
+                "value": "small"
+              },
+              "description": "The size of the button",
+              "name": "size",
+              "parent": {
+                "fileName": "../@pauliescanlon/gatsby-mdx-embed/src/components/Twitter/TwitterMentionButton.tsx",
+                "name": "ITwitterMentionButtonProps"
+              },
+              "required": false,
+              "type": {
+                "name": "\"small\" | \"large\""
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "key": "../@pauliescanlon/gatsby-mdx-embed/src/components/Twitter/TwitterTimeline.tsx",
+      "value": [
+        {
+          "description": "",
+          "displayName": "TwitterTimeline",
+          "methods": [],
+          "props": {
+            "username": {
+              "defaultValue": null,
+              "description": "Twitter username",
+              "name": "username",
+              "parent": {
+                "fileName": "../@pauliescanlon/gatsby-mdx-embed/src/components/Twitter/TwitterTimeline.tsx",
+                "name": "ITwitterTimelineProps"
+              },
+              "required": true,
+              "type": {
+                "name": "string"
+              }
+            },
+            "showLikes": {
+              "defaultValue": {
+                "value": null
+              },
+              "description": "Show Tweets liked by the username",
+              "name": "showLikes",
+              "parent": {
+                "fileName": "../@pauliescanlon/gatsby-mdx-embed/src/components/Twitter/TwitterTimeline.tsx",
+                "name": "ITwitterTimelineProps"
+              },
+              "required": false,
+              "type": {
+                "name": "boolean"
+              }
+            },
+            "theme": {
+              "defaultValue": {
+                "value": "light"
+              },
+              "description": "Color theme of the Timeline",
+              "name": "theme",
+              "parent": {
+                "fileName": "../@pauliescanlon/gatsby-mdx-embed/src/components/Twitter/TwitterTimeline.tsx",
+                "name": "ITwitterTimelineProps"
+              },
+              "required": false,
+              "type": {
+                "name": "\"light\" | \"dark\""
+              }
+            },
+            "width": {
+              "defaultValue": {
+                "value": "498px"
+              },
+              "description": "Width for the iFrame",
+              "name": "width",
+              "parent": {
+                "fileName": "../@pauliescanlon/gatsby-mdx-embed/src/components/Twitter/TwitterTimeline.tsx",
+                "name": "ITwitterTimelineProps"
+              },
+              "required": false,
+              "type": {
+                "name": "ReactText"
+              }
+            },
+            "height": {
+              "defaultValue": {
+                "value": null
+              },
+              "description": "Height for the iFrame. Null is full height",
+              "name": "height",
+              "parent": {
+                "fileName": "../@pauliescanlon/gatsby-mdx-embed/src/components/Twitter/TwitterTimeline.tsx",
+                "name": "ITwitterTimelineProps"
+              },
+              "required": false,
+              "type": {
+                "name": "ReactText"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "key": "../@pauliescanlon/gatsby-mdx-embed/src/components/Twitter/index.ts",
+      "value": []
+    },
+    {
+      "key": "../@pauliescanlon/gatsby-mdx-embed/src/components/Vimeo/Vimeo.tsx",
+      "value": [
+        {
+          "description": "",
+          "displayName": "Vimeo",
+          "methods": [],
+          "props": {
+            "vimeoId": {
+              "defaultValue": null,
+              "description": "Vimeo id",
+              "name": "vimeoId",
+              "parent": {
+                "fileName": "../@pauliescanlon/gatsby-mdx-embed/src/components/Vimeo/Vimeo.tsx",
+                "name": "IVimeoProps"
+              },
+              "required": true,
+              "type": {
+                "name": "string"
+              }
+            },
+            "skipTo": {
+              "defaultValue": {
+                "value": "{ h: 0, m: 0, s: 0 }"
+              },
+              "description": "Skip to a time in the video",
+              "name": "skipTo",
+              "parent": {
+                "fileName": "../@pauliescanlon/gatsby-mdx-embed/src/components/Vimeo/Vimeo.tsx",
+                "name": "IVimeoProps"
+              },
+              "required": false,
+              "type": {
+                "name": "{ h?: number; m: number; s: number; }"
+              }
+            },
+            "autoPlay": {
+              "defaultValue": {
+                "value": false
+              },
+              "description": "Auto play the video",
+              "name": "autoPlay",
+              "parent": {
+                "fileName": "../@pauliescanlon/gatsby-mdx-embed/src/components/Vimeo/Vimeo.tsx",
+                "name": "IVimeoProps"
+              },
+              "required": false,
+              "type": {
+                "name": "boolean"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "key": "../@pauliescanlon/gatsby-mdx-embed/src/components/Vimeo/index.ts",
+      "value": []
+    },
+    {
+      "key": "../@pauliescanlon/gatsby-mdx-embed/src/components/Wikipedia/Wikipedia.tsx",
+      "value": [
+        {
+          "description": "",
+          "displayName": "Wikipedia",
+          "methods": [],
+          "props": {
+            "wikipediaLink": {
+              "defaultValue": null,
+              "description": "Wikipedia page link",
+              "name": "wikipediaLink",
+              "parent": {
+                "fileName": "../@pauliescanlon/gatsby-mdx-embed/src/components/Wikipedia/Wikipedia.tsx",
+                "name": "IWikipediaProps"
+              },
+              "required": true,
+              "type": {
+                "name": "string"
+              }
+            },
+            "height": {
+              "defaultValue": {
+                "value": 600
+              },
+              "description": "Height for the iFrame",
+              "name": "height",
+              "parent": {
+                "fileName": "../@pauliescanlon/gatsby-mdx-embed/src/components/Wikipedia/Wikipedia.tsx",
+                "name": "IWikipediaProps"
+              },
+              "required": false,
+              "type": {
+                "name": "ReactText"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "key": "../@pauliescanlon/gatsby-mdx-embed/src/components/Wikipedia/index.ts",
+      "value": []
+    },
+    {
+      "key": "../@pauliescanlon/gatsby-mdx-embed/src/components/YouTube/YouTube.tsx",
+      "value": [
+        {
+          "description": "",
+          "displayName": "YouTube",
+          "methods": [],
+          "props": {
+            "youTubeId": {
+              "defaultValue": null,
+              "description": "YouTube id",
+              "name": "youTubeId",
+              "parent": {
+                "fileName": "../@pauliescanlon/gatsby-mdx-embed/src/components/YouTube/YouTube.tsx",
+                "name": "IYouTubeProps"
+              },
+              "required": true,
+              "type": {
+                "name": "string"
+              }
+            },
+            "aspectRatio": {
+              "defaultValue": {
+                "value": "16:9"
+              },
+              "description": "Aspect ratio of YouTube video",
+              "name": "aspectRatio",
+              "parent": {
+                "fileName": "../@pauliescanlon/gatsby-mdx-embed/src/components/YouTube/YouTube.tsx",
+                "name": "IYouTubeProps"
+              },
+              "required": false,
+              "type": {
+                "name": "\"1:1\" | \"16:9\" | \"4:3\" | \"3:2\" | \"8:5\""
+              }
+            },
+            "skipTo": {
+              "defaultValue": {
+                "value": "{ h: 0, m: 0, s: 0 }"
+              },
+              "description": "Skip to a time in the video",
+              "name": "skipTo",
+              "parent": {
+                "fileName": "../@pauliescanlon/gatsby-mdx-embed/src/components/YouTube/YouTube.tsx",
+                "name": "IYouTubeProps"
+              },
+              "required": false,
+              "type": {
+                "name": "{ h?: number; m: number; s: number; }"
+              }
+            },
+            "autoPlay": {
+              "defaultValue": {
+                "value": false
+              },
+              "description": "Auto play the video",
+              "name": "autoPlay",
+              "parent": {
+                "fileName": "../@pauliescanlon/gatsby-mdx-embed/src/components/YouTube/YouTube.tsx",
+                "name": "IYouTubeProps"
+              },
+              "required": false,
+              "type": {
+                "name": "boolean"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "key": "../@pauliescanlon/gatsby-mdx-embed/src/components/YouTube/index.ts",
+      "value": []
+    }
+  ],
   "entries": [
     {
       "key": "src/components/codePen.mdx",
@@ -773,6 +1894,5 @@
         ]
       }
     }
-  ],
-  "props": []
+  ]
 }

@@ -11,7 +11,6 @@
   ],
   "plugins": [
     "@babel/proposal-class-properties",
-    "@babel/proposal-object-rest-spread",
-    ["babel-plugin-typescript-to-proptypes", { "comments": true }]
+    "@babel/proposal-object-rest-spread"
   ]
 }
