@@ -6,18 +6,19 @@
     "url": "git+https://github.com/PaulieScanlon/gatsby-mdx-embed.git"
   },
   "version": "0.0.13",
-  "main": "lib/index.js",
+  "main": "index.js",
   "license": "MIT",
   "scripts": {
     "test": "jest",
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage",
-    "publish": "npm login",
+    "publish": "npm run build && npm login",
     "type-check": "tsc --noEmit",
     "type-check:watch": "npm run type-check -- --watch",
     "build": "npm run build:types && npm run build:js",
     "build:types": "tsc --emitDeclarationOnly",
-    "build:js": "babel src --out-dir lib --extensions \".js,.ts,.tsx\" --source-maps inline",
+    "build:js": "babel src --out-dir . --extensions \".js,.ts,.tsx\" --source-maps inline",
+    "build:watch": "babel src --out-dir . --extensions \".js,.ts,.tsx\" --watch",
     "tsc": "tsc"
   },
   "dependencies": {},
@@ -32,6 +33,7 @@
     "@types/node": "^13.1.7",
     "@types/react": "^16.9.17",
     "@types/react-dom": "^16.9.4",
+    "babel-plugin-typescript-to-proptypes": "^1.1.0",
     "prettier": "^1.19.1",
     "typescript": "^3.7.5"
   },

@@ -3,7 +3,7 @@
     [
       "@babel/preset-env",
       {
-        "targets": "last 2 versions, not ie <= 11, not android 4.4.3"
+        "targets": ">0.25%, not ie <= 11, not android 4.4.3"
       }
     ],
     "@babel/preset-react",
@@ -11,6 +11,7 @@
   ],
   "plugins": [
     "@babel/proposal-class-properties",
-    "@babel/proposal-object-rest-spread"
+    "@babel/proposal-object-rest-spread",
+    ["babel-plugin-typescript-to-proptypes", { "comments": true }]
   ]
 }

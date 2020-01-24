@@ -3,17 +3,20 @@
   "scripts": {
     "clean": "yarn workspace demo clean",
     "serve": "yarn workspace demo serve",
-    "develop": "yarn workspace @pauliescanlon/gatsby-mdx-embed build && yarn workspace demo develop",
+    "develop:demo": "yarn workspace demo develop",
+    "develop:plugin": "yarn workspace @pauliescanlon/gatsby-mdx-embed build:watch",
     "build": "yarn workspace demo build",
     "test": "yarn workspace @pauliescanlon/gatsby-mdx-embed test",
     "test:watch": "yarn workspace @pauliescanlon/gatsby-mdx-embed test:watch",
     "test:coverage": "yarn workspace @pauliescanlon/gatsby-mdx-embed test:coverage",
     "release": "node copy-readme.js && yarn workspace @pauliescanlon/gatsby-mdx-embed publish",
-    "build:plugin": "yarn workspace @pauliescanlon/gatsby-mdx-embed build",
-    "tsc:plugin": "yarn workspace @pauliescanlon/gatsby-mdx-embed tsc"
+    "develop": "npm-run-all --parallel develop:demo develop:plugin"
   },
   "workspaces": [
     "demo",
     "@pauliescanlon/gatsby-mdx-embed"
-  ]
+  ],
+  "devDependencies": {
+    "npm-run-all": "^4.1.5"
+  }
 }

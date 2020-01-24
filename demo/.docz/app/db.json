@@ -1,7 +1,7 @@
 {
   "config": {
     "title": "gatsby-mdx-embed",
-    "description": "gatsby-mdx-embed is an mdx plugin to embed YouTube, Twitter etc into .mdx without imports",
+    "description": "gatsby-mdx-embed is an mdx plugin to embed YouTube, Twitter, Instagram etc into .mdx without imports",
     "menu": [
       "Getting Started"
     ],
@@ -14,12 +14,10 @@
     "separator": "-",
     "base": "https://gatsby-mdx-embed.netlify.com/",
     "ogImage": "mdx-embed-main-og-image.jpg",
-    "typescript": true,
     "docgenConfig": {
-      "searchPath": "/Users/paulscanlon/Desktop/_development/gatsby-mdx-embed/@pauliescanlon/gatsby-mdx-embed/lib/src/components"
+      "searchPath": "/Users/paulscanlon/Desktop/_development/gatsby-mdx-embed/@pauliescanlon/gatsby-mdx-embed/components"
     }
   },
-  "props": [],
   "entries": [
     {
       "key": "src/components/codePen.mdx",
@@ -775,5 +773,6 @@
         ]
       }
     }
-  ]
+  ],
+  "props": []
 }

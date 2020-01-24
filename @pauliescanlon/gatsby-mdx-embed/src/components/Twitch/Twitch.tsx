@@ -1,5 +1,4 @@
 import React, { FunctionComponent } from 'react'
-
 import { getPadding } from '../../utils'
 
 export interface ITwitchProps {

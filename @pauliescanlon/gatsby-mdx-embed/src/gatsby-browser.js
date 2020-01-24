@@ -14,7 +14,6 @@ const twttrEmbedScript = `
 `
 
 const twttrLoad = () => {
-  console.log('twttrLoad')
   if (
     typeof window.twttr !== `undefined` &&
     window.twttr.widgets &&
@@ -32,7 +31,6 @@ const instgrmClassNames = [
 const instgrmEmbedUrl = `https://www.instagram.com/embed.js`
 
 const instgrmProcess = () => {
-  console.log('instgrmProcess')
   if (
     typeof window.instgrm !== `undefined` &&
     window.instgrm.Embeds &&
@@ -55,7 +53,6 @@ const pinterestEmbedClassNames = [
 const pinterestEmbedScript = `!function(a,b,c){var d,e,f;d="PIN_"+~~((new Date).getTime()/864e5),a[d]?a[d]+=1:(a[d]=1,a.setTimeout(function(){e=b.getElementsByTagName("SCRIPT")[0],f=b.createElement("SCRIPT"),f.type="text/javascript",f.async=!0,f.src=c.mainUrl+"?"+Math.random(),e.parentNode.insertBefore(f,e)},10))}(window,document,{mainUrl:"//assets.pinterest.com/js/pinit_main.js"});`
 
 const pinterestBuild = () => {
-  console.log('pinterestBuild')
   if (
     typeof window.PinUtils !== `undefined` &&
     window.PinUtils &&
@@ -66,7 +63,6 @@ const pinterestBuild = () => {
 }
 
 export const onRouteUpdate = () => {
-  console.log('onRouteUpdate')
   if (document.querySelector(twttrClassNames) !== null) {
     if (!isTwttrScriptAdded) {
       createScriptTag(null, twttrEmbedScript)
@@ -99,5 +95,3 @@ export const onRouteUpdate = () => {
   twttrLoad()
   instgrmProcess()
 }
-
-console.log('////////// gatsby-browser.ts')
