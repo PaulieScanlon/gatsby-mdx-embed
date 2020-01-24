@@ -5,7 +5,7 @@
     "serve": "yarn workspace demo serve",
     "develop:demo": "yarn workspace demo develop",
     "develop:plugin": "yarn workspace @pauliescanlon/gatsby-mdx-embed build:watch",
-    "build": "yarn workspace demo build",
+    "build": "yarn workspace @pauliescanlon/gatsby-mdx-embed build && yarn workspace demo build",
     "test": "yarn workspace @pauliescanlon/gatsby-mdx-embed test",
     "test:watch": "yarn workspace @pauliescanlon/gatsby-mdx-embed test:watch",
     "test:coverage": "yarn workspace @pauliescanlon/gatsby-mdx-embed test:coverage",
