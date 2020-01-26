@@ -1,10 +1,5 @@
 const path = require("path")
 
-const directoryPath = path.join(
-  process.cwd(),
-  "../@pauliescanlon/gatsby-mdx-embed/src/components"
-)
-
 export default {
   title: "gatsby-mdx-embed",
   description:
@@ -13,10 +8,11 @@ export default {
   ogImage: "mdx-embed-main-og-image.jpg",
   menu: ["Getting Started"],
   typescript: true,
-  filterComponents: files =>
-    files.filter(filepath => /[w-]*.(js|jsx|ts|tsx)$/.test(filepath)),
   docgenConfig: {
-    searchPath: directoryPath,
+    searchPath: path.resolve(
+      __dirname,
+      "../@pauliescanlon/gatsby-mdx-embed/src/components"
+    ),
   },
   themeConfig: {
     initialColorMode: "light",
