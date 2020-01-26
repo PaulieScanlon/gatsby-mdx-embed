@@ -6,7 +6,7 @@ export interface ICodePenProps {
   /** Height for the iFrame */
   height?: number
   /** Which tabs to display */
-  tabs?: 'js' | 'css' | 'scss' | 'less' | 'result'
+  tabs?: string[] | 'js' | 'css' | 'scss' | 'less' | 'result'
 }
 
 export const CodePen: FunctionComponent<ICodePenProps> = ({

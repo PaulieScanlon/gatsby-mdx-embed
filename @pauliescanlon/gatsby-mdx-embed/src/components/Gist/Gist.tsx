@@ -1,5 +1,4 @@
 import React, { FunctionComponent, Fragment, useEffect, useState } from 'react'
-
 import { createScriptTag, createStyleSheet } from '../../utils'
 
 export interface IGistProps {

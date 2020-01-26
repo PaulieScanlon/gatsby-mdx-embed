@@ -1,4 +1,4 @@
-import React, { FunctionComponent } from 'react'
+import * as React from 'react'
 import { MDXProvider } from '@mdx-js/react'
 
 import { CodePen, ICodePenProps } from '../CodePen'
@@ -70,6 +70,6 @@ const components = {
   YouTube: (props: IYouTubeProps) => <YouTube {...props} />
 } as any
 
-export const MdxEmbedProvider: FunctionComponent = ({ children }) => (
+export const MdxEmbedProvider: React.FunctionComponent = ({ children }) => (
   <MDXProvider components={components}>{children}</MDXProvider>
 )

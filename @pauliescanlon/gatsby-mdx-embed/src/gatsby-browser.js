@@ -1,5 +1,5 @@
-import { createScriptTag } from './src/utils'
-export { wrapRootElement } from './src/wrapRootElement'
+import { createScriptTag } from './utils'
+export { wrapRootElement } from './wrapRootElement'
 
 let isTwttrScriptAdded = false
 const twttrClassNames = [
