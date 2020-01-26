@@ -70,8 +70,9 @@ export const Props = ({ name, props, getPropType, isToggle }) => {
   const db = useDbQuery()
   // const entries = Object.entries(props)
   const _entries = Object.entries(
-    db.props.filter(prop => prop.value[0].displayName === name)[0].value[0]
-      .props
+    db.props.filter(
+      prop => prop.value.length > 0 && prop.value[0].displayName === name
+    )[0].value[0].props
   )
 
   return (
