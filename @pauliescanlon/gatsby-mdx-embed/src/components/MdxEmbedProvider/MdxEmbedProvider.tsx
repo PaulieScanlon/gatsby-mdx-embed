@@ -1,75 +1,50 @@
-import * as React from 'react'
+import React, { FunctionComponent } from 'react'
 import { MDXProvider } from '@mdx-js/react'
 
-import { CodePen, ICodePenProps } from '../CodePen'
-import { CodeSandbox, ICodeSandboxProps } from '../CodeSandbox'
-import { Flickr, IFlickrProps } from '../Flickr'
-import { Gist, IGistProps } from '../Gist'
-import { Vimeo, IVimeoProps } from '../Vimeo'
-import { Instagram, IInstagramProps } from '../Instagram'
-import {
-  Pin,
-  IPinProps,
-  PinterestBoard,
-  IPinterestBoardProps,
-  PinterestFollowButton,
-  IPinterestFollowButtonProps
-} from '../Pinterest'
-import { SoundCloud, ISoundCloudProps } from '../SoundCloud'
-import { Spotify, ISpotifyProps } from '../Spotify'
-import { Twitch, ITwitchProps } from '../Twitch'
+import { CodePen } from '../CodePen'
+import { CodeSandbox } from '../CodeSandbox'
+import { Flickr } from '../Flickr'
+import { Gist } from '../Gist'
+import { Vimeo } from '../Vimeo'
+import { Instagram } from '../Instagram'
+import { Pin, PinterestBoard, PinterestFollowButton } from '../Pinterest'
+import { SoundCloud } from '../SoundCloud'
+import { Spotify } from '../Spotify'
+import { Twitch } from '../Twitch'
 import {
   Tweet,
-  ITweetProps,
   TwitterFollowButton,
-  ITwitterFollowButtonProps,
   TwitterHashtagButton,
-  ITwitterHashtagButtonProps,
   TwitterList,
-  ITwitterListProps,
   TwitterMentionButton,
-  ITwitterMentionButtonProps,
-  TwitterTimeline,
-  ITwitterTimelineProps
+  TwitterTimeline
 } from '../Twitter'
-import { Wikipedia, IWikipediaProps } from '../Wikipedia'
-import { YouTube, IYouTubeProps } from '../YouTube'
+import { Wikipedia } from '../Wikipedia'
+import { YouTube } from '../YouTube'
 
 const components = {
-  CodePen: (props: ICodePenProps) => <CodePen {...props} />,
-  CodeSandbox: (props: ICodeSandboxProps) => <CodeSandbox {...props} />,
-  Flickr: (props: IFlickrProps) => <Flickr {...props} />,
-  Gist: (props: IGistProps) => <Gist {...props} />,
-  Instagram: (props: IInstagramProps) => <Instagram {...props} />,
-  Pin: (props: IPinProps) => <Pin {...props} />,
-  PinterestBoard: (props: IPinterestBoardProps) => (
-    <PinterestBoard {...props} />
-  ),
-  PinterestFollowButton: (props: IPinterestFollowButtonProps) => (
-    <PinterestFollowButton {...props} />
-  ),
-  SoundCloud: (props: ISoundCloudProps) => <SoundCloud {...props} />,
-  Spotify: (props: ISpotifyProps) => <Spotify {...props} />,
-  Twitch: (props: ITwitchProps) => <Twitch {...props} />,
-  Tweet: (props: ITweetProps) => <Tweet {...props} />,
-  TwitterFollowButton: (props: ITwitterFollowButtonProps) => (
-    <TwitterFollowButton {...props} />
-  ),
-  TwitterHashtagButton: (props: ITwitterHashtagButtonProps) => (
-    <TwitterHashtagButton {...props} />
-  ),
-  TwitterList: (props: ITwitterListProps) => <TwitterList {...props} />,
-  TwitterMentionButton: (props: ITwitterMentionButtonProps) => (
-    <TwitterMentionButton {...props} />
-  ),
-  TwitterTimeline: (props: ITwitterTimelineProps) => (
-    <TwitterTimeline {...props} />
-  ),
-  Vimeo: (props: IVimeoProps) => <Vimeo {...props} />,
-  Wikipedia: (props: IWikipediaProps) => <Wikipedia {...props} />,
-  YouTube: (props: IYouTubeProps) => <YouTube {...props} />
+  CodePen,
+  CodeSandbox,
+  Flickr,
+  Gist,
+  Instagram,
+  Pin,
+  PinterestBoard,
+  PinterestFollowButton,
+  SoundCloud,
+  Spotify,
+  Twitch,
+  Tweet,
+  TwitterFollowButton,
+  TwitterHashtagButton,
+  TwitterList,
+  TwitterMentionButton,
+  TwitterTimeline,
+  Vimeo,
+  Wikipedia,
+  YouTube
 } as any
 
-export const MdxEmbedProvider: React.FunctionComponent = ({ children }) => (
+export const MdxEmbedProvider: FunctionComponent = ({ children }) => (
   <MDXProvider components={components}>{children}</MDXProvider>
 )
