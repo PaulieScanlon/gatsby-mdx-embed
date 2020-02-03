@@ -1,1 +1,1 @@
-export { wrapRootElement } from './wrapRootElement'
+exports.wrapRootElement = require(`./Provider`)

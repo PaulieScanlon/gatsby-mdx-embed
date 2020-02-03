@@ -38,6 +38,7 @@
   },
   "peerDependencies": {
     "@mdx-js/react": "^1.5.3",
+    "@mdx-js/mdx": "^1.5.5",
     "gatsby": "^2.18.12",
     "gatsby-plugin-mdx": "^1.0.64",
     "react": "^16.12.0"

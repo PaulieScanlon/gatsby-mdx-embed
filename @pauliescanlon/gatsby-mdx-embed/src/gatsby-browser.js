@@ -1,5 +1,6 @@
 import { createScriptTag } from './utils'
-export { wrapRootElement } from './wrapRootElement'
+
+exports.wrapRootElement = require(`./Provider`)
 
 let isTwttrScriptAdded = false
 const twttrClassNames = [
