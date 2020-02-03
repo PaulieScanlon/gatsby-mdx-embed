@@ -3,9 +3,11 @@
   "scripts": {
     "clean": "yarn workspace demo clean",
     "serve": "yarn workspace demo serve",
+    "serve:starter": "yarn workspace starter serve",
     "develop:starter": "yarn workspace starter develop",
     "develop:demo": "yarn workspace demo develop",
     "develop:plugin": "yarn workspace @pauliescanlon/gatsby-mdx-embed build:watch",
+    "build:starter": "yarn workspace @pauliescanlon/gatsby-mdx-embed build && yarn workspace starter build",
     "build": "yarn workspace @pauliescanlon/gatsby-mdx-embed build && yarn workspace demo build",
     "test": "yarn workspace @pauliescanlon/gatsby-mdx-embed test",
     "test:watch": "yarn workspace @pauliescanlon/gatsby-mdx-embed test:watch",
