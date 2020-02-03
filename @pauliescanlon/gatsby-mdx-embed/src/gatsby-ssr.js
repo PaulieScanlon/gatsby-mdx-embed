@@ -1,1 +1,1 @@
-exports.wrapRootElement = require(`./Provider`)
+exports.wrapRootElement = require(`./provider`)
