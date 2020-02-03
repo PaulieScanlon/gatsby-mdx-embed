@@ -5,7 +5,7 @@
     "type": "git",
     "url": "git+https://github.com/PaulieScanlon/gatsby-mdx-embed.git"
   },
-  "version": "0.0.15",
+  "version": "0.0.16-alpha",
   "main": "index.js",
   "license": "MIT",
   "scripts": {
@@ -37,8 +37,8 @@
     "typescript": "^3.7.5"
   },
   "peerDependencies": {
-    "@mdx-js/react": "^1.5.3",
     "@mdx-js/mdx": "^1.5.5",
+    "@mdx-js/react": "^1.5.3",
     "gatsby": "^2.18.12",
     "gatsby-plugin-mdx": "^1.0.64",
     "react": "^16.12.0"
