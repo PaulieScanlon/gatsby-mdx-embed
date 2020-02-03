@@ -21,7 +21,7 @@ npm install @pauliescanlon/gatsby-mdx-embed --save
 ### Install peer dependencies
 
 ```
-npm install @mdx-js/react gatsby-plugin-mdx --save
+npm install gatsby-plugin-mdx @mdx-js/mdx @mdx-js/react --save
 ```
 
 ### Setup

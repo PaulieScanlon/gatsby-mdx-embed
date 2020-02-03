@@ -24,8 +24,8 @@ gatsby-ssr.d.ts
 gatsby-ssr.js
 index.d.ts
 index.js
-wrapRootElement.d.ts
-wrapRootElement.js
+provider.d.ts
+provider.js
 
 # Coverage directory used by tools like istanbul
 coverage
