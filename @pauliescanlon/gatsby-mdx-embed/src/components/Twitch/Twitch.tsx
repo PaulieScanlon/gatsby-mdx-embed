@@ -12,20 +12,37 @@ export interface ITwitchProps {
     s: number
   }
   /** Auto play the video */
-  autoPlay: boolean
+  autoPlay: boolean,
+  /** Name of the channel, for a live stream */
+  channel: string,
+  /** Collection ID, for a collection of videos */
+  collection: string
 }
 
 export const Twitch: FunctionComponent<ITwitchProps> = ({
   twitchId,
   autoPlay = false,
-  skipTo = { h: 0, m: 0, s: 0 }
+  skipTo = { h: 0, m: 0, s: 0 },
+  channel = '',
+  collection = ''
 }: ITwitchProps) => {
   const { h, m, s } = skipTo
 
   return (
-    <GeneralObserver>
-      <div
-        className="twitch-mdx-embed"
+    <div
+      className="twitch-mdx-embed"
+      style={{
+        position: 'relative',
+        width: '100%',
+        ...getPadding('16:9')
+      }}
+    >
+      <iframe
+        title={`twitch-${twitchId}`}
+        src={`https://player.twitch.tv/?autoplay=${autoPlay}&t=${h}h${m}m${s}s&video=v${twitchId}&channel=${channel}&collection=${collection}`}
+        frameBorder="0"
+        allow="autoplay; fullscreen"
+        allowFullScreen
         style={{
           position: 'relative',
           width: '100%',
