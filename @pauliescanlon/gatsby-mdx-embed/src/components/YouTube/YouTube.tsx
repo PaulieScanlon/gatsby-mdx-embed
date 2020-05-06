@@ -1,4 +1,5 @@
 import React, { FunctionComponent } from 'react'
+import { GeneralObserver } from '../GeneralObserver'
 import { getPadding } from '../../utils'
 
 export interface IYouTubeProps {
@@ -30,28 +31,30 @@ export const YouTube: FunctionComponent<IYouTubeProps> = ({
   const startTime = tH + tM + s
 
   return (
-    <div
-      className="youtube-mdx-embed"
-      style={{
-        position: 'relative',
-        width: '100%',
-        ...getPadding(aspectRatio)
-      }}
-    >
-      <iframe
-        title={`youTube-${youTubeId}`}
-        src={`https://www.youtube.com/embed/${youTubeId}?&autoplay=${autoPlay}&start=${startTime}`}
-        frameBorder="0"
-        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-        allowFullScreen
+    <GeneralObserver>
+      <div
+        className="youtube-mdx-embed"
         style={{
-          position: 'absolute',
-          top: 0,
-          left: 0,
+          position: 'relative',
           width: '100%',
-          height: '100%'
+          ...getPadding(aspectRatio)
         }}
-      />
-    </div>
+      >
+        <iframe
+          title={`youTube-${youTubeId}`}
+          src={`https://www.youtube.com/embed/${youTubeId}?&autoplay=${autoPlay}&start=${startTime}`}
+          frameBorder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+          style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%'
+          }}
+        />
+      </div>
+    </GeneralObserver>
   )
 }

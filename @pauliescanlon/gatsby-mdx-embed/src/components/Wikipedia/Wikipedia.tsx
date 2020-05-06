@@ -1,5 +1,5 @@
 import React, { FunctionComponent, Fragment, useEffect, useState } from 'react'
-
+import { GeneralObserver } from '../GeneralObserver'
 export interface IWikipediaProps {
   /** Wikipedia page link */
   wikipediaLink: string
@@ -53,7 +53,7 @@ export const Wikipedia: FunctionComponent<IWikipediaProps> = ({
   }, [wikipediaEmbedUrl])
 
   return (
-    <Fragment>
+    <GeneralObserver>
       {!wikiResponse.isLoading && (
         <iframe
           className="wikipedia-mdx-embed"
@@ -66,6 +66,6 @@ export const Wikipedia: FunctionComponent<IWikipediaProps> = ({
           srcDoc={wikiResponse.body}
         />
       )}
-    </Fragment>
+    </GeneralObserver>
   )
 }

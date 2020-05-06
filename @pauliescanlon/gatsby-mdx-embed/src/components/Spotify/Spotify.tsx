@@ -1,5 +1,5 @@
 import React, { FunctionComponent } from 'react'
-
+import { GeneralObserver } from '../GeneralObserver'
 export interface ISpotifyProps {
   /** Spotify link */
   spotifyLink: string
@@ -14,13 +14,15 @@ export const Spotify: FunctionComponent<ISpotifyProps> = ({
   width = 320,
   height = 380
 }: ISpotifyProps) => (
-  <iframe
-    title={`spotify-${spotifyLink}`}
-    className="spotify-mdx-embed"
-    src={`https://open.spotify.com/embed/${spotifyLink}`}
-    width={width}
-    height={height}
-    frameBorder="0"
-    allow="encrypted-media"
-  />
+  <GeneralObserver>
+    <iframe
+      title={`spotify-${spotifyLink}`}
+      className="spotify-mdx-embed"
+      src={`https://open.spotify.com/embed/${spotifyLink}`}
+      width={width}
+      height={height}
+      frameBorder="0"
+      allow="encrypted-media"
+    />
+  </GeneralObserver>
 )
