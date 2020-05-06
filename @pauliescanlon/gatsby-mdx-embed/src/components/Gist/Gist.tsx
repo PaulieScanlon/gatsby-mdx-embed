@@ -1,4 +1,5 @@
 import React, { FunctionComponent, Fragment, useEffect, useState } from 'react'
+import { GeneralObserver } from '../GeneralObserver'
 import { createScriptTag, createStyleSheet } from '../../utils'
 
 export interface IGistProps {
@@ -41,13 +42,13 @@ export const Gist: FunctionComponent<IGistProps> = ({
   }, [gistId, gistEmbedScript])
 
   return (
-    <Fragment>
+    <GeneralObserver>
       {!gistResponse.isLoading && (
         <div
           className="gist-mdx-embed"
           dangerouslySetInnerHTML={{ __html: gistResponse.div! }}
         />
       )}
-    </Fragment>
+    </GeneralObserver>
   )
 }
