@@ -55,10 +55,11 @@ import { MdxEmbedProvider } from "@pauliescanlon/gatsby-mdx-embed";
 </MdxEmbedProvider>;
 ```
 
-## General Observer
+## General Observer update 07/05/2020
 
 MDX Embed has been updated to include Intersection Observer support for all providers.
-With Intersection Observer support heavy proivder script content won't be loaded until the component in question scrolls in to view... Keeping you site blazing fast! ⚡
+
+With Intersection Observer support now heavy provider scripts won't be loaded until the component in question scrolls in to view... Keeping you site blazing fast! ⚡
 
 If you're using **gatsby-mdx-embed** in your project i'd love to hear from you [@pauliescanlon](https://twitter.com/PaulieScanlon)
 
