@@ -6,7 +6,15 @@ import React, {
   RefObject
 } from 'react'
 
-export const GeneralObserver: FunctionComponent = ({ children }) => {
+interface GeneralObserverProps {
+  /** Fires when IntersectionObserver enters viewport */
+  onEnter?: (id?: string) => void
+}
+
+export const GeneralObserver: FunctionComponent<GeneralObserverProps> = ({
+  children,
+  onEnter
+}) => {
   const ref = useRef<HTMLElement>(null)
   const [isChildVisible, setIsChildVisible] = useState(false)
   useEffect(() => {
@@ -14,6 +22,7 @@ export const GeneralObserver: FunctionComponent = ({ children }) => {
       ([entry]) => {
         if (entry.isIntersecting) {
           setIsChildVisible(true)
+          onEnter && onEnter()
         }
       },
       {

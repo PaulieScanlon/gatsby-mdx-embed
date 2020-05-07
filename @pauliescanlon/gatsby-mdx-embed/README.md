@@ -57,19 +57,8 @@ import { MdxEmbedProvider } from "@pauliescanlon/gatsby-mdx-embed";
 
 ## General Observer
 
-MDX Embed has been updated to include Intersection Observer support for the following providers.
-With Intersection Observer support heavy page content won't be loaded until a the component in question scrolls in to view... Keeping you site blazing fast!
-
-- CodePen
-- CodeSandbox
-- Flick
-- Gist
-- SoundCloud
-- Spotify
-- Twitch
-- Vimeo
-- Wikipedia
-- YouTube
+MDX Embed has been updated to include Intersection Observer support for all providers.
+With Intersection Observer support heavy proivder script content won't be loaded until the component in question scrolls in to view... Keeping you site blazing fast! ⚡
 
 If you're using **gatsby-mdx-embed** in your project i'd love to hear from you [@pauliescanlon](https://twitter.com/PaulieScanlon)
 
