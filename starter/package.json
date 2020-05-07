@@ -8,6 +8,7 @@
     "@emotion/core": "^10.0.27",
     "@mdx-js/mdx": "^1.5.5",
     "@mdx-js/react": "^1.5.5",
+    "@pauliescanlon/gatsby-mdx-embed": "*",
     "gatsby": "^2.19.7",
     "gatsby-plugin-mdx": "^1.0.70",
     "gatsby-plugin-theme-ui": "^0.3.0",

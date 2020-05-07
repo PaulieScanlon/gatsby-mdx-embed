@@ -1,5 +1,6 @@
 import React, { FunctionComponent } from 'react'
-
+import { GeneralObserver } from '../GeneralObserver'
+import { handlePinterestBuild } from './utils'
 export interface IPinterestBoardProps {
   /** Pinterest link */
   pinterestLink: string
@@ -20,12 +21,14 @@ export const PinterestBoard: FunctionComponent<IPinterestBoardProps> = ({
   imageWidth = 80,
   variant = 'board'
 }: IPinterestBoardProps) => (
-  <a
-    className="pinterest-board pinterest-board-mdx-embed"
-    data-pin-do={`embed${variant.charAt(0).toUpperCase()}${variant.slice(1)}`}
-    data-pin-board-width={width}
-    data-pin-scale-height={height}
-    data-pin-scale-width={imageWidth}
-    href={`https://www.pinterest.com/${pinterestLink}`}
-  />
+  <GeneralObserver onEnter={() => handlePinterestBuild()}>
+    <a
+      className="pinterest-board pinterest-board-mdx-embed"
+      data-pin-do={`embed${variant.charAt(0).toUpperCase()}${variant.slice(1)}`}
+      data-pin-board-width={width}
+      data-pin-scale-height={height}
+      data-pin-scale-width={imageWidth}
+      href={`https://www.pinterest.com/${pinterestLink}`}
+    />
+  </GeneralObserver>
 )
