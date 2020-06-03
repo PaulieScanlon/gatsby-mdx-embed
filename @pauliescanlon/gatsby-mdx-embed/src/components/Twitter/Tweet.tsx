@@ -9,12 +9,15 @@ export interface ITweetProps {
   theme?: 'light' | 'dark'
   /** Alignment of the Tweet */
   align?: 'left' | 'center' | 'right'
+  /** Hides the conversation */
+  hideConversation?: boolean
 }
 
 export const Tweet: FunctionComponent<ITweetProps> = ({
   tweetLink,
   theme = 'light',
-  align = 'left'
+  align = 'left',
+  hideConversation = false
 }: ITweetProps) => (
   <GeneralObserver onEnter={() => handleTwttrLoad()}>
     <div className="twitter-tweet-mdx-embed" style={{ overflow: 'auto' }}>
@@ -22,6 +25,7 @@ export const Tweet: FunctionComponent<ITweetProps> = ({
         className="twitter-tweet"
         data-theme={theme}
         data-align={align}
+        data-conversation={hideConversation ? 'none' : ''}
       >
         <a href={`https://twitter.com/${tweetLink}?ref_src=twsrc%5Etfw`}>
           {typeof window !== 'undefined' && !(window as any).twttr
