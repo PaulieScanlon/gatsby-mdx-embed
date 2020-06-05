@@ -1,0 +1,29 @@
+import { Meta, Preview, Props } from "@storybook/addon-docs/blocks";
+
+import { PinterestBoard } from "../../../../@pauliescanlon/gatsby-mdx-embed/src/components/Pinterest";
+
+<Meta title="Components/Pinterest/PinterestBoard" component={PinterestBoard} />
+
+# PinterestBoard
+
+Display a PinterestBoard by including the component in your `.mdx`. The `pinterestLink` prop is required.
+
+<Props of={PinterestBoard} />
+
+## Basic usage
+
+<Preview>
+  <PinterestBoard pinterestLink="fromspacewithlove/astronauts/" />
+</Preview>
+
+## Width
+
+<Preview>
+  <PinterestBoard pinterestLink="fromspacewithlove/astronauts/" width={900} />
+</Preview>
+
+## Variant
+
+<Preview>
+  <PinterestBoard pinterestLink="fromspacewithlove" variant="user" />
+</Preview>

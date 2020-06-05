@@ -1,5 +1,5 @@
 [build]
   command = "yarn build"
-  publish = "demo/public"
+  publish = "docs/storybook-static"
 
 

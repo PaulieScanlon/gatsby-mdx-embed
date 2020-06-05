@@ -1,0 +1,23 @@
+import { Meta, Story, Preview, Props } from "@storybook/addon-docs/blocks";
+
+import { Vimeo } from "../../../@pauliescanlon/gatsby-mdx-embed/src/components/Vimeo";
+
+<Meta title="Components/Vimeo" component={Vimeo} />
+
+# Vimeo
+
+Display a Vimeo video by including the component in your `.mdx`. The `vimeoId` prop is required.
+
+<Props of={Vimeo} />
+
+## Basic usage
+
+<Preview>
+  <Vimeo vimeoId="38445453" />
+</Preview>
+
+## Skip to
+
+<Preview>
+  <Vimeo vimeoId="38445453" skipTo={{ h: 0, m: 1, s: 15 }} />
+</Preview>

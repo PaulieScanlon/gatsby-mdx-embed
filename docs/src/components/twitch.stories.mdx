@@ -1,0 +1,23 @@
+import { Meta, Preview, Props } from "@storybook/addon-docs/blocks";
+
+import { Twitch } from "../../../@pauliescanlon/gatsby-mdx-embed/src/components/Twitch";
+
+<Meta title="Components/Twitch" component={Twitch} />
+
+# Twitch
+
+Display a Twitch video by including the component in your `.mdx`. The `twitchId` is required. There are a number additional props available.
+
+<Props of={Twitch} />
+
+## Basic usage
+
+<Preview>
+  <Twitch twitchId="612049948" />
+</Preview>
+
+## Skip to
+
+<Preview>
+  <Twitch twitchId="612049948" skipTo={{ h: 1, m: 1, s: 53 }} />
+</Preview>
