@@ -1,0 +1,38 @@
+import { Meta, Preview, Props } from "@storybook/addon-docs/blocks";
+
+import { Tweet } from "../../../../@pauliescanlon/gatsby-mdx-embed/src/components/Twitter";
+
+<Meta title="Components/Twitter/Tweet" component={Tweet} />
+
+# Tweet
+
+Display a Tweet by including the component in your `.mdx`. The `tweetLink` prop is required.
+
+<Props of={Tweet} />
+
+## Basic usage
+
+<Preview>
+  <Tweet tweetLink="PaulieScanlon/status/1232982448310497286" />
+</Preview>
+
+## Theme
+
+<Preview>
+  <Tweet tweetLink="PaulieScanlon/status/1232982448310497286" theme="dark" />
+</Preview>
+
+## Align
+
+<Preview>
+  <Tweet tweetLink="PaulieScanlon/status/1232982448310497286" align="right" />
+</Preview>
+
+## Hide Conversation
+
+<Preview>
+  <Tweet
+    tweetLink="https://twitter.com/geekgalgroks/status/1255864483739729922"
+    hideConversation={true}
+  />
+</Preview>

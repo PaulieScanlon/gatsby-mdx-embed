@@ -1,22 +1,23 @@
 {
   "private": true,
   "scripts": {
-    "clean": "yarn workspace demo clean && yarn workspace starter clean",
-    "serve": "yarn workspace demo serve",
+    "clean": "yarn workspace starter clean",
+    "serve": "yarn workspace starter serve",
     "serve:starter": "yarn workspace starter serve",
     "develop:starter": "yarn workspace starter develop",
-    "develop:demo": "yarn workspace demo develop",
+    "develop:docs": "yarn workspace docs storybook",
     "develop:plugin": "yarn workspace @pauliescanlon/gatsby-mdx-embed build:watch",
+    "build:plugin": "yarn workspace @pauliescanlon/gatsby-mdx-embed build",
     "build:starter": "yarn workspace @pauliescanlon/gatsby-mdx-embed build && yarn workspace starter build",
-    "build": "yarn workspace @pauliescanlon/gatsby-mdx-embed build && yarn workspace demo build",
+    "build": "yarn workspace @pauliescanlon/gatsby-mdx-embed build && yarn workspace docs storybook:build",
     "test": "yarn workspace @pauliescanlon/gatsby-mdx-embed test",
     "test:watch": "yarn workspace @pauliescanlon/gatsby-mdx-embed test:watch",
     "test:coverage": "yarn workspace @pauliescanlon/gatsby-mdx-embed test:coverage",
-    "release": "node copy-readme.js && yarn workspace @pauliescanlon/gatsby-mdx-embed publish",
-    "develop": "npm-run-all --parallel develop:demo develop:plugin"
+    "release": "node copy-readme.js && yarn workspace @pauliescanlon/gatsby-mdx-embed build && yarn workspace @pauliescanlon/gatsby-mdx-embed publish",
+    "develop": "npm-run-all --parallel develop:docs develop:plugin"
   },
   "workspaces": [
-    "demo",
+    "docs",
     "starter",
     "@pauliescanlon/gatsby-mdx-embed"
   ],

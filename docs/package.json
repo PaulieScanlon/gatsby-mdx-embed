@@ -1,0 +1,25 @@
+{
+  "name": "docs",
+  "version": "1.0.0",
+  "description": "Docs for gatsby-mdx-embed",
+  "main": "index.js",
+  "scripts": {
+    "storybook": "start-storybook -p 6006 -s public --ci",
+    "storybook:build": "build-storybook -s public",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Paul Scanlon",
+  "license": "MIT",
+  "dependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.10.1",
+    "@babel/preset-env": "^7.10.2",
+    "@babel/preset-react": "^7.10.1",
+    "@babel/preset-typescript": "^7.10.1",
+    "@storybook/addon-docs": "^5.3.19",
+    "@storybook/addons": "^5.3.19",
+    "@storybook/react": "^5.3.19",
+    "@storybook/theming": "^5.3.19",
+    "babel-loader": "^8.1.0",
+    "react-docgen-typescript-loader": "^3.7.2"
+  }
+}

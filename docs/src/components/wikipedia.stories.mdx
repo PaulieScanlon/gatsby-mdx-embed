@@ -1,0 +1,23 @@
+import { Meta, Preview, Props } from "@storybook/addon-docs/blocks";
+
+import { Wikipedia } from "../../../@pauliescanlon/gatsby-mdx-embed/src/components/Wikipedia";
+
+<Meta title="Components/Wikipedia" component={Wikipedia} />
+
+# Wikipedia
+
+Display a Wikipedia page by including the component in your `.mdx`. The `wikipediaLink` prop is required.
+
+<Props of={Wikipedia} />
+
+## Basic usage
+
+<Preview>
+  <Wikipedia wikipediaLink="Tim_Berners-Lee" />
+</Preview>
+
+## Height
+
+<Preview>
+  <Wikipedia wikipediaLink="Tim_Berners-Lee" height="400px" />
+</Preview>

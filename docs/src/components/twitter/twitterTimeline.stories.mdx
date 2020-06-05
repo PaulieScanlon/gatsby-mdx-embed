@@ -1,0 +1,35 @@
+import { Meta, Preview, Props } from "@storybook/addon-docs/blocks";
+
+import { TwitterTimeline } from "../../../../@pauliescanlon/gatsby-mdx-embed/src/components/Twitter";
+
+<Meta title="Components/Twitter/TwitterTimeline" component={TwitterTimeline} />
+
+# TwitterTimeline
+
+Display a TwitterTimeline by including the component in your `.mdx`. The `username` prop is required.
+
+<Props of={TwitterTimeline} />
+
+## Basic usage
+
+<Preview>
+  <TwitterTimeline username="PaulieScanlon" height="400px" />
+</Preview>
+
+## Width
+
+<Preview>
+  <TwitterTimeline username="PaulieScanlon" height="400px" width="100%" />
+</Preview>
+
+## Theme
+
+<Preview>
+  <TwitterTimeline username="PaulieScanlon" theme="dark" height="400px" />
+</Preview>
+
+## Show Likes
+
+<Preview>
+  <TwitterTimeline username="PaulieScanlon" showLikes={true} height="400px" />
+</Preview>

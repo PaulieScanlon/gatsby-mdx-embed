@@ -1,0 +1,23 @@
+import { Meta, Preview, Props } from "@storybook/addon-docs/blocks";
+
+import { CodePen } from "../../../@pauliescanlon/gatsby-mdx-embed/src/components/CodePen";
+
+<Meta title="Components/CodePen" component={CodePen} />
+
+# CodePen
+
+Display a CodePen by including the component in your `.mdx`. The `codePenId` prop is required.
+
+<Props of={CodePen} />
+
+## Basic usage
+
+<Preview>
+  <CodePen codePenId="PNaGbb" />
+</Preview>
+
+## Tabs
+
+<Preview>
+  <CodePen codePenId="PNaGbb" tabs={["js", "result"]} />
+</Preview>

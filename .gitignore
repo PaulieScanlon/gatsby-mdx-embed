@@ -55,9 +55,6 @@ typings/
 # dotenv environment variable files
 .env*
 
-# gatsby files
-.cache/
-public
 
 # Mac files
 .DS_Store
@@ -66,5 +63,10 @@ public
 yarn-error.log
 .pnp/
 .pnp.js
+
 # Yarn Integrity file
 .yarn-integrity
+
+
+# Storybook
+storybook-static

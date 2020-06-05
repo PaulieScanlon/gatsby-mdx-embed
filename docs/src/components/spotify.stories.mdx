@@ -1,0 +1,29 @@
+import { Meta, Preview, Props } from "@storybook/addon-docs/blocks";
+
+import { Spotify } from "../../../@pauliescanlon/gatsby-mdx-embed/src/components/Spotify";
+
+<Meta title="Components/Spotify" component={Spotify} />
+
+# Spotify
+
+Display a Spotify player by including the component in your `.mdx`. The `spotifyLink` prop is required.
+
+<Props of={Spotify} />
+
+## Basic usage
+
+<Preview>
+  <Spotify spotifyLink="album/65KwtzkJXw7oT819NFWmEP" />
+</Preview>
+
+## Width
+
+<Preview>
+  <Spotify spotifyLink="album/65KwtzkJXw7oT819NFWmEP" width="100%" />
+</Preview>
+
+## Height
+
+<Preview>
+  <Spotify spotifyLink="album/65KwtzkJXw7oT819NFWmEP" height="80px" />
+</Preview>
