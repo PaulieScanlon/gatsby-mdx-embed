@@ -69,3 +69,4 @@ yarn-error.log
 
 # Gatsby
 public
+.cache
