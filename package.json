@@ -8,6 +8,7 @@
     "develop:demo": "yarn workspace demo develop",
     "build:docs": "yarn workspace docs storybook:build",
     "develop:docs": "yarn workspace docs storybook",
+    "prettier:docs": "yarn workspace docs prettier",
     "build:plugin": "yarn workspace @pauliescanlon/gatsby-mdx-embed build",
     "develop:plugin": "yarn workspace @pauliescanlon/gatsby-mdx-embed build:watch",
     "build": "yarn workspace @pauliescanlon/gatsby-mdx-embed build && yarn workspace docs storybook:build",
