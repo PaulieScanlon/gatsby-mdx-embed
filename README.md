@@ -1,5 +1,5 @@
 <a href="https://gatsby-mdx-embed.netlify.com/" target="_blank">
-<img src="https://gatsby-mdx-embed.netlify.com/images/mdx-embed-main-og-image.jpg" alt="gatsby-mdx-embed image" />
+<img src="https://gatsby-mdx-embed.netlify.app/mdx-embed-og-image.jpg" alt="gatsby-mdx-embed image" />
 </a>
 
 # gatsby-mdx-embed
