@@ -4,6 +4,9 @@
     "test": "yarn workspace @pauliescanlon/gatsby-mdx-embed test",
     "test:watch": "yarn workspace @pauliescanlon/gatsby-mdx-embed test:watch",
     "test:coverage": "yarn workspace @pauliescanlon/gatsby-mdx-embed test:coverage",
+    "build:demo": "yarn workspace demo build",
+    "develop:demo": "yarn workspace demo develop",
+    "build:docs": "yarn workspace docs storybook:build",
     "develop:docs": "yarn workspace docs storybook",
     "build:plugin": "yarn workspace @pauliescanlon/gatsby-mdx-embed build",
     "develop:plugin": "yarn workspace @pauliescanlon/gatsby-mdx-embed build:watch",
@@ -12,6 +15,7 @@
     "develop": "npm-run-all --parallel develop:docs develop:plugin"
   },
   "workspaces": [
+    "demo",
     "docs",
     "@pauliescanlon/gatsby-mdx-embed"
   ],

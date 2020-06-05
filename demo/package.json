@@ -1,0 +1,26 @@
+{
+  "name": "demo",
+  "version": "1.0.0",
+  "description": "A demo of gatsby-mdx-embed",
+  "main": "index.js",
+  "scripts": {
+    "develop": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@mdx-js/mdx": "^1.6.5",
+    "@mdx-js/react": "^1.6.5",
+    "@pauliescanlon/gatsby-mdx-embed": "^0.0.20",
+    "@types/theme-ui": "^0.3.2",
+    "gatsby": "2.20.36",
+    "gatsby-plugin-mdx": "^1.2.14",
+    "gatsby-source-filesystem": "^2.3.10",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  }
+}
