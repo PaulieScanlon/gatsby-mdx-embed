@@ -69,4 +69,4 @@ Thanks to the following projects which were used as references
 
 - [gatsby-remark-oembed](https://github.com/raae/gatsby-remark-oembed)
 - [gatsby-plugin-twitter](https://github.com/gatsbyjs/gatsby/tree/master/packages/gatsby-plugin-twitter)
-- [gatsby-plugin-instagram-embed](https://github.com/jlengstorf/gatsby-plugin-instagram-embed)
+- [gatsby-plugin-instagram-embed](https://github.com/MichaelDeBoey/gatsby-plugin-instagram-embed)
