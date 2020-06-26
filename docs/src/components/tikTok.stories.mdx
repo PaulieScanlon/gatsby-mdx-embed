@@ -1,0 +1,29 @@
+import { Meta, Preview, Props } from '@storybook/addon-docs/blocks'
+
+import { TikTok } from '../../../@pauliescanlon/gatsby-mdx-embed/src/components/TikTok'
+
+<Meta title="Components/TikTok" component={TikTok} />
+
+# TikTok
+
+Display a TikTok player by including the component in your `.mdx`. The `tikTokId` prop is required.
+
+<Props of={TikTok} />
+
+## Basic usage
+
+<Preview>
+  <TikTok tikTokId="65KwtzkJXw7oT819NFWmEP" />
+</Preview>
+
+## Width
+
+<Preview>
+  <TikTok tikTokId="65KwtzkJXw7oT819NFWmEP" width="100%" />
+</Preview>
+
+## Height
+
+<Preview>
+  <TikTok tikTokId="65KwtzkJXw7oT819NFWmEP" height="80px" />
+</Preview>
