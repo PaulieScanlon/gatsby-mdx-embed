@@ -4,11 +4,11 @@ import { GeneralObserver } from '../GeneralObserver'
 
 export interface IEggheadProps {
   /** Egghead lesson */
-  lesson: string
+  lessonId: string
 }
 
 export const Egghead: FunctionComponent<IEggheadProps> = ({
-  lesson
+  lessonId
 }: IEggheadProps) => {
   return (
     <GeneralObserver>
@@ -21,8 +21,8 @@ export const Egghead: FunctionComponent<IEggheadProps> = ({
         }}
       >
         <iframe
-          title={`egghead-${lesson}`}
-          src={`https://egghead.io/lessons/${lesson}/embed`}
+          title={`egghead-${lessonId}`}
+          src={`https://egghead.io/lessons/${lessonId}/embed`}
           frameBorder="0"
           allow="autoplay; fullscreen"
           allowFullScreen
