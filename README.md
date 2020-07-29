@@ -48,7 +48,7 @@ If the above doesn't help you might need to manually import the `MdxEmbedProvide
 ```js
 // layout.js
 
-import { MdxEmbedProvider } from "@pauliescanlon/gatsby-mdx-embed";
+import { MdxEmbedProvider } from '@pauliescanlon/gatsby-mdx-embed';
 
 <MdxEmbedProvider>
   <MDXRenderer>{body}</MDXRenderer>
@@ -59,7 +59,7 @@ import { MdxEmbedProvider } from "@pauliescanlon/gatsby-mdx-embed";
 
 MDX Embed has been updated to include Intersection Observer support for all providers.
 
-With Intersection Observer support now heavy provider scripts won't be loaded until the component in question scrolls in to view... Keeping you site blazing fast! ⚡
+With Intersection Observer support now heavy provider scripts won't be loaded until the component in question scrolls in to view... Keeping your site blazing fast! ⚡
 
 If you're using **gatsby-mdx-embed** in your project i'd love to hear from you [@pauliescanlon](https://twitter.com/PaulieScanlon)
 
