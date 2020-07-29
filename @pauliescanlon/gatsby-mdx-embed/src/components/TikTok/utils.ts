@@ -1,7 +1,7 @@
 import { createScriptTag } from '../../utils'
 
 let isTikTokScriptAdded = false
-const tikTokClassNames = `._embed_video_wrapper`
+const tikTokClassNames = `.tiktok-embed`
 const tikTokEmbedUrl = `https://www.tiktok.com/embed.js`
 
 export const handleTikTokLoad = () => {
