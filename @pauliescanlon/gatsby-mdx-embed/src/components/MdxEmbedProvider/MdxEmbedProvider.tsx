@@ -1,15 +1,14 @@
-import React, { FunctionComponent } from 'react'
 import { MDXProvider } from '@mdx-js/react'
-
+import React, { FunctionComponent } from 'react'
 import { CodePen } from '../CodePen'
 import { CodeSandbox } from '../CodeSandbox'
 import { Flickr } from '../Flickr'
 import { Gist } from '../Gist'
-import { Vimeo } from '../Vimeo'
 import { Instagram } from '../Instagram'
 import { Pin, PinterestBoard, PinterestFollowButton } from '../Pinterest'
 import { SoundCloud } from '../SoundCloud'
 import { Spotify } from '../Spotify'
+import { TikTok } from '../TikTok'
 import { Twitch } from '../Twitch'
 import {
   Tweet,
@@ -19,6 +18,7 @@ import {
   TwitterMentionButton,
   TwitterTimeline
 } from '../Twitter'
+import { Vimeo } from '../Vimeo'
 import { Wikipedia } from '../Wikipedia'
 import { YouTube } from '../YouTube'
 
@@ -33,6 +33,7 @@ const components = {
   PinterestFollowButton,
   SoundCloud,
   Spotify,
+  TikTok,
   Twitch,
   Tweet,
   TwitterFollowButton,
