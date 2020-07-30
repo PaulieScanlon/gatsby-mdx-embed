@@ -2,6 +2,7 @@ import { MDXProvider } from '@mdx-js/react'
 import React, { FunctionComponent } from 'react'
 import { CodePen } from '../CodePen'
 import { CodeSandbox } from '../CodeSandbox'
+import { EggheadLesson } from '../Egghead'
 import { Flickr } from '../Flickr'
 import { Gist } from '../Gist'
 import { Instagram } from '../Instagram'
@@ -43,7 +44,8 @@ const components = {
   TwitterTimeline,
   Vimeo,
   Wikipedia,
-  YouTube
+  YouTube,
+  EggheadLesson
 } as any
 
 export const MdxEmbedProvider: FunctionComponent = ({ children }) => (

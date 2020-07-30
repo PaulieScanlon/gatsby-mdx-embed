@@ -44,6 +44,28 @@ Then use it in the component like this.
 <CodeSandbox codeSandboxId="react-new" />
 ```
 
+## Egghead
+
+To embed an Egghead video using the `<EggheadLesson />` component grab the `lessonId` from the URL.
+
+It should be everything after `https://egghead.io/lessons/` pay attention to the url for `?pl=` this will show if the lesson relates to a playlist, you will need to remove the playlist query.
+
+```
+https://egghead.io/lessons/gatsby-set-up-a-gatsby-site-to-use-mdx-with-gatsby-plugin-mdx-with-a-default-layout?pl=using-components-in-markdown-with-mdx-5de0
+```
+
+The `lessonId` is this bit.
+
+```
+gatsby-set-up-a-gatsby-site-to-use-mdx-with-gatsby-plugin-mdx-with-a-default-layout
+```
+
+Then use it in the component like this.
+
+```js
+<EggheadLesson lessonId="gatsby-set-up-a-gatsby-site-to-use-mdx-with-gatsby-plugin-mdx-with-a-default-layout" />
+```
+
 ## Flickr
 
 To embed a Flickr image using the `<Flickr />` component find the img `src` in the Embed code.
