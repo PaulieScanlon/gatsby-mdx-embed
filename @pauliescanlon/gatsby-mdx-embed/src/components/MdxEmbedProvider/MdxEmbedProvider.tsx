@@ -2,6 +2,7 @@ import { MDXProvider } from '@mdx-js/react'
 import React, { FunctionComponent } from 'react'
 import { CodePen } from '../CodePen'
 import { CodeSandbox } from '../CodeSandbox'
+import { EggheadLesson } from '../Egghead'
 import { Flickr } from '../Flickr'
 import { Gist } from '../Gist'
 import { Instagram } from '../Instagram'
@@ -21,7 +22,6 @@ import {
 import { Vimeo } from '../Vimeo'
 import { Wikipedia } from '../Wikipedia'
 import { YouTube } from '../YouTube'
-import { EggheadLesson } from '../Egghead'
 
 const components = {
   CodePen,
