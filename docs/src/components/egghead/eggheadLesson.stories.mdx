@@ -1,0 +1,17 @@
+import { Meta, Story, Preview, Props } from '@storybook/addon-docs/blocks'
+
+import { EggheadLesson } from '../../../@pauliescanlon/gatsby-mdx-embed/src/components/Egghead/EggheadLesson'
+
+<Meta title="Components/Egghead/EggheadLesson" component={EggheadLesson} />
+
+# Egghead Lesson
+
+Display an Egghead lesson video by including the component in your `.mdx`. The `lessonId` prop is required.
+
+<Props of={EggheadLesson} />
+
+## Basic usage
+
+<Preview>
+  <EggheadLesson lessonId="gatsby-set-up-a-gatsby-site-to-use-mdx-with-gatsby-plugin-mdx-with-a-default-layout?pl=using-components-in-markdown-with-mdx-5de0" />
+</Preview>

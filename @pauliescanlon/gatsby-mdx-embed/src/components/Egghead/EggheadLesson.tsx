@@ -2,18 +2,18 @@ import React, { FunctionComponent } from 'react'
 import { getPadding } from '../../utils'
 import { GeneralObserver } from '../GeneralObserver'
 
-export interface IEggheadProps {
+export interface IEggheadLessonProps {
   /** Egghead lesson */
   lessonId: string
 }
 
-export const Egghead: FunctionComponent<IEggheadProps> = ({
+export const EggheadLesson: FunctionComponent<IEggheadLessonProps> = ({
   lessonId
-}: IEggheadProps) => {
+}: IEggheadLessonProps) => {
   return (
     <GeneralObserver>
       <div
-        className="egghead-mdx-embed"
+        className="egghead-lesson-mdx-embed"
         style={{
           position: 'relative',
           width: '100%',

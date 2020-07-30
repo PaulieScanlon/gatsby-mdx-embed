@@ -1,1 +1,1 @@
-export * from './Egghead'
+export * from './EggheadLesson'
