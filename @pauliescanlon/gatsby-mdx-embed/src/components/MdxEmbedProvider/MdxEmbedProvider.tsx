@@ -21,6 +21,7 @@ import {
 import { Vimeo } from '../Vimeo'
 import { Wikipedia } from '../Wikipedia'
 import { YouTube } from '../YouTube'
+import { EggheadLesson } from '../Egghead'
 
 const components = {
   CodePen,
@@ -43,7 +44,8 @@ const components = {
   TwitterTimeline,
   Vimeo,
   Wikipedia,
-  YouTube
+  YouTube,
+  EggheadLesson
 } as any
 
 export const MdxEmbedProvider: FunctionComponent = ({ children }) => (
