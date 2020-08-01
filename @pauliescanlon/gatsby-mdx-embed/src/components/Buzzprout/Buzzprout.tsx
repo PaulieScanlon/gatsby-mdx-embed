@@ -2,14 +2,17 @@ import React, { FunctionComponent } from 'react'
 import { GeneralObserver } from '../GeneralObserver'
 
 export interface IBuzzproutProps {
-  /* Buzzprout podcast episode url */
-  url: string
+  /* Buzzprout podcast id */
+  podcastId: string
+  /* Podcast episode id */
+  episodeId: string
 }
 
 export const Buzzprout: FunctionComponent<IBuzzproutProps> = ({
-  url
+  podcastId,
+  episodeId
 }: IBuzzproutProps) => {
-  const embedUrl = `${url}?client_source=admin&amp;iframe=true`
+  const embedUrl = `https://buzzsprout.com/${podcastId}/${episodeId}?client_source=admin&amp;iframe=true`
   return (
     <GeneralObserver>
       <div style={{ position: 'relative' }}>
