@@ -1,0 +1,23 @@
+import { Meta, Story, Preview, Props } from '@storybook/addon-docs/blocks'
+
+import { SimplecastEpisode } from '../../../../@pauliescanlon/gatsby-mdx-embed/src/components/Simplecast'
+
+<Meta
+  title="Components/Simplecast/SimplecastEpisode"
+  component={SimplecastEpisode}
+/>
+
+# Simplecast Episode
+
+Display a Simplecast Episode by including the component in your `.mdx`. The `episodeId` prop is required, the `darkTheme` prop is optional.
+
+<Props of={SimplecastEpisode} />
+
+## Basic usage
+
+<Preview>
+  <SimplecastEpisode
+    episodeId="905d603d-a7e4-4142-9bc3-16012312cc46"
+    darkTheme={true}
+  />
+</Preview>

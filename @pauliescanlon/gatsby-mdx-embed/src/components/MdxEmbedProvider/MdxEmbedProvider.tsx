@@ -7,6 +7,7 @@ import { Flickr } from '../Flickr'
 import { Gist } from '../Gist'
 import { Instagram } from '../Instagram'
 import { Pin, PinterestBoard, PinterestFollowButton } from '../Pinterest'
+import { SimplecastEpesode } from '../Simplecast'
 import { SoundCloud } from '../SoundCloud'
 import { Spotify } from '../Spotify'
 import { TikTok } from '../TikTok'
@@ -45,7 +46,8 @@ const components = {
   Vimeo,
   Wikipedia,
   YouTube,
-  EggheadLesson
+  EggheadLesson,
+  SimplecastEpesode
 } as any
 
 export const MdxEmbedProvider: FunctionComponent = ({ children }) => (
