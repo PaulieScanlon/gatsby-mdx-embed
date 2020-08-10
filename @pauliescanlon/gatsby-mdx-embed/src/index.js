@@ -11,7 +11,7 @@ export {
   PinterestBoard,
   PinterestFollowButton
 } from './components/Pinterest'
-export { SimplecastEpesode } from './components/Simplecast'
+export { SimplecastEpisode as SimplecastEpesode } from './components/Simplecast'
 export { SoundCloud } from './components/SoundCloud'
 export { Spotify } from './components/Spotify'
 export { TikTok } from './components/TikTok'

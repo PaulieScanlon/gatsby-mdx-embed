@@ -1,1 +1,1 @@
-export * from './SimplecastEpesode'
+export * from './SimplecastEpisode'

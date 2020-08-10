@@ -1,5 +1,4 @@
 import React, { FunctionComponent } from 'react'
-import { getPadding } from '../../utils'
 import { GeneralObserver } from '../GeneralObserver'
 
 export interface ISimplecastEpisodeProps {
@@ -8,7 +7,7 @@ export interface ISimplecastEpisodeProps {
   darkTheme?: boolean
 }
 
-export const SimplecastEpesode: FunctionComponent<ISimplecastEpisodeProps> = ({
+export const SimplecastEpisode: FunctionComponent<ISimplecastEpisodeProps> = ({
   episodeId,
   darkTheme
 }: ISimplecastEpisodeProps) => {
@@ -19,8 +18,7 @@ export const SimplecastEpesode: FunctionComponent<ISimplecastEpisodeProps> = ({
         style={{
           position: 'relative',
           height: '200px',
-          width: '100%',
-          ...getPadding('16:9')
+          width: '100%'
         }}
       >
         <iframe
