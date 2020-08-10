@@ -14,7 +14,7 @@ export const Buzzprout: FunctionComponent<IBuzzproutProps> = ({
       <div style={{ position: 'relative' }}>
         <iframe
           title={`buzzprout-${buzzproutId}`}
-          src={`//buzzsprout.com/${buzzproutId}?client_source=admin&amp;iframe=true`}
+          src={`https://www.buzzsprout.com/${buzzproutId}?client_source=admin&amp;iframe=true`}
           width="100%"
           height="200"
           frameBorder="0"
