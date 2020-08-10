@@ -1,8 +1,10 @@
 export { CodePen } from './components/CodePen'
 export { CodeSandbox } from './components/CodeSandbox'
+export { EggheadLesson } from './components/Egghead'
 export { Flickr } from './components/Flickr'
 export { Gist } from './components/Gist'
 export { Instagram } from './components/Instagram'
+export { Lbry } from './components/Lbry'
 export { MdxEmbedProvider } from './components/MdxEmbedProvider'
 export {
   Pin,
@@ -26,3 +28,4 @@ export { Wikipedia } from './components/Wikipedia'
 export { YouTube } from './components/YouTube'
 export { EggheadLesson } from './components/Egghead'
 export { Buzzprout } from './components/Buzzprout'
+

@@ -1,0 +1,23 @@
+import { Meta, Story, Preview, Props } from '@storybook/addon-docs/blocks'
+
+import { Lbry } from '../../../@pauliescanlon/gatsby-mdx-embed/src/components/Lbry'
+
+<Meta title="Components/Lbry" component={Lbry} />
+
+# Lbry
+
+Display a Lbry video by including the component in your `.mdx`. The `lbryId` prop is required.
+
+<Props of={Lbry} />
+
+## Basic usage
+
+<Preview>
+  <Lbry lbryId="get-wordpress-data-into-the-gatsby" />
+</Preview>
+
+## Skip to
+
+<Preview>
+  <Lbry lbryId="get-wordpress-data-into-the-gatsby" skipTo={{ s: 271 }} />
+</Preview>
