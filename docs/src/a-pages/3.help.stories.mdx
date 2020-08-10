@@ -332,21 +332,19 @@ Then use it in the component like this.
 ```jsx
 <TikTok tikTokId="@scout2015/video/6718335390845095173" />
 ```
+
 ## Buzzprout
 
-To embed an Buzzprout podcast episodeio player using the `<Buzzprout />` component grab the `podcastId` and `episodeId` from the URL.
+To embed a Buzzprout podcast episode player using the `<Buzzprout />` component grab the `podcastId` and `episodeId` from the URL.
 
-It should be everything after `https://buzzsprout.com`.
+It should be everything after `https://buzzsprout.com`
 
 ```
 http://buzzsprout.com/1081172/4728410-react-hooks
 ```
 
-The `podcastId` is the first number `1081172` and `episodeId` is the last piece of the url `4728410-react-hooks`.
-
 Then use it in the component like this.
 
-```js
-<Buzzprout podcastId="1081172" episodeId="4728410"/>
+```jsx
+<Buzzprout buzzproutId="1081172/4728410-react-hooks" />
 ```
-
