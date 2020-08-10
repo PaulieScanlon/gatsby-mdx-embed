@@ -26,3 +26,6 @@ export {
 export { Vimeo } from './components/Vimeo'
 export { Wikipedia } from './components/Wikipedia'
 export { YouTube } from './components/YouTube'
+export { EggheadLesson } from './components/Egghead'
+export { Buzzprout } from './components/Buzzprout'
+
