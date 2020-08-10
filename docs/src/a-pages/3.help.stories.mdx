@@ -168,6 +168,40 @@ Skip to, you'll need to add in the seconds, you can get this value from the Lbry
 <Lbry lbryId="get-wordpress-data-into-the-gatsby" skipTo={{ s: 271 }} />
 ```
 
+## Simplecast
+
+To embed a Simplecast Episode using the `<SimplecastEpisode />` component grab the `episodeId` from the embed option on the Simplecase Episode page.
+
+In the embed code dialog the `src` will looks something like this:
+
+```html
+<iframe
+  height="200px"
+  width="100%"
+  frameborder="no"
+  scrolling="no"
+  seamless
+  src="https://player.simplecast.com/905d603d-a7e4-4142-9bc3-16012312cc46?dark=false"
+></iframe>
+```
+
+The `episodeId` should be everything after `https://player.simplecast.com/` pay attention to the url for `?dark=` this is for the dark theme which is passed as a prop.
+
+Use it in the component like this:
+
+```jsx
+<SimplecastEpisode
+  episodeId="905d603d-a7e4-4142-9bc3-16012312cc46"
+  darkTheme={true}
+/>
+```
+
+With no dark theme:
+
+```jsx
+<SimplecastEpisode episodeId="905d603d-a7e4-4142-9bc3-16012312cc46" />
+```
+
 ## SoundCloud
 
 To embed a SoundCloud player using the `<SoundCloud />` component grab the `tracks` or `albums` and the `id` from the src URL in the Embed code.
