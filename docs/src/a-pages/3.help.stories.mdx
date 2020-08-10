@@ -168,6 +168,14 @@ Skip to, you'll need to add in the seconds, you can get this value from the Lbry
 <Lbry lbryId="get-wordpress-data-into-the-gatsby" skipTo={{ s: 271 }} />
 ```
 
+## Strava
+
+To embed a summary of a strava activity, navigate to the activity page on Strava.com (embed links aren't available on the mobile app). From there, click the "share" icon. Copy the URL from the snippet they provide that starts with `htps://www.strava.com/activities`. Set the `stravaEmbedUrl` prop to the url you copied.
+
+```jsx
+<Strava stravaEmbedUrl="https://www.strava.com/activities/3857744534/embed/063fb45ce16095ff076c485ef6b14a01bf0e10e1" />
+```
+
 ## SoundCloud
 
 To embed a SoundCloud player using the `<SoundCloud />` component grab the `tracks` or `albums` and the `id` from the src URL in the Embed code.

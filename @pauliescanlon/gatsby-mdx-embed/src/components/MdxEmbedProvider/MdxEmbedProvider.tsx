@@ -9,6 +9,7 @@ import { Instagram } from '../Instagram'
 import { Pin, PinterestBoard, PinterestFollowButton } from '../Pinterest'
 import { SoundCloud } from '../SoundCloud'
 import { Spotify } from '../Spotify'
+import { Strava } from '../Strava'
 import { TikTok } from '../TikTok'
 import { Twitch } from '../Twitch'
 import {
@@ -35,6 +36,7 @@ const components = {
   PinterestFollowButton,
   SoundCloud,
   Spotify,
+  Strava,
   TikTok,
   Twitch,
   Tweet,

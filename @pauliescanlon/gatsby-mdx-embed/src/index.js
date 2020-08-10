@@ -13,6 +13,7 @@ export {
 } from './components/Pinterest'
 export { SoundCloud } from './components/SoundCloud'
 export { Spotify } from './components/Spotify'
+export { Strava } from './components/Strava'
 export { TikTok } from './components/TikTok'
 export { Twitch } from './components/Twitch'
 export {
