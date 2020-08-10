@@ -23,6 +23,7 @@ import {
 import { Vimeo } from '../Vimeo'
 import { Wikipedia } from '../Wikipedia'
 import { YouTube } from '../YouTube'
+import { Buzzprout } from '../Buzzprout'
 
 const components = {
   CodePen,
@@ -47,7 +48,8 @@ const components = {
   Wikipedia,
   YouTube,
   EggheadLesson,
-  SimplecastEpesode
+  SimplecastEpesode,
+  Buzzprout
 } as any
 
 export const MdxEmbedProvider: FunctionComponent = ({ children }) => (

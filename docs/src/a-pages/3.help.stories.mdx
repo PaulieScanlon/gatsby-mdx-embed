@@ -20,7 +20,7 @@ PNaGbb
 
 Then use it in the component like this.
 
-```
+```jsx
 <CodePen codePenId="PNaGbb" />
 ```
 
@@ -40,7 +40,7 @@ react-new
 
 Then use it in the component like this.
 
-```js
+```jsx
 <CodeSandbox codeSandboxId="react-new" />
 ```
 
@@ -62,7 +62,7 @@ gatsby-set-up-a-gatsby-site-to-use-mdx-with-gatsby-plugin-mdx-with-a-default-lay
 
 Then use it in the component like this.
 
-```js
+```jsx
 <EggheadLesson lessonId="gatsby-set-up-a-gatsby-site-to-use-mdx-with-gatsby-plugin-mdx-with-a-default-layout" />
 ```
 
@@ -98,7 +98,7 @@ The img `src` is this bit.
 
 Then use it in the component like this.
 
-```js
+```jsx
 <Flickr flickrLink="458/30740580204_7283c9987e_k.jpg" />
 ```
 
@@ -118,7 +118,7 @@ PaulieScanlon/ca0cc9239176066492cb2aba435edbf7
 
 Then use it in the component like this.
 
-```js
+```jsx
 <Gist gistLink="PaulieScanlon/ca0cc9239176066492cb2aba435edbf7" />
 ```
 
@@ -138,8 +138,34 @@ B7ISOoHne6s
 
 Then use it in the component like this.
 
-```js
+```jsx
 <Instagram instagramId="B7ISOoHne6s" />
+```
+
+## Lbry
+
+To embed a Lbry video using the `<Lbry />` component grab the `lbryId` from the share dialog under 'Embed this content' on Lbry, this will give you the `src` URL, you'll need to grab everything after `/embed`.
+
+```text
+https://lbry.tv/$/embed/get-wordpress-data-into-the-gatsby
+```
+
+The `lbryId` is this bit.
+
+```text
+get-wordpress-data-into-the-gatsby
+```
+
+Then use it in the component like this.
+
+```jsx
+<Lbry lbryId="get-wordpress-data-into-the-gatsby" />
+```
+
+Skip to, you'll need to add in the seconds, you can get this value from the Lbry share dialog under 'Embed this content' so to skip to 4m 31s use the component like this.
+
+```jsx
+<Lbry lbryId="get-wordpress-data-into-the-gatsby" skipTo={{ s: 271 }} />
 ```
 
 ## SoundCloud
@@ -165,7 +191,7 @@ tracks/499997862
 
 Then use it in the component like this.
 
-```js
+```jsx
 <SoundCloud soundCloudLink="tracks/499997862" />
 ```
 
@@ -203,7 +229,7 @@ album/65KwtzkJXw7oT819NFWmEP
 
 Then use it in the component like this.
 
-```js
+```jsx
 <Spotify spotifyLink="album/65KwtzkJXw7oT819NFWmEP" />
 ```
 
@@ -223,7 +249,7 @@ The `twitchId` is this bit.
 
 Then use it in the component like this.
 
-```js
+```jsx
 <Twitch twitchId="510143691" />
 ```
 
@@ -243,7 +269,7 @@ PaulieScanlon/status/1201514996838141952
 
 Then use it in the component like this.
 
-```js
+```jsx
 <Tweet tweetLink="PaulieScanlon/status/1201514996838141952" />
 ```
 
@@ -263,7 +289,7 @@ The `vimeoId` is this bit.
 
 Then use it in the component like this.
 
-```js
+```jsx
 <Vimeo vimeoId="38445453" />
 ```
 
@@ -283,7 +309,7 @@ WUgvvPRH7Oc
 
 Then use it in the component like this.
 
-```js
+```jsx
 <YouTube youTubeId="WUgvvPRH7Oc" />
 ```
 
@@ -303,6 +329,22 @@ The `username`, `video` and `id` are these bits.
 
 Then use it in the component like this.
 
-```js
+```jsx
 <TikTok tikTokId="@scout2015/video/6718335390845095173" />
+```
+
+## Buzzprout
+
+To embed a Buzzprout podcast episode player using the `<Buzzprout />` component grab the `podcastId` and `episodeId` from the URL.
+
+It should be everything after `https://www.buzzsprout.com`
+
+```
+https://www.buzzsprout.com/1081172/4728410-react-hooks
+```
+
+Then use it in the component like this.
+
+```jsx
+<Buzzprout buzzproutId="1081172/4728410-react-hooks" />
 ```

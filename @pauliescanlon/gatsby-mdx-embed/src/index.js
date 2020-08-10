@@ -4,6 +4,7 @@ export { EggheadLesson } from './components/Egghead'
 export { Flickr } from './components/Flickr'
 export { Gist } from './components/Gist'
 export { Instagram } from './components/Instagram'
+export { Lbry } from './components/Lbry'
 export { MdxEmbedProvider } from './components/MdxEmbedProvider'
 export {
   Pin,
@@ -26,3 +27,4 @@ export {
 export { Vimeo } from './components/Vimeo'
 export { Wikipedia } from './components/Wikipedia'
 export { YouTube } from './components/YouTube'
+export { Buzzprout } from './components/Buzzprout'
