@@ -170,9 +170,9 @@ Skip to, you'll need to add in the seconds, you can get this value from the Lbry
 
 ## Simplecast
 
-To embed a Simplecast Episode using the `<SimplecastEpisode />` component grab the `episodeId` from the embed option on the Simplecase Episode page.
+To embed a Simplecast Episode using the `<SimplecastEpisode />` component grab the `episodeId` from the embed option on the Simplecast Episode page.
 
-In the embed code dialog the `src` will looks something like this:
+In the embed code dialog the `src` will look something like this:
 
 ```html
 <iframe
@@ -181,11 +181,11 @@ In the embed code dialog the `src` will looks something like this:
   frameborder="no"
   scrolling="no"
   seamless
-  src="https://player.simplecast.com/905d603d-a7e4-4142-9bc3-16012312cc46?dark=false"
+  src="https://player.simplecast.com/905d603d-a7e4-4142-9bc3-16012312cc46"
 ></iframe>
 ```
 
-The `episodeId` should be everything after `https://player.simplecast.com/` pay attention to the url for `?dark=` this is for the dark theme which is passed as a prop.
+The `episodeId` should be everything after `https://player.simplecast.com/`
 
 Use it in the component like this:
 
