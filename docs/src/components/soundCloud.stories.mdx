@@ -1,0 +1,34 @@
+import { Meta, Preview, Props } from '@storybook/addon-docs/blocks'
+
+import { SoundCloud } from '../../../@pauliescanlon/gatsby-mdx-embed/src/components/SoundCloud'
+
+<Meta title="Components/SoundCloud" component={SoundCloud} />
+
+# SoundCloud
+
+Display a SoundCloud player by including the component in your `.mdx`. The `soundCloudLink` prop is required.
+
+<Props of={SoundCloud} />
+
+## Basic usage
+
+<Preview>
+  <SoundCloud soundCloudLink="tracks/499997862" />
+</Preview>
+
+## Color
+
+<Preview>
+  <SoundCloud soundCloudLink="tracks/188189839" color="e23f88" />
+</Preview>
+
+## Visual
+
+<Preview>
+  <SoundCloud
+    soundCloudLink="tracks/196287837"
+    visual={true}
+    width="300px"
+    height="300px"
+  />
+</Preview>

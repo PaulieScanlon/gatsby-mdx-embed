@@ -1,0 +1,26 @@
+import { Meta, Preview, Props } from '@storybook/addon-docs/blocks'
+
+import { TwitterMentionButton } from '../../../../@pauliescanlon/gatsby-mdx-embed/src/components/Twitter'
+
+<Meta
+  title="Components/Twitter/TwitterMentionButton"
+  component={TwitterMentionButton}
+/>
+
+# TwitterMentionButton
+
+Display a TwitterMentionButton by including the component in your `.mdx`. The `username` prop is required.
+
+<Props of={TwitterMentionButton} />
+
+## Basic usage
+
+<Preview>
+  <TwitterMentionButton username="PaulieScanlon" />
+</Preview>
+
+## Size
+
+<Preview>
+  <TwitterMentionButton username="PaulieScanlon" size="large" />
+</Preview>

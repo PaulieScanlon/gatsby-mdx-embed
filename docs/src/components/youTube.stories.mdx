@@ -1,0 +1,29 @@
+import { Meta, Preview, Props } from '@storybook/addon-docs/blocks'
+
+import { YouTube } from '../../../@pauliescanlon/gatsby-mdx-embed/src/components/YouTube'
+
+<Meta title="Components/YouTube" component={YouTube} />
+
+# YouTube
+
+Display a YouTube video by including the component in your `.mdx`. The `youTubeId` prop is required.
+
+<Props of={YouTube} />
+
+## Basic usage
+
+<Preview>
+  <YouTube youTubeId="WUgvvPRH7Oc" />
+</Preview>
+
+## Aspect Ratio
+
+<Preview>
+  <YouTube youTubeId="mM5_T-F1Yn4" aspectRatio="4:3" />
+</Preview>
+
+## Skip to
+
+<Preview>
+  <YouTube youTubeId="PS2784YfPpw" skipTo={{ h: 0, m: 38, s: 44 }} />
+</Preview>

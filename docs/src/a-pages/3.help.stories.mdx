@@ -1,0 +1,375 @@
+<Meta title="Help" />
+
+# Help 💁‍♂️
+
+Here you'll find documentation about how to use each of the components and where to source the embed codes from for each of the providers.
+
+## CodePen
+
+To embed a CodePen using the `<CodePen />` component grab the `codePenId` from the URL.
+
+```
+https://codepen.io/team/codepen/pen/PNaGbb
+```
+
+The `codePenId` is this bit.
+
+```
+PNaGbb
+```
+
+Then use it in the component like this.
+
+```jsx
+<CodePen codePenId="PNaGbb" />
+```
+
+## CodeSandbox
+
+To embed a CodeSandbox using the `<CodeSandbox />` component grab the `codeSandboxId` from the URL.
+
+```
+https://codesandbox.io/s/react-new
+```
+
+The `codeSandboxId` is this bit.
+
+```
+react-new
+```
+
+Then use it in the component like this.
+
+```jsx
+<CodeSandbox codeSandboxId="react-new" />
+```
+
+## Egghead
+
+To embed an Egghead video using the `<EggheadLesson />` component grab the `lessonId` from the URL.
+
+It should be everything after `https://egghead.io/lessons/` pay attention to the url for `?pl=` this will show if the lesson relates to a playlist, you will need to remove the playlist query.
+
+```
+https://egghead.io/lessons/gatsby-set-up-a-gatsby-site-to-use-mdx-with-gatsby-plugin-mdx-with-a-default-layout?pl=using-components-in-markdown-with-mdx-5de0
+```
+
+The `lessonId` is this bit.
+
+```
+gatsby-set-up-a-gatsby-site-to-use-mdx-with-gatsby-plugin-mdx-with-a-default-layout
+```
+
+Then use it in the component like this.
+
+```jsx
+<EggheadLesson lessonId="gatsby-set-up-a-gatsby-site-to-use-mdx-with-gatsby-plugin-mdx-with-a-default-layout" />
+```
+
+## Flickr
+
+To embed a Flickr image using the `<Flickr />` component find the img `src` in the Embed code.
+
+```html
+<a
+  data-flickr-embed="true"
+  data-header="true"
+  data-footer="true"
+  href="https://www.flickr.com/photos/123516006@N05/30740580204/in/photolist-NQrvvw-x6jo9P-rMq58s-QXKf3x-qYKbuJ-QN44WS-B43xuX-E84iyH-d9WVUR-Cvdvvu-tiBRv3-NoUEMi-23Mf13i-QZ1tX1-xUXBU1-ripXpz-tdLNbN-spCQTK-Hudqfd-DFCyKN-22KD9n1-qgCP7L-24c2WZ6-RK7QPX-AZpKwi-2d4qbWD-Ck1eXd-ranHVb-BAYBKs-G9ACAJ-CHCrGV-vosLmw-DwYQvn-QSV4XU-Bkad8D-QF8GFf-s79L6o-ERMGQG-L596Ei-Q7D5DW-JzoGNT-BPaVP2-zpCDzE-zD396a-D8vtD2-sEj6Nx-DnmS36-TuEijJ-YhiQwz-22iLYzg"
+  title="Sunset"
+  ><img
+    src="https://live.staticflickr.com/458/30740580204_7283c9987e_k.jpg"
+    width="2048"
+    height="1167"
+    alt="Sunset"
+/></a>
+<script
+  async
+  src="//embedr.flickr.com/assets/client-code.js"
+  charset="utf-8"
+></script>
+```
+
+The img `src` is this bit.
+
+```
+458/30740580204_7283c9987e_k.jpg
+```
+
+Then use it in the component like this.
+
+```jsx
+<Flickr flickrLink="458/30740580204_7283c9987e_k.jpg" />
+```
+
+## Gist
+
+To embed an Gist using the `<Gist />` component grab the `username` and `id` from the Gist URL.
+
+```
+https://gist.github.com/PaulieScanlon/ca0cc9239176066492cb2aba435edbf7#file-gatsby-mdx-embed-html
+```
+
+The `username` and `id` are these bits.
+
+```
+PaulieScanlon/ca0cc9239176066492cb2aba435edbf7
+```
+
+Then use it in the component like this.
+
+```jsx
+<Gist gistLink="PaulieScanlon/ca0cc9239176066492cb2aba435edbf7" />
+```
+
+## Instagram
+
+To embed an Instagram post using the `<Instagram />` component grab the `instagramId` from the posts URL.
+
+```
+https://www.instagram.com/p/B7ISOoHne6s/
+```
+
+The `instagramId` is this bit.
+
+```
+B7ISOoHne6s
+```
+
+Then use it in the component like this.
+
+```jsx
+<Instagram instagramId="B7ISOoHne6s" />
+```
+
+## Lbry
+
+To embed a Lbry video using the `<Lbry />` component grab the `lbryId` from the share dialog under 'Embed this content' on Lbry, this will give you the `src` URL, you'll need to grab everything after `/embed`.
+
+```text
+https://lbry.tv/$/embed/get-wordpress-data-into-the-gatsby
+```
+
+The `lbryId` is this bit.
+
+```text
+get-wordpress-data-into-the-gatsby
+```
+
+Then use it in the component like this.
+
+```jsx
+<Lbry lbryId="get-wordpress-data-into-the-gatsby" />
+```
+
+Skip to, you'll need to add in the seconds, you can get this value from the Lbry share dialog under 'Embed this content' so to skip to 4m 31s use the component like this.
+
+```jsx
+<Lbry lbryId="get-wordpress-data-into-the-gatsby" skipTo={{ s: 271 }} />
+```
+
+## Simplecast
+
+To embed a Simplecast Episode using the `<SimplecastEpisode />` component grab the `episodeId` from the embed option on the Simplecast Episode page.
+
+In the embed code dialog the `src` will look something like this:
+
+```html
+<iframe
+  height="200px"
+  width="100%"
+  frameborder="no"
+  scrolling="no"
+  seamless
+  src="https://player.simplecast.com/905d603d-a7e4-4142-9bc3-16012312cc46"
+></iframe>
+```
+
+The `episodeId` should be everything after `https://player.simplecast.com/`
+
+Use it in the component like this:
+
+```jsx
+<SimplecastEpisode episodeId="905d603d-a7e4-4142-9bc3-16012312cc46" />
+```
+
+## SoundCloud
+
+To embed a SoundCloud player using the `<SoundCloud />` component grab the `tracks` or `albums` and the `id` from the src URL in the Embed code.
+
+```html
+<iframe
+  width="100%"
+  height="166"
+  scrolling="no"
+  frameborder="no"
+  allow="autoplay"
+  src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/499997862&color=%23ff00f5&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
+></iframe>
+```
+
+The `tracks` or `album` and `id` are these bits.
+
+```
+tracks/499997862
+```
+
+Then use it in the component like this.
+
+```jsx
+<SoundCloud soundCloudLink="tracks/499997862" />
+```
+
+## Spotify
+
+To embed a Spotify player using the `<Spotify />` component open the Spotify app and from the share menu grab the `track` or `album` and the `id` from the src URL in the Embed code.
+
+```html
+<iframe
+  src="https://open.spotify.com/embed/album/65KwtzkJXw7oT819NFWmEP"
+  width="300"
+  height="380"
+  frameborder="0"
+  allowtransparency="true"
+  allow="encrypted-media"
+></iframe>
+```
+
+```html
+<iframe
+  src="https://open.spotify.com/embed/track/3982V8R7oW3xyV8zASbCGG"
+  width="300"
+  height="380"
+  frameborder="0"
+  allowtransparency="true"
+  allow="encrypted-media"
+></iframe>
+```
+
+The `track` or `album` and `id` are these bits.
+
+```
+album/65KwtzkJXw7oT819NFWmEP
+```
+
+Then use it in the component like this.
+
+```jsx
+<Spotify spotifyLink="album/65KwtzkJXw7oT819NFWmEP" />
+```
+
+## Twitch
+
+To embed a Twitch video using the `<Twitch />` component grab the `twitchId` from the share Video Link URL.
+
+```
+https://www.twitch.tv/videos/510143691
+```
+
+The `twitchId` is this bit.
+
+```
+510143691
+```
+
+Then use it in the component like this.
+
+```jsx
+<Twitch twitchId="510143691" />
+```
+
+## Tweet
+
+To embed a Tweet using the `<Tweet />` component open the menu next to any Tweet and grab the `username`, `status` and `id` from the Embed Tweet URL.
+
+```
+https://twitter.com/PaulieScanlon/status/1201514996838141952
+```
+
+The `username`, `status` and `id` are these bits.
+
+```
+PaulieScanlon/status/1201514996838141952
+```
+
+Then use it in the component like this.
+
+```jsx
+<Tweet tweetLink="PaulieScanlon/status/1201514996838141952" />
+```
+
+## Vimeo
+
+To embed a Vimeo video using the `<Vimeo />` component grab the `vimeoId` from the URL.
+
+```
+https://vimeo.com/38445453
+```
+
+The `vimeoId` is this bit.
+
+```
+38445453
+```
+
+Then use it in the component like this.
+
+```jsx
+<Vimeo vimeoId="38445453" />
+```
+
+## YouTube
+
+To embed a YouTube video using the `<YouTube />` component grab the `youTubeId` from the URL.
+
+```
+https://www.youtube.com/watch?v=WUgvvPRH7Oc
+```
+
+The `youTubeId` is this bit.
+
+```
+WUgvvPRH7Oc
+```
+
+Then use it in the component like this.
+
+```jsx
+<YouTube youTubeId="WUgvvPRH7Oc" />
+```
+
+## TikTok
+
+To embed a TikTok player using the `<TikTok />` component grab the `username`, `video` and `id` from the TikTok URL.
+
+```
+https://www.tiktok.com/@scout2015/video/6718335390845095173#
+```
+
+The `username`, `video` and `id` are these bits.
+
+```
+@scout2015/video/6718335390845095173
+```
+
+Then use it in the component like this.
+
+```jsx
+<TikTok tikTokId="@scout2015/video/6718335390845095173" />
+```
+
+## Buzzprout
+
+To embed a Buzzprout podcast episode player using the `<Buzzprout />` component grab the `podcastId` and `episodeId` from the URL.
+
+It should be everything after `https://www.buzzsprout.com`
+
+```
+https://www.buzzsprout.com/1081172/4728410-react-hooks
+```
+
+Then use it in the component like this.
+
+```jsx
+<Buzzprout buzzproutId="1081172/4728410-react-hooks" />
+```

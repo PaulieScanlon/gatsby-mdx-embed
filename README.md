@@ -1,5 +1,5 @@
 <a href="https://gatsby-mdx-embed.netlify.com/" target="_blank">
-<img src="https://gatsby-mdx-embed.netlify.com/images/mdx-embed-main-og-image.jpg" alt="gatsby-mdx-embed image" />
+<img src="https://gatsby-mdx-embed.netlify.app/mdx-embed-og-image.jpg" alt="gatsby-mdx-embed image" />
 </a>
 
 # gatsby-mdx-embed
@@ -48,12 +48,18 @@ If the above doesn't help you might need to manually import the `MdxEmbedProvide
 ```js
 // layout.js
 
-import { MdxEmbedProvider } from "@pauliescanlon/gatsby-mdx-embed";
+import { MdxEmbedProvider } from '@pauliescanlon/gatsby-mdx-embed';
 
 <MdxEmbedProvider>
   <MDXRenderer>{body}</MDXRenderer>
 </MdxEmbedProvider>;
 ```
+
+## General Observer update 07/05/2020
+
+MDX Embed has been updated to include Intersection Observer support for all providers.
+
+With Intersection Observer support now heavy provider scripts won't be loaded until the component in question scrolls in to view... Keeping your site blazing fast! ⚡
 
 If you're using **gatsby-mdx-embed** in your project i'd love to hear from you [@pauliescanlon](https://twitter.com/PaulieScanlon)
 
@@ -63,4 +69,4 @@ Thanks to the following projects which were used as references
 
 - [gatsby-remark-oembed](https://github.com/raae/gatsby-remark-oembed)
 - [gatsby-plugin-twitter](https://github.com/gatsbyjs/gatsby/tree/master/packages/gatsby-plugin-twitter)
-- [gatsby-plugin-instagram-embed](https://github.com/jlengstorf/gatsby-plugin-instagram-embed)
+- [gatsby-plugin-instagram-embed](https://github.com/MichaelDeBoey/gatsby-plugin-instagram-embed)

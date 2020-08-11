@@ -1,0 +1,17 @@
+import { Meta, Preview, Props } from '@storybook/addon-docs/blocks'
+
+import { Flickr } from '../../../@pauliescanlon/gatsby-mdx-embed/src/components/Flickr'
+
+<Meta title="Components/Flickr" component={Flickr} />
+
+# Flickr
+
+Display a Flickr image by including the component in your `.mdx`. The `flickrLink` prop is required.
+
+<Props of={Flickr} />
+
+## Basic usage
+
+<Preview>
+  <Flickr flickrLink="458/30740580204_7283c9987e_k.jpg" />
+</Preview>

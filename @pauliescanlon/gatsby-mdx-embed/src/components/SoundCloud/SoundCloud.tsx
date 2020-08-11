@@ -1,4 +1,5 @@
 import React, { FunctionComponent } from 'react'
+import { GeneralObserver } from '../GeneralObserver'
 
 export interface ISoundCloudProps {
   /** SoundCloud link */
@@ -23,14 +24,16 @@ export const SoundCloud: FunctionComponent<ISoundCloudProps> = ({
   visual = false,
   color
 }: ISoundCloudProps) => (
-  <iframe
-    title={`sound-cloud-${soundCloudLink}`}
-    className="soundcloud-mdx-embed"
-    width={width}
-    height={height}
-    scrolling="no"
-    frameBorder="no"
-    allow="autoplay"
-    src={`https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/${soundCloudLink}&color=%23${color}&auto_play=${autoPlay}&visual=${visual}`}
-  />
+  <GeneralObserver>
+    <iframe
+      title={`sound-cloud-${soundCloudLink}`}
+      className="soundcloud-mdx-embed"
+      width={width}
+      height={height}
+      scrolling="no"
+      frameBorder="no"
+      allow="autoplay"
+      src={`https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/${soundCloudLink}&color=%23${color}&auto_play=${autoPlay}&visual=${visual}`}
+    />
+  </GeneralObserver>
 )

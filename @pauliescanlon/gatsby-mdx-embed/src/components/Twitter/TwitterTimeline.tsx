@@ -1,5 +1,6 @@
 import React, { FunctionComponent } from 'react'
-
+import { GeneralObserver } from '../GeneralObserver'
+import { handleTwttrLoad } from './utils'
 export interface ITwitterTimelineProps {
   /** Twitter username */
   username: string
@@ -20,17 +21,19 @@ export const TwitterTimeline: FunctionComponent<ITwitterTimelineProps> = ({
   width = '498px',
   height = null
 }: ITwitterTimelineProps) => (
-  <div style={{ overflow: 'auto' }}>
-    <a
-      className="twitter-timeline twitter-timeline-mdx-embed"
-      data-theme={theme}
-      data-width={width}
-      data-height={height}
-      href={`https://twitter.com/${username}${
-        showLikes ? `/likes` : ''
-      }?ref_src=twsrc%5Etfw`}
-    >
-      {`Tweets by @${username}`}
-    </a>
-  </div>
+  <GeneralObserver onEnter={() => handleTwttrLoad()}>
+    <div style={{ overflow: 'auto' }}>
+      <a
+        className="twitter-timeline twitter-timeline-mdx-embed"
+        data-theme={theme}
+        data-width={width}
+        data-height={height}
+        href={`https://twitter.com/${username}${
+          showLikes ? `/likes` : ''
+        }?ref_src=twsrc%5Etfw`}
+      >
+        {`Tweets by @${username}`}
+      </a>
+    </div>
+  </GeneralObserver>
 )

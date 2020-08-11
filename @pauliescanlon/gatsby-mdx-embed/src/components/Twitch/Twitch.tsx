@@ -1,4 +1,5 @@
 import React, { FunctionComponent } from 'react'
+import { GeneralObserver } from '../GeneralObserver'
 import { getPadding } from '../../utils'
 
 export interface ITwitchProps {
@@ -28,28 +29,30 @@ export const Twitch: FunctionComponent<ITwitchProps> = ({
   const { h, m, s } = skipTo
 
   return (
-    <div
-      className="twitch-mdx-embed"
-      style={{
-        position: 'relative',
-        width: '100%',
-        ...getPadding('16:9')
-      }}
-    >
-      <iframe
-        title={`twitch-${twitchId}`}
-        src={`https://player.twitch.tv/?autoplay=${autoPlay}&t=${h}h${m}m${s}s&video=v${twitchId}&channel=${channel}&collection=${collection}`}
-        frameBorder="0"
-        allow="autoplay; fullscreen"
-        allowFullScreen
+    <GeneralObserver>
+      <div
+        className="twitch-mdx-embed"
         style={{
-          position: 'absolute',
-          top: 0,
-          left: 0,
+          position: 'relative',
           width: '100%',
-          height: '100%'
+          ...getPadding('16:9')
         }}
-      />
-    </div>
+      >
+        <iframe
+          title={`twitch-${twitchId}`}
+          src={`https://player.twitch.tv/?autoplay=${autoPlay}&t=${h}h${m}m${s}s&video=v${twitchId}&channel=${channel}&collection=${collection}`}
+          frameBorder="0"
+          allow="autoplay; fullscreen"
+          allowFullScreen
+          style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%'
+          }}
+        />
+      </div>
+    </GeneralObserver>
   )
 }

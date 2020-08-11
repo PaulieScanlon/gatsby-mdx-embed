@@ -1,0 +1,17 @@
+import { Meta, Preview, Props } from '@storybook/addon-docs/blocks'
+
+import { Gist } from '../../../@pauliescanlon/gatsby-mdx-embed/src/components/Gist'
+
+<Meta title="Components/Gist" component={Gist} />
+
+# Gist
+
+Display a Gist by including the component in your `.mdx`. The `gistLink` prop is required.
+
+<Props of={Gist} />
+
+## Basic usage
+
+<Preview>
+  <Gist gistLink="PaulieScanlon/ca0cc9239176066492cb2aba435edbf7" />
+</Preview>

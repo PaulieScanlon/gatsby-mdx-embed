@@ -1,4 +1,6 @@
 import React, { FunctionComponent } from 'react'
+import { GeneralObserver } from '../GeneralObserver'
+import { handleTwttrLoad } from './utils'
 
 export interface ITweetProps {
   /** Tweet link */
@@ -7,20 +9,30 @@ export interface ITweetProps {
   theme?: 'light' | 'dark'
   /** Alignment of the Tweet */
   align?: 'left' | 'center' | 'right'
+  /** Hides the conversation */
+  hideConversation?: boolean
 }
 
 export const Tweet: FunctionComponent<ITweetProps> = ({
   tweetLink,
   theme = 'light',
-  align = 'left'
+  align = 'left',
+  hideConversation = false
 }: ITweetProps) => (
-  <div className="twitter-tweet-mdx-embed" style={{ overflow: 'auto' }}>
-    <blockquote className="twitter-tweet" data-theme={theme} data-align={align}>
-      <a href={`https://twitter.com/${tweetLink}?ref_src=twsrc%5Etfw`}>
-        {typeof window !== 'undefined' && !(window as any).twttr
-          ? 'Loading'
-          : ''}
-      </a>
-    </blockquote>
-  </div>
+  <GeneralObserver onEnter={() => handleTwttrLoad()}>
+    <div className="twitter-tweet-mdx-embed" style={{ overflow: 'auto' }}>
+      <blockquote
+        className="twitter-tweet"
+        data-theme={theme}
+        data-align={align}
+        data-conversation={hideConversation ? 'none' : ''}
+      >
+        <a href={`https://twitter.com/${tweetLink}?ref_src=twsrc%5Etfw`}>
+          {typeof window !== 'undefined' && !(window as any).twttr
+            ? 'Loading'
+            : ''}
+        </a>
+      </blockquote>
+    </div>
+  </GeneralObserver>
 )

@@ -1,40 +1,28 @@
 {
   "name": "demo",
-  "private": true,
-  "description": "gatsby-mdx-embed docs",
-  "version": "0.1.0",
-  "author": "Paul Scanlon <pauliescanlon@gmail.com>",
-  "dependencies": {
-    "@mdx-js/react": "^1.5.3",
-    "@pauliescanlon/gatsby-mdx-embed": "*",
-    "docz": "^2.2.0",
-    "gatsby": "^2.18.17",
-    "gatsby-plugin-google-analytics": "^2.1.32",
-    "gatsby-theme-docz": "^2.2.0",
-    "react": "^16.12.0",
-    "react-dom": "^16.12.0"
-  },
-  "devDependencies": {
-    "prettier": "^1.19.1"
-  },
-  "keywords": [
-    "gatsby"
-  ],
-  "license": "MIT",
+  "version": "1.0.0",
+  "description": "A demo of gatsby-mdx-embed",
+  "main": "index.js",
   "scripts": {
-    "build": "gatsby build",
     "develop": "gatsby develop",
-    "format": "prettier --write \"**/*.{js,jsx,json,mdx}\"",
-    "start": "npm run develop",
+    "build": "gatsby build",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/PaulieScanlon/gatsby-mdx-embed"
-  },
-  "bugs": {
-    "url": "https://github.com/PaulieScanlon/gatsby-mdx-embed/issues"
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@mdx-js/mdx": "^1.6.5",
+    "@mdx-js/react": "^1.6.5",
+    "@pauliescanlon/gatsby-mdx-embed": "*",
+    "@types/theme-ui": "^0.3.2",
+    "gatsby": "2.20.36",
+    "gatsby-plugin-mdx": "^1.2.14",
+    "gatsby-plugin-theme-ui": "^0.3.0",
+    "gatsby-source-filesystem": "^2.3.10",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "theme-ui": "^0.3.1"
   }
 }

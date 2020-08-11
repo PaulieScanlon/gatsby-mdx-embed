@@ -1,4 +1,5 @@
 import React, { FunctionComponent } from 'react'
+import { GeneralObserver } from '../GeneralObserver'
 import { getPadding } from '../../utils'
 
 export interface IVimeoProps {
@@ -22,28 +23,30 @@ export const Vimeo: FunctionComponent<IVimeoProps> = ({
   const { h, m, s } = skipTo
 
   return (
-    <div
-      className="vimeo-mdx-embed"
-      style={{
-        position: 'relative',
-        width: '100%',
-        ...getPadding('16:9')
-      }}
-    >
-      <iframe
-        title={`vimeo-${vimeoId}`}
-        src={`https://player.vimeo.com/video/${vimeoId}?autoplay=${autoPlay}#t=${h}h${m}m${s}s`}
-        frameBorder="0"
-        allow="autoplay; fullscreen"
-        allowFullScreen
+    <GeneralObserver>
+      <div
+        className="vimeo-mdx-embed"
         style={{
-          position: 'absolute',
-          top: 0,
-          left: 0,
+          position: 'relative',
           width: '100%',
-          height: '100%'
+          ...getPadding('16:9')
         }}
-      />
-    </div>
+      >
+        <iframe
+          title={`vimeo-${vimeoId}`}
+          src={`https://player.vimeo.com/video/${vimeoId}?autoplay=${autoPlay}#t=${h}h${m}m${s}s`}
+          frameBorder="0"
+          allow="autoplay; fullscreen"
+          allowFullScreen
+          style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%'
+          }}
+        />
+      </div>
+    </GeneralObserver>
   )
 }

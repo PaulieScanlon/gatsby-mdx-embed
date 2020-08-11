@@ -1,12 +1,14 @@
 module.exports = {
   plugins: [
-    `@pauliescanlon/gatsby-mdx-embed`,
-    `gatsby-theme-docz`,
     {
-      resolve: "gatsby-plugin-google-analytics",
+      resolve: `gatsby-source-filesystem`,
       options: {
-        trackingId: "UA-76055934-5",
-      },
+        name: `pages`,
+        path: `${__dirname}/src/pages/`
+      }
     },
-  ],
-}
+    `gatsby-plugin-theme-ui`,
+    `gatsby-plugin-mdx`,
+    `@pauliescanlon/gatsby-mdx-embed`
+  ]
+};

@@ -1,0 +1,38 @@
+import { Meta, Preview, Props } from '@storybook/addon-docs/blocks'
+
+import { TwitterFollowButton } from '../../../../@pauliescanlon/gatsby-mdx-embed/src/components/Twitter'
+
+<Meta
+  title="Components/Twitter/TwitterFollowButton"
+  component={TwitterFollowButton}
+/>
+
+# TwitterFollowButton
+
+Display a TwitterFollowButton by including the component in your `.mdx`. The `username` prop is required.
+
+<Props of={TwitterFollowButton} />
+
+## Basic usage
+
+<Preview>
+  <TwitterFollowButton username="PaulieScanlon" />
+</Preview>
+
+## Show followers
+
+<Preview>
+  <TwitterFollowButton username="gatsbyjs" showFollowers={true} />
+</Preview>
+
+## Show username
+
+<Preview>
+  <TwitterFollowButton username="PaulieScanlon" showUsername={false} />
+</Preview>
+
+## Size
+
+<Preview>
+  <TwitterFollowButton username="PaulieScanlon" size="large" />
+</Preview>
