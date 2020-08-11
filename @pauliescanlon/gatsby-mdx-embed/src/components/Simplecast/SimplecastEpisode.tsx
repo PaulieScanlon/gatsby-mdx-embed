@@ -4,12 +4,13 @@ import { GeneralObserver } from '../GeneralObserver'
 export interface ISimplecastEpisodeProps {
   /** Simplecast Episode */
   episodeId: string
-  darkTheme?: boolean
+  /** Color theme of the Player */
+  theme?: `light` | `dark`
 }
 
 export const SimplecastEpisode: FunctionComponent<ISimplecastEpisodeProps> = ({
   episodeId,
-  darkTheme
+  theme = `light`
 }: ISimplecastEpisodeProps) => {
   return (
     <GeneralObserver>
@@ -23,7 +24,9 @@ export const SimplecastEpisode: FunctionComponent<ISimplecastEpisodeProps> = ({
       >
         <iframe
           title={`simplecast-${episodeId}`}
-          src={`https://player.simplecast.com/${episodeId}?dark=${darkTheme}`}
+          src={`https://player.simplecast.com/${episodeId}${
+            theme === `dark` ? `?dark=true` : ``
+          }`}
           frameBorder="no"
           scrolling="no"
           seamless
