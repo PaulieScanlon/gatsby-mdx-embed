@@ -3,8 +3,10 @@ import { GeneralObserver } from '../GeneralObserver'
 import { getPadding } from '../../utils'
 
 export interface ITwitchProps {
+  /** Domain(s) that will be embedding Twitch. You must have one parent key for each domain your site uses. */
+  parent: string,
   /** Twitch id */
-  twitchId: string
+  twitchId?: string
   /** Skip to a time in the video */
   skipTo: {
     h?: number
@@ -14,12 +16,13 @@ export interface ITwitchProps {
   /** Auto play the video */
   autoPlay: boolean,
   /** Name of the channel, for a live stream */
-  channel: string,
+  channel?: string,
   /** Collection ID, for a collection of videos */
-  collection: string
+  collection?: string
 }
 
 export const Twitch: FunctionComponent<ITwitchProps> = ({
+  parent,
   twitchId,
   autoPlay = false,
   skipTo = { h: 0, m: 0, s: 0 },
@@ -51,7 +54,7 @@ export const Twitch: FunctionComponent<ITwitchProps> = ({
       >
         <iframe
           title={`twitch-${twitchId}`}
-          src={`https://player.twitch.tv/?autoplay=${autoPlay}&t=${h}h${m}m${s}s&video=v${twitchId}`}
+          src={`https://player.twitch.tv/?autoplay=${autoPlay}&t=${h}h${m}m${s}s&video=v${twitchId}&channel=${channel}&collection=${collection}&parent=${parent}`}
           frameBorder="0"
           allow="autoplay; fullscreen"
           allowFullScreen
