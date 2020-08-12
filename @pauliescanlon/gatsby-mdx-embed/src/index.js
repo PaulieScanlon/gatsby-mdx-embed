@@ -1,3 +1,4 @@
+export { Buzzprout } from './components/Buzzprout'
 export { CodePen } from './components/CodePen'
 export { CodeSandbox } from './components/CodeSandbox'
 export { EggheadLesson } from './components/Egghead'
@@ -11,6 +12,7 @@ export {
   PinterestBoard,
   PinterestFollowButton
 } from './components/Pinterest'
+export { SimplecastEpisode } from './components/Simplecast'
 export { SoundCloud } from './components/SoundCloud'
 export { Spotify } from './components/Spotify'
 export { Strava } from './components/Strava'
@@ -27,4 +29,3 @@ export {
 export { Vimeo } from './components/Vimeo'
 export { Wikipedia } from './components/Wikipedia'
 export { YouTube } from './components/YouTube'
-export { Buzzprout } from './components/Buzzprout'

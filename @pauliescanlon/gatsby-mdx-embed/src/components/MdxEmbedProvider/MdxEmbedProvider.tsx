@@ -1,5 +1,6 @@
 import { MDXProvider } from '@mdx-js/react'
 import React, { FunctionComponent } from 'react'
+import { Buzzprout } from '../Buzzprout'
 import { CodePen } from '../CodePen'
 import { CodeSandbox } from '../CodeSandbox'
 import { EggheadLesson } from '../Egghead'
@@ -7,6 +8,7 @@ import { Flickr } from '../Flickr'
 import { Gist } from '../Gist'
 import { Instagram } from '../Instagram'
 import { Pin, PinterestBoard, PinterestFollowButton } from '../Pinterest'
+import { SimplecastEpisode } from '../Simplecast'
 import { SoundCloud } from '../SoundCloud'
 import { Spotify } from '../Spotify'
 import { Strava } from '../Strava'
@@ -23,17 +25,19 @@ import {
 import { Vimeo } from '../Vimeo'
 import { Wikipedia } from '../Wikipedia'
 import { YouTube } from '../YouTube'
-import { Buzzprout } from '../Buzzprout'
 
 const components = {
+  Buzzprout,
   CodePen,
   CodeSandbox,
+  EggheadLesson,
   Flickr,
   Gist,
   Instagram,
   Pin,
   PinterestBoard,
   PinterestFollowButton,
+  SimplecastEpisode,
   SoundCloud,
   Spotify,
   Strava,
@@ -47,9 +51,7 @@ const components = {
   TwitterTimeline,
   Vimeo,
   Wikipedia,
-  YouTube,
-  EggheadLesson,
-  Buzzprout
+  YouTube
 } as any
 
 export const MdxEmbedProvider: FunctionComponent = ({ children }) => (
