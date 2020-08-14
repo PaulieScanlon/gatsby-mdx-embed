@@ -1,7 +1,7 @@
 import React, { FunctionComponent } from 'react'
 import { GeneralObserver } from '../GeneralObserver'
 export interface IStravaProps {
-  /** The activity ID provided by Strava's share action on the activity page.  Just the text after `https://www.strava.com/activities/`, which should look something like `1234567/embed/abcdefgh` */
+  /** The activity part of the URL provided by Strava's share action on the activity page. */
   activityId: string
 }
 
