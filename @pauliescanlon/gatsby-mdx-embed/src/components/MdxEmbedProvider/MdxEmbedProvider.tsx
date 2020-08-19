@@ -11,6 +11,7 @@ import { Pin, PinterestBoard, PinterestFollowButton } from '../Pinterest'
 import { SimplecastEpisode } from '../Simplecast'
 import { SoundCloud } from '../SoundCloud'
 import { Spotify } from '../Spotify'
+import { Strava } from '../Strava'
 import { TikTok } from '../TikTok'
 import { Twitch } from '../Twitch'
 import {
@@ -39,6 +40,7 @@ const components = {
   SimplecastEpisode,
   SoundCloud,
   Spotify,
+  Strava,
   TikTok,
   Twitch,
   Tweet,
