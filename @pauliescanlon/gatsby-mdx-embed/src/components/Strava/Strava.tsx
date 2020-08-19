@@ -1,7 +1,7 @@
 import React, { FunctionComponent } from 'react'
 import { GeneralObserver } from '../GeneralObserver'
 export interface IStravaProps {
-  /** The activity part of the URL provided by Strava's share action on the activity page. */
+  /** The Strava activityId */
   activityId: string
 }
 
@@ -10,19 +10,29 @@ export const Strava: FunctionComponent<IStravaProps> = ({
 }: IStravaProps) => {
   return (
     <GeneralObserver>
-      <iframe
-        title={`strava-${activityId}`}
+      <div
         className="strava-mdx-embed"
-        height="405"
         style={{
-          maxWidth: '590px',
-          width: '100%'
+          position: 'relative',
+          height: '350px',
+          maxWidth: '568px',
+          width: '100%',
+          overflow: 'auto'
         }}
-        frameBorder="0"
-        allowTransparency
-        scrolling="no"
-        src={`https://www.strava.com/activities/${activityId}`}
-      />
+      >
+        <iframe
+          title={`strava-${activityId}`}
+          className="strava-mdx-embed"
+          height="100%"
+          width="100%"
+          style={{
+            minWidth: '380px'
+          }}
+          frameBorder="0"
+          scrolling="no"
+          src={`https://www.strava.com/activities/${activityId}`}
+        />
+      </div>
     </GeneralObserver>
   )
 }
