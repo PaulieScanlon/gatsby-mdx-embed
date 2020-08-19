@@ -193,6 +193,14 @@ Use it in the component like this:
 <SimplecastEpisode episodeId="905d603d-a7e4-4142-9bc3-16012312cc46" />
 ```
 
+## Strava
+
+To embed a summary of a strava activity, navigate to the activity page on Strava.com (embed links aren't available on the mobile app). From there, click the "share" icon. The `activityId` should be everything after `https://www.strava.com/activities/`.
+
+```jsx
+<Strava activityId="3857744534/embed/063fb45ce16095ff076c485ef6b14a01bf0e10e1" />
+```
+
 ## SoundCloud
 
 To embed a SoundCloud player using the `<SoundCloud />` component grab the `tracks` or `albums` and the `id` from the src URL in the Embed code.
