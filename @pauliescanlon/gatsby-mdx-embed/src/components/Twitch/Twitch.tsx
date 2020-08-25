@@ -4,7 +4,7 @@ import { getPadding } from '../../utils'
 
 export interface ITwitchProps {
   /** Domain(s) that will be embedding Twitch. You must have one parent key for each domain your site uses. */
-  parent: string,
+  parent: string
   /** Twitch id */
   twitchId?: string
   /** Skip to a time in the video */
@@ -14,9 +14,9 @@ export interface ITwitchProps {
     s: number
   }
   /** Auto play the video */
-  autoPlay: boolean,
+  autoPlay: boolean
   /** Name of the channel, for a live stream */
-  channel?: string,
+  channel?: string
   /** Collection ID, for a collection of videos */
   collection?: string
 }
@@ -32,20 +32,9 @@ export const Twitch: FunctionComponent<ITwitchProps> = ({
   const { h, m, s } = skipTo
 
   return (
-    <div
-      className="twitch-mdx-embed"
-      style={{
-        position: 'relative',
-        width: '100%',
-        ...getPadding('16:9')
-      }}
-    >
-      <iframe
-        title={`twitch-${twitchId}`}
-        src={`https://player.twitch.tv/?autoplay=${autoPlay}&t=${h}h${m}m${s}s&video=v${twitchId}&channel=${channel}&collection=${collection}`}
-        frameBorder="0"
-        allow="autoplay; fullscreen"
-        allowFullScreen
+    <GeneralObserver>
+      <div
+        className="twitch-mdx-embed"
         style={{
           position: 'relative',
           width: '100%',
