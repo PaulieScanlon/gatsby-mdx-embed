@@ -4,7 +4,7 @@ import { getPadding } from '../../utils'
 
 export interface ITwitchProps {
   /** Domain(s) that will be embedding Twitch. You must have one parent key for each domain your site uses. */
-  parent: string
+  parent: string,
   /** Twitch id */
   twitchId?: string
   /** Skip to a time in the video */
@@ -14,9 +14,9 @@ export interface ITwitchProps {
     s: number
   }
   /** Auto play the video */
-  autoPlay: boolean
+  autoPlay: boolean,
   /** Name of the channel, for a live stream */
-  channel?: string
+  channel?: string,
   /** Collection ID, for a collection of videos */
   collection?: string
 }

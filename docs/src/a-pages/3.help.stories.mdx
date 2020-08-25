@@ -195,7 +195,7 @@ Use it in the component like this:
 
 ## Strava
 
-To embed a summary of a strava activity, navigate to the activity page on Strava.com (embed links aren't available on the mobile app). From there, click the "share" icon. Copy the URL from the snippet they provide that starts with `htps://www.strava.com/activities`. Set the `stravaEmbedUrl` prop to the url you copied.
+To embed a summary of a strava activity, navigate to the activity page on Strava.com (embed links aren't available on the mobile app). From there, click the "share" icon. The `activityId` should be everything after `https://www.strava.com/activities/`.
 
 ```jsx
 <Strava activityId="3857744534/embed/063fb45ce16095ff076c485ef6b14a01bf0e10e1" />
