@@ -9,26 +9,28 @@ import React, {
 interface GeneralObserverProps {
   /** Fires when IntersectionObserver enters viewport */
   onEnter?: (id?: string) => void
+  height?: number
 }
 
 export const GeneralObserver: FunctionComponent<GeneralObserverProps> = ({
   children,
-  onEnter
+  onEnter,
+  height = 400
 }) => {
   const ref = useRef<HTMLElement>(null)
   const [isChildVisible, setIsChildVisible] = useState(false)
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
-        if (entry.isIntersecting) {
+        if (entry.intersectionRatio > 0) {
           setIsChildVisible(true)
           onEnter && onEnter()
         }
       },
       {
         root: null,
-        rootMargin: '0px',
-        threshold: 1
+        rootMargin: '400px',
+        threshold: 0
       }
     )
     if (ref && ref.current) {
@@ -38,7 +40,7 @@ export const GeneralObserver: FunctionComponent<GeneralObserverProps> = ({
 
   return (
     <div ref={ref as RefObject<HTMLDivElement>}>
-      {isChildVisible ? children : null}
+      {isChildVisible ? children : <div style={{ height, width: '100%' }} />}
     </div>
   )
 }
