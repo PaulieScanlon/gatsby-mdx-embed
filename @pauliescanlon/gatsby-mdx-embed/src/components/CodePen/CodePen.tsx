@@ -23,7 +23,7 @@ export const CodePen: FunctionComponent<ICodePenProps> = ({
   editable = false,
   theme = 'default'
 }: ICodePenProps) => (
-  <GeneralObserver>
+  <GeneralObserver height={height}>
     <iframe
       title={`codePen-${codePenId}`}
       className="codepen-mdx-embed"
@@ -32,7 +32,9 @@ export const CodePen: FunctionComponent<ICodePenProps> = ({
         width: '100%'
       }}
       scrolling="no"
-      src={`https://codepen.io/team/codepen/embed${clickToLoad && '/preview'}/${codePenId}?height=265&theme-id=${theme}&default-tab=${tabs}${editable && '&editable=true'}`}
+      src={`https://codepen.io/team/codepen/embed${clickToLoad &&
+        '/preview'}/${codePenId}?height=265&theme-id=${theme}&default-tab=${tabs}${editable &&
+        '&editable=true'}`}
       frameBorder="no"
       allowFullScreen
     />
