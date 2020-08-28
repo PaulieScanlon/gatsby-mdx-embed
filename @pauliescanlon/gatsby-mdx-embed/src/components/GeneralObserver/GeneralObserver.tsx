@@ -9,13 +9,14 @@ import React, {
 interface GeneralObserverProps {
   /** Fires when IntersectionObserver enters viewport */
   onEnter?: (id?: string) => void
+  /** The height of the placeholder div before the component renders in */
   height?: number
 }
 
 export const GeneralObserver: FunctionComponent<GeneralObserverProps> = ({
   children,
   onEnter,
-  height = 400
+  height = 0
 }) => {
   const ref = useRef<HTMLElement>(null)
   const [isChildVisible, setIsChildVisible] = useState(false)
